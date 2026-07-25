@@ -47,7 +47,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 - [🤝 参与贡献](#-参与贡献)
 - [📄 许可证](#-许可证)
 
-> ⭐ = 编辑推荐 ｜ Stars 为 GitHub API 近似值（2026-07 校对），随时间变化，仅供参考。
+> ⭐ = 编辑推荐 ｜ Stars 为 GitHub API 近似值，**每周由 GitHub Action 自动刷新**，仅供参考。
 
 ---
 
@@ -88,9 +88,9 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | ⭐ [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~39.5k | **本领域最受欢迎的项目。** 一套 Claude Code 技能，10 阶段流水线（研究→写作→评审→修订→定稿），内置引用/论断「诚信门」，跨 Semantic Scholar + OpenAlex + Crossref 三源校验。理念：*「AI 是副驾，不是主驾」*。`/plugin install academic-research-skills` |
 | [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~7.1k | 上者的 Codex 原生版，人在环中的学术研究流程 |
 | [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | ~5.5k | ML/CV/NLP 论文写作技能包（改编自彭思达老师笔记），兼容 Codex / Claude Code / Gemini |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~23k | 大型技能合集，内含 litreview / grants / deep-research 研究栈，跨 Claude Code / Codex / Gemini / Cursor |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~23.2k | 大型技能合集，内含 litreview / grants / deep-research 研究栈，跨 Claude Code / Codex / Gemini / Cursor |
 | [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | ~1.1k | Strategist（规划）+ Composer（写作）双技能，带质量检查点 |
-| [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1k | 「科研 IDE」，内置多个 AI 助手角色 |
+| [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1.0k | 「科研 IDE」，内置多个 AI 助手角色 |
 | [ScienceClaw](https://github.com/beita6969/ScienceClaw) | ~0.9k | 自进化的 AI 科研伙伴，285 个技能，主打「零幻觉」 |
 | [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | ~0.7k | 多语言的 182 个可安装 AI 智能体技能库，覆盖多学科 |
 | [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | ~0.2k | 面向系统性文献综述的 Claude Code 技能，含引用校验脚本 |
@@ -110,7 +110,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | [open_deep_research](https://github.com/langchain-ai/open_deep_research) | ~12.4k | LangChain 官方的开源深度研究参考实现 |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~8.8k | 本地/隐私优先的深度研究，10+ 数据源含 arXiv / PubMed，可全本地 LLM |
 | [open-deep-research](https://github.com/nickscamara/open-deep-research) | ~6.3k | 基于 Firecrawl 对网页数据推理的开源 deep-research 复刻 |
-| [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | ~1k | 从一个主题自动生成学术综述论文 |
+| [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | ~1.0k | 从一个主题自动生成学术综述论文 |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | ~44 | 专注科学文献综述的工具包，用 RAG + 提示工程快速生成 related work（TMLR 2025） |
 | [opendraft](https://github.com/federicodeponte/opendraft) | ~0.3k | 免费开源的 AI 论文写作，19 个智能体协作起草长文 |
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | ~0.2k | 用 GPT 从 Google Scholar 检索并排序论文，自动生成文献综述 |
@@ -150,7 +150,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 
 | 项目 | Stars | 说明 |
 |---|---|---|
-| ⭐ [ASReview](https://github.com/asreview/asreview) | ~0.9k | 主动学习的系统综述筛选工具，交互式排序论文、大幅缩短筛选时间；学术界成熟方案 |
+| ⭐ [ASReview](https://github.com/asreview/asreview) | ~1.0k | 主动学习的系统综述筛选工具，交互式排序论文、大幅缩短筛选时间；学术界成熟方案 |
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | ~0.1k | 低代码 Python 包，用 AI 智能体自动化系统综述筛选（OpenAI/Gemini/Claude/Ollama） |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | ~24 | 基于生成式 AI 的协议驱动系统综述工具，无需编程、可复现的筛选与抽取 |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | 小众 | PRISMA 2020 全流程，经 MCP 做 AI 辅助筛选（arXiv/OpenAlex/S2，无需 API key） |
@@ -164,7 +164,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | 项目 | Stars | 说明 |
 |---|---|---|
 | ⭐ [zotero-mcp](https://github.com/54yyyu/zotero-mcp) | ~4.4k | 把 Zotero 文献库（本地 + Web API）接给 AI：语义检索、PDF 全文、引用分析。最流行的 Zotero MCP |
-| ⭐ [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | ~3k | 检索与分析 arXiv 论文，下载并把 PDF 转 Markdown 喂给 LLM；提供 `.mcpb` 包 |
+| ⭐ [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | ~3.0k | 检索与分析 arXiv 论文，下载并把 PDF 转 Markdown 喂给 LLM；提供 `.mcpb` 包 |
 | [paper-search-mcp](https://github.com/openags/paper-search-mcp) | ~2.3k | 跨 20+ 源检索/下载论文（arXiv、PubMed、bioRxiv、S2、OpenAlex、Crossref、CORE…） |
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | ~0.1k | 检索、访问与分析 PubMed 文章（元数据 + 深度分析） |
 | [alex-mcp](https://github.com/drAbreu/alex-mcp) | ~50 | OpenAlex MCP，专注作者消歧与机构/成果查询 |
@@ -191,11 +191,11 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 
 | 项目 | Stars | 说明 |
 |---|---|---|
-| ⭐ [MinerU](https://github.com/opendatalab/MinerU) | ~76k | 高精度 PDF/Office → LLM 就绪的 Markdown/JSON（VLM+OCR，100+ 语言，公式/表格） |
-| [docling](https://github.com/docling-project/docling) | ~64k | IBM 出品的文档解析器，为 GenAI/RAG 准备 PDF/文档 |
-| [marker](https://github.com/datalab-to/marker) | ~38k | 快速把 PDF/文档转成干净 Markdown/JSON，对科研文档友好 |
-| [PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate) | ~22k | 保留排版的科研 PDF 翻译（公式/图表不变形） |
-| [grobid](https://github.com/grobidOrg/grobid) | ~5k | 从学术 PDF 抽取结构化 TEI/XML（元数据、参考文献、章节） |
+| ⭐ [MinerU](https://github.com/opendatalab/MinerU) | ~75.7k | 高精度 PDF/Office → LLM 就绪的 Markdown/JSON（VLM+OCR，100+ 语言，公式/表格） |
+| [docling](https://github.com/docling-project/docling) | ~63.8k | IBM 出品的文档解析器，为 GenAI/RAG 准备 PDF/文档 |
+| [marker](https://github.com/datalab-to/marker) | ~37.8k | 快速把 PDF/文档转成干净 Markdown/JSON，对科研文档友好 |
+| [PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate) | ~35.8k | 保留排版的科研 PDF 翻译（公式/图表不变形） |
+| [grobid](https://github.com/grobidOrg/grobid) | ~5.0k | 从学术 PDF 抽取结构化 TEI/XML（元数据、参考文献、章节） |
 | [paperetl](https://github.com/neuml/paperetl) | ~0.7k | 面向医学与科研论文的 ETL 管线，入库为结构化数据 |
 | [scipdf_parser](https://github.com/titipata/scipdf_parser) | ~0.5k | 科研 PDF 的 Python 解析器（正文 + 图，基于 GROBID） |
 

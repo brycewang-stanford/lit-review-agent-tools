@@ -48,7 +48,7 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
-> ⭐ = editor's pick ｜ Star counts are approximate GitHub-API values (verified 2026-07) and change over time.
+> ⭐ = editor's pick ｜ Star counts are approximate GitHub-API values, **auto-refreshed weekly by a GitHub Action**.
 
 ---
 
@@ -90,9 +90,9 @@ I want to chat with my library inside Zotero ───────────�
 | ⭐ [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~39.5k | **The most popular project in this space.** A suite of Claude Code skills running a 10-stage pipeline (research→write→review→revise→finalize) with citation/claim "integrity gates," cross-checked against Semantic Scholar + OpenAlex + Crossref. Philosophy: *"AI is your copilot, not the pilot."* `/plugin install academic-research-skills` |
 | [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~7.1k | Codex-native sibling of the above, human-in-the-loop research flow |
 | [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | ~5.5k | ML/CV/NLP paper-writing skill pack; works with Codex, Claude Code, and Gemini |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~23k | Large skill collection incl. a litreview / grants / deep-research stack across Claude Code / Codex / Gemini / Cursor |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~23.2k | Large skill collection incl. a litreview / grants / deep-research stack across Claude Code / Codex / Gemini / Cursor |
 | [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | ~1.1k | Strategist (planning) + Composer (writing) skills with quality checkpoints |
-| [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1k | A "research IDE" with multiple AI-assistant personas |
+| [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1.0k | A "research IDE" with multiple AI-assistant personas |
 | [ScienceClaw](https://github.com/beita6969/ScienceClaw) | ~0.9k | Self-evolving AI research colleague, 285 skills, "zero hallucination" claim |
 | [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | ~0.7k | Multilingual library of 182 installable AI-agent skills across disciplines |
 | [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | ~0.2k | Claude Code skills for systematic literature review, incl. citation-validation scripts |
@@ -112,7 +112,7 @@ I want to chat with my library inside Zotero ───────────�
 | [open_deep_research](https://github.com/langchain-ai/open_deep_research) | ~12.4k | LangChain's official open deep-research reference implementation |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~8.8k | Local/private deep-research; 10+ sources incl. arXiv & PubMed, fully local LLMs |
 | [open-deep-research](https://github.com/nickscamara/open-deep-research) | ~6.3k | Open deep-research clone reasoning over web data via Firecrawl |
-| [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | ~1k | Automated academic survey-paper generation from a topic |
+| [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | ~1.0k | Automated academic survey-paper generation from a topic |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | ~44 | Toolkit focused on scientific literature review; RAG + prompting to draft related-work fast (TMLR 2025) |
 | [opendraft](https://github.com/federicodeponte/opendraft) | ~0.3k | Free & open-source AI paper writer; 19 agents collaborate to draft long papers |
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | ~0.2k | Uses GPT to find & rank Google Scholar papers and auto-generate a survey |
@@ -152,7 +152,7 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Notes |
 |---|---|---|
-| ⭐ [ASReview](https://github.com/asreview/asreview) | ~0.9k | Active-learning screener for systematic reviews; interactively ranks papers to cut screening time; well-established in academia |
+| ⭐ [ASReview](https://github.com/asreview/asreview) | ~1.0k | Active-learning screener for systematic reviews; interactively ranks papers to cut screening time; well-established in academia |
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | ~0.1k | Low-code Python package automating SR screening via AI agents (OpenAI/Gemini/Claude/Ollama) |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | ~24 | Generative-AI, protocol-based systematic-review toolkit; no-code, replicable screening & extraction |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | PRISMA 2020 flow with AI-assisted screening via MCP (arXiv/OpenAlex/S2, no API keys) |
@@ -166,7 +166,7 @@ I want to chat with my library inside Zotero ───────────�
 | Project | Stars | Notes |
 |---|---|---|
 | ⭐ [zotero-mcp](https://github.com/54yyyu/zotero-mcp) | ~4.4k | Connects a Zotero library (local + web API) to AI: semantic search, PDF full-text, citation analysis. The most popular Zotero MCP |
-| ⭐ [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | ~3k | Search & analyze arXiv papers; downloads and converts PDFs to Markdown for LLM context; ships an `.mcpb` bundle |
+| ⭐ [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | ~3.0k | Search & analyze arXiv papers; downloads and converts PDFs to Markdown for LLM context; ships an `.mcpb` bundle |
 | [paper-search-mcp](https://github.com/openags/paper-search-mcp) | ~2.3k | Multi-source search/download across 20+ sources (arXiv, PubMed, bioRxiv, S2, OpenAlex, Crossref, CORE…) |
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | ~0.1k | Search, access, and analyze PubMed articles (metadata + deep analysis) |
 | [alex-mcp](https://github.com/drAbreu/alex-mcp) | ~50 | OpenAlex MCP focused on author disambiguation and institution/work lookup |
@@ -193,11 +193,11 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Notes |
 |---|---|---|
-| ⭐ [MinerU](https://github.com/opendatalab/MinerU) | ~76k | High-accuracy PDF/Office → LLM-ready Markdown/JSON (VLM+OCR, 100+ languages, formulas/tables) |
-| [docling](https://github.com/docling-project/docling) | ~64k | IBM-origin document parser prepping PDFs/docs for gen-AI/RAG |
-| [marker](https://github.com/datalab-to/marker) | ~38k | Fast PDF/doc → clean Markdown/JSON conversion, scientific-doc friendly |
-| [PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate) | ~22k | Layout-preserving scientific-PDF translation (formulas/figures intact) |
-| [grobid](https://github.com/grobidOrg/grobid) | ~5k | ML tool extracting structured TEI/XML (metadata, refs, sections) from scholarly PDFs |
+| ⭐ [MinerU](https://github.com/opendatalab/MinerU) | ~75.7k | High-accuracy PDF/Office → LLM-ready Markdown/JSON (VLM+OCR, 100+ languages, formulas/tables) |
+| [docling](https://github.com/docling-project/docling) | ~63.8k | IBM-origin document parser prepping PDFs/docs for gen-AI/RAG |
+| [marker](https://github.com/datalab-to/marker) | ~37.8k | Fast PDF/doc → clean Markdown/JSON conversion, scientific-doc friendly |
+| [PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate) | ~35.8k | Layout-preserving scientific-PDF translation (formulas/figures intact) |
+| [grobid](https://github.com/grobidOrg/grobid) | ~5.0k | ML tool extracting structured TEI/XML (metadata, refs, sections) from scholarly PDFs |
 | [paperetl](https://github.com/neuml/paperetl) | ~0.7k | ETL pipeline for medical & scientific papers into structured stores |
 | [scipdf_parser](https://github.com/titipata/scipdf_parser) | ~0.5k | Python parser for scientific-publication PDFs (content + figures, GROBID-backed) |
 
