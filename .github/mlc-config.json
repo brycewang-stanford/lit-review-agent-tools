@@ -4,6 +4,9 @@
   "fallbackRetryDelay": "30s",
   "aliveStatusCodes": [200, 206, 429, 403],
   "ignorePatterns": [
-    { "pattern": "^https://scholar.google.com" }
+    { "pattern": "^https://scholar.google.com" },
+    { "pattern": "^https://api.star-history.com" },
+    { "pattern": "^https://star-history.com" },
+    { "pattern": "^https://github.com/brycewang-stanford/lit-review-agent-tools" }
   ]
 }
