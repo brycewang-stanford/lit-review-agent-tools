@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.svg" alt="Awesome AI Literature Review Agents & Tools" width="100%">
+
 # Awesome AI Literature Review Agents & Tools
 
 **🤖 面向「智能体文献综述」的最强开源技能、工具与框架大全**

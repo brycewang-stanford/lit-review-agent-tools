@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.svg" alt="Awesome AI Literature Review Agents & Tools" width="100%">
+
 # Awesome AI Literature Review Agents & Tools
 
 **🤖 The strongest curated list of open-source skills, tools & frameworks for AI-agent literature reviewing**
