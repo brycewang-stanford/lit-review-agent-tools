@@ -1,0 +1,63 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Awesome AI Literature Review Agents and Tools">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.55" stop-color="#141B33"/>
+      <stop offset="1" stop-color="#1B2247"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C93FF"/>
+      <stop offset="1" stop-color="#5EE6C9"/>
+    </linearGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C93FF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#5EE6C9" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- faint dotted grid -->
+  <g fill="#5EE6C9" opacity="0.06">
+    <circle cx="90" cy="90" r="2.5"/><circle cx="180" cy="90" r="2.5"/><circle cx="270" cy="90" r="2.5"/>
+    <circle cx="1120" cy="560" r="2.5"/><circle cx="1200" cy="560" r="2.5"/><circle cx="1040" cy="560" r="2.5"/>
+    <circle cx="150" cy="560" r="2.5"/><circle cx="230" cy="560" r="2.5"/>
+  </g>
+
+  <!-- decorative citation graph, upper right -->
+  <g stroke="url(#accent)" stroke-width="2.5" opacity="0.5" filter="url(#glow)">
+    <line x1="1000" y1="180" x2="1110" y2="120"/>
+    <line x1="1000" y1="180" x2="1150" y2="230"/>
+    <line x1="1000" y1="180" x2="980"  y2="320"/>
+    <line x1="1110" y1="120" x2="1200" y2="190"/>
+    <line x1="1150" y1="230" x2="1200" y2="190"/>
+    <line x1="1150" y1="230" x2="980"  y2="320"/>
+  </g>
+  <g fill="#0B1020" stroke="url(#accent)" stroke-width="3">
+    <circle cx="1000" cy="180" r="20" fill="url(#accent)"/>
+    <circle cx="1110" cy="120" r="13"/>
+    <circle cx="1150" cy="230" r="16"/>
+    <circle cx="980"  cy="320" r="12"/>
+    <circle cx="1200" cy="190" r="11"/>
+  </g>
+
+  <!-- badge pill -->
+  <rect x="96" y="150" width="330" height="44" rx="22" fill="url(#pill)" stroke="#7C93FF" stroke-opacity="0.4"/>
+  <text x="120" y="179" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" fill="#9FB0FF" letter-spacing="1.5">AWESOME · CC0 · 70+ TOOLS</text>
+
+  <!-- title -->
+  <text x="94" y="300" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="82" font-weight="800" fill="#F4F7FF">AI Literature Review</text>
+  <text x="94" y="392" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="82" font-weight="800" fill="url(#accent)">Agents &amp; Tools</text>
+
+  <!-- subtitle -->
+  <text x="98" y="452" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#AEB8D6">search → read → extract → synthesize → verify citations</text>
+  <text x="98" y="494" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#6B7699">The strongest curated map of open-source AI tools for literature review</text>
+  <text x="98" y="524" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#6B7699">面向智能体文献综述的最强工具大全</text>
+
+  <!-- footer handle -->
+  <text x="96" y="592" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#5EE6C9" opacity="0.8">github.com/brycewang-stanford/lit-review-agent-tools</text>
+</svg>
