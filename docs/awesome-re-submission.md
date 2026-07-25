@@ -11,7 +11,7 @@ sindresorhus/awesome 的 [contributing 要求](https://github.com/sindresorhus/a
 | 要求 | 我们现状 | 待办 |
 |---|---|---|
 | 清单**已存在一段时间**、非「几天前刚建」 | ❌ 仓库刚建 | ⏳ **等待**：先运营几周、积累一定 Star 与 PR 记录再提交，否则大概率被拒 |
-| 通过 `npx awesome-lint` **零报错** | ❌ 当前用表格+emoji 布局，未通过 | 见下方「awesome-lint 合规」 |
+| 通过 `npx awesome-lint` **零报错** | ✅ 已提供 [`AWESOME.md`](../AWESOME.md) bullet 版，**本地 + CI 均零报错** | 提交时把 URL 指向 `#awesomemd` 或直接用主仓库即可 |
 | 有 `awesome` badge 且指向 awesome.re | ✅ 已有 | — |
 | 有目录（TOC） | ✅ 已有 | — |
 | 有 `contributing.md`（小写文件名，awesome-lint 要求） | ⚠️ 现为 `CONTRIBUTING.md` | 需确认大小写是否被接受，或加软链 |

@@ -18,8 +18,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Run awesome-lint
-        run: npx awesome-lint || true
+      # AWESOME.md is the awesome.re-compliant bullet edition and must pass
+      # cleanly. The main README.md uses a richer table layout by design.
+      - name: Run awesome-lint on AWESOME.md
+        run: npx awesome-lint AWESOME.md
 
   link-check:
     name: markdown link check
