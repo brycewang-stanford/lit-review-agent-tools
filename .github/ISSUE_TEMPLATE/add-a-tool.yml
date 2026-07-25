@@ -1,0 +1,44 @@
+name: "➕ Suggest a tool"
+description: "推荐一个应该被收录的文献综述 AI 工具 / Suggest a tool to add to the list"
+title: "Add: <tool name>"
+labels: ["suggestion"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub URL
+      description: "owner/repo 链接 / link to the repository"
+      placeholder: "https://github.com/owner/repo"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category / 分类
+      options:
+        - All-in-one Research Agents & Skills / 综合研究智能体与技能
+        - Deep Research & Auto Survey / 深度研究与自动综述
+        - Paper Q&A and RAG / 文献问答与 RAG
+        - Systematic Review & Screening / 系统综述与筛选
+        - MCP Servers / MCP 服务器
+        - Reference & Knowledge Management / 文献与知识管理
+        - Awesome Lists / 精选清单
+        - Other / 其他
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs / 推荐理由
+      description: "它解决什么问题？有什么独特之处？你用过吗？/ What problem does it solve? What's unique? Have you used it?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: "It's open-source and relevant to literature review / 开源且与文献综述强相关"
+          required: true
+        - label: "It's maintained (commits within ~1 year) or widely adopted / 在维护或广泛使用"
+          required: true
