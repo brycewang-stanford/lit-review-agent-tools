@@ -22,6 +22,7 @@ DATA = ROOT / "data"
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 VALID_SURFACES = {"readme", "awesome"}
+VALID_STATUS = {"active", "slowing", "stale", "archived", "unreachable", "unknown"}
 # Kept generous: these are the descriptions rendered into table cells.
 MAX_DESC = 400
 MAX_DESC_AWESOME = 160
@@ -133,6 +134,22 @@ def main() -> int:
         added = t.get("added")
         if added is not None and not DATE_RE.match(str(added)):
             err(f"{where}: 'added' must be YYYY-MM-DD, got {added!r}")
+
+        # ── machine-written fields (scripts/refresh_metadata.py) ─────────────
+        pushed = t.get("pushed_at")
+        if pushed is not None and not DATE_RE.match(str(pushed)):
+            err(f"{where}: 'pushed_at' must be YYYY-MM-DD, got {pushed!r}")
+
+        status = t.get("status")
+        if status is not None and status not in VALID_STATUS:
+            err(f"{where}: unknown status {status!r} (valid: {', '.join(sorted(VALID_STATUS))})")
+
+        archived = t.get("archived")
+        if archived is not None and not isinstance(archived, bool):
+            err(f"{where}: 'archived' must be true/false, got {archived!r}")
+
+        if t.get("license") == "":
+            err(f"{where}: 'license' is empty; use 'unknown' or 'none'")
 
     if errors:
         print(f"{len(errors)} validation error(s):\n", file=sys.stderr)

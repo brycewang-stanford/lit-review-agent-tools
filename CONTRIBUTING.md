@@ -32,7 +32,6 @@
      repo: owner/repo          # 只写 owner/repo，链接由脚本生成
      category: paper-qa-rag    # 见 data/categories.yaml
      added: 2026-07-27
-     stars: 1200               # 整数；每周由 GitHub Action 自动刷新
      desc_zh: "一句话说明它做什么、有什么独特之处"
      desc_en: "One line: what it does and what's unique about it"
      desc_awesome: "Same idea, plain English, ending with a period."
@@ -43,6 +42,9 @@
    - 说明控制在**一句话**，突出「它解决什么问题 / 独特点」，避免复制官方 slogan。
    - 编辑推荐项目加 `editor_pick: true`（渲染成 ⭐，请在 PR 里说明理由）。
    - 没有 Star 数时写 `stars: null` 并补 `stars_label: {zh: "小众", en: "niche"}`。
+   - **不用手填** `stars` / `pushed_at` / `archived` / `license` / `language` / `status`
+     —— 这些由 `make refresh` 从 GitHub API 抓取。唯一例外：GitHub 识别不出的许可证
+     （报 `NOASSERTION`），可以自己读 LICENSE 后手填，刷新脚本不会覆盖。
 
 3. 运行 `make build` 重新生成所有文件，**把生成结果一起提交**。
 4. 提交 PR，标题写 `Add: <项目名>`，正文简述**推荐理由**（你用过吗？它解决了什么？）。
@@ -53,6 +55,7 @@
 make validate   # 检查 data/ 里的字段、重复项、分类是否合法
 make build      # 重新生成 README.md / README.en.md / AWESOME.md / data/tools.json
 make check      # CI 跑的这条：生成结果如果没提交就报错
+make refresh    # 从 GitHub API 刷新 Star / 活跃度 / 许可证，然后重新生成
 make lint       # awesome-lint（需要 Node）
 ```
 
@@ -104,7 +107,6 @@ A project should ideally meet all of these:
      repo: owner/repo          # owner/repo only — the URL is generated
      category: paper-qa-rag    # see data/categories.yaml
      added: 2026-07-27
-     stars: 1200               # integer; auto-refreshed weekly by a GitHub Action
      desc_zh: "一句话说明它做什么、有什么独特之处"
      desc_en: "One line: what it does and what's unique about it"
      desc_awesome: "Same idea, plain English, ending with a period."
@@ -116,6 +118,10 @@ A project should ideally meet all of these:
      don't just copy the official slogan.
    - Editor's picks set `editor_pick: true` (renders as ⭐; explain why in the PR).
    - No star count? Use `stars: null` plus `stars_label: {zh: "小众", en: "niche"}`.
+   - **Don't hand-write** `stars` / `pushed_at` / `archived` / `license` / `language` /
+     `status` — `make refresh` pulls those from the GitHub API. One exception: a license
+     GitHub can't detect (it reports `NOASSERTION`) may be filled in by hand after reading
+     the repo's LICENSE, and the refresher will not overwrite it.
 
 3. Run `make build` to regenerate every surface, and **commit the generated output too**.
 4. Open a PR titled `Add: <project>`, and explain **why it belongs** (have you used it? what does it solve?).
@@ -126,6 +132,7 @@ A project should ideally meet all of these:
 make validate   # field, duplicate, and category checks over data/
 make build      # regenerate README.md / README.en.md / AWESOME.md / data/tools.json
 make check      # what CI runs: fails if generated output isn't committed
+make refresh    # pull stars / freshness / licenses from the GitHub API, then rebuild
 make lint       # awesome-lint (needs Node)
 ```
 

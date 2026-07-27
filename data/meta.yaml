@@ -1,0 +1,4 @@
+# Written by scripts/refresh_metadata.py. Do not hand-edit.
+# Keeps every clock-dependent value out of scripts/build.py so that
+# generated files stay a pure function of the data.
+refreshed_at: 2026-07-27

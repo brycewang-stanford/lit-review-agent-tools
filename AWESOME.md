@@ -91,7 +91,7 @@ Curated tools that help AI agents handle the whole loop of a literature review: 
 - [MinerU](https://github.com/opendatalab/MinerU) - High-accuracy conversion of PDFs and office files to LLM-ready Markdown and JSON.
 - [docling](https://github.com/docling-project/docling) - Document parser that prepares PDFs and documents for generative AI and RAG.
 - [marker](https://github.com/datalab-to/marker) - Fast conversion of PDFs and documents to clean Markdown and JSON.
-- [PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate) - Layout-preserving scientific-PDF translation that keeps formulas and figures intact.
+- [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) - Layout-preserving scientific-PDF translation that keeps formulas and figures intact.
 - [grobid](https://github.com/grobidOrg/grobid) - Extracts structured metadata, references, and sections from scholarly PDFs.
 - [paperetl](https://github.com/neuml/paperetl) - ETL pipeline that loads medical and scientific papers into structured stores.
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) - Python parser for scientific PDFs that extracts content and figures.

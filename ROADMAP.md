@@ -5,7 +5,7 @@
 > 单一数据源（`data/tools.yaml`）→ 自动渲染所有 Markdown → 自动抓取活跃度/许可证信号 → 可搜索站点 / Skill / MCP。
 > 加工具从「改 4 个文件」变成「加 1 段 YAML」，清单从「读一次」变成「每周回来看」。
 
-**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phase 1 shipped 2026-07-27**
+**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phases 1–2 shipped 2026-07-27**
 
 ---
 
@@ -127,7 +127,7 @@ Add them alongside the consumer that needs them.
 
 ---
 
-## Phase 2 — Trust and freshness signals
+## Phase 2 — Trust and freshness signals ✅ *shipped 2026-07-27*
 
 **Goal:** the list answers "is this still alive, and can I legally use it?" — which stars never answer.
 
@@ -151,11 +151,25 @@ Add a **Health** column: 🟢 active (pushed <90d) · 🟡 slowing (<1y) · 🔴
 
 Full metadata dump: every tool with stars, last push, license, status. Costs nothing to generate and is the kind of page that gets linked to.
 
+> **Delivered.** `scripts/refresh_metadata.py` replaces `update_stars.py` and pulls
+> stars, last push, archived state, license and language in the same API call.
+> Live results across the 66 listed tools: **41 active, 17 slowing, 9 stale**, and
+> the very first run caught `Byaidu/PDFMathTranslate` renamed upstream — the exact
+> silent-decay case that motivated this phase. Licenses proved the sharper signal:
+> GitHub reports `NOASSERTION` for 11 entries, so each was read from its own LICENSE
+> file. **Four tools ship no license at all** (all-rights-reserved by default), three
+> are CC-BY-NC or CC-BY-NC-ND (no commercial use) — including the list's own #1 pick —
+> and three are bespoke. Hand-verified licenses are never overwritten by the refresher.
+>
+> `status` is computed at refresh time, not render time: deriving freshness from
+> today's date inside `build.py` would have made generated files drift on their own
+> and broken the CI gate with no data change.
+
 **Acceptance criteria**
 
-- [ ] Weekly Action refreshes YAML metadata and regenerates all surfaces in one commit
-- [ ] A renamed or archived upstream repo produces a tracking issue within a week
-- [ ] Every table row shows health + license
+- [x] Weekly Action refreshes YAML metadata and regenerates all surfaces in one commit
+- [x] A renamed or archived upstream repo produces a tracking issue within a week
+- [x] Every table row shows health + license
 
 **Effort:** ~half a day on top of Phase 1. **Impact:** turns a link list into a maintained reference.
 
@@ -228,7 +242,7 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 | # | Work | Effort | Impact | Blocks |
 |---|---|---|---|---|
 | ~~1~~ | ~~`data/tools.yaml` + `build.py` + drift-gate CI~~ | ✅ done | 🔥🔥🔥 | — |
-| 2 | `refresh_metadata.py`, health/license signals, `HEALTH.md` | 0.5d | 🔥🔥🔥 | needs 1 |
+| ~~2~~ | ~~`refresh_metadata.py`, health/license signals, `HEALTH.md`~~ | ✅ done | 🔥🔥🔥 | — |
 | 3 | GitHub Pages searchable site + `tools.json` | 1d | 🔥🔥 | needs 1 |
 | 4 | Skill catalog generated from SSOT | 0.5h | 🔥 | needs 1 + skills-agent merge |
 | 5 | `recipes/` — first 3 verified workflows | 3× half-day | 🔥🔥🔥 | none |
@@ -241,7 +255,9 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 
 1. ~~`feat(data): introduce data/tools.yaml as single source of truth`~~ ✅
 2. ~~`feat(ci): generate all Markdown surfaces from tools.yaml and gate on drift`~~ ✅
-3. `feat(data): capture freshness, archived state, and license from the GitHub API` ← next
+3. ~~`feat(data): capture freshness, archived state, and license from the GitHub API`~~ ✅
+
+Next: Phase 3 — the searchable GitHub Pages site over `data/tools.json`.
 
 ---
 
