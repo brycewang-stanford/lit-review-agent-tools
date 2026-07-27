@@ -1,4 +1,4 @@
-<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Awesome AI Literature Review Agents and Tools - 更省力的 AI 文献综述大全">
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Awesome AI Literature Review Agents and Tools - 更省力的 AI 文献综述 Agent 工具大全">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#070C1A"/>
@@ -38,8 +38,8 @@
     .cjk  { font-family: "PingFang SC","Hiragino Sans GB","Source Han Sans SC","Noto Sans SC","Microsoft YaHei","Heiti SC",sans-serif; }
     .lat  { font-family: "Helvetica Neue",Helvetica,Arial,"Segoe UI",sans-serif; }
     .mono { font-family: ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace; }
-    .h1   { font-size: 86px; font-weight: 800; fill: #F3F7FF; letter-spacing: 5px; }
-    .h2   { font-size: 60px; font-weight: 800; fill: url(#mint); letter-spacing: 1px; }
+    .h1   { font-size: 78px; font-weight: 800; fill: #F3F7FF; letter-spacing: 5px; }
+    .h2   { font-size: 54px; font-weight: 800; fill: url(#mint); letter-spacing: 1px; }
     .pill { font-size: 25px; font-weight: 700; fill: #06251C; letter-spacing: 2px; }
   </style>
 
@@ -53,21 +53,21 @@
   <text class="mono" x="102" y="78" font-size="17" letter-spacing="2.2" fill="#7DF3C0">AWESOME · CC0 · 66 TOOLS</text>
 
   <!-- headline -->
-  <text class="cjk h1" x="78" y="204">更省力的</text>
-  <text class="lat h2" x="82" y="292">AI Literature Review</text>
-  <text class="cjk h1" x="78" y="396">文献综述大全</text>
-  <rect x="82" y="426" width="190" height="6" rx="3" fill="url(#rule)"/>
-  <text class="cjk" x="82" y="484" font-size="27" font-weight="600" fill="#A9B7DA">检索 <tspan fill="#5CF0A8">→</tspan> 阅读 <tspan fill="#5CF0A8">→</tspan> 抽取 <tspan fill="#5CF0A8">→</tspan> 综述 <tspan fill="#5CF0A8">→</tspan> 引用核查</text>
+  <text class="cjk h1" x="78" y="186">更省力的</text>
+  <text class="lat h2" x="82" y="264">AI Literature Review</text>
+  <text class="cjk h1" x="78" y="358">文献综述 <tspan class="lat" dx="-16" fill="#5CF0A8">Agent</tspan></text>
+  <text class="cjk h1" x="78" y="450">工具大全</text>
+  <rect x="82" y="478" width="190" height="6" rx="3" fill="url(#rule)"/>
 
   <!-- pills -->
-  <rect x="80"  y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
-  <text class="cjk pill" x="160" y="559" text-anchor="middle">检索文献</text>
-  <rect x="256" y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
-  <text class="cjk pill" x="336" y="559" text-anchor="middle">精读抽取</text>
-  <rect x="432" y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
-  <text class="cjk pill" x="512" y="559" text-anchor="middle">自动综述</text>
-  <rect x="608" y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
-  <text class="cjk pill" x="688" y="559" text-anchor="middle">引用核查</text>
+  <rect x="80"  y="514" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="160" y="553" text-anchor="middle">检索文献</text>
+  <rect x="256" y="514" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="336" y="553" text-anchor="middle">精读抽取</text>
+  <rect x="432" y="514" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="512" y="553" text-anchor="middle">自动综述</text>
+  <rect x="608" y="514" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="688" y="553" text-anchor="middle">引用核查</text>
 
   <!-- right stat block -->
   <g opacity="0.32">
@@ -86,6 +86,6 @@
   <text class="cjk" x="1052" y="492" text-anchor="middle" font-size="21" font-weight="500" fill="#7E8CB0">11 大场景 · 每季度更新</text>
 
   <!-- handle -->
-  <g transform="translate(742,594) scale(1.4)" fill="#6E7CA0"><use xlink:href="#glyphGithub" href="#glyphGithub"/></g>
-  <text class="lat" x="1200" y="612" text-anchor="end" font-size="20" font-weight="600" fill="#6E7CA0">brycewang-stanford / lit-review-agent-tools</text>
+  <g transform="translate(742,588) scale(1.4)" fill="#6E7CA0"><use xlink:href="#glyphGithub" href="#glyphGithub"/></g>
+  <text class="lat" x="1200" y="606" text-anchor="end" font-size="20" font-weight="600" fill="#6E7CA0">brycewang-stanford / lit-review-agent-tools</text>
 </svg>
