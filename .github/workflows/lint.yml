@@ -10,6 +10,23 @@ on:
   workflow_dispatch:
 
 jobs:
+  generated-files:
+    name: data validation & drift check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      # data/tools.yaml is the single source of truth; every Markdown surface is
+      # rendered from it. If a PR edits the generated regions by hand, or edits
+      # the data without rebuilding, this job fails.
+      - name: Validate data files
+        run: python3 scripts/validate.py
+      - name: Check generated files are in sync
+        run: python3 scripts/build.py --check
+
   awesome-lint:
     name: awesome-lint
     runs-on: ubuntu-latest

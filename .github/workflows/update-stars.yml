@@ -19,17 +19,26 @@ jobs:
         with:
           python-version: "3.12"
 
+      - run: pip install pyyaml
+
+      # Writes to data/tools.yaml only …
       - name: Refresh star counts from the GitHub API
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/update_stars.py
 
+      # … then re-renders every surface from it, so the drift check stays green.
+      - name: Re-render generated files
+        run: |
+          python3 scripts/validate.py
+          python3 scripts/build.py
+
       - name: Commit changes if any
         run: |
-          if [[ -n "$(git status --porcelain README.md README.en.md)" ]]; then
+          if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md README.en.md
+            git add -A
             git commit -m "chore: auto-refresh star counts [skip ci]"
             git push
           else

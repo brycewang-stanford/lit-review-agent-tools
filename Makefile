@@ -1,0 +1,24 @@
+.PHONY: help build check validate stars lint
+
+help:
+	@echo "make build     Regenerate every Markdown surface + data/tools.json from data/"
+	@echo "make check     Fail if generated files are out of date (what CI runs)"
+	@echo "make validate  Check data/tools.yaml and data/categories.yaml for errors"
+	@echo "make stars     Refresh star counts from the GitHub API, then rebuild"
+	@echo "make lint      Run awesome-lint on AWESOME.md (needs Node)"
+
+build: validate
+	@python3 scripts/build.py
+
+check: validate
+	@python3 scripts/build.py --check
+
+validate:
+	@python3 scripts/validate.py
+
+stars:
+	@python3 scripts/update_stars.py
+	@python3 scripts/build.py
+
+lint:
+	@npx --yes awesome-lint AWESOME.md

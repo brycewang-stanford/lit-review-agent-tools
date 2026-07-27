@@ -21,33 +21,47 @@
 
 ## 📝 如何添加一个项目
 
-1. Fork 本仓库。
-2. 找到最合适的分类小节，在表格中**按相关性/Star 数大致排序**新增一行。
-3. **中英两个 README 都要更新**（`README.md` 和 `README.en.md`），保持条目一致。
-4. 保持格式统一：
+> ⚠️ **不要直接编辑 README.md / README.en.md / AWESOME.md 里的表格和列表。**
+> 它们由 [`data/tools.yaml`](data/tools.yaml) 自动生成，手改会被 CI 拦下。
 
-   ```markdown
-   | [项目名](https://github.com/owner/repo) | ~1.2k | 一句话说明它做什么、有什么独特之处 |
+1. Fork 本仓库。
+2. 在 [`data/tools.yaml`](data/tools.yaml) 对应分类下新增**一段条目**（同一分类内**按相关性/Star 数大致排序**）：
+
+   ```yaml
+   - name: "项目名"
+     repo: owner/repo          # 只写 owner/repo，链接由脚本生成
+     category: paper-qa-rag    # 见 data/categories.yaml
+     added: 2026-07-27
+     stars: 1200               # 整数；每周由 GitHub Action 自动刷新
+     desc_zh: "一句话说明它做什么、有什么独特之处"
+     desc_en: "One line: what it does and what's unique about it"
+     desc_awesome: "Same idea, plain English, ending with a period."
    ```
 
-   - Star 数用近似值：`~39.4k`、`~900`、`~0.3k`；未知写 `—`。
+   - `desc_zh` / `desc_en` 渲染进两个 README；`desc_awesome` 渲染进 `AWESOME.md`，
+     需**首字母大写、以句号结尾**（awesome-lint 的硬性要求）。
    - 说明控制在**一句话**，突出「它解决什么问题 / 独特点」，避免复制官方 slogan。
-   - 编辑推荐项目可在名称前加 `⭐`（请在 PR 里说明理由）。
+   - 编辑推荐项目加 `editor_pick: true`（渲染成 ⭐，请在 PR 里说明理由）。
+   - 没有 Star 数时写 `stars: null` 并补 `stars_label: {zh: "小众", en: "niche"}`。
 
-5. 提交 PR，标题写 `Add: <项目名>`，正文简述**推荐理由**（你用过吗？它解决了什么？）。
+3. 运行 `make build` 重新生成所有文件，**把生成结果一起提交**。
+4. 提交 PR，标题写 `Add: <项目名>`，正文简述**推荐理由**（你用过吗？它解决了什么？）。
 
-## 🔧 本地检查（可选）
-
-我们用 [awesome-lint](https://github.com/sindresorhus/awesome-lint) 和链接检查保证质量。CI 会自动跑，你也可以本地跑：
+## 🔧 本地检查
 
 ```bash
-npx awesome-lint
+make validate   # 检查 data/ 里的字段、重复项、分类是否合法
+make build      # 重新生成 README.md / README.en.md / AWESOME.md / data/tools.json
+make check      # CI 跑的这条：生成结果如果没提交就报错
+make lint       # awesome-lint（需要 Node）
 ```
+
+只需要 Python 3 和 `pyyaml`（`pip install pyyaml`）。
 
 ## 🌐 关于双语
 
-- 两份 README 是**一等公民**，内容需对齐。
-- 若你只熟悉一种语言，先更新一份并在 PR 里注明，维护者会帮忙补另一份 —— 不要因此不提交。
+- 中英文说明都存在同一条目里（`desc_zh` / `desc_en`），**结构上不可能再走偏**。
+- 若你只熟悉一种语言，先填一份并在 PR 里注明，维护者会帮忙补另一份 —— 不要因此不提交。
 
 ## 🙌 其他贡献方式
 
@@ -78,33 +92,49 @@ A project should ideally meet all of these:
 
 ## 📝 How to add a project
 
-1. Fork the repo.
-2. Find the most fitting category and add a row, **roughly ordered by relevance / stars**.
-3. **Update both READMEs** (`README.md` and `README.en.md`) so entries stay in sync.
-4. Keep the format consistent:
+> ⚠️ **Don't hand-edit the tables or lists in README.md / README.en.md / AWESOME.md.**
+> They're generated from [`data/tools.yaml`](data/tools.yaml), and CI rejects manual edits.
 
-   ```markdown
-   | [name](https://github.com/owner/repo) | ~1.2k | One line: what it does and what's unique about it |
+1. Fork the repo.
+2. Add **one entry** to [`data/tools.yaml`](data/tools.yaml) under the right category
+   (**roughly ordered by relevance / stars** within it):
+
+   ```yaml
+   - name: "project-name"
+     repo: owner/repo          # owner/repo only — the URL is generated
+     category: paper-qa-rag    # see data/categories.yaml
+     added: 2026-07-27
+     stars: 1200               # integer; auto-refreshed weekly by a GitHub Action
+     desc_zh: "一句话说明它做什么、有什么独特之处"
+     desc_en: "One line: what it does and what's unique about it"
+     desc_awesome: "Same idea, plain English, ending with a period."
    ```
 
-   - Approximate stars: `~39.4k`, `~900`, `~0.3k`; use `—` if unknown.
-   - Keep the note to **one line**, emphasizing "what problem it solves / what's unique" — don't just copy the official slogan.
-   - Editor's picks may prefix the name with `⭐` (explain why in the PR).
+   - `desc_zh` / `desc_en` render into the two READMEs; `desc_awesome` renders into
+     `AWESOME.md` and **must start with a capital and end with a period** (awesome-lint).
+   - Keep it to **one line**, emphasizing "what problem it solves / what's unique" —
+     don't just copy the official slogan.
+   - Editor's picks set `editor_pick: true` (renders as ⭐; explain why in the PR).
+   - No star count? Use `stars: null` plus `stars_label: {zh: "小众", en: "niche"}`.
 
-5. Open a PR titled `Add: <project>`, and explain **why it belongs** (have you used it? what does it solve?).
+3. Run `make build` to regenerate every surface, and **commit the generated output too**.
+4. Open a PR titled `Add: <project>`, and explain **why it belongs** (have you used it? what does it solve?).
 
-## 🔧 Local checks (optional)
-
-We use [awesome-lint](https://github.com/sindresorhus/awesome-lint) plus link checking. CI runs automatically; you can also run:
+## 🔧 Local checks
 
 ```bash
-npx awesome-lint
+make validate   # field, duplicate, and category checks over data/
+make build      # regenerate README.md / README.en.md / AWESOME.md / data/tools.json
+make check      # what CI runs: fails if generated output isn't committed
+make lint       # awesome-lint (needs Node)
 ```
+
+Only Python 3 and `pyyaml` are required (`pip install pyyaml`).
 
 ## 🌐 On bilinguality
 
-- Both READMEs are **first-class citizens** and must stay aligned.
-- If you only know one language, update that one and note it in your PR — a maintainer will mirror it. Don't let this stop you from contributing.
+- Both languages live in the same entry (`desc_zh` / `desc_en`), so they **can no longer drift**.
+- If you only know one language, fill in that one and note it in your PR — a maintainer will mirror it. Don't let this stop you from contributing.
 
 ## 🙌 Other ways to help
 

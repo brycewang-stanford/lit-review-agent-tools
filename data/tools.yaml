@@ -188,6 +188,7 @@
   repo: SakanaAI/AI-Scientist-v2
   category: autonomous-science
   added: 2026-07-26
+  stars: 6900
   surfaces: [awesome]
   desc_awesome: "Workshop-level automated scientific discovery via agentic tree search."
 - name: "AutoResearchClaw"
