@@ -7,6 +7,9 @@ This list is generated from data, and that data is published for you to reuse.
 - **[`data/tools.json`](../data/tools.json)** — generated, machine-readable export. **Use this one.**
 - **[`data/meta.yaml`](../data/meta.yaml)** — when the metadata was last refreshed.
 - **[`HEALTH.md`](../HEALTH.md)** — generated per-tool report: stars, last push, status, license, language.
+- **[`CHANGELOG.md`](../CHANGELOG.md)** — generated: what was added when, plus the watch list.
+- **`docs/index.html`** — generated searchable site; the catalogue is embedded in the page,
+  so it is one file with no runtime fetch and works opened straight off disk.
 
 Everything else — the tables in `README.md` and `README.en.md`, the bullets in
 `AWESOME.md` — is rendered from these files by [`scripts/build.py`](../scripts/build.py).

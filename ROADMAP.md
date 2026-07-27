@@ -5,7 +5,7 @@
 > 单一数据源（`data/tools.yaml`）→ 自动渲染所有 Markdown → 自动抓取活跃度/许可证信号 → 可搜索站点 / Skill / MCP。
 > 加工具从「改 4 个文件」变成「加 1 段 YAML」，清单从「读一次」变成「每周回来看」。
 
-**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phases 1–2 shipped 2026-07-27**
+**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phases 1–3 shipped 2026-07-27**
 
 ---
 
@@ -175,7 +175,16 @@ Full metadata dump: every tool with stars, last push, license, status. Costs not
 
 ---
 
-## Phase 3 — Surfaces people actually return to
+## Phase 3 — Surfaces people actually return to ✅ *mostly shipped 2026-07-27*
+
+> **Delivered.** `docs/index.html` is a searchable, filterable catalogue generated from
+> the same data: free-text search, category index with live counts, and filters for
+> maintenance status, licence class and editor's picks — all deep-linkable via query
+> string, bilingual, dark-mode aware. The payload is embedded rather than fetched, so
+> the page is a single 86 KB file with no runtime request that also works off disk.
+> Verified headlessly at four breakpoints: no console errors, no horizontal overflow.
+> `CHANGELOG.md` is generated from `added` dates and carries a watch list of stale and
+> archived entries. **Still blocked:** §3.2, generating the skill catalogue (see §6).
 
 ### 3.1 Searchable site (GitHub Pages)
 
@@ -243,11 +252,11 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 |---|---|---|---|---|
 | ~~1~~ | ~~`data/tools.yaml` + `build.py` + drift-gate CI~~ | ✅ done | 🔥🔥🔥 | — |
 | ~~2~~ | ~~`refresh_metadata.py`, health/license signals, `HEALTH.md`~~ | ✅ done | 🔥🔥🔥 | — |
-| 3 | GitHub Pages searchable site + `tools.json` | 1d | 🔥🔥 | needs 1 |
+| ~~3~~ | ~~GitHub Pages searchable site + `tools.json`~~ | ✅ done | 🔥🔥 | — |
 | 4 | Skill catalog generated from SSOT | 0.5h | 🔥 | needs 1 + skills-agent merge |
 | 5 | `recipes/` — first 3 verified workflows | 3× half-day | 🔥🔥🔥 | none |
 | 6 | Stage × Tool matrix | 2h | 🔥🔥 | needs 1 |
-| 7 | `CHANGELOG.md` generation | 2h | 🔥 | needs 1+2 |
+| ~~7~~ | ~~`CHANGELOG.md` generation~~ | ✅ done | 🔥 | — |
 | 8 | Repo hygiene: topics, `CITATION.cff`, Discussions | 30m | 🔥 | none |
 | 9 | Publish 知乎 post; awesome.re after ~4 weeks | — | 🔥🔥 | needs 3 |
 
@@ -257,7 +266,7 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 2. ~~`feat(ci): generate all Markdown surfaces from tools.yaml and gate on drift`~~ ✅
 3. ~~`feat(data): capture freshness, archived state, and license from the GitHub API`~~ ✅
 
-Next: Phase 3 — the searchable GitHub Pages site over `data/tools.json`.
+Next: Phase 4 — verified end-to-end recipes and the stage × tool matrix (the moat).
 
 ---
 
