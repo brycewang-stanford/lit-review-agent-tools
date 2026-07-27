@@ -302,7 +302,7 @@ def render_stages(cats, tools, meta) -> str:
         "search": ("01-screening-corpus", "597 OpenAlex records, deduplicated, in 18 s"),
         "screen": ("02-active-learning-screening", "all 38 relevant papers after screening 5.5% of 4,544"),
         "cite-check": ("03-verify-citations", "caught a retraction and an invented citation"),
-        "extract": ("04-pdf-to-markdown", "29-page paper in 78 s, 7 tables preserved"),
+        "extract": ("05-pdf-extractor-benchmark", "docling ~20x faster than marker; marker recovers 26% more DOIs"),
     }
     for sid, label, blurb in STAGES:
         rows = sorted(counts[sid], key=lambda x: -(x.get("stars") or 0))

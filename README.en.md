@@ -29,7 +29,7 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 
 > 🔍 **[Open the searchable version →](https://brycewang-stanford.github.io/lit-review-agent-tools/)** — filter by use case, maintenance status and licence, in either language.
 >
-> 🧪 **[Workflows that were actually run →](recipes/)** — 4 pipelines executed end to end, with real output and the things that broke. No API keys needed.
+> 🧪 **[Workflows that were actually run →](recipes/)** — 5 pipelines executed end to end, with real output and the things that broke. No API keys needed.
 > Headline: ASReview found **all 38 relevant papers after screening 248 of 4,544 records (5.5%)** on a published review's own data.
 >
 > 🧭 **[Browse by workflow stage →](STAGES.md)** — search · screen · extract · read · synthesize · cite-check · write · review.

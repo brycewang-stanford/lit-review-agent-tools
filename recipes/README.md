@@ -16,6 +16,7 @@ Every recipe below needs **no API key and no paid service**.
 | [02](02-active-learning-screening/) | Cut screening by 94% with ASReview active learning | screen | ~30 s | 2026-07-27 |
 | [03](03-verify-citations/) | Catch invented and retracted citations | cite-check | ~2 s/citation | 2026-07-27 |
 | [04](04-pdf-to-markdown/) | Turn a paper into structured Markdown with docling | extract | 78 s / 29 pp | 2026-07-27 |
+| [05](05-pdf-extractor-benchmark/) | Head-to-head: MinerU vs marker vs docling | extract | 16 min all-in | 2026-07-27 |
 
 They chain: **01 → 02** (corpus to screener) and **04 → 03** (references out of a
 PDF into the verifier). Both chains were run, and both surfaced problems that
@@ -34,6 +35,11 @@ only appear when you actually run them — see each recipe.
   fixed; see recipe 03, which is the most useful thing in this directory.
 - **docling converted a 29-page paper in 78 seconds on CPU**, reconstructing 7
   tables including the search-strategy table a systematic review actually needs.
+- **In a three-way head-to-head, docling is ~20× faster than marker — but marker
+  recovers 26% more DOIs from reference lists.** Which one is right depends on
+  whether you are embedding body text or chasing citations. Only docling ran on
+  the first try; marker needs `brew install llama.cpp`, and MinerU's CLI failed
+  where its Python API worked.
 
 ## What running them actually taught us
 
@@ -51,7 +57,10 @@ Things that are invisible until you try:
    resolves in Crossref to a *different* 2025 paper, "Is Attention All You
    Need?", at 100% token overlap. Only a DOI confirms.
 4. **"pip install" hides real costs.** docling pulls torch and downloads ~26 MB
-   of OCR weights on first run. Budget the disk and the first-run latency.
+   of OCR weights on first run. marker additionally needs a non-Python binary
+   (`llama.cpp`). Each of the three extractors is a 1.2–1.4 GB install, and they
+   cannot share an environment — MinerU pins `transformers` below what marker's
+   surya backend requires.
 
 ## Not verified
 

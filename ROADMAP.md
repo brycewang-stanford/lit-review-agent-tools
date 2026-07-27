@@ -241,10 +241,12 @@ Publish `data/tools.json` and document its schema in `docs/DATA.md`. Explicitly 
 > to `PICKS.md` and as an expandable block on the site. Every recommendation states
 > its downside, because one that does not is an advertisement.
 >
-> **Still not done: head-to-head comparisons.** A fair benchmark of MinerU vs marker
-> vs docling on the same corpus needs multi-GB installs and hours of runtime; a
-> partial one would be worse than none. The one honest comparative data point so far
-> — docling at 78 s for 29 pages on CPU — is recorded in recipe 04.
+> **The head-to-head is now done too** ([recipe 05](recipes/05-pdf-extractor-benchmark/)):
+> MinerU vs marker vs docling, same two papers, three isolated virtualenvs. docling is
+> ~20× faster; marker recovers 26% more DOIs from reference lists. Only docling ran on
+> the first attempt — marker needs `brew install llama.cpp` plus a macOS multiprocessing
+> workaround, and MinerU's CLI failed where its Python API worked. Two of the three
+> failures in that run were ours, not the tools', and are written up as such.
 
 Anyone can clone a link list in an afternoon. Nobody can clone verified hands-on experience.
 

@@ -101,7 +101,7 @@ _Include/exclude at scale — the PRISMA bottleneck._
 
 _Turn PDFs into structured text or data._
 
-> 🧪 **Verified workflow:** [recipes/04-pdf-to-markdown](recipes/04-pdf-to-markdown/) — 29-page paper in 78 s, 7 tables preserved.
+> 🧪 **Verified workflow:** [recipes/05-pdf-extractor-benchmark](recipes/05-pdf-extractor-benchmark/) — docling ~20x faster than marker; marker recovers 26% more DOIs.
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
