@@ -5,11 +5,15 @@
 > 单一数据源（`data/tools.yaml`）→ 自动渲染所有 Markdown → 自动抓取活跃度/许可证信号 → 可搜索站点 / Skill / MCP。
 > 加工具从「改 4 个文件」变成「加 1 段 YAML」，清单从「读一次」变成「每周回来看」。
 
-**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phases 1–4 shipped 2026-07-27**
+**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phases 1–4 shipped 2026-07-27 · Phase 5 partly shipped**
 
 ---
 
-## 1. Where the repo actually is today
+## 1. Where the repo was before this work
+
+> **Historical.** This section is the diagnosis that motivated Phases 1–4 and is
+> kept as the record. Every numbered problem below has since been fixed; see the
+> shipped notes under each phase.
 
 | Dimension | State |
 |---|---|
@@ -60,7 +64,7 @@ Three pillars, in dependency order:
 > from the marker comments and the tool count, which was corrected from the claimed
 > `70+` to the actual `66`. `scripts/update_stars.py` now writes to the data layer
 > instead of rewriting Markdown cells, so the weekly bot and the drift gate agree.
-> Remaining item from this phase: wiring the skill catalog (§3.2), still blocked on §6.
+> The skill catalogue (§3.2) was wired in afterwards — see Phase 3.
 
 ### 1.1 Schema — `data/tools.yaml`
 
@@ -184,7 +188,14 @@ Full metadata dump: every tool with stars, last push, license, status. Costs not
 > the page is a single 86 KB file with no runtime request that also works off disk.
 > Verified headlessly at four breakpoints: no console errors, no horizontal overflow.
 > `CHANGELOG.md` is generated from `added` dates and carries a watch list of stale and
-> archived entries. **Still blocked:** §3.2, generating the skill catalogue (see §6).
+> archived entries.
+>
+> **§3.2 is now done too.** `skills/literature-review-tools/reference/catalog.md` is
+> generated from the same data. It had already drifted — it still carried the
+> pre-rename `Byaidu/PDFMathTranslate` slug and month-old star counts, which is
+> precisely the failure the data layer exists to prevent. `SKILL.md` and the skill's
+> own `scripts/` and `recipes/` remain hand-written and untouched. **Ten generated
+> surfaces now come from one file, and nothing in the repo is hand-mirrored.**
 
 ### 3.1 Searchable site (GitHub Pages)
 
@@ -226,8 +237,14 @@ Publish `data/tools.json` and document its schema in `docs/DATA.md`. Explicitly 
 > filter on the site. It immediately showed the ecosystem is lopsided — **36 tools help
 > you search, 4 help you screen.**
 >
-> Not done: head-to-head comparisons, and "why this / when not this" prose on each
-> editor's pick. Both want more hands-on time than one session allows.
+> The "why this / when not this" prose is now written for all ten picks and rendered
+> to `PICKS.md` and as an expandable block on the site. Every recommendation states
+> its downside, because one that does not is an advertisement.
+>
+> **Still not done: head-to-head comparisons.** A fair benchmark of MinerU vs marker
+> vs docling on the same corpus needs multi-GB installs and hours of runtime; a
+> partial one would be worse than none. The one honest comparative data point so far
+> — docling at 78 s for 29 pages on CPU — is recorded in recipe 04.
 
 Anyone can clone a link list in an afternoon. Nobody can clone verified hands-on experience.
 
@@ -242,7 +259,18 @@ Anyone can clone a link list in an afternoon. Nobody can clone verified hands-on
 
 ---
 
-## Phase 5 — Distribution
+## Phase 5 — Distribution ⚠️ *partly shipped 2026-07-27*
+
+> **Done:** repo topics (15), `CITATION.cff` so the dataset is citable, GitHub
+> Discussions enabled, homepage pointing at the site.
+>
+> **Deliberately not done, and not for an agent to do unilaterally:**
+> submitting to awesome.re means opening a pull request on `sindresorhus/awesome`
+> under the maintainer's name — and this repo's own
+> [submission kit](docs/awesome-re-submission.md) concludes the list is still too
+> new and would be rejected. Publishing the drafted 知乎 / HN / Reddit posts means
+> posting to external platforms as the maintainer. Both are the owner's call and
+> the owner's voice; the material is written and ready.
 
 Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awesome-re-submission.md`) but unpublished.
 

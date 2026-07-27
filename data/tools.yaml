@@ -14,6 +14,8 @@
   stage: [search, synthesize, cite-check, write, review]
   added: 2026-07-26
   editor_pick: true
+  why: "The most complete research→paper pipeline for Claude Code, and the only pick with citation integrity gates that cross-check three sources."
+  caveat: "Its CC-BY-NC-4.0 licence forbids commercial use — a real constraint the star count hides. It also assumes you work inside Claude Code; there is no library to import."
   stars: 39670
   pushed_at: 2026-07-27
   archived: false
@@ -157,6 +159,8 @@
   stage: [search, synthesize, write]
   added: 2026-07-26
   editor_pick: true
+  why: "Best-in-class for turning a topic into a cited, Wikipedia-style long article, with published research behind the two-stage approach."
+  caveat: "It writes a *survey*, not a systematic review — there is no screening, no PRISMA trail, no reproducible inclusion criteria. Needs an LLM key plus a search backend, and has not been pushed to in over three months."
   stars: 30340
   pushed_at: 2025-09-30
   archived: false
@@ -172,6 +176,8 @@
   stage: [search, synthesize, write]
   added: 2026-07-26
   editor_pick: true
+  why: "The most reliable general-purpose 'go research this' agent, and the least academic-specific — useful when your question spans grey literature and the web."
+  caveat: "Web-first, so coverage of paywalled and indexed scholarly databases is weaker than a dedicated OpenAlex/PubMed client. Requires both an LLM key and a search API."
   stars: 28662
   pushed_at: 2026-07-18
   archived: false
@@ -301,6 +307,8 @@
   stage: [search, synthesize, write, review]
   added: 2026-07-26
   editor_pick: true
+  why: "The most ambitious system in the catalogue and the best one to *read* if you want to see how far end-to-end automation currently goes."
+  caveat: "Not a literature-review tool: it runs experiments and writes papers, at real API cost, under a bespoke non-standard licence. Output is workshop-grade. Treat as a research artefact, not infrastructure."
   stars: 14300
   pushed_at: 2025-12-19
   archived: false
@@ -401,6 +409,8 @@
   stage: [read, extract, synthesize, cite-check]
   added: 2026-07-26
   editor_pick: true
+  why: "The highest-accuracy way to ask questions across your own PDFs and get answers that carry citations back to the source passage."
+  caveat: "Needs an LLM key, and cost scales with corpus size. It answers questions over papers you already have — it will not find them or screen them for you."
   stars: 8943
   pushed_at: 2026-07-20
   archived: false
@@ -446,6 +456,8 @@
   stage: [screen]
   added: 2026-07-26
   editor_pick: true
+  why: "The only pick here with a measured claim: on a published review's own data it surfaced all 38 relevant papers after screening 5.5% of 4,544 records (see recipes/02). Academic provenance, runs fully offline, no key."
+  caveat: "It ranks; you still decide. There is no automatic include/exclude, and no way to see your recall mid-review, so you need a stopping rule. Least-starred pick in the catalogue — popularity is not the signal here."
   stars: 956
   pushed_at: 2026-07-26
   archived: false
@@ -506,6 +518,8 @@
   stage: [search, read]
   added: 2026-07-26
   editor_pick: true
+  why: "The most complete bridge between a Zotero library and an AI client: semantic search, PDF full text and citation analysis over what you have already collected."
+  caveat: "Useless unless you already keep your library in Zotero and use an MCP-capable client."
   stars: 4432
   pushed_at: 2026-07-13
   archived: false
@@ -521,6 +535,8 @@
   stage: [search, extract, read]
   added: 2026-07-26
   editor_pick: true
+  why: "Search arXiv and pull papers into context as Markdown without leaving your assistant; ships a one-click `.mcpb` bundle."
+  caveat: "arXiv-only. For biomedical work PubMed-MCP-Server or paper-search-mcp will cover far more of your field."
   stars: 2987
   pushed_at: 2026-07-26
   archived: false
@@ -594,6 +610,8 @@
   stage: [read, synthesize]
   added: 2026-07-26
   editor_pick: true
+  why: "Chat with your library inside Zotero itself, with no second application to run."
+  caveat: "Interactive by design — it is a reading aid, not something you can put in a pipeline. AGPL-3.0, which matters if you plan to redistribute."
   stars: 7290
   pushed_at: 2026-05-01
   archived: false
@@ -653,6 +671,8 @@
   stage: [extract]
   added: 2026-07-26
   editor_pick: true
+  why: "The most accurate PDF→Markdown converter for scientific documents: formulas, tables and 100+ languages, all local."
+  caveat: "Heavy. If you want something lighter for straightforward papers, docling converted a 29-page paper in 78s on CPU (recipes/04) with tables intact; marker is faster still."
   stars: 75818
   pushed_at: 2026-07-25
   archived: false

@@ -34,6 +34,8 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 >
 > 🧭 **[按工作阶段查表 →](STAGES.md)** —— 检索/筛选/抽取/精读/综合/引用核查/写作/评审。
 >
+> 🎯 **[10 个编辑推荐，以及什么时候别用它们 →](PICKS.md)** —— 每条推荐都附「不适用场景」。
+>
 > 收录用于**文献综述（Literature Review）**的开源 AI 智能体、Claude Code / Codex 技能、MCP 服务器、系统综述筛选工具、PDF 解析、引文图谱与自动综述框架。
 > 目标：成为研究者用 AI 做文献工作的**一站式导航**。⭐ **Star 收藏，随时查阅。**
 
@@ -60,7 +62,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 - [🤝 参与贡献](#-参与贡献)
 - [📄 许可证](#-许可证)
 
-> 另见：[STAGES.md](STAGES.md)（按阶段的覆盖矩阵）· [recipes/](recipes/)（实测工作流）· [HEALTH.md](HEALTH.md)（每个项目的完整元数据）· [CHANGELOG.md](CHANGELOG.md)（新增与观察名单）· [data/tools.json](data/tools.json)（可直接使用的数据集）
+> 另见：[PICKS.md](PICKS.md)（推荐理由与反面）· [STAGES.md](STAGES.md)（按阶段的覆盖矩阵）· [recipes/](recipes/)（实测工作流）· [HEALTH.md](HEALTH.md)（每个项目的完整元数据）· [CHANGELOG.md](CHANGELOG.md)（新增与观察名单）· [data/tools.json](data/tools.json)（可直接使用的数据集）
 
 > ⭐ = 编辑推荐 ｜ Stars 为 GitHub API 快照，**每周由 GitHub Action 自动刷新**。
 >

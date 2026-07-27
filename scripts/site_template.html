@@ -348,6 +348,22 @@ li.tool {
   border-radius: 2px;
 }
 .tool .desc a { color: var(--rubric); text-underline-offset: 2px; }
+.rationale { grid-column: 1 / -1; max-width: var(--measure); margin: 0 0 .5rem; }
+.rationale summary {
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--rubric);
+  list-style: none;
+}
+.rationale summary::-webkit-details-marker { display: none; }
+.rationale summary::before { content: "▸ "; }
+.rationale[open] summary::before { content: "▾ "; }
+.rationale summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.rationale p { margin: .5rem 0 0; color: var(--ink-soft); font-size: .95rem; }
+.rationale p b { color: var(--ink); font-weight: 400; font-style: italic; }
 .tool .meta {
   grid-column: 1 / -1;
   display: flex;
@@ -680,6 +696,8 @@ footer.colo a:hover { color: var(--rubric); }
             "</span>" +
             '<span class="stars">★ ' + esc(stars(x.stars)) + "</span>" +
             '<p class="desc">' + md(desc(x)) + "</p>" +
+            (x.why ? '<details class="rationale"><summary>why this / when not</summary>' +
+                     "<p><b>Why.</b> " + md(x.why) + "</p><p><b>Not if.</b> " + md(x.caveat || "") + "</p></details>" : "") +
             '<p class="meta">' +
               '<span class="s-' + st + '"><i class="dot"></i>' + esc(STATUS[st] ? STATUS[st][state.lang] : st) + "</span>" +
               "<span>" + licHtml + "</span>" +

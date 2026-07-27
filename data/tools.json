@@ -72,6 +72,8 @@
         "review"
       ],
       "editor_pick": true,
+      "why": "The most complete research→paper pipeline for Claude Code, and the only pick with citation integrity gates that cross-check three sources.",
+      "caveat": "Its CC-BY-NC-4.0 licence forbids commercial use — a real constraint the star count hides. It also assumes you work inside Claude Code; there is no library to import.",
       "stars": 39670,
       "pushed_at": "2026-07-27",
       "status": "active",
@@ -94,6 +96,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 7157,
       "pushed_at": "2026-07-23",
       "status": "active",
@@ -112,6 +116,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 5549,
       "pushed_at": "2026-06-23",
       "status": "active",
@@ -132,6 +138,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 23255,
       "pushed_at": "2026-07-17",
       "status": "active",
@@ -150,6 +158,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 1103,
       "pushed_at": "2026-01-04",
       "status": "slowing",
@@ -171,6 +181,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 1039,
       "pushed_at": "2026-07-16",
       "status": "active",
@@ -191,6 +203,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 870,
       "pushed_at": "2026-06-08",
       "status": "active",
@@ -211,6 +225,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 722,
       "pushed_at": "2026-07-20",
       "status": "active",
@@ -231,6 +247,8 @@
         "cite-check"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 238,
       "pushed_at": "2026-02-27",
       "status": "slowing",
@@ -251,6 +269,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 220,
       "pushed_at": "2026-07-26",
       "status": "active",
@@ -271,6 +291,8 @@
         "write"
       ],
       "editor_pick": true,
+      "why": "Best-in-class for turning a topic into a cited, Wikipedia-style long article, with published research behind the two-stage approach.",
+      "caveat": "It writes a *survey*, not a systematic review — there is no screening, no PRISMA trail, no reproducible inclusion criteria. Needs an LLM key plus a search backend, and has not been pushed to in over three months.",
       "stars": 30340,
       "pushed_at": "2025-09-30",
       "status": "slowing",
@@ -291,6 +313,8 @@
         "write"
       ],
       "editor_pick": true,
+      "why": "The most reliable general-purpose 'go research this' agent, and the least academic-specific — useful when your question spans grey literature and the web.",
+      "caveat": "Web-first, so coverage of paywalled and indexed scholarly databases is weaker than a dedicated OpenAlex/PubMed client. Requires both an LLM key and a search API.",
       "stars": 28662,
       "pushed_at": "2026-07-18",
       "status": "active",
@@ -310,6 +334,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 19427,
       "pushed_at": "2026-04-11",
       "status": "slowing",
@@ -329,6 +355,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 12439,
       "pushed_at": "2026-07-25",
       "status": "active",
@@ -348,6 +376,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 8785,
       "pushed_at": "2026-07-27",
       "status": "active",
@@ -367,6 +397,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 6277,
       "pushed_at": "2025-05-07",
       "status": "stale",
@@ -387,6 +419,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 986,
       "pushed_at": "2026-01-12",
       "status": "slowing",
@@ -407,6 +441,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 44,
       "pushed_at": "2026-05-07",
       "status": "active",
@@ -425,6 +461,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 338,
       "pushed_at": "2026-07-22",
       "status": "active",
@@ -445,6 +483,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 156,
       "pushed_at": "2023-05-23",
       "status": "stale",
@@ -466,6 +506,8 @@
         "review"
       ],
       "editor_pick": true,
+      "why": "The most ambitious system in the catalogue and the best one to *read* if you want to see how far end-to-end automation currently goes.",
+      "caveat": "Not a literature-review tool: it runs experiments and writes papers, at real API cost, under a bespoke non-standard licence. Output is workshop-grade. Treat as a research artefact, not infrastructure.",
       "stars": 14300,
       "pushed_at": "2025-12-19",
       "status": "slowing",
@@ -487,6 +529,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 6922,
       "pushed_at": "2025-12-19",
       "status": "slowing",
@@ -509,6 +553,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 13897,
       "pushed_at": "2026-07-13",
       "status": "active",
@@ -529,6 +575,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 5771,
       "pushed_at": "2025-08-20",
       "status": "slowing",
@@ -547,6 +595,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 627,
       "pushed_at": "2025-05-10",
       "status": "stale",
@@ -568,6 +618,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 311,
       "pushed_at": "2025-11-19",
       "status": "slowing",
@@ -586,6 +638,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 279,
       "pushed_at": "2026-03-06",
       "status": "slowing",
@@ -607,6 +661,8 @@
         "cite-check"
       ],
       "editor_pick": true,
+      "why": "The highest-accuracy way to ask questions across your own PDFs and get answers that carry citations back to the source passage.",
+      "caveat": "Needs an LLM key, and cost scales with corpus size. It answers questions over papers you already have — it will not find them or screen them for you.",
       "stars": 8943,
       "pushed_at": "2026-07-20",
       "status": "active",
@@ -627,6 +683,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 1769,
       "pushed_at": "2026-07-14",
       "status": "active",
@@ -647,6 +705,8 @@
         "cite-check"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 395,
       "pushed_at": "2026-07-26",
       "status": "active",
@@ -665,6 +725,8 @@
         "screen"
       ],
       "editor_pick": true,
+      "why": "The only pick here with a measured claim: on a published review's own data it surfaced all 38 relevant papers after screening 5.5% of 4,544 records (see recipes/02). Academic provenance, runs fully offline, no key.",
+      "caveat": "It ranks; you still decide. There is no automatic include/exclude, and no way to see your recall mid-review, so you need a stopping rule. Least-starred pick in the catalogue — popularity is not the signal here.",
       "stars": 956,
       "pushed_at": "2026-07-26",
       "status": "active",
@@ -683,6 +745,8 @@
         "screen"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 117,
       "pushed_at": "2026-06-10",
       "status": "active",
@@ -702,6 +766,8 @@
         "extract"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 24,
       "pushed_at": "2026-07-16",
       "status": "active",
@@ -721,6 +787,8 @@
         "screen"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": null,
       "pushed_at": "2026-04-06",
       "status": "slowing",
@@ -740,6 +808,8 @@
         "read"
       ],
       "editor_pick": true,
+      "why": "The most complete bridge between a Zotero library and an AI client: semantic search, PDF full text and citation analysis over what you have already collected.",
+      "caveat": "Useless unless you already keep your library in Zotero and use an MCP-capable client.",
       "stars": 4432,
       "pushed_at": "2026-07-13",
       "status": "active",
@@ -760,6 +830,8 @@
         "read"
       ],
       "editor_pick": true,
+      "why": "Search arXiv and pull papers into context as Markdown without leaving your assistant; ships a one-click `.mcpb` bundle.",
+      "caveat": "arXiv-only. For biomedical work PubMed-MCP-Server or paper-search-mcp will cover far more of your field.",
       "stars": 2987,
       "pushed_at": "2026-07-26",
       "status": "active",
@@ -778,6 +850,8 @@
         "search"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 2262,
       "pushed_at": "2026-07-02",
       "status": "active",
@@ -797,6 +871,8 @@
         "read"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 122,
       "pushed_at": "2025-05-08",
       "status": "stale",
@@ -815,6 +891,8 @@
         "search"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 50,
       "pushed_at": "2025-08-11",
       "status": "slowing",
@@ -834,6 +912,8 @@
         "cite-check"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 37,
       "pushed_at": "2026-06-22",
       "status": "active",
@@ -853,6 +933,8 @@
         "synthesize"
       ],
       "editor_pick": true,
+      "why": "Chat with your library inside Zotero itself, with no second application to run.",
+      "caveat": "Interactive by design — it is a reading aid, not something you can put in a pipeline. AGPL-3.0, which matters if you plan to redistribute.",
       "stars": 7290,
       "pushed_at": "2026-05-01",
       "status": "active",
@@ -873,6 +955,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 2560,
       "pushed_at": "2026-07-22",
       "status": "active",
@@ -892,6 +976,8 @@
         "synthesize"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 1714,
       "pushed_at": "2025-04-01",
       "status": "stale",
@@ -910,6 +996,8 @@
         "read"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 47,
       "pushed_at": "2025-11-20",
       "status": "slowing",
@@ -928,6 +1016,8 @@
         "extract"
       ],
       "editor_pick": true,
+      "why": "The most accurate PDF→Markdown converter for scientific documents: formulas, tables and 100+ languages, all local.",
+      "caveat": "Heavy. If you want something lighter for straightforward papers, docling converted a 29-page paper in 78s on CPU (recipes/04) with tables intact; marker is faster still.",
       "stars": 75818,
       "pushed_at": "2026-07-25",
       "status": "active",
@@ -946,6 +1036,8 @@
         "extract"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 63819,
       "pushed_at": "2026-07-26",
       "status": "active",
@@ -964,6 +1056,8 @@
         "extract"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 37908,
       "pushed_at": "2026-07-20",
       "status": "active",
@@ -982,6 +1076,8 @@
         "read"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 35808,
       "pushed_at": "2026-05-25",
       "status": "active",
@@ -1000,6 +1096,8 @@
         "extract"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 5024,
       "pushed_at": "2026-07-26",
       "status": "active",
@@ -1018,6 +1116,8 @@
         "extract"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 697,
       "pushed_at": "2025-12-07",
       "status": "slowing",
@@ -1036,6 +1136,8 @@
         "extract"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 455,
       "pushed_at": "2024-03-21",
       "status": "stale",
@@ -1054,6 +1156,8 @@
         "search"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 1877,
       "pushed_at": "2026-03-24",
       "status": "slowing",
@@ -1073,6 +1177,8 @@
         "cite-check"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 476,
       "pushed_at": "2026-07-03",
       "status": "active",
@@ -1092,6 +1198,8 @@
         "cite-check"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 400,
       "pushed_at": "2026-07-06",
       "status": "active",
@@ -1110,6 +1218,8 @@
         "search"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 452,
       "pushed_at": "2024-05-26",
       "status": "stale",
@@ -1128,6 +1238,8 @@
         "search"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 22,
       "pushed_at": "2025-09-24",
       "status": "slowing",
@@ -1146,6 +1258,8 @@
         "write"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 256,
       "pushed_at": "2026-06-01",
       "status": "active",
@@ -1165,6 +1279,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 146,
       "pushed_at": "2026-05-11",
       "status": "active",
@@ -1183,6 +1299,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 151,
       "pushed_at": "2026-07-05",
       "status": "active",
@@ -1201,6 +1319,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 14,
       "pushed_at": "2025-06-21",
       "status": "stale",
@@ -1222,6 +1342,8 @@
         "review"
       ],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 18,
       "pushed_at": "2026-03-25",
       "status": "slowing",
@@ -1238,6 +1360,8 @@
       "category": "awesome-lists",
       "stage": [],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 421,
       "pushed_at": "2026-07-03",
       "status": "active",
@@ -1254,6 +1378,8 @@
       "category": "awesome-lists",
       "stage": [],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 1104,
       "pushed_at": "2026-07-25",
       "status": "active",
@@ -1270,6 +1396,8 @@
       "category": "awesome-lists",
       "stage": [],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 445,
       "pushed_at": "2026-07-15",
       "status": "active",
@@ -1286,6 +1414,8 @@
       "category": "awesome-lists",
       "stage": [],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 131,
       "pushed_at": "2025-01-22",
       "status": "stale",
@@ -1302,6 +1432,8 @@
       "category": "awesome-lists",
       "stage": [],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 54,
       "pushed_at": "2026-07-22",
       "status": "active",
@@ -1318,6 +1450,8 @@
       "category": "awesome-lists",
       "stage": [],
       "editor_pick": false,
+      "why": null,
+      "caveat": null,
       "stars": 20,
       "pushed_at": "2026-07-22",
       "status": "active",

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Awesome AI Literature Review Agents & Tools"
+abstract: >-
+  A curated, continuously verified catalogue of open-source AI agents, skills,
+  MCP servers and frameworks for literature review, covering every stage from
+  search and screening through extraction, synthesis, citation checking and
+  writing. Published as a machine-readable dataset alongside health and licence
+  metadata refreshed weekly from the GitHub API, and a set of workflows executed
+  end to end rather than described.
+message: "If you use this catalogue or its dataset in your research, please cite it."
+type: dataset
+authors:
+  - family-names: Wang
+    given-names: Bryce
+    website: "https://github.com/brycewang-stanford"
+repository-code: "https://github.com/brycewang-stanford/lit-review-agent-tools"
+url: "https://brycewang-stanford.github.io/lit-review-agent-tools/"
+license: CC0-1.0
+keywords:
+  - literature review
+  - systematic review
+  - research software
+  - large language models
+  - AI agents
+  - Model Context Protocol
+  - PRISMA
+  - open science
