@@ -31,6 +31,7 @@ scripts/litrun.py env --set OPENAI_API_KEY=sk-...
 scripts/litrun.py run mineru -- -p paper.pdf -o ./out -b pipeline
 scripts/litrun.py run paper-qa -- ask "What methods does this corpus use?"
 scripts/litrun.py mcp arxiv-mcp-server # prints MCP config to register in Claude/Cursor
+scripts/litrun.py ui gpt-researcher    # clone & launch the full web UI (:8000)
 ```
 
 Runnable tools today: **MinerU · marker · docling** (PDF→Markdown), **PaperQA2**

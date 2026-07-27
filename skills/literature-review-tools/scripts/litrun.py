@@ -13,6 +13,7 @@ Usage:
   litrun.py install <id>
   litrun.py run <id> [-- <tool args...>]
   litrun.py mcp <id> [--storage PATH] [--client claude|cursor]
+  litrun.py ui <id>                       # clone & launch a web UI (gpt-researcher, storm)
 
 Design notes for the calling agent:
   - python-cli tools (mineru, marker, docling, paper-qa, asreview): install then
@@ -176,6 +177,8 @@ def cmd_info(tools, args):
             print("optional env: " + ", ".join(opt))
     if t["kind"] == "mcp-server":
         print(f"mcp:      litrun.py mcp {t['id']}   (prints client config)")
+    if t.get("ui"):
+        print(f"ui:       litrun.py ui {t['id']}   (clone & launch web UI at {t['ui']['url']})")
     print(f"\nnotes: {t['notes']}")
 
 
@@ -278,6 +281,56 @@ def cmd_run(tools, args):
         die(f"don't know how to run kind '{t['kind']}'")
 
 
+def cmd_ui(tools, args):
+    t = get_tool(tools, args.id)
+    ui = t.get("ui")
+    if not ui:
+        die(f"{t['id']} has no web UI. Runnable ids with a UI: gpt-researcher, storm.")
+
+    env = merged_env()
+    missing = [k for k in t.get("env", []) if not env.get(k)]
+    if missing:
+        print(f"⚠ {t['id']} UI needs API keys: {', '.join(missing)}.")
+        if ui.get("write_env"):
+            die(f"Set them first: litrun.py env --set {missing[0]}=...")
+        else:
+            print(f"  Enter them in the app once it opens (or: litrun.py env --set {missing[0]}=...).")
+
+    clone_dir = WORKSPACE / t["id"]
+    if not clone_dir.exists():
+        WORKSPACE.mkdir(parents=True, exist_ok=True)
+        run_cmd(["git", "clone", "--depth", "1", t["repo"], str(clone_dir)])
+    else:
+        print(f"(repo already cloned at {clone_dir})", file=sys.stderr)
+
+    ensure_venv(t["id"])
+    for req in ui.get("requirements", []):
+        req_path = clone_dir / req
+        if not req_path.exists():
+            print(f"⚠ requirements file not found: {req_path} (upstream layout may have changed)", file=sys.stderr)
+            continue
+        if have("uv"):
+            run_cmd(["uv", "pip", "install", "--python", str(venv_python(t["id"])), "-r", str(req_path)])
+        else:
+            run_cmd([str(venv_python(t["id"])), "-m", "pip", "install", "-r", str(req_path)])
+
+    if ui.get("write_env"):
+        keys = t.get("env", []) + t.get("env_optional", [])
+        lines = [f"{k}={env[k]}\n" for k in keys if env.get(k)]
+        if lines:
+            (clone_dir / ".env").write_text("".join(lines))
+            print(f"Wrote {len(lines)} key(s) to {clone_dir / '.env'}", file=sys.stderr)
+
+    # Prepend the venv's bin to PATH so `streamlit`/`uvicorn`/`python` resolve to it.
+    binpath = venv_dir(t["id"]) / ("Scripts" if os.name == "nt" else "bin")
+    env["PATH"] = f"{binpath}{os.pathsep}{env.get('PATH', '')}"
+
+    print(f"\n▶ Launching {t['name']} UI — open {ui['url']} once it's up. Ctrl-C to stop.")
+    if ui.get("notes"):
+        print(f"  {ui['notes']}")
+    run_cmd(list(ui["run"]), env=env, check=False)
+
+
 def cmd_mcp(tools, args):
     t = get_tool(tools, args.id)
     m = t.get("mcp")
@@ -342,6 +395,9 @@ def main():
     p_mcp.add_argument("--storage", help="storage path (uvx servers)")
     p_mcp.add_argument("--client", choices=["claude", "cursor"], default="claude")
 
+    p_ui = sub.add_parser("ui", help="clone & launch a tool's web UI (gpt-researcher, storm)")
+    p_ui.add_argument("id")
+
     args = p.parse_args()
     # Strip a leading `--` separator from run's REMAINDER.
     if getattr(args, "rest", None) and args.rest and args.rest[0] == "--":
@@ -350,7 +406,7 @@ def main():
     tools = load_recipes()
     dispatch = {
         "list": cmd_list, "info": cmd_info, "doctor": cmd_doctor, "env": cmd_env,
-        "install": cmd_install, "run": cmd_run, "mcp": cmd_mcp,
+        "install": cmd_install, "run": cmd_run, "mcp": cmd_mcp, "ui": cmd_ui,
     }
     dispatch[args.cmd](tools, args)
 
