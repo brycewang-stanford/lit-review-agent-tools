@@ -48,7 +48,7 @@ Commands: `list [--category C] [--kind K]` · `info <id>` · `doctor` · `env [-
 
 Runnable ids by kind:
 - **python-cli (auto install+run):** `mineru`, `marker`, `docling` (PDF→Markdown) · `paper-qa` (cited Q&A) · `asreview` (PRISMA screening UI)
-- **python-script (bundled, auto install+run):** `arxiv-fetch` (search arXiv & download PDFs, no key)
+- **python-script (bundled, auto install+run):** `arxiv-fetch` (arXiv PDFs) · `openalex-fetch` (OpenAlex; PDF or abstract .txt) · `pubmed-fetch` (PubMed abstracts) — all keyless for light use
 - **python-lib (install + run example):** `gpt-researcher`, `storm` (deep research; need API keys) · `scholarly`, `pyalex` (API clients)
 - **mcp-server (install + `mcp` config):** `arxiv-mcp-server`, `paper-search-mcp`, `zotero-mcp`
 
@@ -62,6 +62,10 @@ For multi-tool tasks, prefer a named workflow over hand-wiring steps: `litrun.py
 - `pdf-md-then-qa` — convert to Markdown **and** answer a question over the corpus
 - `topic-to-pdfs` — arXiv query → download top-N PDFs (arxiv-fetch, no key)
 - `topic-to-review` — arXiv query → download PDFs → citation-backed answer (PaperQA2). The end-to-end "retrieve then review" pipeline; no MCP client needed. Needs `OPENAI_API_KEY` for the QA step.
+- `topic-to-review-multi` — retrieve from **arXiv + OpenAlex** into one corpus → citation-backed answer. Broader coverage; resilient if one source is rate-limited.
+- `topic-to-related-work` — retrieve (arXiv + OpenAlex) → PaperQA2 drafts a **cited related-work paragraph** synthesizing themes/methods/gaps. Needs `OPENAI_API_KEY`.
+
+For biomedical topics, prefer PubMed: run `arxiv-fetch`/`openalex-fetch`'s sibling `pubmed-fetch` into the corpus dir before the QA step (or just use `openalex-fetch`, which covers biomed too).
 
 Add `--dry-run` first to show the exact resolved step commands without executing — good for confirming paths with the user before a heavy run. Workflows fail fast if a required API key is missing.
 

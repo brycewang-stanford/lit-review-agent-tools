@@ -70,6 +70,39 @@
         {"tool": "paper-qa", "cwd": "{workdir}/pdfs", "args": ["ask", "{question}"]}
       ],
       "outputs": "Retrieved PDFs under {workdir}/pdfs + a citation-backed answer on stdout."
+    },
+    {
+      "id": "topic-to-review-multi",
+      "name": "Topic → multi-source corpus → cited answer",
+      "description": "Retrieve from BOTH arXiv and OpenAlex into one corpus, then answer a question over it with PaperQA2. Broader coverage than a single source; resilient if one source is rate-limited.",
+      "params": {
+        "query": "search query defining the corpus",
+        "question": "the question to answer over the retrieved papers",
+        "max": "how many items per source (default 8)"
+      },
+      "defaults": {"max": "8"},
+      "steps": [
+        {"tool": "arxiv-fetch", "args": ["--query", "{query}", "--max", "{max}", "--outdir", "{workdir}/corpus"]},
+        {"tool": "openalex-fetch", "args": ["--query", "{query}", "--max", "{max}", "--outdir", "{workdir}/corpus"]},
+        {"tool": "paper-qa", "cwd": "{workdir}/corpus", "args": ["ask", "{question}"]}
+      ],
+      "outputs": "A merged arXiv+OpenAlex corpus under {workdir}/corpus + a citation-backed answer on stdout."
+    },
+    {
+      "id": "topic-to-related-work",
+      "name": "Topic → related-work paragraph",
+      "description": "Retrieve papers (arXiv + OpenAlex), then have PaperQA2 draft a citation-backed related-work / literature-review paragraph synthesizing themes, methods, and gaps.",
+      "params": {
+        "query": "the topic / search query for the related-work section",
+        "max": "how many items per source (default 10)"
+      },
+      "defaults": {"max": "10"},
+      "steps": [
+        {"tool": "arxiv-fetch", "args": ["--query", "{query}", "--max", "{max}", "--outdir", "{workdir}/corpus"]},
+        {"tool": "openalex-fetch", "args": ["--query", "{query}", "--max", "{max}", "--outdir", "{workdir}/corpus"]},
+        {"tool": "paper-qa", "cwd": "{workdir}/corpus", "args": ["ask", "Write a ~250-word related-work / literature-review paragraph on '{query}'. Synthesize the main themes, methods, and open gaps across these papers, and support every claim with an inline citation. Write in an academic tone suitable for a paper's Related Work section."]}
+      ],
+      "outputs": "A cited related-work paragraph on stdout, grounded in {workdir}/corpus."
     }
   ]
 }

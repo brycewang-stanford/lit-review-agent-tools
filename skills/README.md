@@ -41,13 +41,15 @@ scripts/litrun.py workflow run topic-to-review \
 ```
 
 Runnable tools today: **MinerU · marker · docling** (PDF→Markdown), **PaperQA2**
-(cited Q&A), **ASReview** (PRISMA screening), **arxiv-fetch** (search & download
-arXiv PDFs), **GPT Researcher · STORM** (deep research), **scholarly · pyalex**
-(API clients), and the **arxiv / paper-search / zotero** MCP servers.
+(cited Q&A), **ASReview** (PRISMA screening), **arxiv-fetch · openalex-fetch ·
+pubmed-fetch** (multi-source search & download), **GPT Researcher · STORM** (deep
+research), **scholarly · pyalex** (API clients), and the **arxiv / paper-search /
+zotero** MCP servers.
 
 Built-in workflows: `pdf-to-markdown`, `pdf-corpus-qa`, `pdf-md-then-qa`,
-`topic-to-pdfs`, and `topic-to-review` (arXiv query → download PDFs → cited
-answer — a full lightweight review with no MCP client). The 70+ catalog stays
+`topic-to-pdfs`, `topic-to-review` (arXiv → cited answer), `topic-to-review-multi`
+(arXiv **+** OpenAlex → cited answer), and `topic-to-related-work` (retrieve →
+PaperQA2 drafts a cited related-work paragraph). The 70+ catalog stays
 browse-only; more recipes/workflows are easy to add to `recipes/`.
 
 ## Install

@@ -151,6 +151,32 @@
       "notes": "Bundled fetcher (uses the free 'arxiv' package). Searches arXiv and downloads PDFs + a manifest.json into --outdir. No API key. Query supports cat:, AND/OR. Feeds retrieval workflows into PaperQA2."
     },
     {
+      "id": "openalex-fetch",
+      "name": "OpenAlex search & download",
+      "category": "retrieval",
+      "kind": "python-script",
+      "repo": "https://openalex.org",
+      "pip": ["requests"],
+      "script": "fetch_openalex.py",
+      "example": "openalex-fetch --query 'active learning systematic review' --max 10 --outdir ./papers",
+      "env": [],
+      "env_optional": ["OPENALEX_API_KEY", "OPENALEX_MAILTO"],
+      "notes": "Bundled fetcher over the OpenAlex API (240M+ works, all fields). Downloads the OA PDF when available, else saves title+abstract as .txt (PaperQA2 reads text too). No key needed for light use; set OPENALEX_API_KEY / OPENALEX_MAILTO for higher limits. Appends to manifest.json for multi-source runs."
+    },
+    {
+      "id": "pubmed-fetch",
+      "name": "PubMed search & abstracts",
+      "category": "retrieval",
+      "kind": "python-script",
+      "repo": "https://www.ncbi.nlm.nih.gov/pmc/tools/developers/",
+      "pip": ["requests"],
+      "script": "fetch_pubmed.py",
+      "example": "pubmed-fetch --query 'CRISPR off-target detection' --max 10 --outdir ./papers",
+      "env": [],
+      "env_optional": ["NCBI_API_KEY", "NCBI_EMAIL"],
+      "notes": "Bundled fetcher over NCBI E-utilities. Saves each article's title+abstract as .txt (+ manifest) — PubMed rarely exposes downloadable PDFs. Best for biomedical corpora. No key needed for light use; set NCBI_API_KEY / NCBI_EMAIL to raise the rate limit."
+    },
+    {
       "id": "arxiv-mcp-server",
       "name": "arxiv-mcp-server",
       "category": "mcp-server",
