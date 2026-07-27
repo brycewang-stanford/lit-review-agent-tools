@@ -23,6 +23,8 @@ REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 VALID_SURFACES = {"readme", "awesome"}
 VALID_STATUS = {"active", "slowing", "stale", "archived", "unreachable", "unknown"}
+# The literature-review workflow, in the order the work actually happens.
+VALID_STAGES = ["search", "screen", "extract", "read", "synthesize", "cite-check", "write", "review"]
 # Kept generous: these are the descriptions rendered into table cells.
 MAX_DESC = 400
 MAX_DESC_AWESOME = 160
@@ -150,6 +152,17 @@ def main() -> int:
 
         if t.get("license") == "":
             err(f"{where}: 'license' is empty; use 'unknown' or 'none'")
+
+        stage = t.get("stage")
+        if stage is not None:
+            if not isinstance(stage, list) or not stage:
+                err(f"{where}: 'stage' must be a non-empty list, or omitted entirely")
+            else:
+                bad = [s for s in stage if s not in VALID_STAGES]
+                if bad:
+                    err(f"{where}: unknown stage(s) {bad} (valid: {', '.join(VALID_STAGES)})")
+                if len(set(stage)) != len(stage):
+                    err(f"{where}: 'stage' contains duplicates")
 
     if errors:
         print(f"{len(errors)} validation error(s):\n", file=sys.stderr)

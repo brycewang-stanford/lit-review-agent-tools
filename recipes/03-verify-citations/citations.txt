@@ -1,0 +1,8 @@
+# Real papers, cited by DOI
+10.1038/s41586-021-03819-2
+# Real paper, cited by title only
+Attention Is All You Need
+# A real, well-known retracted paper (Wakefield MMR, retracted 2010)
+10.1016/S0140-6736(97)11096-0
+# Plausible-sounding but invented — the kind an LLM produces
+Deep Contrastive Meta-Learning for Systematic Review Screening at Scale

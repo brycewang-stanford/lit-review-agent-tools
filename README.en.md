@@ -29,6 +29,11 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 
 > 🔍 **[Open the searchable version →](https://brycewang-stanford.github.io/lit-review-agent-tools/)** — filter by use case, maintenance status and licence, in either language.
 >
+> 🧪 **[Workflows that were actually run →](recipes/)** — 4 pipelines executed end to end, with real output and the things that broke. No API keys needed.
+> Headline: ASReview found **all 38 relevant papers after screening 248 of 4,544 records (5.5%)** on a published review's own data.
+>
+> 🧭 **[Browse by workflow stage →](STAGES.md)** — search · screen · extract · read · synthesize · cite-check · write · review.
+>
 > Open-source AI agents, Claude Code / Codex skills, MCP servers, systematic-review screeners, PDF parsers,
 > citation graphs, and auto-survey frameworks — all for **literature review**.
 > Goal: a **one-stop map** for researchers doing literature work with AI. ⭐ **Star it for later.**
@@ -56,7 +61,7 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
-> See also: [HEALTH.md](HEALTH.md) (full per-tool metadata) · [CHANGELOG.md](CHANGELOG.md) (additions and watch list) · [data/tools.json](data/tools.json) (the dataset)
+> See also: [STAGES.md](STAGES.md) (coverage by workflow stage) · [recipes/](recipes/) (verified workflows) · [HEALTH.md](HEALTH.md) (full per-tool metadata) · [CHANGELOG.md](CHANGELOG.md) (additions and watch list) · [data/tools.json](data/tools.json) (the dataset)
 
 > ⭐ = editor's pick ｜ Star counts are GitHub-API snapshots, **auto-refreshed weekly by a GitHub Action**.
 >

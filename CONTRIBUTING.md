@@ -31,6 +31,7 @@
    - name: "项目名"
      repo: owner/repo          # 只写 owner/repo，链接由脚本生成
      category: paper-qa-rag    # 见 data/categories.yaml
+     stage: [read, synthesize] # 它在流程的哪一步干活，见 STAGES.md
      added: 2026-07-27
      desc_zh: "一句话说明它做什么、有什么独特之处"
      desc_en: "One line: what it does and what's unique about it"
@@ -71,6 +72,9 @@ make lint       # awesome-lint（需要 Node）
 - 修正失效链接、过时的 Star 数、错误描述。
 - 提出更好的分类方式或「如何选择」决策建议。
 - 补充某个工具的真实使用体验（放进说明里，非常有价值）。
+- **贡献一条实测工作流**到 [`recipes/`](recipes/) —— 这是本仓库最有价值的贡献。
+  规则只有一条：**必须真跑过**。附上命令、真实输出、耗时，以及哪里会踩坑。
+  尤其欢迎需要 LLM API key 的那些（PaperQA2 / STORM / GPT Researcher）——我们没有 key，跑不了。
 
 ---
 
@@ -106,6 +110,7 @@ A project should ideally meet all of these:
    - name: "project-name"
      repo: owner/repo          # owner/repo only — the URL is generated
      category: paper-qa-rag    # see data/categories.yaml
+     stage: [read, synthesize] # which step(s) of the workflow it does; see STAGES.md
      added: 2026-07-27
      desc_zh: "一句话说明它做什么、有什么独特之处"
      desc_en: "One line: what it does and what's unique about it"
@@ -148,5 +153,10 @@ Only Python 3 and `pyyaml` are required (`pip install pyyaml`).
 - Fix dead links, stale star counts, or inaccurate descriptions.
 - Propose better categorization or "how to choose" guidance.
 - Add real hands-on experience with a tool (put it in the note — hugely valuable).
+- **Contribute a verified workflow** to [`recipes/`](recipes/) — the most valuable
+  contribution here. One rule: **it must have been run.** Include the commands, the
+  real output, the runtime, and where it breaks. Workflows needing an LLM API key
+  (PaperQA2, STORM, GPT Researcher) are especially wanted — we have no key, so we
+  cannot verify them ourselves.
 
 By contributing, you agree that your contributions are released under [CC0-1.0](LICENSE) (public domain).

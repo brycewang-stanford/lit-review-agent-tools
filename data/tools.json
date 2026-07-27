@@ -64,6 +64,13 @@
       "repo": "Imbad0202/academic-research-skills",
       "url": "https://github.com/Imbad0202/academic-research-skills",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "synthesize",
+        "cite-check",
+        "write",
+        "review"
+      ],
       "editor_pick": true,
       "stars": 39670,
       "pushed_at": "2026-07-27",
@@ -79,6 +86,13 @@
       "repo": "Imbad0202/academic-research-skills-codex",
       "url": "https://github.com/Imbad0202/academic-research-skills-codex",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "synthesize",
+        "cite-check",
+        "write",
+        "review"
+      ],
       "editor_pick": false,
       "stars": 7157,
       "pushed_at": "2026-07-23",
@@ -94,6 +108,9 @@
       "repo": "Master-cai/Research-Paper-Writing-Skills",
       "url": "https://github.com/Master-cai/Research-Paper-Writing-Skills",
       "category": "all-in-one",
+      "stage": [
+        "write"
+      ],
       "editor_pick": false,
       "stars": 5549,
       "pushed_at": "2026-06-23",
@@ -109,6 +126,11 @@
       "repo": "alirezarezvani/claude-skills",
       "url": "https://github.com/alirezarezvani/claude-skills",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 23255,
       "pushed_at": "2026-07-17",
@@ -124,6 +146,9 @@
       "repo": "lishix520/academic-paper-skills",
       "url": "https://github.com/lishix520/academic-paper-skills",
       "category": "all-in-one",
+      "stage": [
+        "write"
+      ],
       "editor_pick": false,
       "stars": 1103,
       "pushed_at": "2026-01-04",
@@ -139,6 +164,12 @@
       "repo": "OpenLAIR/dr-claw",
       "url": "https://github.com/OpenLAIR/dr-claw",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "read",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 1039,
       "pushed_at": "2026-07-16",
@@ -154,6 +185,11 @@
       "repo": "beita6969/ScienceClaw",
       "url": "https://github.com/beita6969/ScienceClaw",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 870,
       "pushed_at": "2026-06-08",
@@ -169,6 +205,11 @@
       "repo": "LeonChaoX/qinyan-academic-skills",
       "url": "https://github.com/LeonChaoX/qinyan-academic-skills",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 722,
       "pushed_at": "2026-07-20",
@@ -184,6 +225,11 @@
       "repo": "lingzhi227/agent-research-skills",
       "url": "https://github.com/lingzhi227/agent-research-skills",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "synthesize",
+        "cite-check"
+      ],
       "editor_pick": false,
       "stars": 238,
       "pushed_at": "2026-02-27",
@@ -199,6 +245,11 @@
       "repo": "Aperivue/medsci-skills",
       "url": "https://github.com/Aperivue/medsci-skills",
       "category": "all-in-one",
+      "stage": [
+        "search",
+        "cite-check",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 220,
       "pushed_at": "2026-07-26",
@@ -214,6 +265,11 @@
       "repo": "stanford-oval/storm",
       "url": "https://github.com/stanford-oval/storm",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": true,
       "stars": 30340,
       "pushed_at": "2025-09-30",
@@ -229,6 +285,11 @@
       "repo": "assafelovic/gpt-researcher",
       "url": "https://github.com/assafelovic/gpt-researcher",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": true,
       "stars": 28662,
       "pushed_at": "2026-07-18",
@@ -244,6 +305,10 @@
       "repo": "dzhng/deep-research",
       "url": "https://github.com/dzhng/deep-research",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 19427,
       "pushed_at": "2026-04-11",
@@ -259,6 +324,10 @@
       "repo": "langchain-ai/open_deep_research",
       "url": "https://github.com/langchain-ai/open_deep_research",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 12439,
       "pushed_at": "2026-07-25",
@@ -274,6 +343,10 @@
       "repo": "LearningCircuit/local-deep-research",
       "url": "https://github.com/LearningCircuit/local-deep-research",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 8785,
       "pushed_at": "2026-07-27",
@@ -289,6 +362,10 @@
       "repo": "nickscamara/open-deep-research",
       "url": "https://github.com/nickscamara/open-deep-research",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 6277,
       "pushed_at": "2025-05-07",
@@ -304,6 +381,11 @@
       "repo": "IAAR-Shanghai/SurveyX",
       "url": "https://github.com/IAAR-Shanghai/SurveyX",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 986,
       "pushed_at": "2026-01-12",
@@ -319,6 +401,11 @@
       "repo": "LitLLM/LitLLM",
       "url": "https://github.com/LitLLM/LitLLM",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 44,
       "pushed_at": "2026-05-07",
@@ -334,6 +421,9 @@
       "repo": "federicodeponte/opendraft",
       "url": "https://github.com/federicodeponte/opendraft",
       "category": "deep-research",
+      "stage": [
+        "write"
+      ],
       "editor_pick": false,
       "stars": 338,
       "pushed_at": "2026-07-22",
@@ -349,6 +439,11 @@
       "repo": "a554b554/AutoSurveyGPT",
       "url": "https://github.com/a554b554/AutoSurveyGPT",
       "category": "deep-research",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 156,
       "pushed_at": "2023-05-23",
@@ -364,6 +459,12 @@
       "repo": "SakanaAI/AI-Scientist",
       "url": "https://github.com/SakanaAI/AI-Scientist",
       "category": "autonomous-science",
+      "stage": [
+        "search",
+        "synthesize",
+        "write",
+        "review"
+      ],
       "editor_pick": true,
       "stars": 14300,
       "pushed_at": "2025-12-19",
@@ -379,6 +480,12 @@
       "repo": "SakanaAI/AI-Scientist-v2",
       "url": "https://github.com/SakanaAI/AI-Scientist-v2",
       "category": "autonomous-science",
+      "stage": [
+        "search",
+        "synthesize",
+        "write",
+        "review"
+      ],
       "editor_pick": false,
       "stars": 6922,
       "pushed_at": "2025-12-19",
@@ -394,6 +501,13 @@
       "repo": "aiming-lab/AutoResearchClaw",
       "url": "https://github.com/aiming-lab/AutoResearchClaw",
       "category": "autonomous-science",
+      "stage": [
+        "search",
+        "synthesize",
+        "cite-check",
+        "write",
+        "review"
+      ],
       "editor_pick": false,
       "stars": 13897,
       "pushed_at": "2026-07-13",
@@ -409,6 +523,11 @@
       "repo": "SamuelSchmidgall/AgentLaboratory",
       "url": "https://github.com/SamuelSchmidgall/AgentLaboratory",
       "category": "autonomous-science",
+      "stage": [
+        "search",
+        "synthesize",
+        "write"
+      ],
       "editor_pick": false,
       "stars": 5771,
       "pushed_at": "2025-08-20",
@@ -424,6 +543,9 @@
       "repo": "lamm-mit/SciAgentsDiscovery",
       "url": "https://github.com/lamm-mit/SciAgentsDiscovery",
       "category": "autonomous-science",
+      "stage": [
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 627,
       "pushed_at": "2025-05-10",
@@ -439,6 +561,12 @@
       "repo": "IntologyAI/Zochi",
       "url": "https://github.com/IntologyAI/Zochi",
       "category": "autonomous-science",
+      "stage": [
+        "search",
+        "synthesize",
+        "write",
+        "review"
+      ],
       "editor_pick": false,
       "stars": 311,
       "pushed_at": "2025-11-19",
@@ -454,6 +582,9 @@
       "repo": "HKUDS/DeepInnovator",
       "url": "https://github.com/HKUDS/DeepInnovator",
       "category": "autonomous-science",
+      "stage": [
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 279,
       "pushed_at": "2026-03-06",
@@ -469,6 +600,12 @@
       "repo": "Future-House/paper-qa",
       "url": "https://github.com/Future-House/paper-qa",
       "category": "paper-qa-rag",
+      "stage": [
+        "read",
+        "extract",
+        "synthesize",
+        "cite-check"
+      ],
       "editor_pick": true,
       "stars": 8943,
       "pushed_at": "2026-07-20",
@@ -484,6 +621,11 @@
       "repo": "neuml/paperai",
       "url": "https://github.com/neuml/paperai",
       "category": "paper-qa-rag",
+      "stage": [
+        "search",
+        "read",
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 1769,
       "pushed_at": "2026-07-14",
@@ -499,6 +641,11 @@
       "repo": "khoj-ai/openpaper",
       "url": "https://github.com/khoj-ai/openpaper",
       "category": "paper-qa-rag",
+      "stage": [
+        "read",
+        "synthesize",
+        "cite-check"
+      ],
       "editor_pick": false,
       "stars": 395,
       "pushed_at": "2026-07-26",
@@ -514,6 +661,9 @@
       "repo": "asreview/asreview",
       "url": "https://github.com/asreview/asreview",
       "category": "systematic-review",
+      "stage": [
+        "screen"
+      ],
       "editor_pick": true,
       "stars": 956,
       "pushed_at": "2026-07-26",
@@ -529,6 +679,9 @@
       "repo": "PouriaRouzrokh/LatteReview",
       "url": "https://github.com/PouriaRouzrokh/LatteReview",
       "category": "systematic-review",
+      "stage": [
+        "screen"
+      ],
       "editor_pick": false,
       "stars": 117,
       "pushed_at": "2026-06-10",
@@ -544,6 +697,10 @@
       "repo": "Open-and-Sustainable/prismAId",
       "url": "https://github.com/Open-and-Sustainable/prismAId",
       "category": "systematic-review",
+      "stage": [
+        "screen",
+        "extract"
+      ],
       "editor_pick": false,
       "stars": 24,
       "pushed_at": "2026-07-16",
@@ -559,6 +716,10 @@
       "repo": "Black-Lights/prisma-review-tool",
       "url": "https://github.com/Black-Lights/prisma-review-tool",
       "category": "systematic-review",
+      "stage": [
+        "search",
+        "screen"
+      ],
       "editor_pick": false,
       "stars": null,
       "pushed_at": "2026-04-06",
@@ -574,6 +735,10 @@
       "repo": "54yyyu/zotero-mcp",
       "url": "https://github.com/54yyyu/zotero-mcp",
       "category": "mcp-servers",
+      "stage": [
+        "search",
+        "read"
+      ],
       "editor_pick": true,
       "stars": 4432,
       "pushed_at": "2026-07-13",
@@ -589,6 +754,11 @@
       "repo": "blazickjp/arxiv-mcp-server",
       "url": "https://github.com/blazickjp/arxiv-mcp-server",
       "category": "mcp-servers",
+      "stage": [
+        "search",
+        "extract",
+        "read"
+      ],
       "editor_pick": true,
       "stars": 2987,
       "pushed_at": "2026-07-26",
@@ -604,6 +774,9 @@
       "repo": "openags/paper-search-mcp",
       "url": "https://github.com/openags/paper-search-mcp",
       "category": "mcp-servers",
+      "stage": [
+        "search"
+      ],
       "editor_pick": false,
       "stars": 2262,
       "pushed_at": "2026-07-02",
@@ -619,6 +792,10 @@
       "repo": "JackKuo666/PubMed-MCP-Server",
       "url": "https://github.com/JackKuo666/PubMed-MCP-Server",
       "category": "mcp-servers",
+      "stage": [
+        "search",
+        "read"
+      ],
       "editor_pick": false,
       "stars": 122,
       "pushed_at": "2025-05-08",
@@ -634,6 +811,9 @@
       "repo": "drAbreu/alex-mcp",
       "url": "https://github.com/drAbreu/alex-mcp",
       "category": "mcp-servers",
+      "stage": [
+        "search"
+      ],
       "editor_pick": false,
       "stars": 50,
       "pushed_at": "2025-08-11",
@@ -649,6 +829,10 @@
       "repo": "oksure/openalex-research-mcp",
       "url": "https://github.com/oksure/openalex-research-mcp",
       "category": "mcp-servers",
+      "stage": [
+        "search",
+        "cite-check"
+      ],
       "editor_pick": false,
       "stars": 37,
       "pushed_at": "2026-06-22",
@@ -664,6 +848,10 @@
       "repo": "MuiseDestiny/zotero-gpt",
       "url": "https://github.com/MuiseDestiny/zotero-gpt",
       "category": "reference-management",
+      "stage": [
+        "read",
+        "synthesize"
+      ],
       "editor_pick": true,
       "stars": 7290,
       "pushed_at": "2026-05-01",
@@ -679,6 +867,11 @@
       "repo": "papersgpt/papersgpt-for-zotero",
       "url": "https://github.com/papersgpt/papersgpt-for-zotero",
       "category": "reference-management",
+      "stage": [
+        "read",
+        "extract",
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 2560,
       "pushed_at": "2026-07-22",
@@ -694,6 +887,10 @@
       "repo": "lifan0127/ai-research-assistant",
       "url": "https://github.com/lifan0127/ai-research-assistant",
       "category": "reference-management",
+      "stage": [
+        "read",
+        "synthesize"
+      ],
       "editor_pick": false,
       "stars": 1714,
       "pushed_at": "2025-04-01",
@@ -709,6 +906,9 @@
       "repo": "chauff/paper-note-filler",
       "url": "https://github.com/chauff/paper-note-filler",
       "category": "reference-management",
+      "stage": [
+        "read"
+      ],
       "editor_pick": false,
       "stars": 47,
       "pushed_at": "2025-11-20",
@@ -724,6 +924,9 @@
       "repo": "opendatalab/MinerU",
       "url": "https://github.com/opendatalab/MinerU",
       "category": "pdf-extraction",
+      "stage": [
+        "extract"
+      ],
       "editor_pick": true,
       "stars": 75818,
       "pushed_at": "2026-07-25",
@@ -739,6 +942,9 @@
       "repo": "docling-project/docling",
       "url": "https://github.com/docling-project/docling",
       "category": "pdf-extraction",
+      "stage": [
+        "extract"
+      ],
       "editor_pick": false,
       "stars": 63819,
       "pushed_at": "2026-07-26",
@@ -754,6 +960,9 @@
       "repo": "datalab-to/marker",
       "url": "https://github.com/datalab-to/marker",
       "category": "pdf-extraction",
+      "stage": [
+        "extract"
+      ],
       "editor_pick": false,
       "stars": 37908,
       "pushed_at": "2026-07-20",
@@ -769,6 +978,9 @@
       "repo": "PDFMathTranslate/PDFMathTranslate",
       "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
       "category": "pdf-extraction",
+      "stage": [
+        "read"
+      ],
       "editor_pick": false,
       "stars": 35808,
       "pushed_at": "2026-05-25",
@@ -784,6 +996,9 @@
       "repo": "grobidOrg/grobid",
       "url": "https://github.com/grobidOrg/grobid",
       "category": "pdf-extraction",
+      "stage": [
+        "extract"
+      ],
       "editor_pick": false,
       "stars": 5024,
       "pushed_at": "2026-07-26",
@@ -799,6 +1014,9 @@
       "repo": "neuml/paperetl",
       "url": "https://github.com/neuml/paperetl",
       "category": "pdf-extraction",
+      "stage": [
+        "extract"
+      ],
       "editor_pick": false,
       "stars": 697,
       "pushed_at": "2025-12-07",
@@ -814,6 +1032,9 @@
       "repo": "titipata/scipdf_parser",
       "url": "https://github.com/titipata/scipdf_parser",
       "category": "pdf-extraction",
+      "stage": [
+        "extract"
+      ],
       "editor_pick": false,
       "stars": 455,
       "pushed_at": "2024-03-21",
@@ -829,6 +1050,9 @@
       "repo": "scholarly-python-package/scholarly",
       "url": "https://github.com/scholarly-python-package/scholarly",
       "category": "citation-graphs",
+      "stage": [
+        "search"
+      ],
       "editor_pick": false,
       "stars": 1877,
       "pushed_at": "2026-03-24",
@@ -844,6 +1068,10 @@
       "repo": "danielnsilva/semanticscholar",
       "url": "https://github.com/danielnsilva/semanticscholar",
       "category": "citation-graphs",
+      "stage": [
+        "search",
+        "cite-check"
+      ],
       "editor_pick": false,
       "stars": 476,
       "pushed_at": "2026-07-03",
@@ -859,6 +1087,10 @@
       "repo": "J535D165/pyalex",
       "url": "https://github.com/J535D165/pyalex",
       "category": "citation-graphs",
+      "stage": [
+        "search",
+        "cite-check"
+      ],
       "editor_pick": false,
       "stars": 400,
       "pushed_at": "2026-07-06",
@@ -874,6 +1106,9 @@
       "repo": "AutoLLM/ArxivDigest",
       "url": "https://github.com/AutoLLM/ArxivDigest",
       "category": "citation-graphs",
+      "stage": [
+        "search"
+      ],
       "editor_pick": false,
       "stars": 452,
       "pushed_at": "2024-05-26",
@@ -889,6 +1124,9 @@
       "repo": "Citegraph/citegraph",
       "url": "https://github.com/Citegraph/citegraph",
       "category": "citation-graphs",
+      "stage": [
+        "search"
+      ],
       "editor_pick": false,
       "stars": 22,
       "pushed_at": "2025-09-24",
@@ -904,6 +1142,9 @@
       "repo": "EvolvingLMMs-Lab/lmms-lab-writer",
       "url": "https://github.com/EvolvingLMMs-Lab/lmms-lab-writer",
       "category": "writing-peer-review",
+      "stage": [
+        "write"
+      ],
       "editor_pick": false,
       "stars": 256,
       "pushed_at": "2026-06-01",
@@ -919,6 +1160,10 @@
       "repo": "andrehuang/academic-writing-agents",
       "url": "https://github.com/andrehuang/academic-writing-agents",
       "category": "writing-peer-review",
+      "stage": [
+        "write",
+        "review"
+      ],
       "editor_pick": false,
       "stars": 146,
       "pushed_at": "2026-05-11",
@@ -934,6 +1179,9 @@
       "repo": "poldrack/ai-peer-review",
       "url": "https://github.com/poldrack/ai-peer-review",
       "category": "writing-peer-review",
+      "stage": [
+        "review"
+      ],
       "editor_pick": false,
       "stars": 151,
       "pushed_at": "2026-07-05",
@@ -949,6 +1197,9 @@
       "repo": "maxidl/openreviewer",
       "url": "https://github.com/maxidl/openreviewer",
       "category": "writing-peer-review",
+      "stage": [
+        "review"
+      ],
       "editor_pick": false,
       "stars": 14,
       "pushed_at": "2025-06-21",
@@ -964,6 +1215,12 @@
       "repo": "JeanDiable/academic-research-plugin",
       "url": "https://github.com/JeanDiable/academic-research-plugin",
       "category": "writing-peer-review",
+      "stage": [
+        "search",
+        "synthesize",
+        "cite-check",
+        "review"
+      ],
       "editor_pick": false,
       "stars": 18,
       "pushed_at": "2026-03-25",
@@ -979,6 +1236,7 @@
       "repo": "HKUST-KnowComp/Awesome-LLM-Scientific-Discovery",
       "url": "https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery",
       "category": "awesome-lists",
+      "stage": [],
       "editor_pick": false,
       "stars": 421,
       "pushed_at": "2026-07-03",
@@ -994,6 +1252,7 @@
       "repo": "handsome-rich/Awesome-Auto-Research-Tools",
       "url": "https://github.com/handsome-rich/Awesome-Auto-Research-Tools",
       "category": "awesome-lists",
+      "stage": [],
       "editor_pick": false,
       "stars": 1104,
       "pushed_at": "2026-07-25",
@@ -1009,6 +1268,7 @@
       "repo": "worldbench/awesome-ai-auto-research",
       "url": "https://github.com/worldbench/awesome-ai-auto-research",
       "category": "awesome-lists",
+      "stage": [],
       "editor_pick": false,
       "stars": 445,
       "pushed_at": "2026-07-15",
@@ -1024,6 +1284,7 @@
       "repo": "du-nlp-lab/LLM4SR",
       "url": "https://github.com/du-nlp-lab/LLM4SR",
       "category": "awesome-lists",
+      "stage": [],
       "editor_pick": false,
       "stars": 131,
       "pushed_at": "2025-01-22",
@@ -1039,6 +1300,7 @@
       "repo": "0x11c11e/awesome-ai-research-tools",
       "url": "https://github.com/0x11c11e/awesome-ai-research-tools",
       "category": "awesome-lists",
+      "stage": [],
       "editor_pick": false,
       "stars": 54,
       "pushed_at": "2026-07-22",
@@ -1054,6 +1316,7 @@
       "repo": "evidencesynthesis-tools/awesome-evidence-synthesis",
       "url": "https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis",
       "category": "awesome-lists",
+      "stage": [],
       "editor_pick": false,
       "stars": 20,
       "pushed_at": "2026-07-22",

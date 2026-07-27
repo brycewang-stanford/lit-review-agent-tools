@@ -5,7 +5,7 @@
 > 单一数据源（`data/tools.yaml`）→ 自动渲染所有 Markdown → 自动抓取活跃度/许可证信号 → 可搜索站点 / Skill / MCP。
 > 加工具从「改 4 个文件」变成「加 1 段 YAML」，清单从「读一次」变成「每周回来看」。
 
-**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phases 1–3 shipped 2026-07-27**
+**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phases 1–4 shipped 2026-07-27**
 
 ---
 
@@ -208,7 +208,26 @@ Publish `data/tools.json` and document its schema in `docs/DATA.md`. Explicitly 
 
 ---
 
-## Phase 4 — Editorial depth (the real moat)
+## Phase 4 — Editorial depth (the real moat) ✅ *shipped 2026-07-27*
+
+> **Delivered.** Four workflows in [`recipes/`](recipes/), each **executed end to end**
+> on this machine, key-free, with real output. The headline: ASReview found **all 38
+> relevant papers after screening 248 of 4,544 records (5.5%)** on a published review's
+> own SYNERGY data — the catalogue's biggest claim, now measured rather than repeated.
+> Two chains were also run: corpus→screener, and PDF→citation-verifier.
+>
+> Running them produced findings no amount of reading docs would: "open access" does
+> not mean downloadable (4 candidates before a real PDF); PDF line-breaks corrupt DOIs;
+> and title matching **cannot** confirm a citation — the verifier falsely confirmed
+> *Attention Is All You Need* against a different 2025 paper at 100% token overlap,
+> which is written up in recipe 03 as the most useful thing in the directory.
+>
+> The `stage` field deferred in Phase 1 now has its consumers: `STAGES.md` and a stage
+> filter on the site. It immediately showed the ecosystem is lopsided — **36 tools help
+> you search, 4 help you screen.**
+>
+> Not done: head-to-head comparisons, and "why this / when not this" prose on each
+> editor's pick. Both want more hands-on time than one session allows.
 
 Anyone can clone a link list in an afternoon. Nobody can clone verified hands-on experience.
 
@@ -254,8 +273,8 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 | ~~2~~ | ~~`refresh_metadata.py`, health/license signals, `HEALTH.md`~~ | ✅ done | 🔥🔥🔥 | — |
 | ~~3~~ | ~~GitHub Pages searchable site + `tools.json`~~ | ✅ done | 🔥🔥 | — |
 | 4 | Skill catalog generated from SSOT | 0.5h | 🔥 | needs 1 + skills-agent merge |
-| 5 | `recipes/` — first 3 verified workflows | 3× half-day | 🔥🔥🔥 | none |
-| 6 | Stage × Tool matrix | 2h | 🔥🔥 | needs 1 |
+| ~~5~~ | ~~`recipes/` — first 3 verified workflows~~ | ✅ 4 done | 🔥🔥🔥 | — |
+| ~~6~~ | ~~Stage × Tool matrix~~ | ✅ done | 🔥🔥 | — |
 | ~~7~~ | ~~`CHANGELOG.md` generation~~ | ✅ done | 🔥 | — |
 | 8 | Repo hygiene: topics, `CITATION.cff`, Discussions | 30m | 🔥 | none |
 | 9 | Publish 知乎 post; awesome.re after ~4 weeks | — | 🔥🔥 | needs 3 |
@@ -266,7 +285,7 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 2. ~~`feat(ci): generate all Markdown surfaces from tools.yaml and gate on drift`~~ ✅
 3. ~~`feat(data): capture freshness, archived state, and license from the GitHub API`~~ ✅
 
-Next: Phase 4 — verified end-to-end recipes and the stage × tool matrix (the moat).
+Next: Phase 5 — repo hygiene (topics, CITATION.cff), then awesome.re once the list has ~4 weeks of history, then the drafted 知乎/HN posts.
 
 ---
 

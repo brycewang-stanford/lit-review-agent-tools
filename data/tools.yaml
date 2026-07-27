@@ -11,6 +11,7 @@
 - name: "academic-research-skills"
   repo: Imbad0202/academic-research-skills
   category: all-in-one
+  stage: [search, synthesize, cite-check, write, review]
   added: 2026-07-26
   editor_pick: true
   stars: 39670
@@ -25,6 +26,7 @@
 - name: "academic-research-skills-codex"
   repo: Imbad0202/academic-research-skills-codex
   category: all-in-one
+  stage: [search, synthesize, cite-check, write, review]
   added: 2026-07-26
   stars: 7157
   pushed_at: 2026-07-23
@@ -38,6 +40,7 @@
 - name: "Research-Paper-Writing-Skills"
   repo: Master-cai/Research-Paper-Writing-Skills
   category: all-in-one
+  stage: [write]
   added: 2026-07-26
   stars: 5549
   pushed_at: 2026-06-23
@@ -51,6 +54,7 @@
 - name: "claude-skills"
   repo: alirezarezvani/claude-skills
   category: all-in-one
+  stage: [search, synthesize, write]
   added: 2026-07-26
   stars: 23255
   pushed_at: 2026-07-17
@@ -64,6 +68,7 @@
 - name: "academic-paper-skills"
   repo: lishix520/academic-paper-skills
   category: all-in-one
+  stage: [write]
   added: 2026-07-26
   stars: 1103
   pushed_at: 2026-01-04
@@ -77,6 +82,7 @@
 - name: "dr-claw"
   repo: OpenLAIR/dr-claw
   category: all-in-one
+  stage: [search, read, synthesize, write]
   added: 2026-07-26
   stars: 1039
   pushed_at: 2026-07-16
@@ -90,6 +96,7 @@
 - name: "ScienceClaw"
   repo: beita6969/ScienceClaw
   category: all-in-one
+  stage: [search, synthesize, write]
   added: 2026-07-26
   stars: 870
   pushed_at: 2026-06-08
@@ -103,6 +110,7 @@
 - name: "qinyan-academic-skills"
   repo: LeonChaoX/qinyan-academic-skills
   category: all-in-one
+  stage: [search, synthesize, write]
   added: 2026-07-26
   stars: 722
   pushed_at: 2026-07-20
@@ -116,6 +124,7 @@
 - name: "agent-research-skills"
   repo: lingzhi227/agent-research-skills
   category: all-in-one
+  stage: [search, synthesize, cite-check]
   added: 2026-07-26
   stars: 238
   pushed_at: 2026-02-27
@@ -129,6 +138,7 @@
 - name: "medsci-skills"
   repo: Aperivue/medsci-skills
   category: all-in-one
+  stage: [search, cite-check, write]
   added: 2026-07-26
   stars: 220
   pushed_at: 2026-07-26
@@ -144,6 +154,7 @@
 - name: "STORM"
   repo: stanford-oval/storm
   category: deep-research
+  stage: [search, synthesize, write]
   added: 2026-07-26
   editor_pick: true
   stars: 30340
@@ -158,6 +169,7 @@
 - name: "gpt-researcher"
   repo: assafelovic/gpt-researcher
   category: deep-research
+  stage: [search, synthesize, write]
   added: 2026-07-26
   editor_pick: true
   stars: 28662
@@ -172,6 +184,7 @@
 - name: "deep-research"
   repo: dzhng/deep-research
   category: deep-research
+  stage: [search, synthesize]
   added: 2026-07-26
   stars: 19427
   pushed_at: 2026-04-11
@@ -185,6 +198,7 @@
 - name: "open_deep_research"
   repo: langchain-ai/open_deep_research
   category: deep-research
+  stage: [search, synthesize]
   added: 2026-07-26
   stars: 12439
   pushed_at: 2026-07-25
@@ -198,6 +212,7 @@
 - name: "local-deep-research"
   repo: LearningCircuit/local-deep-research
   category: deep-research
+  stage: [search, synthesize]
   added: 2026-07-26
   stars: 8785
   pushed_at: 2026-07-27
@@ -211,6 +226,7 @@
 - name: "open-deep-research"
   repo: nickscamara/open-deep-research
   category: deep-research
+  stage: [search, synthesize]
   added: 2026-07-26
   stars: 6277
   pushed_at: 2025-05-07
@@ -224,6 +240,7 @@
 - name: "SurveyX"
   repo: IAAR-Shanghai/SurveyX
   category: deep-research
+  stage: [search, synthesize, write]
   added: 2026-07-26
   stars: 986
   pushed_at: 2026-01-12
@@ -237,6 +254,7 @@
 - name: "LitLLM"
   repo: LitLLM/LitLLM
   category: deep-research
+  stage: [search, synthesize, write]
   added: 2026-07-26
   stars: 44
   pushed_at: 2026-05-07
@@ -250,6 +268,7 @@
 - name: "opendraft"
   repo: federicodeponte/opendraft
   category: deep-research
+  stage: [write]
   added: 2026-07-26
   stars: 338
   pushed_at: 2026-07-22
@@ -263,6 +282,7 @@
 - name: "AutoSurveyGPT"
   repo: a554b554/AutoSurveyGPT
   category: deep-research
+  stage: [search, synthesize, write]
   added: 2026-07-26
   stars: 156
   pushed_at: 2023-05-23
@@ -278,6 +298,7 @@
 - name: "AI-Scientist"
   repo: SakanaAI/AI-Scientist
   category: autonomous-science
+  stage: [search, synthesize, write, review]
   added: 2026-07-26
   editor_pick: true
   stars: 14300
@@ -292,6 +313,7 @@
 - name: "AI-Scientist-v2"
   repo: SakanaAI/AI-Scientist-v2
   category: autonomous-science
+  stage: [search, synthesize, write, review]
   added: 2026-07-26
   stars: 6922
   pushed_at: 2025-12-19
@@ -304,6 +326,7 @@
 - name: "AutoResearchClaw"
   repo: aiming-lab/AutoResearchClaw
   category: autonomous-science
+  stage: [search, synthesize, cite-check, write, review]
   added: 2026-07-26
   stars: 13897
   pushed_at: 2026-07-13
@@ -317,6 +340,7 @@
 - name: "Agent-Laboratory"
   repo: SamuelSchmidgall/AgentLaboratory
   category: autonomous-science
+  stage: [search, synthesize, write]
   added: 2026-07-26
   stars: 5771
   pushed_at: 2025-08-20
@@ -330,6 +354,7 @@
 - name: "SciAgentsDiscovery"
   repo: lamm-mit/SciAgentsDiscovery
   category: autonomous-science
+  stage: [synthesize]
   added: 2026-07-26
   stars: 627
   pushed_at: 2025-05-10
@@ -343,6 +368,7 @@
 - name: "Zochi"
   repo: IntologyAI/Zochi
   category: autonomous-science
+  stage: [search, synthesize, write, review]
   added: 2026-07-26
   stars: 311
   pushed_at: 2025-11-19
@@ -356,6 +382,7 @@
 - name: "DeepInnovator"
   repo: HKUDS/DeepInnovator
   category: autonomous-science
+  stage: [synthesize]
   added: 2026-07-26
   stars: 279
   pushed_at: 2026-03-06
@@ -371,6 +398,7 @@
 - name: "paper-qa"
   repo: Future-House/paper-qa
   category: paper-qa-rag
+  stage: [read, extract, synthesize, cite-check]
   added: 2026-07-26
   editor_pick: true
   stars: 8943
@@ -385,6 +413,7 @@
 - name: "paperai"
   repo: neuml/paperai
   category: paper-qa-rag
+  stage: [search, read, synthesize]
   added: 2026-07-26
   stars: 1769
   pushed_at: 2026-07-14
@@ -398,6 +427,7 @@
 - name: "openpaper"
   repo: khoj-ai/openpaper
   category: paper-qa-rag
+  stage: [read, synthesize, cite-check]
   added: 2026-07-26
   stars: 395
   pushed_at: 2026-07-26
@@ -413,6 +443,7 @@
 - name: "ASReview"
   repo: asreview/asreview
   category: systematic-review
+  stage: [screen]
   added: 2026-07-26
   editor_pick: true
   stars: 956
@@ -427,6 +458,7 @@
 - name: "LatteReview"
   repo: PouriaRouzrokh/LatteReview
   category: systematic-review
+  stage: [screen]
   added: 2026-07-26
   stars: 117
   pushed_at: 2026-06-10
@@ -440,6 +472,7 @@
 - name: "prismAId"
   repo: Open-and-Sustainable/prismAId
   category: systematic-review
+  stage: [screen, extract]
   added: 2026-07-26
   stars: 24
   pushed_at: 2026-07-16
@@ -453,6 +486,7 @@
 - name: "prisma-review-tool"
   repo: Black-Lights/prisma-review-tool
   category: systematic-review
+  stage: [search, screen]
   added: 2026-07-26
   stars: null
   pushed_at: 2026-04-06
@@ -469,6 +503,7 @@
 - name: "zotero-mcp"
   repo: 54yyyu/zotero-mcp
   category: mcp-servers
+  stage: [search, read]
   added: 2026-07-26
   editor_pick: true
   stars: 4432
@@ -483,6 +518,7 @@
 - name: "arxiv-mcp-server"
   repo: blazickjp/arxiv-mcp-server
   category: mcp-servers
+  stage: [search, extract, read]
   added: 2026-07-26
   editor_pick: true
   stars: 2987
@@ -497,6 +533,7 @@
 - name: "paper-search-mcp"
   repo: openags/paper-search-mcp
   category: mcp-servers
+  stage: [search]
   added: 2026-07-26
   stars: 2262
   pushed_at: 2026-07-02
@@ -510,6 +547,7 @@
 - name: "PubMed-MCP-Server"
   repo: JackKuo666/PubMed-MCP-Server
   category: mcp-servers
+  stage: [search, read]
   added: 2026-07-26
   stars: 122
   pushed_at: 2025-05-08
@@ -523,6 +561,7 @@
 - name: "alex-mcp"
   repo: drAbreu/alex-mcp
   category: mcp-servers
+  stage: [search]
   added: 2026-07-26
   stars: 50
   pushed_at: 2025-08-11
@@ -536,6 +575,7 @@
 - name: "openalex-research-mcp"
   repo: oksure/openalex-research-mcp
   category: mcp-servers
+  stage: [search, cite-check]
   added: 2026-07-26
   stars: 37
   pushed_at: 2026-06-22
@@ -551,6 +591,7 @@
 - name: "zotero-gpt"
   repo: MuiseDestiny/zotero-gpt
   category: reference-management
+  stage: [read, synthesize]
   added: 2026-07-26
   editor_pick: true
   stars: 7290
@@ -565,6 +606,7 @@
 - name: "papersgpt-for-zotero"
   repo: papersgpt/papersgpt-for-zotero
   category: reference-management
+  stage: [read, extract, synthesize]
   added: 2026-07-26
   stars: 2560
   pushed_at: 2026-07-22
@@ -578,6 +620,7 @@
 - name: "ai-research-assistant"
   repo: lifan0127/ai-research-assistant
   category: reference-management
+  stage: [read, synthesize]
   added: 2026-07-26
   stars: 1714
   pushed_at: 2025-04-01
@@ -591,6 +634,7 @@
 - name: "paper-note-filler"
   repo: chauff/paper-note-filler
   category: reference-management
+  stage: [read]
   added: 2026-07-26
   stars: 47
   pushed_at: 2025-11-20
@@ -606,6 +650,7 @@
 - name: "MinerU"
   repo: opendatalab/MinerU
   category: pdf-extraction
+  stage: [extract]
   added: 2026-07-26
   editor_pick: true
   stars: 75818
@@ -620,6 +665,7 @@
 - name: "docling"
   repo: docling-project/docling
   category: pdf-extraction
+  stage: [extract]
   added: 2026-07-26
   stars: 63819
   pushed_at: 2026-07-26
@@ -633,6 +679,7 @@
 - name: "marker"
   repo: datalab-to/marker
   category: pdf-extraction
+  stage: [extract]
   added: 2026-07-26
   stars: 37908
   pushed_at: 2026-07-20
@@ -646,6 +693,7 @@
 - name: "PDFMathTranslate"
   repo: PDFMathTranslate/PDFMathTranslate
   category: pdf-extraction
+  stage: [read]
   added: 2026-07-26
   stars: 35808
   pushed_at: 2026-05-25
@@ -659,6 +707,7 @@
 - name: "grobid"
   repo: grobidOrg/grobid
   category: pdf-extraction
+  stage: [extract]
   added: 2026-07-26
   stars: 5024
   pushed_at: 2026-07-26
@@ -672,6 +721,7 @@
 - name: "paperetl"
   repo: neuml/paperetl
   category: pdf-extraction
+  stage: [extract]
   added: 2026-07-26
   stars: 697
   pushed_at: 2025-12-07
@@ -685,6 +735,7 @@
 - name: "scipdf_parser"
   repo: titipata/scipdf_parser
   category: pdf-extraction
+  stage: [extract]
   added: 2026-07-26
   stars: 455
   pushed_at: 2024-03-21
@@ -700,6 +751,7 @@
 - name: "scholarly"
   repo: scholarly-python-package/scholarly
   category: citation-graphs
+  stage: [search]
   added: 2026-07-26
   stars: 1877
   pushed_at: 2026-03-24
@@ -713,6 +765,7 @@
 - name: "semanticscholar"
   repo: danielnsilva/semanticscholar
   category: citation-graphs
+  stage: [search, cite-check]
   added: 2026-07-26
   stars: 476
   pushed_at: 2026-07-03
@@ -726,6 +779,7 @@
 - name: "pyalex"
   repo: J535D165/pyalex
   category: citation-graphs
+  stage: [search, cite-check]
   added: 2026-07-26
   stars: 400
   pushed_at: 2026-07-06
@@ -739,6 +793,7 @@
 - name: "ArxivDigest"
   repo: AutoLLM/ArxivDigest
   category: citation-graphs
+  stage: [search]
   added: 2026-07-26
   stars: 452
   pushed_at: 2024-05-26
@@ -752,6 +807,7 @@
 - name: "citegraph"
   repo: Citegraph/citegraph
   category: citation-graphs
+  stage: [search]
   added: 2026-07-26
   stars: 22
   pushed_at: 2025-09-24
@@ -767,6 +823,7 @@
 - name: "lmms-lab-writer"
   repo: EvolvingLMMs-Lab/lmms-lab-writer
   category: writing-peer-review
+  stage: [write]
   added: 2026-07-26
   stars: 256
   pushed_at: 2026-06-01
@@ -780,6 +837,7 @@
 - name: "academic-writing-agents"
   repo: andrehuang/academic-writing-agents
   category: writing-peer-review
+  stage: [write, review]
   added: 2026-07-26
   stars: 146
   pushed_at: 2026-05-11
@@ -793,6 +851,7 @@
 - name: "ai-peer-review"
   repo: poldrack/ai-peer-review
   category: writing-peer-review
+  stage: [review]
   added: 2026-07-26
   stars: 151
   pushed_at: 2026-07-05
@@ -806,6 +865,7 @@
 - name: "open_reviewer"
   repo: maxidl/openreviewer
   category: writing-peer-review
+  stage: [review]
   added: 2026-07-26
   stars: 14
   pushed_at: 2025-06-21
@@ -820,6 +880,7 @@
 - name: "academic-research-plugin"
   repo: JeanDiable/academic-research-plugin
   category: writing-peer-review
+  stage: [search, synthesize, cite-check, review]
   added: 2026-07-26
   stars: 18
   pushed_at: 2026-03-25

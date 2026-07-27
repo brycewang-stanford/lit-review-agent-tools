@@ -178,6 +178,9 @@ h1 em { font-style: italic; color: var(--rubric); }
 @media (max-width: 620px) { .slash, .searchrow label { display: none; } }
 
 .filters { display: flex; flex-wrap: wrap; gap: .4rem .55rem; margin-top: .8rem; align-items: center; }
+#stagerow { margin-top: .7rem; padding-bottom: .55rem; border-bottom: 1px dotted var(--rule); }
+#stagerow .rail-h { align-self: center; }
+.chip.stage[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .filters .sep { width: 1px; height: 1.1rem; background: var(--rule); margin: 0 .3rem; }
 .chip {
   appearance: none;
@@ -407,6 +410,7 @@ footer.colo a:hover { color: var(--rubric); }
       <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="PRISMA screening, PDF to markdown, Zotero…">
       <span class="slash">/</span>
     </div>
+    <div class="filters" id="stagerow"></div>
     <div class="filters" id="filters"></div>
   </div>
 
@@ -455,7 +459,7 @@ footer.colo a:hover { color: var(--rubric); }
       search: "Search", cats: "Categories", zh: "中文",
       picks: "Editor's picks", permissive: "Permissive licence", restricted: "Restricted licence",
       reset: "Clear all", results: "showing", of: "of",
-      sorted: "grouped by use case, most-starred first",
+      sorted: "grouped by use case, most-starred first", stagelabel: "STAGE",
       none: "Nothing matches those filters.", noneHint: "Try clearing a filter or searching for a task instead of a tool name.",
       count: function (n) { return n + " tools"; },
       refreshed: function (d) { return "metadata refreshed " + d; },
@@ -469,7 +473,7 @@ footer.colo a:hover { color: var(--rubric); }
       search: "搜索", cats: "分类", zh: "EN",
       picks: "编辑推荐", permissive: "宽松许可", restricted: "受限许可",
       reset: "清除筛选", results: "显示", of: "/",
-      sorted: "按使用场景分组，Star 数降序",
+      sorted: "按使用场景分组，Star 数降序", stagelabel: "阶段",
       none: "没有匹配的结果。", noneHint: "试试清除某个筛选，或直接搜索你要做的事情。",
       count: function (n) { return n + " 个工具"; },
       refreshed: function (d) { return "元数据更新于 " + d; },
@@ -486,8 +490,20 @@ footer.colo a:hover { color: var(--rubric); }
   // Licences that restrict use in ways a researcher shipping something must read.
   var RESTRICTED = /^(CC-BY-NC|AGPL|GPL|custom|none)/;
 
+  var STAGE_LABELS = {
+    "search":     { en: "search",     zh: "检索" },
+    "screen":     { en: "screen",     zh: "筛选" },
+    "extract":    { en: "extract",    zh: "抽取" },
+    "read":       { en: "read",       zh: "精读" },
+    "synthesize": { en: "synthesize", zh: "综合" },
+    "cite-check": { en: "cite-check", zh: "引用核查" },
+    "write":      { en: "write",      zh: "写作" },
+    "review":     { en: "review",     zh: "评审" }
+  };
+  var STAGE_ORDER = ["search","screen","extract","read","synthesize","cite-check","write","review"];
+
   var state = {
-    q: "", cats: new Set(), status: new Set(), lic: "", picks: false,
+    q: "", cats: new Set(), status: new Set(), stages: new Set(), lic: "", picks: false,
     lang: (navigator.language || "en").toLowerCase().indexOf("zh") === 0 ? "zh" : "en"
   };
 
@@ -497,6 +513,7 @@ footer.colo a:hover { color: var(--rubric); }
     state.q = p.get("q") || "";
     (p.get("cat") || "").split(",").filter(Boolean).forEach(function (c) { if (CAT_BY_ID[c]) state.cats.add(c); });
     (p.get("status") || "").split(",").filter(Boolean).forEach(function (s) { if (STATUS[s]) state.status.add(s); });
+    (p.get("stage") || "").split(",").filter(Boolean).forEach(function (s) { if (STAGE_LABELS[s]) state.stages.add(s); });
     state.lic = p.get("lic") || "";
     state.picks = p.get("picks") === "1";
     if (p.get("lang") === "zh" || p.get("lang") === "en") state.lang = p.get("lang");
@@ -506,6 +523,7 @@ footer.colo a:hover { color: var(--rubric); }
     if (state.q) p.set("q", state.q);
     if (state.cats.size) p.set("cat", Array.from(state.cats).join(","));
     if (state.status.size) p.set("status", Array.from(state.status).join(","));
+    if (state.stages.size) p.set("stage", Array.from(state.stages).join(","));
     if (state.lic) p.set("lic", state.lic);
     if (state.picks) p.set("picks", "1");
     p.set("lang", state.lang);
@@ -545,6 +563,11 @@ footer.colo a:hover { color: var(--rubric); }
     if (state.picks && !t.editor_pick) return false;
     if (state.cats.size && !state.cats.has(t.category)) return false;
     if (state.status.size && !state.status.has(t.status || "unknown")) return false;
+    if (state.stages.size) {
+      var have = t.stage || [];
+      var wanted = Array.from(state.stages);
+      for (var s = 0; s < wanted.length; s++) if (have.indexOf(wanted[s]) === -1) return false;
+    }
     if (state.lic) {
       var l = t.license || "";
       if (state.lic === "permissive" && !PERMISSIVE.test(l)) return false;
@@ -600,6 +623,16 @@ footer.colo a:hover { color: var(--rubric); }
     }).join("");
 
     // filter chips
+    var stageCounts = {};
+    TOOLS.forEach(function (x) { (x.stage || []).forEach(function (s) { stageCounts[s] = (stageCounts[s] || 0) + 1; }); });
+    document.getElementById("stagerow").innerHTML =
+      '<span class="rail-h" style="margin:0 .5rem 0 0">' + esc(t.stagelabel) + "</span>" +
+      STAGE_ORDER.map(function (s) {
+        return '<button class="chip stage" type="button" data-stage="' + s + '" aria-pressed="' +
+               state.stages.has(s) + '">' + esc(STAGE_LABELS[s][state.lang]) +
+               '<span class="n">' + (stageCounts[s] || 0) + "</span></button>";
+      }).join("");
+
     var chips = [];
     chips.push('<button class="chip" type="button" data-picks aria-pressed="' + state.picks + '">✦ ' + esc(t.picks) + "</button>");
     chips.push('<span class="sep"></span>');
@@ -611,7 +644,7 @@ footer.colo a:hover { color: var(--rubric); }
     chips.push('<span class="sep"></span>');
     chips.push('<button class="chip" type="button" data-lic="permissive" aria-pressed="' + (state.lic === "permissive") + '">' + esc(t.permissive) + "</button>");
     chips.push('<button class="chip" type="button" data-lic="restricted" aria-pressed="' + (state.lic === "restricted") + '">' + esc(t.restricted) + "</button>");
-    var dirty = state.q || state.cats.size || state.status.size || state.lic || state.picks;
+    var dirty = state.q || state.cats.size || state.status.size || state.stages.size || state.lic || state.picks;
     chips.push('<button class="chip" type="button" id="reset"' + (dirty ? "" : " hidden") + ">↺ " + esc(t.reset) + "</button>");
     elFilters.innerHTML = chips.join("");
 
@@ -684,12 +717,13 @@ footer.colo a:hover { color: var(--rubric); }
     if (!b) return;
     if (b.id === "lang") { state.lang = state.lang === "zh" ? "en" : "zh"; return render(); }
     if (b.id === "reset") {
-      state.q = ""; q.value = ""; state.cats.clear(); state.status.clear();
+      state.q = ""; q.value = ""; state.cats.clear(); state.status.clear(); state.stages.clear();
       state.lic = ""; state.picks = false;
       return render();
     }
     if (b.dataset.cat !== undefined) { toggleSet(state.cats, b.dataset.cat); return render(); }
     if (b.dataset.status !== undefined) { toggleSet(state.status, b.dataset.status); return render(); }
+    if (b.dataset.stage !== undefined) { toggleSet(state.stages, b.dataset.stage); return render(); }
     if (b.dataset.lic !== undefined) { state.lic = state.lic === b.dataset.lic ? "" : b.dataset.lic; return render(); }
     if (b.dataset.picks !== undefined) { state.picks = !state.picks; return render(); }
   });
