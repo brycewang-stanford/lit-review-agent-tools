@@ -1,63 +1,91 @@
-<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Awesome AI Literature Review Agents and Tools">
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Awesome AI Literature Review Agents and Tools - 更省力的 AI 文献综述大全">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0B1020"/>
-      <stop offset="0.55" stop-color="#141B33"/>
-      <stop offset="1" stop-color="#1B2247"/>
+      <stop offset="0" stop-color="#070C1A"/>
+      <stop offset="0.55" stop-color="#0A1122"/>
+      <stop offset="1" stop-color="#0D1630"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7C93FF"/>
-      <stop offset="1" stop-color="#5EE6C9"/>
+    <radialGradient id="glowGreen" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3AE" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#22D3AE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6C8CFF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#6C8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5CF0A8"/>
+      <stop offset="0.55" stop-color="#2FE0C0"/>
+      <stop offset="1" stop-color="#4CC9F0"/>
     </linearGradient>
-    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7C93FF" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#5EE6C9" stop-opacity="0.18"/>
+    <linearGradient id="pillGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39E39B"/>
+      <stop offset="1" stop-color="#20C9A4"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="9" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39E39B" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#39E39B" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#9FB6FF" fill-opacity="0.10"/>
+    </pattern>
+    <g id="glyphGithub">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </g>
   </defs>
 
+  <style>
+    .cjk  { font-family: "PingFang SC","Hiragino Sans GB","Source Han Sans SC","Noto Sans SC","Microsoft YaHei","Heiti SC",sans-serif; }
+    .lat  { font-family: "Helvetica Neue",Helvetica,Arial,"Segoe UI",sans-serif; }
+    .mono { font-family: ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace; }
+    .h1   { font-size: 86px; font-weight: 800; fill: #F3F7FF; letter-spacing: 5px; }
+    .h2   { font-size: 60px; font-weight: 800; fill: url(#mint); letter-spacing: 1px; }
+    .pill { font-size: 25px; font-weight: 700; fill: #06251C; letter-spacing: 2px; }
+  </style>
+
   <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#dots)"/>
+  <ellipse cx="180" cy="580" rx="520" ry="360" fill="url(#glowGreen)"/>
+  <ellipse cx="1140" cy="90" rx="460" ry="340" fill="url(#glowBlue)"/>
 
-  <!-- faint dotted grid -->
-  <g fill="#5EE6C9" opacity="0.06">
-    <circle cx="90" cy="90" r="2.5"/><circle cx="180" cy="90" r="2.5"/><circle cx="270" cy="90" r="2.5"/>
-    <circle cx="1120" cy="560" r="2.5"/><circle cx="1200" cy="560" r="2.5"/><circle cx="1040" cy="560" r="2.5"/>
-    <circle cx="150" cy="560" r="2.5"/><circle cx="230" cy="560" r="2.5"/>
+  <!-- badge -->
+  <rect x="80" y="48" width="336" height="44" rx="22" fill="#5CF0A8" fill-opacity="0.10" stroke="#5CF0A8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text class="mono" x="102" y="78" font-size="17" letter-spacing="2.2" fill="#7DF3C0">AWESOME · CC0 · 66 TOOLS</text>
+
+  <!-- headline -->
+  <text class="cjk h1" x="78" y="204">更省力的</text>
+  <text class="lat h2" x="82" y="292">AI Literature Review</text>
+  <text class="cjk h1" x="78" y="396">文献综述大全</text>
+  <rect x="82" y="426" width="190" height="6" rx="3" fill="url(#rule)"/>
+  <text class="cjk" x="82" y="484" font-size="27" font-weight="600" fill="#A9B7DA">检索 <tspan fill="#5CF0A8">→</tspan> 阅读 <tspan fill="#5CF0A8">→</tspan> 抽取 <tspan fill="#5CF0A8">→</tspan> 综述 <tspan fill="#5CF0A8">→</tspan> 引用核查</text>
+
+  <!-- pills -->
+  <rect x="80"  y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="160" y="559" text-anchor="middle">检索文献</text>
+  <rect x="256" y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="336" y="559" text-anchor="middle">精读抽取</text>
+  <rect x="432" y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="512" y="559" text-anchor="middle">自动综述</text>
+  <rect x="608" y="520" width="160" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text class="cjk pill" x="688" y="559" text-anchor="middle">引用核查</text>
+
+  <!-- right stat block -->
+  <g opacity="0.32">
+    <g stroke="#5CF0A8" stroke-width="2" stroke-opacity="0.55">
+      <path d="M960 168 1054 128M960 168 1072 218M1054 128 1146 176M1072 218 1146 176M960 168 990 250"/>
+    </g>
+    <g fill="#0A1122" stroke="#5CF0A8" stroke-width="2.5">
+      <circle cx="960" cy="168" r="12" fill="#5CF0A8"/>
+      <circle cx="1054" cy="128" r="8"/><circle cx="1072" cy="218" r="9"/>
+      <circle cx="1146" cy="176" r="7"/><circle cx="990" cy="250" r="6"/>
+    </g>
   </g>
 
-  <!-- decorative citation graph, upper right -->
-  <g stroke="url(#accent)" stroke-width="2.5" opacity="0.5" filter="url(#glow)">
-    <line x1="1000" y1="180" x2="1110" y2="120"/>
-    <line x1="1000" y1="180" x2="1150" y2="230"/>
-    <line x1="1000" y1="180" x2="980"  y2="320"/>
-    <line x1="1110" y1="120" x2="1200" y2="190"/>
-    <line x1="1150" y1="230" x2="1200" y2="190"/>
-    <line x1="1150" y1="230" x2="980"  y2="320"/>
-  </g>
-  <g fill="#0B1020" stroke="url(#accent)" stroke-width="3">
-    <circle cx="1000" cy="180" r="20" fill="url(#accent)"/>
-    <circle cx="1110" cy="120" r="13"/>
-    <circle cx="1150" cy="230" r="16"/>
-    <circle cx="980"  cy="320" r="12"/>
-    <circle cx="1200" cy="190" r="11"/>
-  </g>
+  <text class="lat" x="1052" y="404" text-anchor="middle" font-size="150" font-weight="800" fill="url(#mint)">66</text>
+  <text class="cjk" x="1052" y="450" text-anchor="middle" font-size="30" font-weight="700" fill="#EAF0FF">个开源工具</text>
+  <text class="cjk" x="1052" y="492" text-anchor="middle" font-size="21" font-weight="500" fill="#7E8CB0">11 大场景 · 每季度更新</text>
 
-  <!-- badge pill -->
-  <rect x="96" y="150" width="330" height="44" rx="22" fill="url(#pill)" stroke="#7C93FF" stroke-opacity="0.4"/>
-  <text x="120" y="179" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" fill="#9FB0FF" letter-spacing="1.5">AWESOME · CC0 · 70+ TOOLS</text>
-
-  <!-- title -->
-  <text x="94" y="300" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="82" font-weight="800" fill="#F4F7FF">AI Literature Review</text>
-  <text x="94" y="392" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="82" font-weight="800" fill="url(#accent)">Agents &amp; Tools</text>
-
-  <!-- subtitle -->
-  <text x="98" y="452" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#AEB8D6">search → read → extract → synthesize → verify citations</text>
-  <text x="98" y="494" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#6B7699">The strongest curated map of open-source AI tools for literature review</text>
-  <text x="98" y="524" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#6B7699">面向智能体文献综述的最强工具大全</text>
-
-  <!-- footer handle -->
-  <text x="96" y="592" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#5EE6C9" opacity="0.8">github.com/brycewang-stanford/lit-review-agent-tools</text>
+  <!-- handle -->
+  <g transform="translate(742,594) scale(1.4)" fill="#6E7CA0"><use xlink:href="#glyphGithub" href="#glyphGithub"/></g>
+  <text class="lat" x="1200" y="612" text-anchor="end" font-size="20" font-weight="600" fill="#6E7CA0">brycewang-stanford / lit-review-agent-tools</text>
 </svg>

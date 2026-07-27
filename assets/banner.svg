@@ -1,60 +1,180 @@
-<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Awesome AI Literature Review Agents and Tools">
+<svg width="1600" height="820" viewBox="0 0 1600 820" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Awesome AI Literature Review Agents and Tools - 更省力的 AI 文献综述大全">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0B1020"/>
-      <stop offset="0.55" stop-color="#141B33"/>
-      <stop offset="1" stop-color="#1B2247"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#070C1A"/>
+      <stop offset="0.55" stop-color="#0A1122"/>
+      <stop offset="1" stop-color="#0D1630"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7C93FF"/>
-      <stop offset="1" stop-color="#5EE6C9"/>
+    <radialGradient id="glowGreen" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3AE" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#22D3AE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6C8CFF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#6C8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5CF0A8"/>
+      <stop offset="0.55" stop-color="#2FE0C0"/>
+      <stop offset="1" stop-color="#4CC9F0"/>
     </linearGradient>
-    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7C93FF" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#5EE6C9" stop-opacity="0.18"/>
+    <linearGradient id="pillGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39E39B"/>
+      <stop offset="1" stop-color="#20C9A4"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="10" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="iconA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C6BFF"/><stop offset="1" stop-color="#4C7BFF"/>
+    </linearGradient>
+    <linearGradient id="iconB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8A3D"/><stop offset="1" stop-color="#FF4D6D"/>
+    </linearGradient>
+    <linearGradient id="iconC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2FE0C0"/><stop offset="1" stop-color="#12A5D6"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39E39B" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#39E39B" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#9FB6FF" fill-opacity="0.10"/>
+    </pattern>
+
+    <clipPath id="halfStar"><rect x="0" y="0" width="12" height="24"/></clipPath>
+
+    <g id="starShape">
+      <path d="M12 1.6 15.09 8.02 22.2 9.05 17.1 14 18.3 21.1 12 17.75 5.7 21.1 6.9 14 1.8 9.05 8.91 8.02 Z"/>
+    </g>
+
+    <!-- glyphs drawn in a 24x24 box -->
+    <g id="glyphCap">
+      <path d="M12 3 23 8.6 12 14.2 1 8.6 Z" fill="#fff"/>
+      <path d="M5.2 10.8v4.9c0 1.7 3.05 3.1 6.8 3.1s6.8-1.4 6.8-3.1v-4.9" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g id="glyphBolt">
+      <path d="M13.6 1.8 3.9 14.4h6.1l-1.5 7.8 9.7-12.9h-6.1z" fill="#fff"/>
+    </g>
+    <g id="glyphDoc">
+      <path d="M6 2.2h7.6L19 7.6v14.2H6z" fill="#fff"/>
+      <path d="M13.2 2.4v5.4h5.4" fill="#0A1122" fill-opacity="0.35"/>
+      <g stroke="#0F1830" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.75">
+        <path d="M8.6 12h8"/><path d="M8.6 15.2h8"/><path d="M8.6 18.4h5"/>
+      </g>
+    </g>
+    <g id="glyphGithub">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </g>
   </defs>
 
-  <rect width="1280" height="360" rx="20" fill="url(#bg)"/>
+  <style>
+    .cjk  { font-family: "PingFang SC","Hiragino Sans GB","Source Han Sans SC","Noto Sans SC","Microsoft YaHei","Heiti SC",sans-serif; }
+    .lat  { font-family: "Helvetica Neue",Helvetica,Arial,"Segoe UI",sans-serif; }
+    .mono { font-family: ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace; }
+    .h1   { font-size: 100px; font-weight: 800; fill: #F3F7FF; letter-spacing: 6px; }
+    .h2   { font-size: 70px;  font-weight: 800; fill: url(#mint); letter-spacing: 1px; }
+    .card { font-size: 30px;  font-weight: 700; fill: #EAF0FF; }
+    .meta { font-size: 21px;  font-weight: 500; fill: #7E8CB0; }
+    .pill { font-size: 28px;  font-weight: 700; fill: #06251C; letter-spacing: 2px; }
+  </style>
 
-  <!-- faint dotted grid -->
-  <g fill="#5EE6C9" opacity="0.06">
-    <circle cx="80"  cy="60"  r="2"/><circle cx="160" cy="60" r="2"/><circle cx="240" cy="60" r="2"/>
-    <circle cx="1120" cy="300" r="2"/><circle cx="1200" cy="300" r="2"/><circle cx="1040" cy="300" r="2"/>
-    <circle cx="1180" cy="70" r="2"/><circle cx="1100" cy="70" r="2"/><circle cx="1020" cy="70" r="2"/>
-    <circle cx="120" cy="300" r="2"/><circle cx="200" cy="300" r="2"/>
+  <!-- ── background ─────────────────────────────────────────── -->
+  <rect width="1600" height="820" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="820" rx="28" fill="url(#dots)"/>
+  <ellipse cx="240" cy="720" rx="620" ry="440" fill="url(#glowGreen)"/>
+  <ellipse cx="1400" cy="120" rx="560" ry="420" fill="url(#glowBlue)"/>
+  <rect x="1" y="1" width="1598" height="818" rx="28" fill="none" stroke="#93A9FF" stroke-opacity="0.12" stroke-width="2"/>
+
+  <!-- faint citation graph, top-right decoration -->
+  <g opacity="0.30">
+    <g stroke="#5CF0A8" stroke-width="2" stroke-opacity="0.55">
+      <path d="M1268 236 1372 190M1268 236 1392 292M1372 190 1470 244M1392 292 1470 244M1268 236 1300 330"/>
+    </g>
+    <g fill="#0A1122" stroke="#5CF0A8" stroke-width="2.5">
+      <circle cx="1268" cy="236" r="13" fill="#5CF0A8"/>
+      <circle cx="1372" cy="190" r="9"/><circle cx="1392" cy="292" r="10"/>
+      <circle cx="1470" cy="244" r="8"/><circle cx="1300" cy="330" r="7"/>
+    </g>
   </g>
 
-  <!-- decorative citation graph on the right -->
-  <g stroke="url(#accent)" stroke-width="2" opacity="0.55" filter="url(#glow)">
-    <line x1="1010" y1="120" x2="1110" y2="80"/>
-    <line x1="1010" y1="120" x2="1120" y2="180"/>
-    <line x1="1010" y1="120" x2="1000" y2="240"/>
-    <line x1="1110" y1="80"  x2="1190" y2="140"/>
-    <line x1="1120" y1="180" x2="1190" y2="140"/>
-    <line x1="1120" y1="180" x2="1000" y2="240"/>
+  <!-- ── top bar ────────────────────────────────────────────── -->
+  <rect x="88" y="52" width="360" height="46" rx="23" fill="#5CF0A8" fill-opacity="0.10" stroke="#5CF0A8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text class="mono" x="112" y="83" font-size="18" letter-spacing="2.4" fill="#7DF3C0">AWESOME · CC0 · 66 TOOLS</text>
+
+  <g transform="translate(1008,61) scale(1.6)" fill="#6E7CA0"><use xlink:href="#glyphGithub" href="#glyphGithub"/></g>
+  <text class="lat" x="1512" y="82" text-anchor="end" font-size="22" font-weight="600" fill="#6E7CA0">brycewang-stanford / lit-review-agent-tools</text>
+
+  <!-- ── headline ───────────────────────────────────────────── -->
+  <text class="cjk h1" x="86" y="222">更省力的</text>
+  <text class="lat h2" x="90" y="326">AI Literature Review</text>
+  <text class="cjk h1" x="86" y="452">文献综述大全</text>
+
+  <rect x="90" y="486" width="220" height="6" rx="3" fill="url(#rule)"/>
+
+  <text class="cjk" x="90" y="552" font-size="31" font-weight="600" fill="#A9B7DA">检索 <tspan fill="#5CF0A8">→</tspan> 阅读 <tspan fill="#5CF0A8">→</tspan> 抽取 <tspan fill="#5CF0A8">→</tspan> 综述 <tspan fill="#5CF0A8">→</tspan> 引用核查　全流程打通</text>
+  <text class="lat" x="90" y="592" font-size="21" font-weight="500" fill="#66739A">The strongest curated map of open-source AI tools for literature review</text>
+
+  <!-- ── featured cards ─────────────────────────────────────── -->
+  <g>
+    <!-- card 1 -->
+    <rect x="964" y="388" width="548" height="112" rx="22" fill="#FFFFFF" fill-opacity="0.045" stroke="#93A9FF" stroke-opacity="0.14" stroke-width="1.5"/>
+    <rect x="988" y="406" width="76" height="76" rx="20" fill="url(#iconA)"/>
+    <g transform="translate(1006,424) scale(1.667)"><use xlink:href="#glyphCap" href="#glyphCap"/></g>
+    <text class="lat card" x="1086" y="438">academic-research-skills</text>
+    <g fill="#FFC531">
+      <g transform="translate(1086,455) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1114,455) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1142,455) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1170,455) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1198,455) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+    </g>
+    <text class="cjk meta" x="1240" y="474">39.5k ★ · 综述技能包</text>
+
+    <!-- card 2 -->
+    <rect x="964" y="516" width="548" height="112" rx="22" fill="#FFFFFF" fill-opacity="0.045" stroke="#93A9FF" stroke-opacity="0.14" stroke-width="1.5"/>
+    <rect x="988" y="534" width="76" height="76" rx="20" fill="url(#iconB)"/>
+    <g transform="translate(1006,552) scale(1.667)"><use xlink:href="#glyphBolt" href="#glyphBolt"/></g>
+    <text class="lat card" x="1086" y="566">STORM</text>
+    <g fill="#FFC531">
+      <g transform="translate(1086,583) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1114,583) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1142,583) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1170,583) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      <g transform="translate(1198,583) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+    </g>
+    <text class="cjk meta" x="1240" y="602">30.3k ★ · 自动写长文</text>
+
+    <!-- card 3 -->
+    <rect x="964" y="644" width="548" height="112" rx="22" fill="#FFFFFF" fill-opacity="0.045" stroke="#93A9FF" stroke-opacity="0.14" stroke-width="1.5"/>
+    <rect x="988" y="662" width="76" height="76" rx="20" fill="url(#iconC)"/>
+    <g transform="translate(1006,680) scale(1.667)"><use xlink:href="#glyphDoc" href="#glyphDoc"/></g>
+    <text class="lat card" x="1086" y="694">MinerU</text>
+    <g>
+      <g fill="#FFC531">
+        <g transform="translate(1086,711) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+        <g transform="translate(1114,711) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+        <g transform="translate(1142,711) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+        <g transform="translate(1170,711) scale(1.05)"><use xlink:href="#starShape" href="#starShape"/></g>
+      </g>
+      <g transform="translate(1198,711) scale(1.05)">
+        <g fill="#3A4460"><use xlink:href="#starShape" href="#starShape"/></g>
+        <g clip-path="url(#halfStar)" fill="#FFC531"><use xlink:href="#starShape" href="#starShape"/></g>
+      </g>
+    </g>
+    <text class="cjk meta" x="1240" y="730">75.7k ★ · PDF 解析</text>
   </g>
-  <g fill="#0B1020" stroke="url(#accent)" stroke-width="2.5">
-    <circle cx="1010" cy="120" r="16" fill="url(#accent)"/>
-    <circle cx="1110" cy="80"  r="11"/>
-    <circle cx="1120" cy="180" r="13"/>
-    <circle cx="1000" cy="240" r="10"/>
-    <circle cx="1190" cy="140" r="9"/>
+
+  <!-- ── bottom pills ───────────────────────────────────────── -->
+  <g>
+    <rect x="88"  y="688" width="184" height="68" rx="34" fill="url(#pillGrad)"/>
+    <text class="cjk pill" x="180"  y="732" text-anchor="middle">检索文献</text>
+
+    <rect x="288" y="688" width="184" height="68" rx="34" fill="url(#pillGrad)"/>
+    <text class="cjk pill" x="380"  y="732" text-anchor="middle">精读抽取</text>
+
+    <rect x="488" y="688" width="184" height="68" rx="34" fill="url(#pillGrad)"/>
+    <text class="cjk pill" x="580"  y="732" text-anchor="middle">自动综述</text>
+
+    <rect x="688" y="688" width="184" height="68" rx="34" fill="url(#pillGrad)"/>
+    <text class="cjk pill" x="780"  y="732" text-anchor="middle">引用核查</text>
   </g>
-
-  <!-- badge pill -->
-  <rect x="72" y="60" width="196" height="34" rx="17" fill="url(#pill)" stroke="#7C93FF" stroke-opacity="0.4"/>
-  <text x="90" y="83" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9FB0FF" letter-spacing="1">AWESOME · CC0 · 70+ TOOLS</text>
-
-  <!-- title -->
-  <text x="72" y="176" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="800" fill="#F4F7FF">AI Literature Review</text>
-  <text x="72" y="240" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="800" fill="url(#accent)">Agents &amp; Tools</text>
-
-  <!-- subtitle -->
-  <text x="74" y="292" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#AEB8D6">search → read → extract → synthesize → verify citations</text>
-  <text x="74" y="322" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#6B7699">The strongest curated map of open-source AI tools for literature review · 面向智能体文献综述的最强工具大全</text>
 </svg>
