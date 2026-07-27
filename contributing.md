@@ -21,7 +21,7 @@
 
 ## 📝 如何添加一个项目
 
-> ⚠️ **不要直接编辑 README.md / README.en.md / AWESOME.md 里的表格和列表。**
+> ⚠️ **不要直接编辑 README.md / README.zh.md / README.en.md 里的表格和列表。**
 > 它们由 [`data/tools.yaml`](data/tools.yaml) 自动生成，手改会被 CI 拦下。
 
 1. Fork 本仓库。
@@ -38,7 +38,7 @@
      desc_awesome: "Same idea, plain English, ending with a period."
    ```
 
-   - `desc_zh` / `desc_en` 渲染进两个 README；`desc_awesome` 渲染进 `AWESOME.md`，
+   - `desc_zh` / `desc_en` 渲染进两份富表格 README；`desc_awesome` 渲染进 `README.md`(awesome.re 收录的那份)，
      需**首字母大写、以句号结尾**（awesome-lint 的硬性要求）。
    - 说明控制在**一句话**，突出「它解决什么问题 / 独特点」，避免复制官方 slogan。
    - 编辑推荐项目加 `editor_pick: true`（渲染成 ⭐，请在 PR 里说明理由）。
@@ -54,7 +54,7 @@
 
 ```bash
 make validate   # 检查 data/ 里的字段、重复项、分类是否合法
-make build      # 重新生成 README.md / README.en.md / AWESOME.md / data/tools.json
+make build      # 重新生成 README.md / README.zh.md / README.en.md / data/tools.json
 make check      # CI 跑的这条：生成结果如果没提交就报错
 make refresh    # 从 GitHub API 刷新 Star / 活跃度 / 许可证，然后重新生成
 make lint       # awesome-lint（需要 Node）
@@ -99,7 +99,7 @@ A project should ideally meet all of these:
 
 ## 📝 How to add a project
 
-> ⚠️ **Don't hand-edit the tables or lists in README.md / README.en.md / AWESOME.md.**
+> ⚠️ **Don't hand-edit the lists in README.md / README.zh.md / README.en.md.**
 > They're generated from [`data/tools.yaml`](data/tools.yaml), and CI rejects manual edits.
 
 1. Fork the repo.
@@ -118,7 +118,7 @@ A project should ideally meet all of these:
    ```
 
    - `desc_zh` / `desc_en` render into the two READMEs; `desc_awesome` renders into
-     `AWESOME.md` and **must start with a capital and end with a period** (awesome-lint).
+     `README.md` (the awesome.re edition) and **must start with a capital and end with a period** (awesome-lint).
    - Keep it to **one line**, emphasizing "what problem it solves / what's unique" —
      don't just copy the official slogan.
    - Editor's picks set `editor_pick: true` (renders as ⭐; explain why in the PR).
@@ -135,7 +135,7 @@ A project should ideally meet all of these:
 
 ```bash
 make validate   # field, duplicate, and category checks over data/
-make build      # regenerate README.md / README.en.md / AWESOME.md / data/tools.json
+make build      # regenerate README.md / README.zh.md / README.en.md / data/tools.json
 make check      # what CI runs: fails if generated output isn't committed
 make refresh    # pull stars / freshness / licenses from the GitHub API, then rebuild
 make lint       # awesome-lint (needs Node)

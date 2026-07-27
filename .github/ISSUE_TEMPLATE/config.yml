@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: 📖 Contributing Guide / 贡献指南
-    url: https://github.com/brycewang-stanford/lit-review-agent-tools/blob/main/CONTRIBUTING.md
+    url: https://github.com/brycewang-stanford/lit-review-agent-tools/blob/main/contributing.md
     about: Read this before adding a tool. / 添加工具前请先阅读。

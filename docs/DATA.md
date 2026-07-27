@@ -12,7 +12,7 @@ This list is generated from data, and that data is published for you to reuse.
   so it is one file with no runtime fetch and works opened straight off disk.
 
 Everything else — the tables in `README.md` and `README.en.md`, the bullets in
-`AWESOME.md` — is rendered from these files by [`scripts/build.py`](../scripts/build.py).
+`README.zh.md` — is rendered from these files by [`scripts/build.py`](../scripts/build.py).
 CI fails if the rendered files and the data disagree, so the JSON is never stale
 relative to what you read in the README.
 
@@ -60,8 +60,8 @@ curl -sL https://raw.githubusercontent.com/brycewang-stanford/lit-review-agent-t
 | `archived` | bool | Archived by its owner |
 | `license` | string | SPDX id where GitHub detects one. `none` = no license file at all, i.e. all rights reserved. `custom` = bespoke terms, read them. Values GitHub reports as `NOASSERTION` are hand-verified from the repo's LICENSE file and are never overwritten by the refresher |
 | `language` | string | Primary language per GitHub |
-| `description_en` | string | Falls back to the AWESOME.md description for entries not in the READMEs |
-| `description_zh` | string \| null | Absent for entries that only appear in `AWESOME.md` |
+| `description_en` | string | Falls back to the awesome-list description for entries not in the READMEs |
+| `description_zh` | string \| null | Absent for entries that only appear in the awesome list |
 
 Star counts and freshness are weekly snapshots, not live values. `status` is
 computed at refresh time rather than at render time, so the generated files stay
@@ -70,7 +70,7 @@ link back is appreciated.
 
 ## Editing the data
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md). In short: edit `data/tools.yaml`,
+See [contributing.md](../contributing.md). In short: edit `data/tools.yaml`,
 run `make build`, commit the result.
 
 ## Fields in `tools.yaml` not exported to JSON

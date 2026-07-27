@@ -35,10 +35,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      # AWESOME.md is the awesome.re-compliant bullet edition and must pass
-      # cleanly. The main README.md uses a richer table layout by design.
-      - name: Run awesome-lint on AWESOME.md
-        run: npx awesome-lint AWESOME.md
+      # README.md IS the awesome list: awesome.re links to `#readme`, so their
+      # lint runs against the repo readme. The rich bilingual tables live in
+      # README.zh.md / README.en.md, which are not linted.
+      - name: Run awesome-lint on README.md
+        run: npx awesome-lint README.md
 
   link-check:
     name: markdown link check
@@ -51,4 +52,4 @@ jobs:
           use-quiet-mode: "yes"
           use-verbose-mode: "yes"
           config-file: ".github/mlc-config.json"
-          file-path: "./README.md, ./README.en.md"
+          file-path: "./README.md, ./README.zh.md, ./README.en.md, ./STAGES.md, ./PICKS.md, ./recipes/README.md"

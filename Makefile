@@ -5,7 +5,7 @@ help:
 	@echo "make check     Fail if generated files are out of date (what CI runs)"
 	@echo "make validate  Check data/tools.yaml and data/categories.yaml for errors"
 	@echo "make refresh   Pull stars/freshness/license from the GitHub API, then rebuild"
-	@echo "make lint      Run awesome-lint on AWESOME.md (needs Node)"
+	@echo "make lint      Run awesome-lint on README.md (needs Node)"
 
 build: validate
 	@python3 scripts/build.py
@@ -21,4 +21,4 @@ refresh:
 	@python3 scripts/build.py
 
 lint:
-	@npx --yes awesome-lint AWESOME.md
+	@npx --yes awesome-lint README.md

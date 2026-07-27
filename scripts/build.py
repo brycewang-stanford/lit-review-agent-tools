@@ -10,9 +10,9 @@ Generated content is written between HTML-comment markers:
 Everything outside those markers is hand-written prose and is never touched.
 
 Surfaces:
-  README.md      zh tables          regions: badge, tagline, toc, categories
-  README.en.md   en tables          regions: badge, tagline, toc, categories
-  AWESOME.md     awesome-lint bullets   regions: toc, categories
+  README.md      awesome-lint bullets — what awesome.re sees   regions: toc, categories
+  README.zh.md   zh rich tables     regions: badge, tagline, toc, categories
+  README.en.md   en rich tables     regions: badge, tagline, toc, categories
   data/tools.json  machine-readable dataset (whole file is generated)
 
 Usage:
@@ -550,7 +550,7 @@ def build() -> dict[Path, str]:
 
     for path, lang, badge, tagline in (
         (
-            ROOT / "README.md",
+            ROOT / "README.zh.md",
             "zh",
             f"![Tools](https://img.shields.io/badge/tools-{n_tools}-blue)",
             f"<em>收录 <b>{n_tools}</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>",
@@ -572,7 +572,10 @@ def build() -> dict[Path, str]:
         )
         out[path] = text
 
-    aw_path = ROOT / "AWESOME.md"
+    # README.md IS the awesome list: awesome.re links to `#readme`, so their lint
+    # runs against the repo readme, not a side file. The rich bilingual tables
+    # live in README.zh.md / README.en.md and on the site.
+    aw_path = ROOT / "README.md"
     aw = aw_path.read_text(encoding="utf-8")
     aw = splice(aw, "toc", render_awesome_toc(cats, awesome_grouped), aw_path)
     aw = splice(aw, "categories", render_awesome_categories(cats, awesome_grouped), aw_path)

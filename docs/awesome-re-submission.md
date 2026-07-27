@@ -1,106 +1,111 @@
-# 提交到 awesome.re 主目录 · Submission kit
+# 提交到 awesome.re · Submission kit
 
-[awesome.re](https://awesome.re)（即 `sindresorhus/awesome`）是所有 Awesome 清单的总目录，被它收录会带来长期、持续的流量。本文件是一份**即用型提交包** + **诚实的准备度评估**。
+[awesome.re](https://awesome.re)（即 `sindresorhus/awesome`）是所有 Awesome 清单的总目录。
+本文件是**即用型提交包**：所有能提前做的都已经做完，剩下的只有等时间。
 
----
-
-## ✅ 提交前必须满足的硬性要求（awesome.re 官方）
-
-sindresorhus/awesome 的 [contributing 要求](https://github.com/sindresorhus/awesome/blob/main/contributing.md) 很严格，逐条核对：
-
-| 要求 | 我们现状 | 待办 |
-|---|---|---|
-| 清单**已存在一段时间**、非「几天前刚建」 | ❌ 仓库刚建 | ⏳ **等待**：先运营几周、积累一定 Star 与 PR 记录再提交，否则大概率被拒 |
-| 通过 `npx awesome-lint` **零报错** | ✅ 已提供 [`AWESOME.md`](../AWESOME.md) bullet 版，**本地 + CI 均零报错** | 提交时把 URL 指向 `#awesomemd` 或直接用主仓库即可 |
-| 有 `awesome` badge 且指向 awesome.re | ✅ 已有 | — |
-| 有目录（TOC） | ✅ 已有 | — |
-| 有 `contributing.md`（小写文件名，awesome-lint 要求） | ⚠️ 现为 `CONTRIBUTING.md` | 需确认大小写是否被接受，或加软链 |
-| 有 `license` / `LICENSE` | ✅ CC0 | — |
-| 条目格式 `- [Name](link) - Description.`，描述以句号结尾 | ❌ 现用表格 | 需要一个符合规范的分支 |
-| 仓库有清晰的描述与 topics | ✅ 已配置 | — |
-| 不是「作者自己项目」的合集 | ✅ 收录的是他人项目 | — |
-
-> 结论：**建议先别急着提交。** awesome.re 明确不接受「太新」的清单。合理节奏是：先做中文推广（见 `promo-zhihu.md`）攒起第一波 Star，运营 3–4 周后，再走下面的提交流程。
+> **状态（2026-07-27）**：技术要求已全部满足。**唯一未满足的是 30 天龄期**。
+> 仓库创建于 **2026-07-25**，官方要求「至少存在 30 天」，因此**最早可提交日期是 2026-08-24**。
 
 ---
 
-## 🔧 关于 awesome-lint 合规（重要设计权衡）
+## 逐条核对官方要求
 
-`awesome-lint` 要求条目是**纯 bullet list**：
+来源：[pull_request_template.md](https://github.com/sindresorhus/awesome/blob/main/pull_request_template.md) 与 [create-list.md](https://github.com/sindresorhus/awesome/blob/main/create-list.md)。
 
-```markdown
-- [gpt-researcher](https://github.com/assafelovic/gpt-researcher) - Autonomous agent that produces cited reports.
-```
+| 要求 | 状态 |
+|---|---|
+| **清单已存在至少 30 天** | ⏳ **唯一阻塞项**。创建于 2026-07-25，最早可提交 **2026-08-24** |
+| `npx awesome-lint` 对**仓库 README** 零报错 | ✅ README.md 现在就是合规 bullet 清单，CI 每次 push 都验 |
+| 条目格式 `- [Title](URL#readme) - Description.` | ✅ 见下方文案 |
+| 主标题 title case `# Awesome Name of List` | ✅ `# Awesome AI Literature Review` |
+| `Contents` 章节（不叫 "Table of Contents"） | ✅ |
+| Awesome badge 指向 awesome.re | ✅ |
+| 默认分支 `main` | ✅ |
+| GitHub topics 含 `awesome` 与 `awesome-list` | ✅ 共 15 个 topic |
+| CC0 / 知识共享许可（非代码许可） | ✅ CC0-1.0 |
+| `contributing.md`（**小写文件名**） | ✅ 已从 `CONTRIBUTING.md` 改名 |
+| 仓库有清晰描述与 topics | ✅ |
+| 不是「作者自己项目」的合集 | ✅ 收录的全是他人项目 |
+| 仓库名 `awesome-*` 小写 slug | ⚠️ 现为 `lit-review-agent-tools`。**已决定暂不改名**——改名会让已发布的推广链接与 Pages 网址失效。GitHub 上存在不少已收录但不遵守此命名的清单，可以先试；若被要求改名，届时再改 |
 
-而我们当前的 README 用的是**表格 + Star 列 + emoji 分区**，对人类读者更友好、更「网红」，但**不符合 awesome-lint**。
+## 为满足要求所做的结构调整（2026-07-27）
 
-两条路，二选一：
+awesome.re 的条目指向 `URL#readme`，也就是说**他们的 lint 查的是仓库 README 本身**，
+旁边放一份合规文件是没用的。因此：
 
-- **路线 A（推荐，保持现状）**：主 README 保留漂亮的表格版给人看；**另建一个 `awesome.re` 专用的精简 bullet 分支**（例如 `awesome-lint` 分支或一个 `AWESOME.md`）专门用于通过 lint 与提交。鱼与熊掌兼得。
-- **路线 B**：把主 README 改成纯 bullet list 以通过 lint —— 会损失当前的视觉冲击力，不推荐。
+| 文件 | 现在是什么 |
+|---|---|
+| `README.md` | **合规英文 bullet 清单**（awesome.re 看的就是它） |
+| `README.zh.md` | 中文富表格版（原 `README.md`） |
+| `README.en.md` | 英文富表格版 |
+| ~~`AWESOME.md`~~ | 已删除，其内容成为 `README.md` |
+| `CONTRIBUTING.md` → `contributing.md` | 小写，符合要求 |
 
-如果决定走路线 A，告诉我，我可以生成一份通过 `awesome-lint` 的 `AWESOME.md` bullet 版本（内容与主表格同步）。
+三份文件全部由 `data/tools.yaml` 生成，不存在同步问题。
 
 ---
 
-## 📦 即用型提交材料
+## 提交文案（直接复制）
 
-### 1) 要加到 sindresorhus/awesome 的条目行
+**PR 标题**（注意：不带 "Awesome" 一词，动词大写）：
 
-放到 `readme.md` 的 **Miscellaneous** 或 **Learn / Research** 相关分区（提交时按当时目录结构选最贴切的）：
+```
+Add AI Literature Review
+```
+
+**要加进 `sindresorhus/awesome` 的 `readme.md` 的那一行**：
 
 ```markdown
-- [AI Literature Review Agents & Tools](https://github.com/brycewang-stanford/lit-review-agent-tools#readme) - Open-source AI agents, skills, MCP servers, and frameworks for literature review.
+- [AI Literature Review](https://github.com/brycewang-stanford/lit-review-agent-tools#readme) - Open-source agents and tools that search, screen, extract, and synthesize scholarly literature.
 ```
 
-### 2) PR 标题
+**放哪个区**：`## Miscellaneous`，紧邻已有的 `Scientific Writing` 条目附近；
+提交前请对照该区当前的排列顺序插入。
 
-```
-Add AI Literature Review Agents & Tools
-```
+> 描述写的是**主题本身**而不是「这个清单如何如何」，首字母大写、句号结尾、无营销词
+> —— 这三点是他们明确要求的。
 
-### 3) PR 正文（按 awesome.re 模板）
+---
 
-```markdown
-**https://github.com/brycewang-stanford/lit-review-agent-tools**
-
-Added AI Literature Review Agents & Tools to the [Miscellaneous] section.
-
-By submitting this pull request I promise my submission adheres to the guidelines:
-
-- [x] I read and followed the instructions.
-- [x] This pull request has a title in the format `Add Name of List`.
-- [x] The entry is added at the bottom of the appropriate category.
-- [x] The list I am adding has been around for a while and is not brand new.
-- [x] The list has an `awesome` badge at the top.
-- [x] The list passes `npx awesome-lint` with no errors.
-- [x] The list has a Table of Contents, a license, and a contribution guide.
-- [x] The description is short, clear, and starts with a capital letter and ends with a period.
-```
-
-### 4) 提交流程（gh CLI）
+## 到日子之后的操作步骤
 
 ```bash
-# 1. Fork 官方仓库
+# 0. 先确认自己仓库仍然干净
+npx awesome-lint README.md          # 必须零报错
+make check                          # 生成物必须已提交
+
+# 1. fork 并克隆主目录仓库
 gh repo fork sindresorhus/awesome --clone --remote
+cd awesome
 
-# 2. 新建分支，编辑 readme.md 加入上面的条目行
-cd awesome && git checkout -b add-lit-review-agent-tools
-#   ... 手动编辑 readme.md ...
+# 2. 开分支
+git checkout -b add-ai-literature-review
 
-# 3. 提交并推送
-git add readme.md
-git commit -m "Add AI Literature Review Agents & Tools"
-git push -u origin add-lit-review-agent-tools
+# 3. 手动把上面那一行插进 readme.md 的 Miscellaneous 区
+#    （对照周围条目的顺序，不要破坏缩进）
 
-# 4. 开 PR（把上面的 PR 正文粘进去）
-gh pr create --repo sindresorhus/awesome --title "Add AI Literature Review Agents & Tools" --body-file -
+# 4. 本地自检
+npx awesome-lint          # 主目录仓库自己也要过 lint
+
+# 5. 提交
+git commit -am "Add AI Literature Review"
+git push -u origin add-ai-literature-review
+gh pr create --repo sindresorhus/awesome \
+  --title "Add AI Literature Review" \
+  --body-file ../lit-review-agent-tools/docs/awesome-re-pr-body.md
 ```
+
+提交后请逐条勾选他们 PR 模板里的清单——维护者会严格按模板审。
 
 ---
 
-## ⏭️ 建议时间线
+## 为什么不是现在就提交
 
-1. **现在**：发中文推广稿（`promo-zhihu.md`）→ 攒第一波 Star + PR。
-2. **2–4 周后**：Star 上百、有几个外部 PR 后，生成 `AWESOME.md` bullet 版通过 `awesome-lint`。
-3. **然后**：按上面的流程提交到 awesome.re。
+他们的规则原文是 **"Has been around for at least 30 days."**，从首次真实提交或开源之日算起。
+本仓库距今 **2 天**。现在提交的唯一结果是被 close，而重复提交比等待更伤。
+
+这段时间可以做的事：
+1. 中文推广已发布，观察 Star 与 issue/PR 的自然增长。
+2. 让每周的元数据刷新 workflow 正常跑几轮，积累真实的提交历史。
+3. 补 1–2 条 `recipes/`（尤其是需要 LLM key 的那几个，我们跑不了）。
+4. 到 **2026-08-24** 之后，按上面的步骤走。

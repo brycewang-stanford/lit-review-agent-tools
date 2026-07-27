@@ -107,7 +107,7 @@ def main() -> int:
             if "awesome" in surfaces:
                 d = t.get("desc_awesome")
                 if not d:
-                    err(f"{where}: rendered in AWESOME.md but missing 'desc_awesome'")
+                    err(f"{where}: rendered in the awesome list but missing 'desc_awesome'")
                 else:
                     if not d.endswith("."):
                         err(f"{where}: 'desc_awesome' must end with a period (awesome-lint)")
@@ -122,7 +122,7 @@ def main() -> int:
         stars = t.get("stars")
         if stars is None:
             # Only the README tables render a Stars column, so a label is only
-            # needed there; AWESOME.md entries may legitimately carry no count.
+            # needed there; awesome-list-only entries may legitimately carry no count.
             if not t.get("stars_label"):
                 if "readme" in surfaces:
                     err(f"{where}: 'stars' is null so a 'stars_label' {{zh, en}} is required")

@@ -68,7 +68,7 @@ not have. They are deliberately **not** written up:
 
 If you have run any of these, a recipe following the same format — commands,
 real output, runtime, and where it breaks — is the most valuable contribution
-you can make to this repo. See [CONTRIBUTING.md](../CONTRIBUTING.md).
+you can make to this repo. See [contributing.md](../contributing.md).
 
 ## Environment these were run in
 

@@ -9,7 +9,7 @@
 _Let AI agents handle the whole loop: search → read → extract → synthesize → verify citations_
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](contributing.md)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
@@ -17,7 +17,7 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 ![Tools](https://img.shields.io/badge/tools-66-blue)
 <!-- END GENERATED:badge -->
 
-[简体中文](README.md) · **English** · **[🔍 Searchable site](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
+[简体中文](README.zh.md) · **English** · **[🔍 Searchable site](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
 <em><b>66</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
@@ -313,7 +313,7 @@ I want to chat with my library inside Zotero ───────────�
 
 ## 🤝 Contributing
 
-Missing a great project? Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md):
+Missing a great project? Contributions welcome — see [CONTRIBUTING.md](contributing.md):
 
 1. Fork → add a row under the right category
 2. Keep the format consistent: `[name](link) | Stars | one-line description`
