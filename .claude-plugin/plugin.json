@@ -1,0 +1,22 @@
+{
+  "name": "lit-review-agent-tools",
+  "version": "0.1.0",
+  "description": "Recommend AND run open-source AI literature-review tools — a curated 70+ catalog plus a launcher that installs & runs MinerU, PaperQA2, ASReview, GPT Researcher, STORM, and arXiv/Zotero MCP servers.",
+  "author": {
+    "name": "Bryce Wang",
+    "url": "https://github.com/brycewang-stanford"
+  },
+  "homepage": "https://github.com/brycewang-stanford/lit-review-agent-tools",
+  "repository": "https://github.com/brycewang-stanford/lit-review-agent-tools",
+  "license": "CC0-1.0",
+  "keywords": [
+    "literature-review",
+    "research",
+    "academic",
+    "pdf-extraction",
+    "rag",
+    "systematic-review",
+    "mcp",
+    "deep-research"
+  ]
+}

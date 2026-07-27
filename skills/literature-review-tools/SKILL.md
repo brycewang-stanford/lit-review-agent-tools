@@ -53,7 +53,16 @@ Runnable ids by kind:
 
 For **`gpt-researcher`** and **`storm`**, `litrun.py ui <id>` clones the repo and launches the full web UI (GPT Researcher → FastAPI at :8000; STORM → Streamlit at :8501). These are long-running servers — launch them with a background Bash call and tell the user the URL. gpt-researcher's UI needs `OPENAI_API_KEY` + `TAVILY_API_KEY` set first (litrun writes them into the repo's `.env`); STORM takes its keys in the app sidebar.
 
-Guardrails: installs and downloads happen under the user's home and hit the network — for a heavy first install (marker/docling pull in PyTorch) say so before running. Never fabricate API keys. If a `run` fails, show the real error rather than claiming success.
+### Chained pipelines
+
+For multi-tool tasks, prefer a named workflow over hand-wiring steps: `litrun.py workflow list` then `litrun.py workflow run <id> --input <path> [--question "..."]`. Built-ins:
+- `pdf-to-markdown` — a PDF/folder → clean Markdown (MinerU)
+- `pdf-corpus-qa` — a folder of PDFs → citation-backed answer (PaperQA2)
+- `pdf-md-then-qa` — convert to Markdown **and** answer a question over the corpus
+
+Add `--dry-run` first to show the exact resolved step commands without executing — good for confirming paths with the user before a heavy run. Workflows fail fast if a required API key is missing.
+
+Guardrails: installs and downloads happen under the user's home and hit the network — for a heavy first install (marker/docling pull in PyTorch) say so before running. Never fabricate API keys. If a `run` fails, show the real error rather than claiming success. Paths in this file (`scripts/…`, `recipes/…`) are relative to this skill's directory.
 
 ## Recommend mode — how to route
 

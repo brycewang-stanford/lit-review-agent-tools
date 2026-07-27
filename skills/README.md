@@ -32,6 +32,11 @@ scripts/litrun.py run mineru -- -p paper.pdf -o ./out -b pipeline
 scripts/litrun.py run paper-qa -- ask "What methods does this corpus use?"
 scripts/litrun.py mcp arxiv-mcp-server # prints MCP config to register in Claude/Cursor
 scripts/litrun.py ui gpt-researcher    # clone & launch the full web UI (:8000)
+
+# chained pipelines
+scripts/litrun.py workflow list
+scripts/litrun.py workflow run pdf-md-then-qa --input ./papers \
+  --question "What datasets are used?" --dry-run   # preview, then drop --dry-run
 ```
 
 Runnable tools today: **MinerU · marker · docling** (PDF→Markdown), **PaperQA2**
@@ -42,7 +47,16 @@ recipes are easy to add to `recipes.json`.
 
 ## Install
 
-**Claude Code** (personal skills live in `~/.claude/skills/`):
+**As a plugin (recommended)** — the repo doubles as a Claude Code plugin marketplace:
+
+```text
+/plugin marketplace add brycewang-stanford/lit-review-agent-tools
+/plugin install lit-review-agent-tools@lit-review-marketplace
+```
+
+That pulls in the skill *and* the launcher scripts in one step.
+
+**Copy the skill folder** (Claude Code personal skills live in `~/.claude/skills/`):
 
 ```bash
 git clone https://github.com/brycewang-stanford/lit-review-agent-tools

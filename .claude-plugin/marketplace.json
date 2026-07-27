@@ -1,0 +1,21 @@
+{
+  "name": "lit-review-marketplace",
+  "owner": {
+    "name": "Bryce Wang",
+    "url": "https://github.com/brycewang-stanford"
+  },
+  "metadata": {
+    "description": "Marketplace hosting the lit-review-agent-tools plugin.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "lit-review-agent-tools",
+      "source": "./",
+      "description": "Select & run open-source AI literature-review tools: a curated 70+ catalog plus a launcher (scripts/litrun.py) that installs and runs the top tools and pipelines.",
+      "version": "0.1.0",
+      "category": "research",
+      "keywords": ["literature-review", "research", "academic", "mcp", "rag"]
+    }
+  ]
+}

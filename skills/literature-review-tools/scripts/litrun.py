@@ -14,6 +14,8 @@ Usage:
   litrun.py run <id> [-- <tool args...>]
   litrun.py mcp <id> [--storage PATH] [--client claude|cursor]
   litrun.py ui <id>                       # clone & launch a web UI (gpt-researcher, storm)
+  litrun.py workflow list
+  litrun.py workflow run <id> --input PATH [--question "..."] [--dry-run]
 
 Design notes for the calling agent:
   - python-cli tools (mineru, marker, docling, paper-qa, asreview): install then
@@ -36,6 +38,7 @@ ENVS = BASE / "envs"
 WORKSPACE = BASE / "workspace"
 ENV_FILE = BASE / ".env"
 RECIPES = Path(__file__).resolve().parent.parent / "recipes" / "recipes.json"
+WORKFLOWS = Path(__file__).resolve().parent.parent / "recipes" / "workflows.json"
 
 
 def die(msg, code=1):
@@ -48,6 +51,13 @@ def load_recipes():
         die(f"recipes.json not found at {RECIPES}")
     data = json.loads(RECIPES.read_text())
     return {t["id"]: t for t in data["tools"]}
+
+
+def load_workflows():
+    if not WORKFLOWS.exists():
+        die(f"workflows.json not found at {WORKFLOWS}")
+    data = json.loads(WORKFLOWS.read_text())
+    return {w["id"]: w for w in data["workflows"]}
 
 
 def get_tool(tools, tid):
@@ -124,10 +134,30 @@ def pip_install(tid, packages):
     run_cmd(cmd)
 
 
-def run_cmd(cmd, env=None, check=True):
+def run_cmd(cmd, env=None, check=True, cwd=None):
     printable = " ".join(str(c) for c in cmd)
-    print(f"$ {printable}", file=sys.stderr)
-    return subprocess.run(cmd, env=env, check=check)
+    loc = f"(cd {cwd}) " if cwd else ""
+    print(f"$ {loc}{printable}", file=sys.stderr)
+    return subprocess.run(cmd, env=env, check=check, cwd=cwd)
+
+
+def exec_cli(t, tool_args, env, cwd=None, dry=False):
+    """Run a python-cli tool's entrypoint with args. Shared by run & workflow."""
+    if t["kind"] != "python-cli":
+        die(f"'{t['id']}' is {t['kind']}, not python-cli — can't exec it directly.")
+    entry = venv_bin(t["id"], t["entry"])
+    cmd = [str(entry), *tool_args]
+    if dry:
+        loc = f"(cd {cwd}) " if cwd else ""
+        print(f"DRY  $ {loc}{t['entry']} {' '.join(tool_args)}")
+        return
+    if not entry.exists():
+        if t.get("pip"):
+            print(f"{t['id']} not installed — installing first.")
+            pip_install(t["id"], t["pip"])
+        else:
+            die(f"entry '{t['entry']}' not found; try: litrun.py install {t['id']}")
+    run_cmd(cmd, env=env, check=False, cwd=cwd)
 
 
 # ---------------------------------------------------------------- commands
@@ -258,10 +288,7 @@ def cmd_run(tools, args):
         pip_install(t["id"], t["pip"])
 
     if t["kind"] == "python-cli":
-        entry = venv_bin(t["id"], t["entry"])
-        if not entry.exists():
-            die(f"entry '{t['entry']}' not found in venv. Try: litrun.py install {t['id']}")
-        run_cmd([str(entry), *args.rest], env=env, check=False)
+        exec_cli(t, args.rest, env)
     elif t["kind"] == "python-lib":
         print(f"{t['name']} is a library, not a CLI. Running its example snippet:\n  {t.get('example','')}\n")
         # Execute the example via the tool's own venv python.
@@ -279,6 +306,86 @@ def cmd_run(tools, args):
         print(f"Register it with:  litrun.py mcp {t['id']}")
     else:
         die(f"don't know how to run kind '{t['kind']}'")
+
+
+def cmd_workflow(tools, args):
+    wfs = load_workflows()
+    if args.wf_cmd == "list":
+        for w in wfs.values():
+            print(f"# {w['id']} — {w['name']}")
+            print(f"    {w['description']}")
+            print(f"    params: {', '.join(w['params'])}")
+            chain = " → ".join(s["tool"] for s in w["steps"])
+            print(f"    steps:  {chain}\n")
+        print("Run:  litrun.py workflow run <id> --input <path> [--question \"...\"] [--dry-run]")
+        return
+
+    if not args.id:
+        die("usage: litrun.py workflow run <id> [--input ...] [--question ...]")
+    if args.id not in wfs:
+        die(f"unknown workflow '{args.id}'. Run `litrun.py workflow list`.")
+    w = wfs[args.id]
+
+    # Collect params from flags.
+    params = {}
+    if args.input:
+        params["input"] = args.input
+    if args.question:
+        params["question"] = args.question
+    for pair in (args.param or []):
+        if "=" not in pair:
+            die(f"--param expects KEY=VALUE, got '{pair}'")
+        k, v = pair.split("=", 1)
+        params[k] = v
+    workdir = WORKSPACE / "runs" / w["id"]
+    params["workdir"] = str(workdir)
+
+    missing = [p for p in w["params"] if p not in params]
+    if missing:
+        if args.dry_run:
+            for p in missing:
+                params[p] = f"<{p}>"
+        else:
+            die(f"workflow '{w['id']}' needs params: {', '.join(missing)}. "
+                f"Provide with --input / --question / --param KEY=VALUE.")
+
+    def sub(s):
+        for k, v in params.items():
+            s = s.replace("{" + k + "}", v)
+        return s
+
+    # Validate every step tool exists and is python-cli; gather required env.
+    step_tools = []
+    needed_env = set()
+    for step in w["steps"]:
+        t = get_tool(tools, step["tool"])
+        if t["kind"] != "python-cli":
+            die(f"workflow step tool '{t['id']}' is {t['kind']}; workflows only chain python-cli tools.")
+        step_tools.append(t)
+        needed_env.update(t.get("env", []))
+
+    if not args.dry_run:
+        env = merged_env()
+        env_missing = [k for k in sorted(needed_env) if not env.get(k)]
+        if env_missing:
+            die(f"missing API keys for this workflow: {', '.join(env_missing)}. "
+                f"Set with `litrun.py env --set {env_missing[0]}=...`")
+        workdir.mkdir(parents=True, exist_ok=True)
+    else:
+        env = merged_env()
+
+    print(f"{'DRY RUN — ' if args.dry_run else ''}workflow '{w['id']}' ({len(w['steps'])} step(s))")
+    print(f"  workdir: {workdir}\n")
+    for i, (step, t) in enumerate(zip(w["steps"], step_tools), 1):
+        step_args = [sub(a) for a in step.get("args", [])]
+        cwd = sub(step["cwd"]) if step.get("cwd") else None
+        print(f"[step {i}/{len(w['steps'])}] {t['name']}")
+        exec_cli(t, step_args, env, cwd=cwd, dry=args.dry_run)
+        print()
+    if args.dry_run:
+        print("(dry run — nothing executed. Drop --dry-run to run for real.)")
+    else:
+        print(f"✓ workflow '{w['id']}' finished. Outputs: {w.get('outputs', workdir)}")
 
 
 def cmd_ui(tools, args):
@@ -398,6 +505,15 @@ def main():
     p_ui = sub.add_parser("ui", help="clone & launch a tool's web UI (gpt-researcher, storm)")
     p_ui.add_argument("id")
 
+    p_wf = sub.add_parser("workflow", help="run a named multi-step pipeline")
+    p_wf.add_argument("wf_cmd", choices=["list", "run"])
+    p_wf.add_argument("id", nargs="?")
+    p_wf.add_argument("--input")
+    p_wf.add_argument("--question")
+    p_wf.add_argument("--param", action="append", help="extra KEY=VALUE params")
+    p_wf.add_argument("--dry-run", action="store_true", dest="dry_run",
+                      help="print resolved step commands without running")
+
     args = p.parse_args()
     # Strip a leading `--` separator from run's REMAINDER.
     if getattr(args, "rest", None) and args.rest and args.rest[0] == "--":
@@ -407,6 +523,7 @@ def main():
     dispatch = {
         "list": cmd_list, "info": cmd_info, "doctor": cmd_doctor, "env": cmd_env,
         "install": cmd_install, "run": cmd_run, "mcp": cmd_mcp, "ui": cmd_ui,
+        "workflow": cmd_workflow,
     }
     dispatch[args.cmd](tools, args)
 

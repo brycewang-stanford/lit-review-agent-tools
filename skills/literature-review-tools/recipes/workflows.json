@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "description": "Named multi-step pipelines for litrun.py. Each step invokes a python-cli tool from recipes.json with placeholder-substituted args. Placeholders: {input}, {question}, {workdir}. Steps run in order, sharing one {workdir} under ~/.lit-review-tools/workspace/runs/<id>.",
+    "source": "https://github.com/brycewang-stanford/lit-review-agent-tools"
+  },
+  "workflows": [
+    {
+      "id": "pdf-to-markdown",
+      "name": "PDF(s) → clean Markdown",
+      "description": "Convert a PDF file or a folder of PDFs into LLM-ready Markdown with MinerU.",
+      "params": {"input": "path to a PDF file or a folder of PDFs"},
+      "steps": [
+        {"tool": "mineru", "args": ["-p", "{input}", "-o", "{workdir}/markdown", "-b", "pipeline"]}
+      ],
+      "outputs": "Markdown/JSON under {workdir}/markdown"
+    },
+    {
+      "id": "pdf-corpus-qa",
+      "name": "PDF corpus → cited answer",
+      "description": "Ask a question over a folder of PDFs with PaperQA2; every claim comes back with a citation.",
+      "params": {
+        "input": "folder containing the PDFs to search",
+        "question": "the question to answer over the corpus"
+      },
+      "steps": [
+        {"tool": "paper-qa", "cwd": "{input}", "args": ["ask", "{question}"]}
+      ],
+      "outputs": "A citation-backed answer printed to stdout (PaperQA2 caches its index in {input})."
+    },
+    {
+      "id": "pdf-md-then-qa",
+      "name": "PDFs → Markdown + cited answer",
+      "description": "Two-step: convert PDFs to Markdown (MinerU) for a clean artifact, then answer a question over the same corpus with PaperQA2.",
+      "params": {
+        "input": "folder containing the PDFs",
+        "question": "the question to answer over the corpus"
+      },
+      "steps": [
+        {"tool": "mineru", "args": ["-p", "{input}", "-o", "{workdir}/markdown", "-b", "pipeline"]},
+        {"tool": "paper-qa", "cwd": "{input}", "args": ["ask", "{question}"]}
+      ],
+      "outputs": "Markdown under {workdir}/markdown + a citation-backed answer on stdout."
+    }
+  ]
+}
