@@ -5,7 +5,7 @@
 > 单一数据源（`data/tools.yaml`）→ 自动渲染所有 Markdown → 自动抓取活跃度/许可证信号 → 可搜索站点 / Skill / MCP。
 > 加工具从「改 4 个文件」变成「加 1 段 YAML」，清单从「读一次」变成「每周回来看」。
 
-**Status:** proposed · **Owner:** @brycewang-stanford · **Written:** 2026-07-27
+**Owner:** @brycewang-stanford · **Written:** 2026-07-27 · **Phase 1 shipped 2026-07-27**
 
 ---
 
@@ -50,9 +50,17 @@ Three pillars, in dependency order:
 
 ---
 
-## Phase 1 — Single source of truth (highest leverage)
+## Phase 1 — Single source of truth ✅ *shipped 2026-07-27*
 
 **Goal:** adding a tool is one YAML block plus `make build`. Drift becomes impossible, not unlikely.
+
+> **Delivered.** `data/tools.yaml` (67 entries) + `data/categories.yaml` now generate
+> `README.md`, `README.en.md`, `AWESOME.md`, and `data/tools.json`. The migration was
+> verified byte-faithful: regenerated output matched the previous files exactly, apart
+> from the marker comments and the tool count, which was corrected from the claimed
+> `70+` to the actual `66`. `scripts/update_stars.py` now writes to the data layer
+> instead of rewriting Markdown cells, so the weekly bot and the drift gate agree.
+> Remaining item from this phase: wiring the skill catalog (§3.2), still blocked on §6.
 
 ### 1.1 Schema — `data/tools.yaml`
 
@@ -105,10 +113,15 @@ One-off `scripts/migrate_readme_to_yaml.py` parses the existing tables into `too
 
 **Acceptance criteria**
 
-- [ ] `make build` regenerates all surfaces; `git diff` is empty on a clean tree
-- [ ] A new tool can be added in a single YAML block, with CI proving all four surfaces updated
-- [ ] `CONTRIBUTING.md` rewritten: "edit both READMEs" → "edit `data/tools.yaml`"
-- [ ] Tool count in badge/tagline generated from the data, not typed
+- [x] `make build` regenerates all surfaces; `git diff` is empty on a clean tree
+- [x] A new tool can be added in a single YAML block, with CI proving all four surfaces updated
+- [x] `CONTRIBUTING.md` rewritten: "edit both READMEs" → "edit `data/tools.yaml`"
+- [x] Tool count in badge/tagline generated from the data, not typed
+
+**Not shipped from the proposed schema:** the `stage` and `install` fields. Nothing
+consumes them until the Phase 3 site and the Phase 4 stage matrix exist, and
+back-filling 66 entries with guessed workflow stages would be curation-by-assertion.
+Add them alongside the consumer that needs them.
 
 **Effort:** ~1 focused day. **Impact:** unblocks every later phase.
 
@@ -214,7 +227,7 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 
 | # | Work | Effort | Impact | Blocks |
 |---|---|---|---|---|
-| 1 | `data/tools.yaml` + `build.py` + drift-gate CI | 1d | 🔥🔥🔥 | everything |
+| ~~1~~ | ~~`data/tools.yaml` + `build.py` + drift-gate CI~~ | ✅ done | 🔥🔥🔥 | — |
 | 2 | `refresh_metadata.py`, health/license signals, `HEALTH.md` | 0.5d | 🔥🔥🔥 | needs 1 |
 | 3 | GitHub Pages searchable site + `tools.json` | 1d | 🔥🔥 | needs 1 |
 | 4 | Skill catalog generated from SSOT | 0.5h | 🔥 | needs 1 + skills-agent merge |
@@ -226,9 +239,9 @@ Assets are already drafted (`docs/promo-zhihu.md`, `docs/promo-en.md`, `docs/awe
 
 ### Next three commits
 
-1. `feat(data): introduce data/tools.yaml as single source of truth` — schema, migration, all 66 entries, byte-faithful regeneration proven
-2. `feat(ci): generate all Markdown surfaces from tools.yaml and gate on drift`
-3. `feat(data): capture freshness, archived state, and license from the GitHub API`
+1. ~~`feat(data): introduce data/tools.yaml as single source of truth`~~ ✅
+2. ~~`feat(ci): generate all Markdown surfaces from tools.yaml and gate on drift`~~ ✅
+3. `feat(data): capture freshness, archived state, and license from the GitHub API` ← next
 
 ---
 
