@@ -1,15 +1,43 @@
 # Claude Skill — `literature-review-tools`
 
-This repo's curated catalog is also packaged as an installable **[Claude Agent Skill](https://docs.claude.com/en/docs/claude-code/skills)**.
-Instead of browsing the README yourself, let Claude pick the right tool: ask *"what should I use to turn PDFs into Markdown for an LLM?"* or *"recommend a tool for a PRISMA systematic review"* and the skill routes you to the best open-source option with a one-line rationale.
+This repo's curated catalog is also packaged as an installable **[Claude Agent Skill](https://docs.claude.com/en/docs/claude-code/skills)** — and it does two things:
 
-```
+- **Recommend** — ask *"what should I use to turn PDFs into Markdown for an LLM?"* and it routes you to the best open-source pick with a one-line rationale.
+- **Run** — ask *"use MinerU to convert this PDF"* or *"ask PaperQA2 about these papers"* and Claude drives the bundled launcher to install the tool in an isolated venv and run it — no manual pip wrangling.
+
+```text
 skills/
 └── literature-review-tools/
-    ├── SKILL.md              # routing + 30-second picker + decision tables
+    ├── SKILL.md              # routing (recommend) + launcher instructions (run)
+    ├── recipes/
+    │   └── recipes.json      # machine-readable manifest of runnable tools
+    ├── scripts/
+    │   └── litrun.py         # launcher: install/run/configure tools by id
     └── reference/
         └── catalog.md        # full 70+ tool catalog (progressive disclosure)
 ```
+
+## The launcher (`litrun.py`)
+
+Dependency-free (stdlib only). Installs each tool into its own venv under
+`~/.lit-review-tools/` (prefers [`uv`](https://docs.astral.sh/uv/), falls back to
+`python -m venv`), and reads API keys from one shared `~/.lit-review-tools/.env`.
+
+```bash
+scripts/litrun.py list                 # what can be run
+scripts/litrun.py doctor               # toolchain + which API keys are set
+scripts/litrun.py info mineru          # a tool's install/run details
+scripts/litrun.py env --set OPENAI_API_KEY=sk-...
+scripts/litrun.py run mineru -- -p paper.pdf -o ./out -b pipeline
+scripts/litrun.py run paper-qa -- ask "What methods does this corpus use?"
+scripts/litrun.py mcp arxiv-mcp-server # prints MCP config to register in Claude/Cursor
+```
+
+Runnable tools today: **MinerU · marker · docling** (PDF→Markdown), **PaperQA2**
+(cited Q&A), **ASReview** (PRISMA screening), **GPT Researcher · STORM** (deep
+research), **scholarly · pyalex** (API clients), and the **arxiv / paper-search /
+zotero** MCP servers. The full 70+ list stays browse-only in the catalog; more
+recipes are easy to add to `recipes.json`.
 
 ## Install
 
