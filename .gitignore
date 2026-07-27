@@ -12,6 +12,13 @@ Thumbs.db
 node_modules/
 package-lock.json
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+
 # Scratch
 scratchpad/
 *.log
+
+社交媒体/
