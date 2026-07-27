@@ -35,15 +35,20 @@ scripts/litrun.py ui gpt-researcher    # clone & launch the full web UI (:8000)
 
 # chained pipelines
 scripts/litrun.py workflow list
-scripts/litrun.py workflow run pdf-md-then-qa --input ./papers \
-  --question "What datasets are used?" --dry-run   # preview, then drop --dry-run
+scripts/litrun.py workflow run topic-to-review \
+  --query "cat:cs.CL retrieval augmented generation" --max 8 \
+  --question "What evaluation benchmarks recur?" --dry-run   # preview, then drop --dry-run
 ```
 
 Runnable tools today: **MinerU · marker · docling** (PDF→Markdown), **PaperQA2**
-(cited Q&A), **ASReview** (PRISMA screening), **GPT Researcher · STORM** (deep
-research), **scholarly · pyalex** (API clients), and the **arxiv / paper-search /
-zotero** MCP servers. The full 70+ list stays browse-only in the catalog; more
-recipes are easy to add to `recipes.json`.
+(cited Q&A), **ASReview** (PRISMA screening), **arxiv-fetch** (search & download
+arXiv PDFs), **GPT Researcher · STORM** (deep research), **scholarly · pyalex**
+(API clients), and the **arxiv / paper-search / zotero** MCP servers.
+
+Built-in workflows: `pdf-to-markdown`, `pdf-corpus-qa`, `pdf-md-then-qa`,
+`topic-to-pdfs`, and `topic-to-review` (arXiv query → download PDFs → cited
+answer — a full lightweight review with no MCP client). The 70+ catalog stays
+browse-only; more recipes/workflows are easy to add to `recipes/`.
 
 ## Install
 

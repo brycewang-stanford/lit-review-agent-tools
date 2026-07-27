@@ -138,6 +138,19 @@
       "notes": "OpenAlex API client (library). Set pyalex.config.email for the polite pool. As of ~2026 OpenAlex asks for an API key for higher limits: pyalex.config.api_key='...'."
     },
     {
+      "id": "arxiv-fetch",
+      "name": "arXiv search & download",
+      "category": "retrieval",
+      "kind": "python-script",
+      "repo": "https://github.com/lukasschwab/arxiv.py",
+      "pip": ["arxiv"],
+      "script": "fetch_arxiv.py",
+      "example": "arxiv-fetch --query 'retrieval augmented generation' --max 10 --outdir ./papers",
+      "env": [],
+      "env_optional": [],
+      "notes": "Bundled fetcher (uses the free 'arxiv' package). Searches arXiv and downloads PDFs + a manifest.json into --outdir. No API key. Query supports cat:, AND/OR. Feeds retrieval workflows into PaperQA2."
+    },
+    {
       "id": "arxiv-mcp-server",
       "name": "arxiv-mcp-server",
       "category": "mcp-server",

@@ -48,6 +48,7 @@ Commands: `list [--category C] [--kind K]` · `info <id>` · `doctor` · `env [-
 
 Runnable ids by kind:
 - **python-cli (auto install+run):** `mineru`, `marker`, `docling` (PDF→Markdown) · `paper-qa` (cited Q&A) · `asreview` (PRISMA screening UI)
+- **python-script (bundled, auto install+run):** `arxiv-fetch` (search arXiv & download PDFs, no key)
 - **python-lib (install + run example):** `gpt-researcher`, `storm` (deep research; need API keys) · `scholarly`, `pyalex` (API clients)
 - **mcp-server (install + `mcp` config):** `arxiv-mcp-server`, `paper-search-mcp`, `zotero-mcp`
 
@@ -55,10 +56,12 @@ For **`gpt-researcher`** and **`storm`**, `litrun.py ui <id>` clones the repo an
 
 ### Chained pipelines
 
-For multi-tool tasks, prefer a named workflow over hand-wiring steps: `litrun.py workflow list` then `litrun.py workflow run <id> --input <path> [--question "..."]`. Built-ins:
+For multi-tool tasks, prefer a named workflow over hand-wiring steps: `litrun.py workflow list` then `litrun.py workflow run <id> [--input PATH] [--query "..."] [--question "..."] [--max N]`. Built-ins:
 - `pdf-to-markdown` — a PDF/folder → clean Markdown (MinerU)
 - `pdf-corpus-qa` — a folder of PDFs → citation-backed answer (PaperQA2)
 - `pdf-md-then-qa` — convert to Markdown **and** answer a question over the corpus
+- `topic-to-pdfs` — arXiv query → download top-N PDFs (arxiv-fetch, no key)
+- `topic-to-review` — arXiv query → download PDFs → citation-backed answer (PaperQA2). The end-to-end "retrieve then review" pipeline; no MCP client needed. Needs `OPENAI_API_KEY` for the QA step.
 
 Add `--dry-run` first to show the exact resolved step commands without executing — good for confirming paths with the user before a heavy run. Workflows fail fast if a required API key is missing.
 

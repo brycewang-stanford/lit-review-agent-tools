@@ -39,6 +39,7 @@ WORKSPACE = BASE / "workspace"
 ENV_FILE = BASE / ".env"
 RECIPES = Path(__file__).resolve().parent.parent / "recipes" / "recipes.json"
 WORKFLOWS = Path(__file__).resolve().parent.parent / "recipes" / "workflows.json"
+SCRIPTS_DIR = Path(__file__).resolve().parent
 
 
 def die(msg, code=1):
@@ -142,21 +143,27 @@ def run_cmd(cmd, env=None, check=True, cwd=None):
 
 
 def exec_cli(t, tool_args, env, cwd=None, dry=False):
-    """Run a python-cli tool's entrypoint with args. Shared by run & workflow."""
-    if t["kind"] != "python-cli":
-        die(f"'{t['id']}' is {t['kind']}, not python-cli — can't exec it directly.")
-    entry = venv_bin(t["id"], t["entry"])
-    cmd = [str(entry), *tool_args]
+    """Run a python-cli entrypoint or a bundled python-script. Shared by run & workflow."""
+    if t["kind"] == "python-cli":
+        probe = venv_bin(t["id"], t["entry"])
+        cmd = [str(probe), *tool_args]
+        display = t["entry"]
+    elif t["kind"] == "python-script":
+        probe = venv_python(t["id"])
+        cmd = [str(probe), str(SCRIPTS_DIR / t["script"]), *tool_args]
+        display = t["script"]
+    else:
+        die(f"'{t['id']}' is {t['kind']} — can't exec it directly.")
     if dry:
         loc = f"(cd {cwd}) " if cwd else ""
-        print(f"DRY  $ {loc}{t['entry']} {' '.join(tool_args)}")
+        print(f"DRY  $ {loc}{display} {' '.join(tool_args)}")
         return
-    if not entry.exists():
+    if not probe.exists():
         if t.get("pip"):
             print(f"{t['id']} not installed — installing first.")
             pip_install(t["id"], t["pip"])
         else:
-            die(f"entry '{t['entry']}' not found; try: litrun.py install {t['id']}")
+            die(f"'{display}' not found; try: litrun.py install {t['id']}")
     run_cmd(cmd, env=env, check=False, cwd=cwd)
 
 
@@ -193,6 +200,8 @@ def cmd_info(tools, args):
         print(f"install:  litrun.py install {t['id']}   (pip: {', '.join(t['pip'])})")
     if t.get("entry"):
         print(f"entry:    {t['entry']}")
+    if t.get("script"):
+        print(f"script:   {t['script']} (bundled; runs via this tool's venv)")
     if t.get("example"):
         print(f"example:  {t['example']}")
     req = t.get("env", [])
@@ -287,7 +296,7 @@ def cmd_run(tools, args):
         print(f"{t['id']} not installed yet — installing first.")
         pip_install(t["id"], t["pip"])
 
-    if t["kind"] == "python-cli":
+    if t["kind"] in ("python-cli", "python-script"):
         exec_cli(t, args.rest, env)
     elif t["kind"] == "python-lib":
         print(f"{t['name']} is a library, not a CLI. Running its example snippet:\n  {t.get('example','')}\n")
@@ -332,11 +341,17 @@ def cmd_workflow(tools, args):
         params["input"] = args.input
     if args.question:
         params["question"] = args.question
+    if args.query:
+        params["query"] = args.query
+    if args.max:
+        params["max"] = str(args.max)
     for pair in (args.param or []):
         if "=" not in pair:
             die(f"--param expects KEY=VALUE, got '{pair}'")
         k, v = pair.split("=", 1)
         params[k] = v
+    for k, v in w.get("defaults", {}).items():
+        params.setdefault(k, v)
     workdir = WORKSPACE / "runs" / w["id"]
     params["workdir"] = str(workdir)
 
@@ -359,8 +374,8 @@ def cmd_workflow(tools, args):
     needed_env = set()
     for step in w["steps"]:
         t = get_tool(tools, step["tool"])
-        if t["kind"] != "python-cli":
-            die(f"workflow step tool '{t['id']}' is {t['kind']}; workflows only chain python-cli tools.")
+        if t["kind"] not in ("python-cli", "python-script"):
+            die(f"workflow step tool '{t['id']}' is {t['kind']}; workflows chain python-cli / python-script tools only.")
         step_tools.append(t)
         needed_env.update(t.get("env", []))
 
@@ -510,6 +525,8 @@ def main():
     p_wf.add_argument("id", nargs="?")
     p_wf.add_argument("--input")
     p_wf.add_argument("--question")
+    p_wf.add_argument("--query")
+    p_wf.add_argument("--max")
     p_wf.add_argument("--param", action="append", help="extra KEY=VALUE params")
     p_wf.add_argument("--dry-run", action="store_true", dest="dry_run",
                       help="print resolved step commands without running")
