@@ -17,7 +17,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 ![Tools](https://img.shields.io/badge/tools-66-blue)
 <!-- END GENERATED:badge -->
 
-**简体中文** · [English](README.en.md)
+**简体中文** · [English](README.en.md) · **[🔍 可搜索站点](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
 <em>收录 <b>66</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
@@ -27,6 +27,8 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 
 ---
 
+> 🔍 **[打开可搜索版本 →](https://brycewang-stanford.github.io/lit-review-agent-tools/)** —— 按使用场景、维护状态、许可证即时筛选，中英双语。
+>
 > 收录用于**文献综述（Literature Review）**的开源 AI 智能体、Claude Code / Codex 技能、MCP 服务器、系统综述筛选工具、PDF 解析、引文图谱与自动综述框架。
 > 目标：成为研究者用 AI 做文献工作的**一站式导航**。⭐ **Star 收藏，随时查阅。**
 
@@ -52,6 +54,8 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 - [📈 Star 趋势](#-star-趋势)
 - [🤝 参与贡献](#-参与贡献)
 - [📄 许可证](#-许可证)
+
+> 另见：[HEALTH.md](HEALTH.md)（每个项目的完整元数据）· [CHANGELOG.md](CHANGELOG.md)（新增与观察名单）· [data/tools.json](data/tools.json)（可直接使用的数据集）
 
 > ⭐ = 编辑推荐 ｜ Stars 为 GitHub API 快照，**每周由 GitHub Action 自动刷新**。
 >

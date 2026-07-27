@@ -17,7 +17,7 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 ![Tools](https://img.shields.io/badge/tools-66-blue)
 <!-- END GENERATED:badge -->
 
-[简体中文](README.md) · **English**
+[简体中文](README.md) · **English** · **[🔍 Searchable site](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
 <em><b>66</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
@@ -27,6 +27,8 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 
 ---
 
+> 🔍 **[Open the searchable version →](https://brycewang-stanford.github.io/lit-review-agent-tools/)** — filter by use case, maintenance status and licence, in either language.
+>
 > Open-source AI agents, Claude Code / Codex skills, MCP servers, systematic-review screeners, PDF parsers,
 > citation graphs, and auto-survey frameworks — all for **literature review**.
 > Goal: a **one-stop map** for researchers doing literature work with AI. ⭐ **Star it for later.**
@@ -53,6 +55,8 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 - [📈 Star history](#-star-history)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
+
+> See also: [HEALTH.md](HEALTH.md) (full per-tool metadata) · [CHANGELOG.md](CHANGELOG.md) (additions and watch list) · [data/tools.json](data/tools.json) (the dataset)
 
 > ⭐ = editor's pick ｜ Star counts are GitHub-API snapshots, **auto-refreshed weekly by a GitHub Action**.
 >
