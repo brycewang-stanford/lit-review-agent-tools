@@ -13,11 +13,15 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
-![Tools](https://img.shields.io/badge/tools-70%2B-blue)
+<!-- BEGIN GENERATED:badge -->
+![Tools](https://img.shields.io/badge/tools-66-blue)
+<!-- END GENERATED:badge -->
 
 **简体中文** · [English](README.en.md)
 
-<em>收录 <b>70+</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
+<!-- BEGIN GENERATED:tagline -->
+<em>收录 <b>66</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
+<!-- END GENERATED:tagline -->
 
 </div>
 
@@ -30,6 +34,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 
 - [为什么需要这个清单](#为什么需要这个清单)
 - [⚡ 30 秒选型](#-30-秒选型)
+<!-- BEGIN GENERATED:toc -->
 - [🌟 综合研究智能体与技能](#-综合研究智能体与技能)
 - [🔎 深度研究与自动综述生成](#-深度研究与自动综述生成)
 - [🧪 自主科研：从想法到论文](#-自主科研从想法到论文)
@@ -41,6 +46,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 - [🕸️ 引文图谱与 API 客户端](#️-引文图谱与-api-客户端)
 - [✍️ 论文写作与同行评审助手](#️-论文写作与同行评审助手)
 - [📖 精选清单（Awesome Lists）](#-精选清单awesome-lists)
+<!-- END GENERATED:toc -->
 - [🏢 商业 / 闭源工具（参考）](#-商业--闭源工具参考)
 - [🧭 如何选择（决策表）](#-如何选择决策表)
 - [📈 Star 趋势](#-star-趋势)
@@ -79,6 +85,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 
 ---
 
+<!-- BEGIN GENERATED:categories -->
 ## 🌟 综合研究智能体与技能
 
 > 覆盖「研究 → 写作 → 评审 → 修订」全流程的端到端方案，多为 Claude Code / Codex 技能。
@@ -241,6 +248,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | [LLM4SR](https://github.com/du-nlp-lab/LLM4SR) | ~0.1k | LLM 用于科学研究综述的论文与资源合集 |
 | [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) | ~55 | 文献综述、文献管理、数据分析等 AI 科研工具 |
 | [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) | ~19 | 系统综述、荟萃分析与证据合成的开源工具 |
+<!-- END GENERATED:categories -->
 
 ---
 

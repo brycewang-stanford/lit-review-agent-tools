@@ -11,71 +11,81 @@
 - name: "academic-research-skills"
   repo: Imbad0202/academic-research-skills
   category: all-in-one
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~39.5k"
+  stars: 39500
   desc_zh: "**本领域最受欢迎的项目。** 一套 Claude Code 技能，10 阶段流水线（研究→写作→评审→修订→定稿），内置引用/论断「诚信门」，跨 Semantic Scholar + OpenAlex + Crossref 三源校验。理念：*「AI 是副驾，不是主驾」*。`/plugin install academic-research-skills`"
   desc_en: "**The most popular project in this space.** A suite of Claude Code skills running a 10-stage pipeline (research→write→review→revise→finalize) with citation/claim \"integrity gates,\" cross-checked against Semantic Scholar + OpenAlex + Crossref. Philosophy: *\"AI is your copilot, not the pilot.\"* `/plugin install academic-research-skills`"
   desc_awesome: "Claude Code skills running a ten-stage research-to-paper pipeline with citation integrity gates."
 - name: "academic-research-skills-codex"
   repo: Imbad0202/academic-research-skills-codex
   category: all-in-one
-  stars_cell: "~7.1k"
+  added: 2026-07-26
+  stars: 7100
   desc_zh: "上者的 Codex 原生版，人在环中的学术研究流程"
   desc_en: "Codex-native sibling of the above, human-in-the-loop research flow"
   desc_awesome: "Codex-native sibling with a human-in-the-loop research flow."
 - name: "Research-Paper-Writing-Skills"
   repo: Master-cai/Research-Paper-Writing-Skills
   category: all-in-one
-  stars_cell: "~5.5k"
+  added: 2026-07-26
+  stars: 5500
   desc_zh: "ML/CV/NLP 论文写作技能包（改编自彭思达老师笔记），兼容 Codex / Claude Code / Gemini"
   desc_en: "ML/CV/NLP paper-writing skill pack; works with Codex, Claude Code, and Gemini"
   desc_awesome: "Machine-learning paper-writing skill pack for Codex, Claude Code, and Gemini."
 - name: "claude-skills"
   repo: alirezarezvani/claude-skills
   category: all-in-one
-  stars_cell: "~23.2k"
+  added: 2026-07-26
+  stars: 23200
   desc_zh: "大型技能合集，内含 litreview / grants / deep-research 研究栈，跨 Claude Code / Codex / Gemini / Cursor"
   desc_en: "Large skill collection incl. a litreview / grants / deep-research stack across Claude Code / Codex / Gemini / Cursor"
   desc_awesome: "Large skill collection including a literature-review, grants, and deep-research stack."
 - name: "academic-paper-skills"
   repo: lishix520/academic-paper-skills
   category: all-in-one
-  stars_cell: "~1.1k"
+  added: 2026-07-26
+  stars: 1100
   desc_zh: "Strategist（规划）+ Composer（写作）双技能，带质量检查点"
   desc_en: "Strategist (planning) + Composer (writing) skills with quality checkpoints"
   desc_awesome: "Planning and writing skills with quality checkpoints for systematic paper writing."
 - name: "dr-claw"
   repo: OpenLAIR/dr-claw
   category: all-in-one
-  stars_cell: "~1.0k"
+  added: 2026-07-26
+  stars: 1000
   desc_zh: "「科研 IDE」，内置多个 AI 助手角色"
   desc_en: "A \"research IDE\" with multiple AI-assistant personas"
   desc_awesome: "Research workbench with multiple AI-assistant personas."
 - name: "ScienceClaw"
   repo: beita6969/ScienceClaw
   category: all-in-one
-  stars_cell: "~0.9k"
+  added: 2026-07-26
+  stars: 900
   desc_zh: "自进化的 AI 科研伙伴，285 个技能，主打「零幻觉」"
   desc_en: "Self-evolving AI research colleague, 285 skills, \"zero hallucination\" claim"
   desc_awesome: "Self-evolving AI research colleague with a large skill library."
 - name: "qinyan-academic-skills"
   repo: LeonChaoX/qinyan-academic-skills
   category: all-in-one
-  stars_cell: "~0.7k"
+  added: 2026-07-26
+  stars: 700
   desc_zh: "多语言的 182 个可安装 AI 智能体技能库，覆盖多学科"
   desc_en: "Multilingual library of 182 installable AI-agent skills across disciplines"
   desc_awesome: "Multilingual library of installable AI-agent skills across disciplines."
 - name: "agent-research-skills"
   repo: lingzhi227/agent-research-skills
   category: all-in-one
-  stars_cell: "~0.2k"
+  added: 2026-07-26
+  stars: 200
   desc_zh: "面向系统性文献综述的 Claude Code 技能，含引用校验脚本"
   desc_en: "Claude Code skills for systematic literature review, incl. citation-validation scripts"
   desc_awesome: "Claude Code skills for systematic literature review with citation-validation scripts."
 - name: "medsci-skills"
   repo: Aperivue/medsci-skills
   category: all-in-one
-  stars_cell: "~0.2k"
+  added: 2026-07-26
+  stars: 200
   desc_zh: "医学科研技能：检索、报告规范/引用核查、统计、出版图表、投稿（医生-研究者出品）"
   desc_en: "Medical-research skills: search, reporting-guideline/citation checks, stats, figures, submission (by a physician-researcher)"
   desc_awesome: "Medical-research skills for search, reporting-guideline checks, statistics, and submission."
@@ -84,72 +94,82 @@
 - name: "STORM"
   repo: stanford-oval/storm
   category: deep-research
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~30.3k"
+  stars: 30300
   desc_zh: "斯坦福 OVAL 出品，基于检索的「预写作 + 写作」两阶段，生成维基百科式长文并附引用；含多智能体对话式版本 Co-STORM"
   desc_en: "Stanford OVAL; retrieval-grounded \"pre-writing + writing\" stages, produces Wikipedia-style long articles with citations; includes conversational Co-STORM"
   desc_awesome: "Retrieval-grounded system that writes cited, encyclopedia-style long articles from a topic."
 - name: "gpt-researcher"
   repo: assafelovic/gpt-researcher
   category: deep-research
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~28.6k"
+  stars: 28600
   desc_zh: "自主研究智能体，对任意主题做深度调研并生成带引用报告；通用型，非学术专用"
   desc_en: "Autonomous agent that runs deep research on any topic and outputs a cited report; general-purpose, not academic-only"
   desc_awesome: "Autonomous agent that runs deep research on any topic and outputs a cited report."
 - name: "deep-research"
   repo: dzhng/deep-research
   category: deep-research
-  stars_cell: "~19.4k"
+  added: 2026-07-26
+  stars: 19400
   desc_zh: "极简的迭代式深度研究智能体（搜索 + 抓取 + LLM 精炼），代码短小易改"
   desc_en: "Minimal iterative deep-research agent (search + scrape + LLM refinement); small and hackable"
   desc_awesome: "Minimal iterative deep-research agent that is small and easy to hack on."
 - name: "open_deep_research"
   repo: langchain-ai/open_deep_research
   category: deep-research
-  stars_cell: "~12.4k"
+  added: 2026-07-26
+  stars: 12400
   desc_zh: "LangChain 官方的开源深度研究参考实现"
   desc_en: "LangChain's official open deep-research reference implementation"
   desc_awesome: "Open deep-research reference implementation from LangChain."
 - name: "local-deep-research"
   repo: LearningCircuit/local-deep-research
   category: deep-research
-  stars_cell: "~8.8k"
+  added: 2026-07-26
+  stars: 8800
   desc_zh: "本地/隐私优先的深度研究，10+ 数据源含 arXiv / PubMed，可全本地 LLM"
   desc_en: "Local/private deep-research; 10+ sources incl. arXiv & PubMed, fully local LLMs"
   desc_awesome: "Local and private deep-research over many sources including arXiv and PubMed."
 - name: "open-deep-research"
   repo: nickscamara/open-deep-research
   category: deep-research
-  stars_cell: "~6.3k"
+  added: 2026-07-26
+  stars: 6300
   desc_zh: "基于 Firecrawl 对网页数据推理的开源 deep-research 复刻"
   desc_en: "Open deep-research clone reasoning over web data via Firecrawl"
   desc_awesome: "Open deep-research clone that reasons over web data via Firecrawl."
 - name: "SurveyX"
   repo: IAAR-Shanghai/SurveyX
   category: deep-research
-  stars_cell: "~1.0k"
+  added: 2026-07-26
+  stars: 1000
   desc_zh: "从一个主题自动生成学术综述论文"
   desc_en: "Automated academic survey-paper generation from a topic"
   desc_awesome: "Automated generation of academic survey papers from a topic."
 - name: "LitLLM"
   repo: LitLLM/LitLLM
   category: deep-research
-  stars_cell: "~44"
+  added: 2026-07-26
+  stars: 44
   desc_zh: "专注科学文献综述的工具包，用 RAG + 提示工程快速生成 related work（TMLR 2025）"
   desc_en: "Toolkit focused on scientific literature review; RAG + prompting to draft related-work fast (TMLR 2025)"
   desc_awesome: "Toolkit that drafts related-work sections fast with retrieval and prompting."
 - name: "opendraft"
   repo: federicodeponte/opendraft
   category: deep-research
-  stars_cell: "~0.3k"
+  added: 2026-07-26
+  stars: 300
   desc_zh: "免费开源的 AI 论文写作，19 个智能体协作起草长文"
   desc_en: "Free & open-source AI paper writer; 19 agents collaborate to draft long papers"
   desc_awesome: "Free and open-source AI paper writer where many agents collaborate on long drafts."
 - name: "AutoSurveyGPT"
   repo: a554b554/AutoSurveyGPT
   category: deep-research
-  stars_cell: "~0.2k"
+  added: 2026-07-26
+  stars: 200
   desc_zh: "用 GPT 从 Google Scholar 检索并排序论文，自动生成文献综述"
   desc_en: "Uses GPT to find & rank Google Scholar papers and auto-generate a survey"
   desc_awesome: "Finds and ranks scholarly papers and auto-generates a survey."
@@ -158,72 +178,82 @@
 - name: "AI-Scientist"
   repo: SakanaAI/AI-Scientist
   category: autonomous-science
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~14.3k"
+  stars: 14300
   desc_zh: "Sakana AI，端到端全自动科学发现（文献→实验→写作→评审）；另有 [v2](https://github.com/SakanaAI/AI-Scientist-v2)（~6.9k，agentic 树搜索，达 workshop 级）"
   desc_en: "Sakana AI; end-to-end automated discovery (lit review→experiments→writing→review); see also [v2](https://github.com/SakanaAI/AI-Scientist-v2) (~6.9k, agentic tree search, workshop-level)"
   desc_awesome: "End-to-end automated discovery covering literature review, experiments, writing, and review."
+- name: "AI-Scientist-v2"
+  repo: SakanaAI/AI-Scientist-v2
+  category: autonomous-science
+  added: 2026-07-26
+  surfaces: [awesome]
+  desc_awesome: "Workshop-level automated scientific discovery via agentic tree search."
 - name: "AutoResearchClaw"
   repo: aiming-lab/AutoResearchClaw
   category: autonomous-science
-  stars_cell: "~13.9k"
+  added: 2026-07-26
+  stars: 13900
   desc_zh: "自进化的自主科研：从想法到可投稿 LaTeX 论文（OpenAlex/S2/arXiv 真实文献 + 沙盒实验 + 多智能体评审）"
   desc_en: "Self-evolving autonomous research: idea → conference-ready LaTeX paper (real lit from OpenAlex/S2/arXiv + sandboxed experiments + multi-agent peer review)"
   desc_awesome: "Self-evolving research from idea to conference-ready paper with real literature and sandboxed experiments."
 - name: "Agent-Laboratory"
   repo: SamuelSchmidgall/AgentLaboratory
   category: autonomous-science
-  stars_cell: "~5.8k"
+  added: 2026-07-26
+  stars: 5800
   desc_zh: "端到端自主研究流程：文献综述 → 实验 → 报告写作"
   desc_en: "End-to-end autonomous workflow: literature review → experimentation → report writing"
   desc_awesome: "Autonomous workflow from literature review through experimentation to report writing."
 - name: "SciAgentsDiscovery"
   repo: lamm-mit/SciAgentsDiscovery
   category: autonomous-science
-  stars_cell: "~0.6k"
+  added: 2026-07-26
+  stars: 600
   desc_zh: "多智能体（本体学家/科学家/批评家）自动生成假设与科学发现"
   desc_en: "Multi-agent (ontologist/scientist/critic) automated hypothesis & discovery system"
   desc_awesome: "Multi-agent system that generates hypotheses and scientific discoveries."
 - name: "Zochi"
   repo: IntologyAI/Zochi
   category: autonomous-science
-  stars_cell: "~0.3k"
+  added: 2026-07-26
+  stars: 300
   desc_zh: "「人工科学家」，从发现到被同行评审接收的端到端"
   desc_en: "\"Artificial scientist\" doing end-to-end discovery to peer-reviewed publication"
   desc_awesome: "Artificial-scientist system doing end-to-end discovery toward publication."
 - name: "DeepInnovator"
   repo: HKUDS/DeepInnovator
   category: autonomous-science
-  stars_cell: "~0.3k"
+  added: 2026-07-26
+  stars: 300
   desc_zh: "自主生成研究想法、问题、可检验假设与实验设计"
   desc_en: "Autonomously generates research ideas, questions, testable hypotheses & experiment designs"
   desc_awesome: "Autonomously generates research ideas, hypotheses, and experiment designs."
-- name: "AI-Scientist-v2"
-  repo: SakanaAI/AI-Scientist-v2
-  category: autonomous-science
-  surfaces: [awesome]
-  desc_awesome: "Workshop-level automated scientific discovery via agentic tree search."
 
 # ── paper-qa-rag ────────────────────────────────────────────────
 - name: "paper-qa"
   repo: Future-House/paper-qa
   category: paper-qa-rag
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~8.9k"
+  stars: 8900
   desc_zh: "FutureHouse 出品，高精度科学文献 RAG，回答**必带引用**；PaperQA2 号称文献检索达到超人水平"
   desc_en: "FutureHouse; high-accuracy RAG for scientific papers, answers **always cite sources**; PaperQA2 claims superhuman literature search"
   desc_awesome: "High-accuracy retrieval system for scientific papers whose answers always cite sources."
 - name: "paperai"
   repo: neuml/paperai
   category: paper-qa-rag
-  stars_cell: "~1.8k"
+  added: 2026-07-26
+  stars: 1800
   desc_zh: "面向医学与科研论文的语义检索 + 问答"
   desc_en: "Semantic search + Q&A over medical & scientific papers"
   desc_awesome: "Semantic search and question answering over medical and scientific papers."
 - name: "openpaper"
   repo: khoj-ai/openpaper
   category: paper-qa-rag
-  stars_cell: "~0.4k"
+  added: 2026-07-26
+  stars: 400
   desc_zh: "科研文库工作台：阅读/标注论文 + 带引用溯源的 AI 综述助手"
   desc_en: "Research-library workbench: read/annotate papers + AI lit-review assistant with grounded citations"
   desc_awesome: "Research-library workbench with a grounded, citation-aware review assistant."
@@ -232,28 +262,32 @@
 - name: "ASReview"
   repo: asreview/asreview
   category: systematic-review
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~1.0k"
+  stars: 1000
   desc_zh: "主动学习的系统综述筛选工具，交互式排序论文、大幅缩短筛选时间；学术界成熟方案"
   desc_en: "Active-learning screener for systematic reviews; interactively ranks papers to cut screening time; well-established in academia"
   desc_awesome: "Active-learning screener that ranks papers to cut systematic-review screening time."
 - name: "LatteReview"
   repo: PouriaRouzrokh/LatteReview
   category: systematic-review
-  stars_cell: "~0.1k"
+  added: 2026-07-26
+  stars: 100
   desc_zh: "低代码 Python 包，用 AI 智能体自动化系统综述筛选（OpenAI/Gemini/Claude/Ollama）"
   desc_en: "Low-code Python package automating SR screening via AI agents (OpenAI/Gemini/Claude/Ollama)"
   desc_awesome: "Low-code package that automates systematic-review screening with AI agents."
 - name: "prismAId"
   repo: Open-and-Sustainable/prismAId
   category: systematic-review
-  stars_cell: "~24"
+  added: 2026-07-26
+  stars: 24
   desc_zh: "基于生成式 AI 的协议驱动系统综述工具，无需编程、可复现的筛选与抽取"
   desc_en: "Generative-AI, protocol-based systematic-review toolkit; no-code, replicable screening & extraction"
   desc_awesome: "Protocol-based, no-code toolkit for replicable review screening and extraction."
 - name: "prisma-review-tool"
   repo: Black-Lights/prisma-review-tool
   category: systematic-review
+  added: 2026-07-26
   stars: null
   stars_label: {zh: "小众", en: "niche"}
   desc_zh: "PRISMA 2020 全流程，经 MCP 做 AI 辅助筛选（arXiv/OpenAlex/S2，无需 API key）"
@@ -264,44 +298,50 @@
 - name: "zotero-mcp"
   repo: 54yyyu/zotero-mcp
   category: mcp-servers
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~4.4k"
+  stars: 4400
   desc_zh: "把 Zotero 文献库（本地 + Web API）接给 AI：语义检索、PDF 全文、引用分析。最流行的 Zotero MCP"
   desc_en: "Connects a Zotero library (local + web API) to AI: semantic search, PDF full-text, citation analysis. The most popular Zotero MCP"
   desc_awesome: "Connects a Zotero library to AI clients for semantic search and citation analysis."
 - name: "arxiv-mcp-server"
   repo: blazickjp/arxiv-mcp-server
   category: mcp-servers
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~3.0k"
+  stars: 3000
   desc_zh: "检索与分析 arXiv 论文，下载并把 PDF 转 Markdown 喂给 LLM；提供 `.mcpb` 包"
   desc_en: "Search & analyze arXiv papers; downloads and converts PDFs to Markdown for LLM context; ships an `.mcpb` bundle"
   desc_awesome: "Searches and analyzes arXiv papers and converts them to Markdown for context."
 - name: "paper-search-mcp"
   repo: openags/paper-search-mcp
   category: mcp-servers
-  stars_cell: "~2.3k"
+  added: 2026-07-26
+  stars: 2300
   desc_zh: "跨 20+ 源检索/下载论文（arXiv、PubMed、bioRxiv、S2、OpenAlex、Crossref、CORE…）"
   desc_en: "Multi-source search/download across 20+ sources (arXiv, PubMed, bioRxiv, S2, OpenAlex, Crossref, CORE…)"
   desc_awesome: "Multi-source search and download across many scholarly databases."
 - name: "PubMed-MCP-Server"
   repo: JackKuo666/PubMed-MCP-Server
   category: mcp-servers
-  stars_cell: "~0.1k"
+  added: 2026-07-26
+  stars: 100
   desc_zh: "检索、访问与分析 PubMed 文章（元数据 + 深度分析）"
   desc_en: "Search, access, and analyze PubMed articles (metadata + deep analysis)"
   desc_awesome: "Searches, accesses, and analyzes PubMed articles through a tool interface."
 - name: "alex-mcp"
   repo: drAbreu/alex-mcp
   category: mcp-servers
-  stars_cell: "~50"
+  added: 2026-07-26
+  stars: 50
   desc_zh: "OpenAlex MCP，专注作者消歧与机构/成果查询"
   desc_en: "OpenAlex MCP focused on author disambiguation and institution/work lookup"
   desc_awesome: "OpenAlex server focused on author disambiguation and institution lookup."
 - name: "openalex-research-mcp"
   repo: oksure/openalex-research-mcp
   category: mcp-servers
-  stars_cell: "~37"
+  added: 2026-07-26
+  stars: 37
   desc_zh: "OpenAlex（2.4 亿+ 成果）：引用分析、研究趋势、合作网络"
   desc_en: "OpenAlex (240M+ works): citation analysis, research-trend tracking, collaboration networks"
   desc_awesome: "OpenAlex-backed citation analysis, trend tracking, and collaboration mapping."
@@ -310,29 +350,33 @@
 - name: "zotero-gpt"
   repo: MuiseDestiny/zotero-gpt
   category: reference-management
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~7.3k"
+  stars: 7300
   desc_zh: "把 GPT 集成进 Zotero，直接和你的文献库对话"
   desc_en: "GPT integrated into Zotero to chat with your library"
   desc_awesome: "Integrates a chat assistant into Zotero to talk with your library."
 - name: "papersgpt-for-zotero"
   repo: papersgpt/papersgpt-for-zotero
   category: reference-management
-  stars_cell: "~2.6k"
+  added: 2026-07-26
+  stars: 2600
   desc_zh: "Zotero AI + MCP 插件，跨 30+ LLM 聊天/批量处理 PDF"
   desc_en: "Zotero AI + MCP plugin; chat/batch-process PDFs across 30+ LLMs"
   desc_awesome: "Zotero plugin to chat with and batch-process PDFs across many models."
 - name: "ai-research-assistant"
   repo: lifan0127/ai-research-assistant
   category: reference-management
-  stars_cell: "~1.7k"
+  added: 2026-07-26
+  stars: 1700
   desc_zh: "Zotero 内的「Aria」LLM 研究助手"
   desc_en: "\"Aria\" — LLM-powered research assistant inside Zotero"
   desc_awesome: "Assistant that lives inside Zotero for research tasks."
 - name: "paper-note-filler"
   repo: chauff/paper-note-filler
   category: reference-management
-  stars_cell: "~47"
+  added: 2026-07-26
+  stars: 47
   desc_zh: "Obsidian 插件，从 arXiv / ACL Anthology / Semantic Scholar 自动建笔记"
   desc_en: "Obsidian plugin auto-creating notes from arXiv / ACL Anthology / Semantic Scholar"
   desc_awesome: "Obsidian plugin that auto-creates notes from scholarly sources."
@@ -341,50 +385,57 @@
 - name: "MinerU"
   repo: opendatalab/MinerU
   category: pdf-extraction
+  added: 2026-07-26
   editor_pick: true
-  stars_cell: "~75.7k"
+  stars: 75700
   desc_zh: "高精度 PDF/Office → LLM 就绪的 Markdown/JSON（VLM+OCR，100+ 语言，公式/表格）"
   desc_en: "High-accuracy PDF/Office → LLM-ready Markdown/JSON (VLM+OCR, 100+ languages, formulas/tables)"
   desc_awesome: "High-accuracy conversion of PDFs and office files to LLM-ready Markdown and JSON."
 - name: "docling"
   repo: docling-project/docling
   category: pdf-extraction
-  stars_cell: "~63.8k"
+  added: 2026-07-26
+  stars: 63800
   desc_zh: "IBM 出品的文档解析器，为 GenAI/RAG 准备 PDF/文档"
   desc_en: "IBM-origin document parser prepping PDFs/docs for gen-AI/RAG"
   desc_awesome: "Document parser that prepares PDFs and documents for generative AI and RAG."
 - name: "marker"
   repo: datalab-to/marker
   category: pdf-extraction
-  stars_cell: "~37.8k"
+  added: 2026-07-26
+  stars: 37800
   desc_zh: "快速把 PDF/文档转成干净 Markdown/JSON，对科研文档友好"
   desc_en: "Fast PDF/doc → clean Markdown/JSON conversion, scientific-doc friendly"
   desc_awesome: "Fast conversion of PDFs and documents to clean Markdown and JSON."
 - name: "PDFMathTranslate"
   repo: Byaidu/PDFMathTranslate
   category: pdf-extraction
-  stars_cell: "~35.8k"
+  added: 2026-07-26
+  stars: 35800
   desc_zh: "保留排版的科研 PDF 翻译（公式/图表不变形）"
   desc_en: "Layout-preserving scientific-PDF translation (formulas/figures intact)"
   desc_awesome: "Layout-preserving scientific-PDF translation that keeps formulas and figures intact."
 - name: "grobid"
   repo: grobidOrg/grobid
   category: pdf-extraction
-  stars_cell: "~5.0k"
+  added: 2026-07-26
+  stars: 5000
   desc_zh: "从学术 PDF 抽取结构化 TEI/XML（元数据、参考文献、章节）"
   desc_en: "ML tool extracting structured TEI/XML (metadata, refs, sections) from scholarly PDFs"
   desc_awesome: "Extracts structured metadata, references, and sections from scholarly PDFs."
 - name: "paperetl"
   repo: neuml/paperetl
   category: pdf-extraction
-  stars_cell: "~0.7k"
+  added: 2026-07-26
+  stars: 700
   desc_zh: "面向医学与科研论文的 ETL 管线，入库为结构化数据"
   desc_en: "ETL pipeline for medical & scientific papers into structured stores"
   desc_awesome: "ETL pipeline that loads medical and scientific papers into structured stores."
 - name: "scipdf_parser"
   repo: titipata/scipdf_parser
   category: pdf-extraction
-  stars_cell: "~0.5k"
+  added: 2026-07-26
+  stars: 500
   desc_zh: "科研 PDF 的 Python 解析器（正文 + 图，基于 GROBID）"
   desc_en: "Python parser for scientific-publication PDFs (content + figures, GROBID-backed)"
   desc_awesome: "Python parser for scientific PDFs that extracts content and figures."
@@ -393,35 +444,40 @@
 - name: "scholarly"
   repo: scholarly-python-package/scholarly
   category: citation-graphs
-  stars_cell: "~1.9k"
+  added: 2026-07-26
+  stars: 1900
   desc_zh: "Pythonic 的 Google Scholar 作者/论文检索"
   desc_en: "Pythonic Google Scholar author/publication retrieval"
   desc_awesome: "Pythonic retrieval of authors and publications from Google Scholar."
 - name: "semanticscholar"
   repo: danielnsilva/semanticscholar
   category: citation-graphs
-  stars_cell: "~0.5k"
+  added: 2026-07-26
+  stars: 500
   desc_zh: "Semantic Scholar API 的非官方 Python 客户端"
   desc_en: "Unofficial Python client for Semantic Scholar APIs"
   desc_awesome: "Python client for the Semantic Scholar APIs."
 - name: "pyalex"
   repo: J535D165/pyalex
   category: citation-graphs
-  stars_cell: "~0.4k"
+  added: 2026-07-26
+  stars: 400
   desc_zh: "轻量的 OpenAlex API Python 接口"
   desc_en: "Lightweight Python interface to the OpenAlex API"
   desc_awesome: "Lightweight Python interface to the OpenAlex API."
 - name: "ArxivDigest"
   repo: AutoLLM/ArxivDigest
   category: citation-graphs
-  stars_cell: "~0.5k"
+  added: 2026-07-26
+  stars: 500
   desc_zh: "个性化每日 arXiv 摘要，GPT 打相关性分 + 邮件推送"
   desc_en: "Personalized daily arXiv digest with GPT relevancy scoring + email pipeline"
   desc_awesome: "Personalized daily arXiv digest with relevancy scoring and email delivery."
 - name: "citegraph"
   repo: Citegraph/citegraph
   category: citation-graphs
-  stars_cell: "~22"
+  added: 2026-07-26
+  stars: 22
   desc_zh: "500 万+ 论文/引用网络的开源可视化（CS 文献）"
   desc_en: "Open web visualizer of 5M+ papers / citation networks (CS bibliography)"
   desc_awesome: "Open web visualizer of papers and citation networks."
@@ -430,28 +486,32 @@
 - name: "lmms-lab-writer"
   repo: EvolvingLMMs-Lab/lmms-lab-writer
   category: writing-peer-review
-  stars_cell: "~0.3k"
+  added: 2026-07-26
+  stars: 300
   desc_zh: "本地优先的 agentic LaTeX 写作，用于 AI 辅助学术写作"
   desc_en: "Local-first agentic LaTeX writer for AI-assisted academic writing"
   desc_awesome: "Local-first agentic LaTeX writer for AI-assisted academic writing."
 - name: "academic-writing-agents"
   repo: andrehuang/academic-writing-agents
   category: writing-peer-review
-  stars_cell: "~0.1k"
+  added: 2026-07-26
+  stars: 100
   desc_zh: "Claude Code 插件：10+ 专家智能体协作做学术写作评审、调研、起草、润色"
   desc_en: "Claude Code plugin: 10+ specialist agents for academic writing review, research, drafting, polishing"
   desc_awesome: "Claude Code plugin with specialist agents for reviewing, drafting, and polishing."
 - name: "ai-peer-review"
   repo: poldrack/ai-peer-review
   category: writing-peer-review
-  stars_cell: "~0.2k"
+  added: 2026-07-26
+  stars: 200
   desc_zh: "多 LLM 元评审：独立评审 + 综合成 meta-review"
   desc_en: "Multi-LLM meta-review: independent reviews synthesized into a meta-review"
   desc_awesome: "Multi-model meta-review that synthesizes independent reviews of a paper."
 - name: "open_reviewer"
   repo: maxidl/openreviewer
   category: writing-peer-review
-  stars_cell: "~14"
+  added: 2026-07-26
+  stars: 14
   desc_zh: "为 ML/AI 会议论文生成高质量同行评审，用于投稿前反馈"
   desc_en: "Generates high-quality peer reviews of ML/AI conference papers for pre-submission feedback"
   name_awesome: "openreviewer"
@@ -459,7 +519,8 @@
 - name: "academic-research-plugin"
   repo: JeanDiable/academic-research-plugin
   category: writing-peer-review
-  stars_cell: "~17"
+  added: 2026-07-26
+  stars: 17
   desc_zh: "Claude Code 插件：文献综述、论文评审、引用管理，检索 arXiv/S2/DBLP 并识别研究空白"
   desc_en: "Claude Code plugin: lit surveys, paper reviews, citation management; searches arXiv/S2/DBLP and finds research gaps"
   desc_awesome: "Claude Code plugin for surveys, paper reviews, and finding research gaps."
@@ -468,42 +529,48 @@
 - name: "Awesome-LLM-Scientific-Discovery"
   repo: HKUST-KnowComp/Awesome-LLM-Scientific-Discovery
   category: awesome-lists
-  stars_cell: "~0.4k"
+  added: 2026-07-26
+  stars: 400
   desc_zh: "EMNLP 2025 综述清单：LLM 用于科学发现"
   desc_en: "EMNLP 2025 survey list: LLMs in scientific discovery"
   desc_awesome: "Survey list of language models in scientific discovery."
 - name: "Awesome-Auto-Research-Tools"
   repo: handsome-rich/Awesome-Auto-Research-Tools
   category: awesome-lists
-  stars_cell: "~1.1k"
+  added: 2026-07-26
+  stars: 1100
   desc_zh: "自动化文献检索、论文阅读、实验管理与代码生成"
   desc_en: "Automated literature search, paper reading, experiment management, code gen"
   desc_awesome: "Automated tools for search, reading, experiments, and code generation."
 - name: "awesome-ai-auto-research"
   repo: worldbench/awesome-ai-auto-research
   category: awesome-lists
-  stars_cell: "~0.4k"
+  added: 2026-07-26
+  stars: 400
   desc_zh: "AI 自动科研综述"
   desc_en: "A survey on AI auto-research"
   desc_awesome: "Survey of AI approaches to automated research."
 - name: "LLM4SR"
   repo: du-nlp-lab/LLM4SR
   category: awesome-lists
-  stars_cell: "~0.1k"
+  added: 2026-07-26
+  stars: 100
   desc_zh: "LLM 用于科学研究综述的论文与资源合集"
   desc_en: "Papers & resources on LLMs for scientific research surveys"
   desc_awesome: "Papers and resources on language models for scientific research surveys."
 - name: "awesome-ai-research-tools"
   repo: 0x11c11e/awesome-ai-research-tools
   category: awesome-lists
-  stars_cell: "~55"
+  added: 2026-07-26
+  stars: 55
   desc_zh: "文献综述、文献管理、数据分析等 AI 科研工具"
   desc_en: "AI tools for lit reviews, reference management, data analysis"
   desc_awesome: "AI tools for literature reviews, reference management, and data analysis."
 - name: "awesome-evidence-synthesis"
   repo: evidencesynthesis-tools/awesome-evidence-synthesis
   category: awesome-lists
-  stars_cell: "~19"
+  added: 2026-07-26
+  stars: 19
   desc_zh: "系统综述、荟萃分析与证据合成的开源工具"
   desc_en: "Open-source tools for systematic reviews, meta-analysis & evidence synthesis"
   desc_awesome: "Open-source tools for systematic reviews and meta-analysis."

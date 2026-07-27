@@ -6,6 +6,7 @@ Curated tools that help AI agents handle the whole loop of a literature review: 
 
 ## Contents
 
+<!-- BEGIN GENERATED:toc -->
 - [All-in-one Research Agents and Skills](#all-in-one-research-agents-and-skills)
 - [Deep Research and Auto Survey Generation](#deep-research-and-auto-survey-generation)
 - [Autonomous Science](#autonomous-science)
@@ -17,7 +18,9 @@ Curated tools that help AI agents handle the whole loop of a literature review: 
 - [Citation Graphs and API Clients](#citation-graphs-and-api-clients)
 - [Writing and Peer Review](#writing-and-peer-review)
 - [Awesome Lists](#awesome-lists)
+<!-- END GENERATED:toc -->
 
+<!-- BEGIN GENERATED:categories -->
 ## All-in-one Research Agents and Skills
 
 - [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) - Claude Code skills running a ten-stage research-to-paper pipeline with citation integrity gates.
@@ -117,6 +120,7 @@ Curated tools that help AI agents handle the whole loop of a literature review: 
 - [LLM4SR](https://github.com/du-nlp-lab/LLM4SR) - Papers and resources on language models for scientific research surveys.
 - [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) - AI tools for literature reviews, reference management, and data analysis.
 - [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) - Open-source tools for systematic reviews and meta-analysis.
+<!-- END GENERATED:categories -->
 
 ## Contributing
 

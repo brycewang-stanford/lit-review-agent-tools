@@ -13,11 +13,15 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
-![Tools](https://img.shields.io/badge/tools-70%2B-blue)
+<!-- BEGIN GENERATED:badge -->
+![Tools](https://img.shields.io/badge/tools-66-blue)
+<!-- END GENERATED:badge -->
 
 [简体中文](README.md) · **English**
 
-<em><b>70+</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
+<!-- BEGIN GENERATED:tagline -->
+<em><b>66</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
+<!-- END GENERATED:tagline -->
 
 </div>
 
@@ -31,6 +35,7 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 
 - [Why this list](#why-this-list)
 - [⚡ 30-second picker](#-30-second-picker)
+<!-- BEGIN GENERATED:toc -->
 - [🌟 All-in-one Research Agents & Skills](#-all-in-one-research-agents--skills)
 - [🔎 Deep Research & Auto Survey Generation](#-deep-research--auto-survey-generation)
 - [🧪 Autonomous Science: idea → paper](#-autonomous-science-idea--paper)
@@ -42,6 +47,7 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 - [🕸️ Citation Graphs & API Clients](#️-citation-graphs--api-clients)
 - [✍️ Writing & Peer-review Assistants](#️-writing--peer-review-assistants)
 - [📖 Awesome Lists](#-awesome-lists)
+<!-- END GENERATED:toc -->
 - [🏢 Commercial / Closed-source (for reference)](#-commercial--closed-source-for-reference)
 - [🧭 How to choose (decision table)](#-how-to-choose-decision-table)
 - [📈 Star history](#-star-history)
@@ -81,6 +87,7 @@ I want to chat with my library inside Zotero ───────────�
 
 ---
 
+<!-- BEGIN GENERATED:categories -->
 ## 🌟 All-in-one Research Agents & Skills
 
 > End-to-end `research → write → review → revise` solutions — mostly Claude Code / Codex skills.
@@ -243,6 +250,7 @@ I want to chat with my library inside Zotero ───────────�
 | [LLM4SR](https://github.com/du-nlp-lab/LLM4SR) | ~0.1k | Papers & resources on LLMs for scientific research surveys |
 | [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) | ~55 | AI tools for lit reviews, reference management, data analysis |
 | [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) | ~19 | Open-source tools for systematic reviews, meta-analysis & evidence synthesis |
+<!-- END GENERATED:categories -->
 
 ---
 
