@@ -1,16 +1,17 @@
-name: Update Star Counts
+name: Refresh Tool Metadata
 
 on:
   schedule:
-    # 每周一 04:00 UTC 刷新 Star 数 / weekly refresh of star counts
+    # 每周一 04:00 UTC 刷新元数据 / weekly refresh of stars, freshness, licenses
     - cron: "0 4 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
-  update-stars:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,10 +23,11 @@ jobs:
       - run: pip install pyyaml
 
       # Writes to data/tools.yaml only …
-      - name: Refresh star counts from the GitHub API
+      - name: Refresh metadata from the GitHub API
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/update_stars.py
+          WARNINGS_FILE: ${{ runner.temp }}/warnings.txt
+        run: python3 scripts/refresh_metadata.py
 
       # … then re-renders every surface from it, so the drift check stays green.
       - name: Re-render generated files
@@ -39,8 +41,46 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
-            git commit -m "chore: auto-refresh star counts [skip ci]"
+            git commit -m "chore: auto-refresh tool metadata [skip ci]"
             git push
           else
-            echo "No star-count changes."
+            echo "No metadata changes."
+          fi
+
+      # A renamed, deleted, or archived upstream repo is how a curated list rots.
+      # Keep exactly one open issue and rewrite its body each run, so this
+      # reports the current state instead of accumulating weekly duplicates.
+      - name: Report entries needing attention
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WARNINGS_FILE: ${{ runner.temp }}/warnings.txt
+        run: |
+          TITLE="Health report: entries needing attention"
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" \
+                      --json number --jq '.[0].number // empty')
+
+          if [[ ! -s "$WARNINGS_FILE" ]]; then
+            if [[ -n "$EXISTING" ]]; then
+              gh issue close "$EXISTING" \
+                --comment "All entries resolved as of $(date -u +%Y-%m-%d). Closing automatically."
+            fi
+            echo "Nothing to report."
+            exit 0
+          fi
+
+          COUNT=$(wc -l < "$WARNINGS_FILE" | tr -d ' ')
+          {
+            echo "The weekly metadata refresh found **$COUNT** entr(ies) that need a human:"
+            echo
+            sed 's/^/- /' "$WARNINGS_FILE"
+            echo
+            echo "Update \`data/tools.yaml\` (usually the \`repo:\` field), then run \`make build\`."
+            echo
+            echo "_Rewritten automatically on each run — last updated $(date -u +%Y-%m-%d)._"
+          } > "$RUNNER_TEMP/body.md"
+
+          if [[ -n "$EXISTING" ]]; then
+            gh issue edit "$EXISTING" --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh issue create --title "$TITLE" --body-file "$RUNNER_TEMP/body.md"
           fi
