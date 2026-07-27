@@ -295,6 +295,8 @@ Missing a great project? Contributions welcome — see [CONTRIBUTING.md](CONTRIB
 5. Open a PR and explain why it belongs here
 
 > You can also use the [issue template](.github/ISSUE_TEMPLATE/add-a-tool.yml) to suggest a tool in one click.
+>
+> Curious where this project is heading (data layer, freshness signals, searchable site, hands-on recipes)? See [ROADMAP.md](ROADMAP.md).
 
 If you find this useful, please leave a ⭐ **Star** so more researchers can discover it!
 
