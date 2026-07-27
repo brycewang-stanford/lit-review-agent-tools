@@ -111,7 +111,7 @@ I want to chat with my library inside Zotero ───────────�
 | [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 870 | 🟢 | MIT | Self-evolving AI research colleague, 285 skills, "zero hallucination" claim |
 | [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 722 | 🟢 | MIT | Multilingual library of 182 installable AI-agent skills across disciplines |
 | [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 238 | 🟡 | none | Claude Code skills for systematic literature review, incl. citation-validation scripts |
-| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 219 | 🟢 | MIT | Medical-research skills: search, reporting-guideline/citation checks, stats, figures, submission (by a physician-researcher) |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 220 | 🟢 | MIT | Medical-research skills: search, reporting-guideline/citation checks, stats, figures, submission (by a physician-researcher) |
 
 ---
 

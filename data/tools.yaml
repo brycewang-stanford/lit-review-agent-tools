@@ -13,7 +13,7 @@
   category: all-in-one
   added: 2026-07-26
   editor_pick: true
-  stars: 39667
+  stars: 39670
   pushed_at: 2026-07-27
   archived: false
   license: CC-BY-NC-4.0
@@ -26,7 +26,7 @@
   repo: Imbad0202/academic-research-skills-codex
   category: all-in-one
   added: 2026-07-26
-  stars: 7156
+  stars: 7157
   pushed_at: 2026-07-23
   archived: false
   license: CC-BY-NC-4.0
@@ -130,7 +130,7 @@
   repo: Aperivue/medsci-skills
   category: all-in-one
   added: 2026-07-26
-  stars: 219
+  stars: 220
   pushed_at: 2026-07-26
   archived: false
   license: MIT
@@ -608,7 +608,7 @@
   category: pdf-extraction
   added: 2026-07-26
   editor_pick: true
-  stars: 75817
+  stars: 75818
   pushed_at: 2026-07-25
   archived: false
   license: Apache-2.0
@@ -621,7 +621,7 @@
   repo: docling-project/docling
   category: pdf-extraction
   added: 2026-07-26
-  stars: 63817
+  stars: 63819
   pushed_at: 2026-07-26
   archived: false
   license: MIT
@@ -634,7 +634,7 @@
   repo: datalab-to/marker
   category: pdf-extraction
   added: 2026-07-26
-  stars: 37907
+  stars: 37908
   pushed_at: 2026-07-20
   archived: false
   license: Apache-2.0
@@ -849,7 +849,7 @@
   repo: handsome-rich/Awesome-Auto-Research-Tools
   category: awesome-lists
   added: 2026-07-26
-  stars: 1103
+  stars: 1104
   pushed_at: 2026-07-25
   archived: false
   license: CC0-1.0

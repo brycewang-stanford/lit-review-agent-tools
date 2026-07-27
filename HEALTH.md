@@ -18,16 +18,16 @@ you depend on it*, not *broken*.
 
 | Project | Stars | Last push | Status | License | Language |
 |---|---|---|---|---|---|
-| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 39,667 | 2026-07-27 | 🟢 active | CC-BY-NC-4.0 | Python |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 39,670 | 2026-07-27 | 🟢 active | CC-BY-NC-4.0 | Python |
 | [claude-skills](https://github.com/alirezarezvani/claude-skills) | 23,255 | 2026-07-17 | 🟢 active | MIT | Python |
-| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | 7,156 | 2026-07-23 | 🟢 active | CC-BY-NC-4.0 | Python |
+| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | 7,157 | 2026-07-23 | 🟢 active | CC-BY-NC-4.0 | Python |
 | [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 5,549 | 2026-06-23 | 🟢 active | MIT | unknown |
 | [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | 1,103 | 2026-01-04 | 🟡 slowing | MIT | Python |
 | [dr-claw](https://github.com/OpenLAIR/dr-claw) | 1,039 | 2026-07-16 | 🟢 active | custom | JavaScript |
 | [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 870 | 2026-06-08 | 🟢 active | MIT | TypeScript |
 | [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 722 | 2026-07-20 | 🟢 active | MIT | Python |
 | [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 238 | 2026-02-27 | 🟡 slowing | none | Python |
-| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 219 | 2026-07-26 | 🟢 active | MIT | Python |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 220 | 2026-07-26 | 🟢 active | MIT | Python |
 
 ## 🔎 Deep Research & Auto Survey Generation
 
@@ -97,9 +97,9 @@ you depend on it*, not *broken*.
 
 | Project | Stars | Last push | Status | License | Language |
 |---|---|---|---|---|---|
-| [MinerU](https://github.com/opendatalab/MinerU) | 75,817 | 2026-07-25 | 🟢 active | Apache-2.0 | Python |
-| [docling](https://github.com/docling-project/docling) | 63,817 | 2026-07-26 | 🟢 active | MIT | Python |
-| [marker](https://github.com/datalab-to/marker) | 37,907 | 2026-07-20 | 🟢 active | Apache-2.0 | Python |
+| [MinerU](https://github.com/opendatalab/MinerU) | 75,818 | 2026-07-25 | 🟢 active | Apache-2.0 | Python |
+| [docling](https://github.com/docling-project/docling) | 63,819 | 2026-07-26 | 🟢 active | MIT | Python |
+| [marker](https://github.com/datalab-to/marker) | 37,908 | 2026-07-20 | 🟢 active | Apache-2.0 | Python |
 | [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) | 35,808 | 2026-05-25 | 🟢 active | AGPL-3.0 | Python |
 | [grobid](https://github.com/grobidOrg/grobid) | 5,024 | 2026-07-26 | 🟢 active | Apache-2.0 | Java |
 | [paperetl](https://github.com/neuml/paperetl) | 697 | 2025-12-07 | 🟡 slowing | Apache-2.0 | Python |
@@ -129,7 +129,7 @@ you depend on it*, not *broken*.
 
 | Project | Stars | Last push | Status | License | Language |
 |---|---|---|---|---|---|
-| [Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) | 1,103 | 2026-07-25 | 🟢 active | CC0-1.0 | Python |
+| [Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) | 1,104 | 2026-07-25 | 🟢 active | CC0-1.0 | Python |
 | [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) | 445 | 2026-07-15 | 🟢 active | MIT | HTML |
 | [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) | 421 | 2026-07-03 | 🟢 active | MIT | unknown |
 | [LLM4SR](https://github.com/du-nlp-lab/LLM4SR) | 131 | 2025-01-22 | 🔴 stale | MIT | unknown |

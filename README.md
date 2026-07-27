@@ -107,7 +107,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 870 | 🟢 | MIT | 自进化的 AI 科研伙伴，285 个技能，主打「零幻觉」 |
 | [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 722 | 🟢 | MIT | 多语言的 182 个可安装 AI 智能体技能库，覆盖多学科 |
 | [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 238 | 🟡 | none | 面向系统性文献综述的 Claude Code 技能，含引用校验脚本 |
-| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 219 | 🟢 | MIT | 医学科研技能：检索、报告规范/引用核查、统计、出版图表、投稿（医生-研究者出品） |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 220 | 🟢 | MIT | 医学科研技能：检索、报告规范/引用核查、统计、出版图表、投稿（医生-研究者出品） |
 
 ---
 
