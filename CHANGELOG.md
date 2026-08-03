@@ -21,8 +21,8 @@
 - [open_deep_research](https://github.com/langchain-ai/open_deep_research) — Open deep-research reference implementation from LangChain. `deep-research`
 - [paper-qa](https://github.com/Future-House/paper-qa) — High-accuracy retrieval system for scientific papers whose answers always cite sources. `paper-qa-rag`
 - [local-deep-research](https://github.com/LearningCircuit/local-deep-research) — Local and private deep-research over many sources including arXiv and PubMed. `deep-research`
-- [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) — Codex-native sibling with a human-in-the-loop research flow. `all-in-one`
+- [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) — Workshop-level automated scientific discovery via agentic tree search. `autonomous-science`
 - [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Autonomous workflow from literature review through experimentation to report writing. `autonomous-science`
@@ -35,8 +35,8 @@
 - [scholarly](https://github.com/scholarly-python-package/scholarly) — Pythonic retrieval of authors and publications from Google Scholar. `citation-graphs`
 - [paperai](https://github.com/neuml/paperai) — Semantic search and question answering over medical and scientific papers. `paper-qa-rag`
 - [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) — Assistant that lives inside Zotero for research tasks. `reference-management`
-- [Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) — Automated tools for search, reading, experiments, and code generation. `awesome-lists`
 - [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) — Planning and writing skills with quality checkpoints for systematic paper writing. `all-in-one`
+- [Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) — Automated tools for search, reading, experiments, and code generation. `awesome-lists`
 - [dr-claw](https://github.com/OpenLAIR/dr-claw) — Research workbench with multiple AI-assistant personas. `all-in-one`
 - [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) — Automated generation of academic survey papers from a topic. `deep-research`
 - [ASReview](https://github.com/asreview/asreview) — Active-learning screener that ranks papers to cut systematic-review screening time. `systematic-review`
@@ -45,9 +45,9 @@
 - [paperetl](https://github.com/neuml/paperetl) — ETL pipeline that loads medical and scientific papers into structured stores. `pdf-extraction`
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — Multi-agent system that generates hypotheses and scientific discoveries. `autonomous-science`
 - [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
+- [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
-- [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
 - [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
@@ -58,8 +58,8 @@
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) — Claude Code skills for systematic literature review with citation-validation scripts. `all-in-one`
 - [medsci-skills](https://github.com/Aperivue/medsci-skills) — Medical-research skills for search, reporting-guideline checks, statistics, and submission. `all-in-one`
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — Finds and ranks scholarly papers and auto-generates a survey. `deep-research`
-- [ai-peer-review](https://github.com/poldrack/ai-peer-review) — Multi-model meta-review that synthesizes independent reviews of a paper. `writing-peer-review`
 - [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) — Claude Code plugin with specialist agents for reviewing, drafting, and polishing. `writing-peer-review`
+- [ai-peer-review](https://github.com/poldrack/ai-peer-review) — Multi-model meta-review that synthesizes independent reviews of a paper. `writing-peer-review`
 - [LLM4SR](https://github.com/du-nlp-lab/LLM4SR) — Papers and resources on language models for scientific research surveys. `awesome-lists`
 - [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) — Searches, accesses, and analyzes PubMed articles through a tool interface. `mcp-servers`
 - [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) — Low-code package that automates systematic-review screening with AI agents. `systematic-review`
