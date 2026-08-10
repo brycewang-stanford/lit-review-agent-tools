@@ -17,10 +17,12 @@ Every recipe below needs **no API key and no paid service**.
 | [03](03-verify-citations/) | Catch invented and retracted citations | cite-check | ~2 s/citation | 2026-07-27 |
 | [04](04-pdf-to-markdown/) | Turn a paper into structured Markdown with docling | extract | 78 s / 29 pp | 2026-07-27 |
 | [05](05-pdf-extractor-benchmark/) | Head-to-head: MinerU vs marker vs docling | extract | 16 min all-in | 2026-07-27 |
+| [06](06-multi-source-search/) | Six indexes, one corpus, zero keys | search | 4 min | 2026-08-10 |
 
-They chain: **01 → 02** (corpus to screener) and **04 → 03** (references out of a
-PDF into the verifier). Both chains were run, and both surfaced problems that
-only appear when you actually run them — see each recipe.
+They chain: **01 → 02** (corpus to screener), **04 → 03** (references out of a
+PDF into the verifier), and **06 → 04** (retrieved PDFs into the extractor). All
+were run, and each surfaced problems that only appear when you actually run
+them — see each recipe.
 
 ## Headline results
 
@@ -35,6 +37,13 @@ only appear when you actually run them — see each recipe.
   fixed; see recipe 03, which is the most useful thing in this directory.
 - **docling converted a 29-page paper in 78 seconds on CPU**, reconstructing 7
   tables including the search-strategy table a systematic review actually needs.
+- **Six scholarly APIs, searched with the same query, returned 47 unique papers
+  of which exactly one was found by more than one source.** Single-database
+  search is not a weaker version of multi-database search; it is a different,
+  much smaller literature. The same run pulled **33 of those 47 papers as legal
+  full text with no API key at all**, and its DOI-registration check caught a
+  DOI-mismatch bug in our own PubMed parsing before it could produce a
+  plausible-looking citation pointing at the wrong object.
 - **In a three-way head-to-head, docling is ~20× faster than marker — but marker
   recovers 26% more DOIs from reference lists.** Which one is right depends on
   whether you are embedding body text or chasing citations. Only docling ran on
@@ -45,18 +54,22 @@ only appear when you actually run them — see each recipe.
 
 Things that are invisible until you try:
 
-1. **Open access does not mean downloadable.** 91% of corpus records advertised a
+1. **Relevance rankings barely overlap between databases**, and they skew
+   differently: Europe PMC returned only 2026 papers on a query where OpenAlex
+   surfaced the older, more-cited work. Whichever single index you picked, you
+   picked a bias.
+2. **Open access does not mean downloadable.** 91% of corpus records advertised a
    PDF link. The first candidate (BMJ) served an HTML block page with a `.pdf`
    URL; it took 4 attempts to get a real PDF. Any pipeline that assumes
    `oa_url` → PDF will silently ingest HTML.
-2. **PDF extraction corrupts DOIs.** Of 10 DOIs pulled from a converted reference
+3. **PDF extraction corrupts DOIs.** Of 10 DOIs pulled from a converted reference
    list, 2 were unresolvable — one had a trailing `)`, and
    `10.1007/s40593013-0012-6` had lost a hyphen across a line break. Always
    validate extracted DOIs before treating a citation as missing.
-3. **Title matching cannot confirm a citation.** "Attention Is All You Need"
+4. **Title matching cannot confirm a citation.** "Attention Is All You Need"
    resolves in Crossref to a *different* 2025 paper, "Is Attention All You
    Need?", at 100% token overlap. Only a DOI confirms.
-4. **"pip install" hides real costs.** docling pulls torch and downloads ~26 MB
+5. **"pip install" hides real costs.** docling pulls torch and downloads ~26 MB
    of OCR weights on first run. marker additionally needs a non-Python binary
    (`llama.cpp`). Each of the three extractors is a 1.2–1.4 GB install, and they
    cannot share an environment — MinerU pins `transformers` below what marker's
@@ -73,7 +86,7 @@ not have. They are deliberately **not** written up:
 | STORM / Co-STORM | Needs an LLM key plus a search backend |
 | GPT Researcher | Needs an LLM key plus a search API |
 | AI-Scientist / AutoResearchClaw | Needs an LLM key, and runs experiments |
-| Semantic Scholar API at volume | Returns HTTP 429 without a key |
+| Semantic Scholar API at volume | Returns HTTP 429 without a key (confirmed again in recipe 06) |
 
 If you have run any of these, a recipe following the same format — commands,
 real output, runtime, and where it breaks — is the most valuable contribution
@@ -82,5 +95,6 @@ you can make to this repo. See [contributing.md](../contributing.md).
 ## Environment these were run in
 
 macOS (Darwin 25.5.0, Apple silicon), Python 3.13.5, no GPU, home broadband.
-`pyalex 0.21`, `asreview 3.0.8`, `docling 2.115.0`. Runtimes on a GPU box, or
-behind an institutional proxy, will differ.
+`pyalex 0.21`, `asreview 3.0.8`, `docling 2.115.0`. Recipe 06 needs none of
+these — it is standard library only. Runtimes on a GPU box, or behind an
+institutional proxy, will differ.

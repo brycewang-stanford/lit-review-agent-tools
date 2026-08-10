@@ -43,6 +43,8 @@ The distribution is lopsided: **36 tools help you search**, but only **4 help yo
 
 _Find candidate literature across databases._
 
+> 🧪 **Verified workflow:** [recipes/06-multi-source-search](recipes/06-multi-source-search/) — 6 APIs, 47 unique papers, only 1 found by more than one source.
+
 > 🧪 **Verified workflow:** [recipes/01-screening-corpus](recipes/01-screening-corpus/) — 597 OpenAlex records, deduplicated, in 18 s.
 
 | Tool | Stars | Health | Licence | Also covers |

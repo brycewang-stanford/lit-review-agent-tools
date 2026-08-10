@@ -103,6 +103,52 @@
         {"tool": "paper-qa", "cwd": "{workdir}/corpus", "args": ["ask", "Write a ~250-word related-work / literature-review paragraph on '{query}'. Synthesize the main themes, methods, and open gaps across these papers, and support every claim with an inline citation. Write in an academic tone suitable for a paper's Related Work section."]}
       ],
       "outputs": "A cited related-work paragraph on stdout, grounded in {workdir}/corpus."
+    },
+    {
+      "id": "topic-to-corpus",
+      "name": "Topic → deduplicated multi-source corpus",
+      "description": "Search six scholarly APIs at once (OpenAlex, Crossref, Semantic Scholar, PubMed, Europe PMC, arXiv), deduplicate by DOI, and save one .txt per unique paper. No install, no API key — the keyless starting point for any review.",
+      "params": {
+        "query": "search query defining the corpus",
+        "max": "how many hits per source before dedup (default 15)"
+      },
+      "defaults": {"max": "15"},
+      "steps": [
+        {"tool": "papers-fetch", "args": ["--query", "{query}", "--sources", "openalex,crossref,semanticscholar,pubmed,europepmc,arxiv", "--max", "{max}", "--dedup-titles", "--outdir", "{workdir}/corpus"]}
+      ],
+      "outputs": "results.json (normalised records + per-source counts) and one .txt per unique paper under {workdir}/corpus"
+    },
+    {
+      "id": "topic-to-fulltext",
+      "name": "Topic → multi-source search → open-access full text",
+      "description": "Search six APIs, deduplicate, then resolve every DOI to a legally downloadable full text via Unpaywall → OpenAlex → Europe PMC → arXiv → CORE. Turns an abstract-only corpus into a real full-text one. Keyless.",
+      "params": {
+        "query": "search query defining the corpus",
+        "max": "how many hits per source before dedup (default 15)"
+      },
+      "defaults": {"max": "15"},
+      "steps": [
+        {"tool": "papers-fetch", "args": ["--query", "{query}", "--sources", "openalex,crossref,semanticscholar,pubmed,europepmc,arxiv", "--max", "{max}", "--dedup-titles", "--outdir", "{workdir}/corpus"]},
+        {"tool": "oa-resolve", "args": ["--from-json", "{workdir}/corpus/results.json", "--outdir", "{workdir}/corpus", "--skip-existing"]}
+      ],
+      "outputs": "PDFs / full-text .txt + oa_report.json (how each DOI resolved, including the closed ones) under {workdir}/corpus"
+    },
+    {
+      "id": "topic-to-fulltext-review",
+      "name": "Topic → full-text corpus → cited answer",
+      "description": "The strongest end-to-end path: six-source search → dedup → open-access full-text resolution → PaperQA2 answers over the full texts rather than the abstracts. Needs OPENAI_API_KEY for the final step only.",
+      "params": {
+        "query": "search query defining the corpus",
+        "question": "the question to answer over the retrieved papers",
+        "max": "how many hits per source before dedup (default 12)"
+      },
+      "defaults": {"max": "12"},
+      "steps": [
+        {"tool": "papers-fetch", "args": ["--query", "{query}", "--sources", "openalex,crossref,semanticscholar,pubmed,europepmc,arxiv", "--max", "{max}", "--dedup-titles", "--outdir", "{workdir}/corpus"]},
+        {"tool": "oa-resolve", "args": ["--from-json", "{workdir}/corpus/results.json", "--outdir", "{workdir}/corpus", "--skip-existing"]},
+        {"tool": "paper-qa", "cwd": "{workdir}/corpus", "args": ["ask", "{question}"]}
+      ],
+      "outputs": "A full-text corpus under {workdir}/corpus + a citation-backed answer on stdout."
     }
   ]
 }

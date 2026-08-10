@@ -4,7 +4,7 @@
 
 Curated tools that help AI agents handle the whole loop of a literature review: search, screen, extract, read, synthesize, verify citations, and write.
 
-Every entry carries a maintenance status and a licence, refreshed weekly from the GitHub API, because a dead link and a non-commercial licence both cost you more than a missing star count. Four of the workflows here were run end to end rather than described.
+Every entry carries a maintenance status and a licence, refreshed weekly from the GitHub API, because a dead link and a non-commercial licence both cost you more than a missing star count. Six of the workflows here were run end to end rather than described, including a six-database search that recovered 33 full-text papers without an API key.
 
 - 🔍 [Searchable version](https://brycewang-stanford.github.io/lit-review-agent-tools/) — filter by workflow stage, maintenance status and licence
 - 🧪 [Verified workflows](recipes/) — executed, with real output and what broke

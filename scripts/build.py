@@ -299,16 +299,18 @@ def render_stages(cats, tools, meta) -> str:
 
     # Stages where a workflow in recipes/ was actually executed end to end.
     RECIPES = {
-        "search": ("01-screening-corpus", "597 OpenAlex records, deduplicated, in 18 s"),
-        "screen": ("02-active-learning-screening", "all 38 relevant papers after screening 5.5% of 4,544"),
-        "cite-check": ("03-verify-citations", "caught a retraction and an invented citation"),
-        "extract": ("05-pdf-extractor-benchmark", "docling ~20x faster than marker; marker recovers 26% more DOIs"),
+        "search": [
+            ("06-multi-source-search", "6 APIs, 47 unique papers, only 1 found by more than one source"),
+            ("01-screening-corpus", "597 OpenAlex records, deduplicated, in 18 s"),
+        ],
+        "screen": [("02-active-learning-screening", "all 38 relevant papers after screening 5.5% of 4,544")],
+        "cite-check": [("03-verify-citations", "caught a retraction and an invented citation")],
+        "extract": [("05-pdf-extractor-benchmark", "docling ~20x faster than marker; marker recovers 26% more DOIs")],
     }
     for sid, label, blurb in STAGES:
         rows = sorted(counts[sid], key=lambda x: -(x.get("stars") or 0))
         lines += [f"## {label}", "", f"_{blurb}_", ""]
-        if sid in RECIPES:
-            slug, result = RECIPES[sid]
+        for slug, result in RECIPES.get(sid, []):
             lines += [f"> 🧪 **Verified workflow:** [recipes/{slug}](recipes/{slug}/) — {result}.", ""]
         if not rows:
             lines += ["_Nothing in the catalogue covers this yet._", ""]

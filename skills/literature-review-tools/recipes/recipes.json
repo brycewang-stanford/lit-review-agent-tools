@@ -177,6 +177,32 @@
       "notes": "Bundled fetcher over NCBI E-utilities. Saves each article's title+abstract as .txt (+ manifest) — PubMed rarely exposes downloadable PDFs. Best for biomedical corpora. No key needed for light use; set NCBI_API_KEY / NCBI_EMAIL to raise the rate limit."
     },
     {
+      "id": "papers-fetch",
+      "name": "Multi-source paper search (6 APIs, deduplicated)",
+      "category": "retrieval",
+      "kind": "python-script",
+      "repo": "https://github.com/brycewang-stanford/lit-review-agent-tools",
+      "pip": [],
+      "script": "fetch_papers.py",
+      "example": "papers-fetch --query 'retrieval augmented generation' --sources openalex,crossref,semanticscholar --max 20 --outdir ./papers",
+      "env": [],
+      "env_optional": ["OPENALEX_API_KEY", "OPENALEX_MAILTO", "S2_API_KEY", "NCBI_API_KEY", "NCBI_EMAIL", "CROSSREF_MAILTO"],
+      "notes": "Bundled, standard-library only — no install, no API key. Searches any subset of OpenAlex, Crossref, Semantic Scholar, PubMed, Europe PMC and arXiv, merges the hits into one normalised record list deduplicated by DOI (add --dedup-titles to also fold preprint/published pairs), and writes results.json + one .txt per record + manifest.json. A failing source is reported and skipped, never fatal. Use it instead of arxiv-fetch/openalex-fetch/pubmed-fetch when you want coverage rather than one index."
+    },
+    {
+      "id": "oa-resolve",
+      "name": "Open-access full-text resolver",
+      "category": "retrieval",
+      "kind": "python-script",
+      "repo": "https://github.com/brycewang-stanford/lit-review-agent-tools",
+      "pip": [],
+      "script": "resolve_oa.py",
+      "example": "oa-resolve --from-json ./papers/results.json --outdir ./papers --email you@example.com",
+      "env": [],
+      "env_optional": ["UNPAYWALL_EMAIL", "CORE_API_KEY"],
+      "notes": "Bundled, standard-library only. Turns DOIs into downloadable full text by walking Unpaywall -> OpenAlex -> Europe PMC OA XML -> arXiv -> CORE, stopping at the first hit. Writes PDFs/plain text plus oa_report.json recording how each DOI resolved, separating 'closed' (paywalled) from 'not-in-crossref' (no such record — usually an invented citation). Never bypasses a paywall. This is the step that turns an abstract-only corpus into a full-text one before PaperQA2."
+    },
+    {
       "id": "arxiv-mcp-server",
       "name": "arxiv-mcp-server",
       "category": "mcp-server",

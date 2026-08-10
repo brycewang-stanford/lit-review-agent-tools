@@ -149,7 +149,9 @@ def exec_cli(t, tool_args, env, cwd=None, dry=False):
         cmd = [str(probe), *tool_args]
         display = t["entry"]
     elif t["kind"] == "python-script":
-        probe = venv_python(t["id"])
+        # Stdlib-only scripts (no pip list) run on the ambient interpreter —
+        # no venv, no install, nothing to go stale.
+        probe = Path(sys.executable) if not t.get("pip") else venv_python(t["id"])
         cmd = [str(probe), str(SCRIPTS_DIR / t["script"]), *tool_args]
         display = t["script"]
     else:
@@ -177,7 +179,8 @@ def cmd_list(tools, args):
             continue
         if args.kind and t["kind"] != args.kind:
             continue
-        installed = "✓" if venv_python(t["id"]).exists() or t["kind"] == "mcp-server" and not t.get("pip") else " "
+        no_install_needed = not t.get("pip")  # stdlib scripts and uvx MCP servers
+        installed = "✓" if venv_python(t["id"]).exists() or no_install_needed else " "
         rows.append((installed, t["id"], t["kind"], t["category"], t["name"]))
     if not rows:
         print("No tools match that filter.")
@@ -201,7 +204,8 @@ def cmd_info(tools, args):
     if t.get("entry"):
         print(f"entry:    {t['entry']}")
     if t.get("script"):
-        print(f"script:   {t['script']} (bundled; runs via this tool's venv)")
+        where = "runs via this tool's venv" if t.get("pip") else "stdlib only — no install, runs on python3"
+        print(f"script:   {t['script']} (bundled; {where})")
     if t.get("example"):
         print(f"example:  {t['example']}")
     req = t.get("env", [])
@@ -271,6 +275,10 @@ def cmd_install(tools, args):
     if not t.get("pip"):
         if t["kind"] == "mcp-server":
             print(f"{t['id']} needs no install (runs via uvx). Register it with: litrun.py mcp {t['id']}")
+            return
+        if t["kind"] == "python-script":
+            print(f"{t['id']} needs no install — it is standard-library only. "
+                  f"Just run it: litrun.py run {t['id']} -- <args>")
             return
         die(f"{t['id']} has no pip recipe; see notes: {t['notes']}")
     print(f"Installing {t['name']} into {venv_dir(t['id'])} ...")
@@ -400,7 +408,7 @@ def cmd_workflow(tools, args):
     if args.dry_run:
         print("(dry run — nothing executed. Drop --dry-run to run for real.)")
     else:
-        print(f"✓ workflow '{w['id']}' finished. Outputs: {w.get('outputs', workdir)}")
+        print(f"✓ workflow '{w['id']}' finished. Outputs: {sub(w.get('outputs') or str(workdir))}")
 
 
 def cmd_ui(tools, args):

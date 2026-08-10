@@ -9,9 +9,13 @@ description: >-
   PDF→Markdown extraction for LLMs (MinerU/marker/docling), PRISMA / systematic
   review (ASReview), citation-backed Q&A over PDFs (PaperQA2), wiring papers into
   Claude/Cursor via MCP (arxiv/paper-search/zotero servers), or chatting with a
-  Zotero library. Ships a launcher (scripts/litrun.py) that installs each tool in
-  an isolated venv and runs it. Curated catalog of 70+ vetted projects.
-  支持中英文（用于「文献综述工具选型」与「一键安装/运行」）。
+  Zotero library. Also answers direct literature lookups — find papers on a topic,
+  resolve a DOI, get an open-access PDF, check a citation, search PubMed / OpenAlex /
+  Crossref / Semantic Scholar / Europe PMC / arXiv — with no install and no API key.
+  Ships a launcher (scripts/litrun.py) that installs each tool in an isolated venv and
+  runs it, plus keyless bundled scripts for multi-source search and open-access
+  full-text retrieval. Curated catalog of 70+ vetted projects.
+  支持中英文（用于「文献综述工具选型」「文献检索」与「一键安装/运行」）。
 ---
 
 # Literature Review Tools — Select & Run
@@ -25,10 +29,46 @@ paper-writing / peer-review assistants.
 
 Full source of truth (README, always current star counts): <https://github.com/brycewang-stanford/lit-review-agent-tools>
 
-## Two modes
+## Three modes
 
+- **Look up** — user wants *the literature itself*: "find papers on X", "get me the PDF for this DOI", "does this citation exist", "what does PubMed have since 2022". Answer it directly — no install, no key. Start with [`reference/apis/README.md`](reference/apis/README.md) for one-off lookups, or run the bundled `papers-fetch` / `oa-resolve` scripts for anything corpus-sized.
 - **Recommend** — user asks "what should I use to …". Route with the tables below; cite the catalog for details.
 - **Run** — user asks to *install / run / use* a specific tool ("turn this PDF into Markdown with MinerU", "ask PaperQA2 about these papers", "set up the arXiv MCP server"). Drive [`scripts/litrun.py`](scripts/litrun.py) via Bash — do not hand the user raw pip commands to copy.
+
+Mode 1 is the cheap default. Do not send someone to install PyTorch when they asked
+for five papers and a PDF.
+
+## Look up mode — search without installing anything
+
+Two bundled scripts, both **standard-library only**: no venv, no pip, no API key.
+Run them straight (`python3 scripts/fetch_papers.py …`) or through the launcher.
+
+```bash
+# 1. search six indexes at once, deduplicated by DOI
+python3 scripts/fetch_papers.py --query "active learning for screening" \
+    --sources openalex,crossref,semanticscholar,pubmed,europepmc,arxiv \
+    --max 15 --dedup-titles --outdir ./corpus
+
+# 2. turn those DOIs into full text you may legally read
+python3 scripts/resolve_oa.py --from-json ./corpus/results.json --outdir ./corpus
+```
+
+`fetch_papers.py` writes `results.json` (normalised records, per-source counts, and the
+errors of any source that failed) plus one `.txt` per paper. `resolve_oa.py` walks
+Unpaywall → OpenAlex → Europe PMC → arXiv → CORE and writes `oa_report.json` recording
+how every DOI resolved — **including the ones that stayed closed**, and separating those
+from DOIs Crossref has never registered (usually an invented citation). On a 47-paper
+corpus with zero keys it recovered 33 full texts; nothing in it bypasses a paywall, and
+you should not offer to.
+
+For a *single* lookup — one DOI, one author, one citation check — skip the scripts and
+call the API directly (`WebFetch`/`curl`). [`reference/apis/`](reference/apis/) has a
+routing table, the identifier formats, and one page per API with the endpoints and the
+failure modes that waste time (Crossref's `select` 400, OpenAlex's inverted abstracts,
+Semantic Scholar's exhausted keyless pool, PubMed's multi-part `AbstractText`).
+
+Report which indexes you queried and which came back empty. "OpenAlex had no match" is
+a fact; "that paper doesn't exist" is a much bigger claim than one API can support.
 
 ## Run mode — how to drive `scripts/litrun.py`
 
@@ -48,7 +88,8 @@ Commands: `list [--category C] [--kind K]` · `info <id>` · `doctor` · `env [-
 
 Runnable ids by kind:
 - **python-cli (auto install+run):** `mineru`, `marker`, `docling` (PDF→Markdown) · `paper-qa` (cited Q&A) · `asreview` (PRISMA screening UI)
-- **python-script (bundled, auto install+run):** `arxiv-fetch` (arXiv PDFs) · `openalex-fetch` (OpenAlex; PDF or abstract .txt) · `pubmed-fetch` (PubMed abstracts) — all keyless for light use
+- **python-script, zero install (stdlib only):** `papers-fetch` (6-source deduplicated search) · `oa-resolve` (DOI → open-access full text)
+- **python-script (bundled, auto install+run):** `arxiv-fetch` (arXiv PDFs) · `openalex-fetch` (OpenAlex; PDF or abstract .txt) · `pubmed-fetch` (PubMed abstracts) — all keyless for light use. `papers-fetch` supersedes all three when you want coverage rather than one index.
 - **python-lib (install + run example):** `gpt-researcher`, `storm` (deep research; need API keys) · `scholarly`, `pyalex` (API clients)
 - **mcp-server (install + `mcp` config):** `arxiv-mcp-server`, `paper-search-mcp`, `zotero-mcp`
 
@@ -64,8 +105,14 @@ For multi-tool tasks, prefer a named workflow over hand-wiring steps: `litrun.py
 - `topic-to-review` — arXiv query → download PDFs → citation-backed answer (PaperQA2). The end-to-end "retrieve then review" pipeline; no MCP client needed. Needs `OPENAI_API_KEY` for the QA step.
 - `topic-to-review-multi` — retrieve from **arXiv + OpenAlex** into one corpus → citation-backed answer. Broader coverage; resilient if one source is rate-limited.
 - `topic-to-related-work` — retrieve (arXiv + OpenAlex) → PaperQA2 drafts a **cited related-work paragraph** synthesizing themes/methods/gaps. Needs `OPENAI_API_KEY`.
+- `topic-to-corpus` — six-source search → deduplicated corpus. **Keyless, no install** — the default first step for any review.
+- `topic-to-fulltext` — six-source search → open-access full text for every DOI it can legally get. Keyless.
+- `topic-to-fulltext-review` — the strongest path: search → dedup → full text → PaperQA2 answers over **full texts, not abstracts**. `OPENAI_API_KEY` for the last step only.
 
-For biomedical topics, prefer PubMed: run `arxiv-fetch`/`openalex-fetch`'s sibling `pubmed-fetch` into the corpus dir before the QA step (or just use `openalex-fetch`, which covers biomed too).
+Prefer the `topic-to-fulltext*` workflows over `topic-to-review-multi`: same idea, six
+sources instead of two, DOI-level deduplication, and it retrieves the papers rather
+than the abstracts. Biomedical topics need no special casing — PubMed and Europe PMC
+are already in the source set.
 
 Add `--dry-run` first to show the exact resolved step commands without executing — good for confirming paths with the user before a heavy run. Workflows fail fast if a required API key is missing.
 
@@ -81,6 +128,7 @@ Guardrails: installs and downloads happen under the user's home and hit the netw
 ## ⚡ 30-second picker
 
 ```text
+Just need the papers themselves (topic / DOI / OA PDF) ──▶ Look up mode — no install ⭐
 Use Claude Code, want end-to-end research→paper ──────────▶ academic-research-skills ⭐
 Want AI to research a topic → cited report ───────────────▶ GPT Researcher / STORM
 Want fully autonomous "idea → submittable paper" ────────▶ AI-Scientist-v2 / AutoResearchClaw

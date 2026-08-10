@@ -29,8 +29,10 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 
 > 🔍 **[Open the searchable version →](https://brycewang-stanford.github.io/lit-review-agent-tools/)** — filter by use case, maintenance status and licence, in either language.
 >
-> 🧪 **[Workflows that were actually run →](recipes/)** — 5 pipelines executed end to end, with real output and the things that broke. No API keys needed.
+> 🧪 **[Workflows that were actually run →](recipes/)** — 6 pipelines executed end to end, with real output and the things that broke. No API keys needed.
 > Headline: ASReview found **all 38 relevant papers after screening 248 of 4,544 records (5.5%)** on a published review's own data.
+>
+> 🔎 **[Search six scholarly APIs with nothing installed →](skills/literature-review-tools/)** — the bundled skill now ships a standard-library multi-source search and an open-access full-text resolver. On one query they returned **47 unique papers and pulled 33 of them as legal full text, with no API key**.
 >
 > 🧭 **[Browse by workflow stage →](STAGES.md)** — search · screen · extract · read · synthesize · cite-check · write · review.
 >

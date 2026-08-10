@@ -221,7 +221,7 @@ Publish `data/tools.json` and document its schema in `docs/DATA.md`. Explicitly 
 
 ## Phase 4 — Editorial depth (the real moat) ✅ *shipped 2026-07-27*
 
-> **Delivered.** Four workflows in [`recipes/`](recipes/), each **executed end to end**
+> **Delivered.** Six workflows in [`recipes/`](recipes/), each **executed end to end**
 > on this machine, key-free, with real output. The headline: ASReview found **all 38
 > relevant papers after screening 248 of 4,544 records (5.5%)** on a published review's
 > own SYNERGY data — the catalogue's biggest claim, now measured rather than repeated.
@@ -248,11 +248,25 @@ Publish `data/tools.json` and document its schema in `docs/DATA.md`. Explicitly 
 > workaround, and MinerU's CLI failed where its Python API worked. Two of the three
 > failures in that run were ours, not the tools', and are written up as such.
 
+> **Phase 4 continues (2026-08-10): the retrieval layer.** [Recipe 06](recipes/06-multi-source-search/)
+> answers a question the catalogue had been ducking — *does it matter which database you
+> search?* Six APIs, one query, 50 raw hits, **47 unique papers of which exactly one was
+> returned by more than one source.** Single-database search is not a smaller version of
+> multi-database search; it is a different literature. The same run recovered **31 of the
+> 47 as legal full text with no API key at all** — and its DOI-registration check caught
+> a real DOI-mismatch bug in our own PubMed parsing, which is written up as ours.
+>
+> That result shipped as capability, not just prose: the skill now carries two
+> standard-library scripts (`fetch_papers.py`, `resolve_oa.py`) that need no venv and no
+> key, three new workflows, and a `reference/apis/` layer documenting each API's
+> endpoints and its time-wasting failure modes. The skill gained a third mode — **look
+> up** — so "find me papers on X" no longer routes through a 1.3 GB install.
+
 Anyone can clone a link list in an afternoon. Nobody can clone verified hands-on experience.
 
 > ⚠️ **Overlap:** a `skills/literature-review-tools/recipes/recipes.json` is being authored in parallel. Decide one home before writing more: either recipes are *skill data* (stay under `skills/`, and the repo-facing `recipes/*.md` are generated from that JSON) or they are *repo content* (live at root, and the skill consumes them). Do not maintain both by hand.
 
-- **`recipes/` — 5–8 end-to-end, actually-run workflows.** e.g. *"200 PDFs → MinerU → PaperQA2 index → cited answers"*, *"topic → STORM outline → citation check against OpenAlex"*, *"3,000 abstracts → ASReview active-learning screen → PRISMA flow diagram"*. Each with commands, runtime, cost, and a note on where it breaks. Screenshot or transcript required — no recipe ships unrun.
+- **`recipes/` — 5–8 end-to-end, actually-run workflows.** ✅ *six shipped* e.g. *"200 PDFs → MinerU → PaperQA2 index → cited answers"*, *"topic → STORM outline → citation check against OpenAlex"*, *"3,000 abstracts → ASReview active-learning screen → PRISMA flow diagram"*. Each with commands, runtime, cost, and a note on where it breaks. Screenshot or transcript required — no recipe ships unrun.
 - **Stage × Tool matrix.** One grid: rows = the 8 workflow stages, columns = top tools, cells = ✅ / ⚠️ / ❌. Makes coverage gaps visible at a glance and is inherently screenshot-shaped.
 - **Honest head-to-heads.** Same task through 3 tools, documented outcome. Even one such comparison outranks another 20 catalog entries in value.
 - **Deepen the ⭐ picks.** Each editor's pick gets a short "why this, when not this" paragraph. Curation with a stated opinion is the product.
