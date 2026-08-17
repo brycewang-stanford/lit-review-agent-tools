@@ -77,7 +77,7 @@
 
 ## Watch list
 
-9 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
+10 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
 
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — last push 2023-05-23 (stale)
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — last push 2024-03-21 (stale)
@@ -88,3 +88,4 @@
 - [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) — last push 2025-05-08 (stale)
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — last push 2025-05-10 (stale)
 - [open_reviewer](https://github.com/maxidl/openreviewer) — last push 2025-06-21 (stale)
+- [alex-mcp](https://github.com/drAbreu/alex-mcp) — last push 2025-08-11 (stale)
