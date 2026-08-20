@@ -14,13 +14,13 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 [简体中文](README.zh.md) · **English** · **[🔍 Searchable site](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em><b>66</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
+<em><b>67</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -212,6 +212,7 @@ I want to chat with my library inside Zotero ───────────�
 | [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) | ~2.6k | 🟢 | AGPL-3.0 | Zotero AI + MCP plugin; chat/batch-process PDFs across 30+ LLMs |
 | [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) | ~1.7k | 🔴 | AGPL-3.0 | "Aria" — LLM-powered research assistant inside Zotero |
 | [paper-note-filler](https://github.com/chauff/paper-note-filler) | 47 | 🟡 | none | Obsidian plugin auto-creating notes from arXiv / ACL Anthology / Semantic Scholar |
+| [PaperForge](https://github.com/Lurek-st/PaperForge) | niche | ❔ | — | Local-first Zotero → AI Agent → Obsidian workflow for traceable single-paper reading, source-located evidence review, and structured research notes. |
 
 ---
 

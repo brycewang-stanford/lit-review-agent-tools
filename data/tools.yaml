@@ -663,6 +663,18 @@
   desc_zh: "Obsidian 插件，从 arXiv / ACL Anthology / Semantic Scholar 自动建笔记"
   desc_en: "Obsidian plugin auto-creating notes from arXiv / ACL Anthology / Semantic Scholar"
   desc_awesome: "Obsidian plugin that auto-creates notes from scholarly sources."
+- name: "PaperForge"
+  repo: Lurek-st/PaperForge
+  category: reference-management
+  stage: [read]
+  added: 2026-08-20
+  stars: null
+  stars_label:
+    zh: "小众"
+    en: "niche"
+  desc_zh: "本地优先的 Zotero → AI Agent → Obsidian 论文阅读工作流，用来源定位、证据审查与结构化笔记把单篇深读结果沉淀到长期知识库。"
+  desc_en: "Local-first Zotero → AI Agent → Obsidian workflow for traceable single-paper reading, source-located evidence review, and structured research notes."
+  desc_awesome: "Local-first Zotero-to-agent-to-Obsidian workflow for traceable paper reading and source-located research notes."
 
 # ── pdf-extraction ──────────────────────────────────────────────
 - name: "MinerU"

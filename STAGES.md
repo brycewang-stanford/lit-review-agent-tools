@@ -14,7 +14,7 @@ Four of these stages have a workflow in [recipes/](recipes/) that was actually r
 | **Search** | Find candidate literature across databases. | 36 |
 | **Screen** | Include/exclude at scale — the PRISMA bottleneck. | 4 |
 | **Extract** | Turn PDFs into structured text or data. | 10 |
-| **Read** | Read, annotate, and interrogate individual papers. | 12 |
+| **Read** | Read, annotate, and interrogate individual papers. | 13 |
 | **Synthesize** | Combine findings across papers into themes. | 30 |
 | **Cite-check** | Verify citations and claims against the sources. | 11 |
 | **Write** | Draft the prose. | 22 |
@@ -136,6 +136,7 @@ _Read, annotate, and interrogate individual papers._
 | [openpaper](https://github.com/khoj-ai/openpaper) | 413 | 🟢 | AGPL-3.0 | Synthesize, Cite-check |
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | 126 | 🔴 | MIT | Search |
 | [paper-note-filler](https://github.com/chauff/paper-note-filler) | 47 | 🟡 | none | — |
+| [PaperForge](https://github.com/Lurek-st/PaperForge) | niche | ❔ | — | — |
 
 ## Synthesize
 

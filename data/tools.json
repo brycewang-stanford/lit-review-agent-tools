@@ -1008,6 +1008,26 @@
       "description_zh": "Obsidian 插件，从 arXiv / ACL Anthology / Semantic Scholar 自动建笔记"
     },
     {
+      "name": "PaperForge",
+      "repo": "Lurek-st/PaperForge",
+      "url": "https://github.com/Lurek-st/PaperForge",
+      "category": "reference-management",
+      "stage": [
+        "read"
+      ],
+      "editor_pick": false,
+      "why": null,
+      "caveat": null,
+      "stars": null,
+      "pushed_at": null,
+      "status": null,
+      "archived": null,
+      "license": null,
+      "language": null,
+      "description_en": "Local-first Zotero → AI Agent → Obsidian workflow for traceable single-paper reading, source-located evidence review, and structured research notes.",
+      "description_zh": "本地优先的 Zotero → AI Agent → Obsidian 论文阅读工作流，用来源定位、证据审查与结构化笔记把单篇深读结果沉淀到长期知识库。"
+    },
+    {
       "name": "MinerU",
       "repo": "opendatalab/MinerU",
       "url": "https://github.com/opendatalab/MinerU",

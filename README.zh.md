@@ -14,13 +14,13 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 **简体中文** · [English](README.en.md) · [Awesome list](README.md) · **[🔍 可搜索站点](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em>收录 <b>66</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
+<em>收录 <b>67</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -208,6 +208,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) | ~2.6k | 🟢 | AGPL-3.0 | Zotero AI + MCP 插件，跨 30+ LLM 聊天/批量处理 PDF |
 | [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) | ~1.7k | 🔴 | AGPL-3.0 | Zotero 内的「Aria」LLM 研究助手 |
 | [paper-note-filler](https://github.com/chauff/paper-note-filler) | 47 | 🟡 | none | Obsidian 插件，从 arXiv / ACL Anthology / Semantic Scholar 自动建笔记 |
+| [PaperForge](https://github.com/Lurek-st/PaperForge) | 小众 | ❔ | — | 本地优先的 Zotero → AI Agent → Obsidian 论文阅读工作流，用来源定位、证据审查与结构化笔记把单篇深读结果沉淀到长期知识库。 |
 
 ---
 

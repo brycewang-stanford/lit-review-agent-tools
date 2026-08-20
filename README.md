@@ -95,6 +95,7 @@ Every entry carries a maintenance status and a licence, refreshed weekly from th
 - [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) - Zotero plugin to chat with and batch-process PDFs across many models.
 - [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) - Assistant that lives inside Zotero for research tasks.
 - [paper-note-filler](https://github.com/chauff/paper-note-filler) - Obsidian plugin that auto-creates notes from scholarly sources.
+- [PaperForge](https://github.com/Lurek-st/PaperForge) - Local-first Zotero-to-agent-to-Obsidian workflow for traceable paper reading and source-located research notes.
 
 ## PDF to Structured Data
 
