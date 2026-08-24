@@ -14,13 +14,13 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 [简体中文](README.zh.md) · **English** · **[🔍 Searchable site](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em><b>66</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
+<em><b>67</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -199,6 +199,7 @@ I want to chat with my library inside Zotero ───────────�
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | 126 | 🔴 | MIT | Search, access, and analyze PubMed articles (metadata + deep analysis) |
 | [alex-mcp](https://github.com/drAbreu/alex-mcp) | 54 | 🔴 | MIT | OpenAlex MCP focused on author disambiguation and institution/work lookup |
 | [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 45 | 🟢 | MIT | OpenAlex (240M+ works): citation analysis, research-trend tracking, collaboration networks |
+| [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) | 3 | 🟢 | MIT | Full-text peer-reviewed paper search, citation traversal, evidence extraction, claim verification against verbatim quotes, and methodology guidance for AI agents |
 
 ---
 

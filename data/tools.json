@@ -924,6 +924,29 @@
       "description_zh": "OpenAlex（2.4 亿+ 成果）：引用分析、研究趋势、合作网络"
     },
     {
+      "name": "lune-research",
+      "repo": "RetrogradeLabs/lune-mcp-server",
+      "url": "https://github.com/RetrogradeLabs/lune-mcp-server",
+      "category": "mcp-servers",
+      "stage": [
+        "search",
+        "extract",
+        "read",
+        "cite-check"
+      ],
+      "editor_pick": false,
+      "why": null,
+      "caveat": null,
+      "stars": 3,
+      "pushed_at": "2026-08-24",
+      "status": "active",
+      "archived": false,
+      "license": "MIT",
+      "language": "TypeScript",
+      "description_en": "Full-text peer-reviewed paper search, citation traversal, evidence extraction, claim verification against verbatim quotes, and methodology guidance for AI agents",
+      "description_zh": "面向 AI 智能体的同行评审论文全文检索、引文追踪、证据提取、原文引述式论断核验与科研方法指导"
+    },
+    {
       "name": "zotero-gpt",
       "repo": "MuiseDestiny/zotero-gpt",
       "url": "https://github.com/MuiseDestiny/zotero-gpt",

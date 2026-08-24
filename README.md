@@ -88,6 +88,7 @@ Every entry carries a maintenance status and a licence, refreshed weekly from th
 - [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) - Searches, accesses, and analyzes PubMed articles through a tool interface.
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) - OpenAlex server focused on author disambiguation and institution lookup.
 - [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) - OpenAlex-backed citation analysis, trend tracking, and collaboration mapping.
+- [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) - Searches full-text peer-reviewed papers, traces citations, extracts evidence, verifies claims against quotes, and retrieves methodology guidance.
 
 ## Reference and Knowledge Management
 

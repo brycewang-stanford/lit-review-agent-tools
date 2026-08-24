@@ -11,16 +11,16 @@ Four of these stages have a workflow in [recipes/](recipes/) that was actually r
 
 | Stage | What it means | Tools |
 |---|---|---|
-| **Search** | Find candidate literature across databases. | 36 |
+| **Search** | Find candidate literature across databases. | 37 |
 | **Screen** | Include/exclude at scale — the PRISMA bottleneck. | 4 |
-| **Extract** | Turn PDFs into structured text or data. | 10 |
-| **Read** | Read, annotate, and interrogate individual papers. | 12 |
+| **Extract** | Turn PDFs into structured text or data. | 11 |
+| **Read** | Read, annotate, and interrogate individual papers. | 13 |
 | **Synthesize** | Combine findings across papers into themes. | 30 |
-| **Cite-check** | Verify citations and claims against the sources. | 11 |
+| **Cite-check** | Verify citations and claims against the sources. | 12 |
 | **Write** | Draft the prose. | 22 |
 | **Review** | Critique a draft before a human reviewer does. | 10 |
 
-The distribution is lopsided: **36 tools help you search**, but only **4 help you screen** and **10 help you extract**. The ecosystem is thickest where the work is easiest to automate and thinnest in the middle of a real review — which is worth knowing before you assume a tool exists for your bottleneck.
+The distribution is lopsided: **37 tools help you search**, but only **4 help you screen** and **10 help you review**. The ecosystem is thickest where the work is easiest to automate and thinnest in the middle of a real review — which is worth knowing before you assume a tool exists for your bottleneck.
 
 ## Editor's picks by stage
 
@@ -84,6 +84,7 @@ _Find candidate literature across databases._
 | [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 45 | 🟢 | MIT | Cite-check |
 | [citegraph](https://github.com/Citegraph/citegraph) | 22 | 🟡 | MIT | — |
 | [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 20 | 🟡 | MIT | Synthesize, Cite-check, Review |
+| [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) | 3 | 🟢 | MIT | Extract, Read, Cite-check |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | Screen |
 
 ## Screen
@@ -117,6 +118,7 @@ _Turn PDFs into structured text or data._
 | [paperetl](https://github.com/neuml/paperetl) | 697 | 🟡 | Apache-2.0 | — |
 | [scipdf_parser](https://github.com/titipata/scipdf_parser) | 456 | 🔴 | MIT | — |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 27 | 🟢 | AGPL-3.0 | Screen |
+| [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) | 3 | 🟢 | MIT | Search, Read, Cite-check |
 
 ## Read
 
@@ -136,6 +138,7 @@ _Read, annotate, and interrogate individual papers._
 | [openpaper](https://github.com/khoj-ai/openpaper) | 419 | 🟢 | AGPL-3.0 | Synthesize, Cite-check |
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | 126 | 🔴 | MIT | Search |
 | [paper-note-filler](https://github.com/chauff/paper-note-filler) | 47 | 🟡 | none | — |
+| [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) | 3 | 🟢 | MIT | Search, Extract, Cite-check |
 
 ## Synthesize
 
@@ -193,6 +196,7 @@ _Verify citations and claims against the sources._
 | [medsci-skills](https://github.com/Aperivue/medsci-skills) | 266 | 🟢 | MIT | Search, Write |
 | [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 45 | 🟢 | MIT | Search |
 | [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 20 | 🟡 | MIT | Search, Synthesize, Review |
+| [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) | 3 | 🟢 | MIT | Search, Extract, Read |
 
 ## Write
 
