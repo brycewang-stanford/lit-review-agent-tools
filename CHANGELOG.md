@@ -19,9 +19,9 @@
 - [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) — End-to-end automated discovery covering literature review, experiments, writing, and review. `autonomous-science`
 - [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — Self-evolving research from idea to conference-ready paper with real literature and sandboxed experiments. `autonomous-science`
 - [open_deep_research](https://github.com/langchain-ai/open_deep_research) — Open deep-research reference implementation from LangChain. `deep-research`
+- [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) — Codex-native sibling with a human-in-the-loop research flow. `all-in-one`
 - [paper-qa](https://github.com/Future-House/paper-qa) — High-accuracy retrieval system for scientific papers whose answers always cite sources. `paper-qa-rag`
 - [local-deep-research](https://github.com/LearningCircuit/local-deep-research) — Local and private deep-research over many sources including arXiv and PubMed. `deep-research`
-- [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) — Codex-native sibling with a human-in-the-loop research flow. `all-in-one`
 - [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) — Workshop-level automated scientific discovery via agentic tree search. `autonomous-science`
 - [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
@@ -46,17 +46,17 @@
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — Multi-agent system that generates hypotheses and scientific discoveries. `autonomous-science`
 - [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
 - [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
-- [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
+- [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
 - [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
 - [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
 - [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
-- [DeepInnovator](https://github.com/HKUDS/DeepInnovator) — Autonomously generates research ideas, hypotheses, and experiment designs. `autonomous-science`
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) — Claude Code skills for systematic literature review with citation-validation scripts. `all-in-one`
-- [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) — Local-first agentic LaTeX writer for AI-assisted academic writing. `writing-peer-review`
+- [DeepInnovator](https://github.com/HKUDS/DeepInnovator) — Autonomously generates research ideas, hypotheses, and experiment designs. `autonomous-science`
 - [medsci-skills](https://github.com/Aperivue/medsci-skills) — Medical-research skills for search, reporting-guideline checks, statistics, and submission. `all-in-one`
+- [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) — Local-first agentic LaTeX writer for AI-assisted academic writing. `writing-peer-review`
 - [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) — Claude Code plugin with specialist agents for reviewing, drafting, and polishing. `writing-peer-review`
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — Finds and ranks scholarly papers and auto-generates a survey. `deep-research`
 - [ai-peer-review](https://github.com/poldrack/ai-peer-review) — Multi-model meta-review that synthesizes independent reviews of a paper. `writing-peer-review`
@@ -77,7 +77,7 @@
 
 ## Watch list
 
-10 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
+12 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
 
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — last push 2023-05-23 (stale)
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — last push 2024-03-21 (stale)
@@ -89,3 +89,5 @@
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — last push 2025-05-10 (stale)
 - [open_reviewer](https://github.com/maxidl/openreviewer) — last push 2025-06-21 (stale)
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) — last push 2025-08-11 (stale)
+- [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — last push 2025-08-20 (stale)
+- [open_deep_research](https://github.com/langchain-ai/open_deep_research) — last push 2026-08-10 (archived)
