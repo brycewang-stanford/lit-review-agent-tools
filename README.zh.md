@@ -14,13 +14,13 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 **简体中文** · [English](README.en.md) · [Awesome list](README.md) · **[🔍 可搜索站点](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em>收录 <b>66</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
+<em>收录 <b>67</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -195,6 +195,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | 126 | 🔴 | MIT | 检索、访问与分析 PubMed 文章（元数据 + 深度分析） |
 | [alex-mcp](https://github.com/drAbreu/alex-mcp) | 54 | 🔴 | MIT | OpenAlex MCP，专注作者消歧与机构/成果查询 |
 | [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 45 | 🟢 | MIT | OpenAlex（2.4 亿+ 成果）：引用分析、研究趋势、合作网络 |
+| [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) | 3 | 🟢 | MIT | 面向 AI 智能体的同行评审论文全文检索、引文追踪、证据提取、原文引述式论断核验与科研方法指导 |
 
 ---
 

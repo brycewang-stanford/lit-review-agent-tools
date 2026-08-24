@@ -602,6 +602,20 @@
   desc_zh: "OpenAlex（2.4 亿+ 成果）：引用分析、研究趋势、合作网络"
   desc_en: "OpenAlex (240M+ works): citation analysis, research-trend tracking, collaboration networks"
   desc_awesome: "OpenAlex-backed citation analysis, trend tracking, and collaboration mapping."
+- name: "lune-research"
+  repo: RetrogradeLabs/lune-mcp-server
+  category: mcp-servers
+  stage: [search, extract, read, cite-check]
+  added: 2026-08-24
+  stars: 3
+  pushed_at: 2026-08-24
+  archived: false
+  license: MIT
+  language: TypeScript
+  status: active
+  desc_zh: "面向 AI 智能体的同行评审论文全文检索、引文追踪、证据提取、原文引述式论断核验与科研方法指导"
+  desc_en: "Full-text peer-reviewed paper search, citation traversal, evidence extraction, claim verification against verbatim quotes, and methodology guidance for AI agents"
+  desc_awesome: "Searches full-text peer-reviewed papers, traces citations, extracts evidence, verifies claims against quotes, and retrieves methodology guidance."
 
 # ── reference-management ────────────────────────────────────────
 - name: "zotero-gpt"
