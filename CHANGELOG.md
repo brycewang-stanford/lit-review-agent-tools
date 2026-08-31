@@ -24,8 +24,8 @@
 - [local-deep-research](https://github.com/LearningCircuit/local-deep-research) — Local and private deep-research over many sources including arXiv and PubMed. `deep-research`
 - [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) — Workshop-level automated scientific discovery via agentic tree search. `autonomous-science`
-- [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
 - [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) — Machine-learning paper-writing skill pack for Codex, Claude Code, and Gemini. `all-in-one`
+- [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Autonomous workflow from literature review through experimentation to report writing. `autonomous-science`
 - [grobid](https://github.com/grobidOrg/grobid) — Extracts structured metadata, references, and sections from scholarly PDFs. `pdf-extraction`
 - [zotero-mcp](https://github.com/54yyyu/zotero-mcp) — Connects a Zotero library to AI clients for semantic search and citation analysis. `mcp-servers`
@@ -38,8 +38,8 @@
 - [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) — Planning and writing skills with quality checkpoints for systematic paper writing. `all-in-one`
 - [Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) — Automated tools for search, reading, experiments, and code generation. `awesome-lists`
 - [dr-claw](https://github.com/OpenLAIR/dr-claw) — Research workbench with multiple AI-assistant personas. `all-in-one`
-- [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) — Automated generation of academic survey papers from a topic. `deep-research`
 - [ASReview](https://github.com/asreview/asreview) — Active-learning screener that ranks papers to cut systematic-review screening time. `systematic-review`
+- [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) — Automated generation of academic survey papers from a topic. `deep-research`
 - [ScienceClaw](https://github.com/beita6969/ScienceClaw) — Self-evolving AI research colleague with a large skill library. `all-in-one`
 - [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) — Multilingual library of installable AI-agent skills across disciplines. `all-in-one`
 - [paperetl](https://github.com/neuml/paperetl) — ETL pipeline that loads medical and scientific papers into structured stores. `pdf-extraction`
@@ -66,11 +66,11 @@
 - [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) — AI tools for literature reviews, reference management, and data analysis. `awesome-lists`
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) — OpenAlex server focused on author disambiguation and institution lookup. `mcp-servers`
 - [LitLLM](https://github.com/LitLLM/LitLLM) — Toolkit that drafts related-work sections fast with retrieval and prompting. `deep-research`
-- [paper-note-filler](https://github.com/chauff/paper-note-filler) — Obsidian plugin that auto-creates notes from scholarly sources. `reference-management`
 - [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) — OpenAlex-backed citation analysis, trend tracking, and collaboration mapping. `mcp-servers`
+- [paper-note-filler](https://github.com/chauff/paper-note-filler) — Obsidian plugin that auto-creates notes from scholarly sources. `reference-management`
 - [prismAId](https://github.com/Open-and-Sustainable/prismAId) — Protocol-based, no-code toolkit for replicable review screening and extraction. `systematic-review`
-- [citegraph](https://github.com/Citegraph/citegraph) — Open web visualizer of papers and citation networks. `citation-graphs`
 - [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) — Open-source tools for systematic reviews and meta-analysis. `awesome-lists`
+- [citegraph](https://github.com/Citegraph/citegraph) — Open web visualizer of papers and citation networks. `citation-graphs`
 - [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) — Claude Code plugin for surveys, paper reviews, and finding research gaps. `writing-peer-review`
 - [open_reviewer](https://github.com/maxidl/openreviewer) — Generates peer reviews of conference papers for pre-submission feedback. `writing-peer-review`
 - [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) — Structured review flow with AI-assisted screening over open scholarly sources. `systematic-review`
