@@ -6,20 +6,20 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 | Pick | Stars | Health | Licence | Covers |
 |---|---|---|---|---|
-| [MinerU](#mineru) | ~78.9k | 🟢 | Apache-2.0 | extract |
-| [academic-research-skills](#academic-research-skills) | ~44.4k | 🟢 | CC-BY-NC-4.0 | search, synthesize, cite-check, write, review |
+| [MinerU](#mineru) | ~79.4k | 🟢 | Apache-2.0 | extract |
+| [academic-research-skills](#academic-research-skills) | ~46.7k | 🟢 | CC-BY-NC-4.0 | search, synthesize, cite-check, write, review |
 | [STORM](#storm) | ~31.2k | 🟡 | MIT | search, synthesize, write |
-| [gpt-researcher](#gpt-researcher) | ~29.2k | 🟢 | Apache-2.0 | search, synthesize, write |
+| [gpt-researcher](#gpt-researcher) | ~29.3k | 🟢 | Apache-2.0 | search, synthesize, write |
 | [AI-Scientist](#ai-scientist) | ~14.5k | 🟡 | custom | search, synthesize, write, review |
-| [paper-qa](#paper-qa) | ~9.1k | 🟢 | Apache-2.0 | read, extract, synthesize, cite-check |
+| [paper-qa](#paper-qa) | ~9.2k | 🟢 | Apache-2.0 | read, extract, synthesize, cite-check |
 | [zotero-gpt](#zotero-gpt) | ~7.4k | 🟡 | AGPL-3.0 | read, synthesize |
-| [zotero-mcp](#zotero-mcp) | ~4.8k | 🟢 | MIT | search, read |
+| [zotero-mcp](#zotero-mcp) | ~4.9k | 🟢 | MIT | search, read |
 | [arxiv-mcp-server](#arxiv-mcp-server) | ~3.1k | 🟢 | Apache-2.0 | search, extract, read |
-| [ASReview](#asreview) | 993 | 🟢 | Apache-2.0 | screen |
+| [ASReview](#asreview) | ~1.0k | 🟢 | Apache-2.0 | screen |
 
 ## MinerU
 
-[github.com/opendatalab/MinerU](https://github.com/opendatalab/MinerU) · 📄 PDF → Structured Data Extraction · ~78.9k★ · 🟢 · `Apache-2.0`
+[github.com/opendatalab/MinerU](https://github.com/opendatalab/MinerU) · 📄 PDF → Structured Data Extraction · ~79.4k★ · 🟢 · `Apache-2.0`
 
 **Why this one.** The most accurate PDF→Markdown converter for scientific documents: formulas, tables and 100+ languages, all local.
 
@@ -27,7 +27,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## academic-research-skills
 
-[github.com/Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) · 🌟 All-in-one Research Agents & Skills · ~44.4k★ · 🟢 · `CC-BY-NC-4.0`
+[github.com/Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) · 🌟 All-in-one Research Agents & Skills · ~46.7k★ · 🟢 · `CC-BY-NC-4.0`
 
 **Why this one.** The most complete research→paper pipeline for Claude Code, and the only pick with citation integrity gates that cross-check three sources.
 
@@ -43,7 +43,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## gpt-researcher
 
-[github.com/assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) · 🔎 Deep Research & Auto Survey Generation · ~29.2k★ · 🟢 · `Apache-2.0`
+[github.com/assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) · 🔎 Deep Research & Auto Survey Generation · ~29.3k★ · 🟢 · `Apache-2.0`
 
 **Why this one.** The most reliable general-purpose 'go research this' agent, and the least academic-specific — useful when your question spans grey literature and the web.
 
@@ -59,7 +59,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## paper-qa
 
-[github.com/Future-House/paper-qa](https://github.com/Future-House/paper-qa) · 📚 Paper Q&A and RAG · ~9.1k★ · 🟢 · `Apache-2.0`
+[github.com/Future-House/paper-qa](https://github.com/Future-House/paper-qa) · 📚 Paper Q&A and RAG · ~9.2k★ · 🟢 · `Apache-2.0`
 
 **Why this one.** The highest-accuracy way to ask questions across your own PDFs and get answers that carry citations back to the source passage.
 
@@ -75,7 +75,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## zotero-mcp
 
-[github.com/54yyyu/zotero-mcp](https://github.com/54yyyu/zotero-mcp) · 🔌 MCP Servers · ~4.8k★ · 🟢 · `MIT`
+[github.com/54yyyu/zotero-mcp](https://github.com/54yyyu/zotero-mcp) · 🔌 MCP Servers · ~4.9k★ · 🟢 · `MIT`
 
 **Why this one.** The most complete bridge between a Zotero library and an AI client: semantic search, PDF full text and citation analysis over what you have already collected.
 
@@ -91,7 +91,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## ASReview
 
-[github.com/asreview/asreview](https://github.com/asreview/asreview) · 🧮 Systematic Review & Screening · 993★ · 🟢 · `Apache-2.0`
+[github.com/asreview/asreview](https://github.com/asreview/asreview) · 🧮 Systematic Review & Screening · ~1.0k★ · 🟢 · `Apache-2.0`
 
 **Why this one.** The only pick here with a measured claim: on a published review's own data it surfaced all 38 relevant papers after screening 5.5% of 4,544 records (see recipes/02). Academic provenance, runs fully offline, no key.
 

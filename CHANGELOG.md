@@ -47,9 +47,9 @@
 - [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
 - [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
 - [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
+- [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
-- [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
 - [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
 - [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
