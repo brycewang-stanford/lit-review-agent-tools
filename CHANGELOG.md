@@ -46,16 +46,16 @@
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — Multi-agent system that generates hypotheses and scientific discoveries. `autonomous-science`
 - [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
 - [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
-- [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
 - [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
+- [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
-- [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
-- [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
+- [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) — Claude Code skills for systematic literature review with citation-validation scripts. `all-in-one`
-- [DeepInnovator](https://github.com/HKUDS/DeepInnovator) — Autonomously generates research ideas, hypotheses, and experiment designs. `autonomous-science`
+- [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
 - [medsci-skills](https://github.com/Aperivue/medsci-skills) — Medical-research skills for search, reporting-guideline checks, statistics, and submission. `all-in-one`
+- [DeepInnovator](https://github.com/HKUDS/DeepInnovator) — Autonomously generates research ideas, hypotheses, and experiment designs. `autonomous-science`
 - [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) — Local-first agentic LaTeX writer for AI-assisted academic writing. `writing-peer-review`
 - [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) — Claude Code plugin with specialist agents for reviewing, drafting, and polishing. `writing-peer-review`
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — Finds and ranks scholarly papers and auto-generates a survey. `deep-research`
@@ -70,8 +70,8 @@
 - [paper-note-filler](https://github.com/chauff/paper-note-filler) — Obsidian plugin that auto-creates notes from scholarly sources. `reference-management`
 - [prismAId](https://github.com/Open-and-Sustainable/prismAId) — Protocol-based, no-code toolkit for replicable review screening and extraction. `systematic-review`
 - [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) — Open-source tools for systematic reviews and meta-analysis. `awesome-lists`
-- [citegraph](https://github.com/Citegraph/citegraph) — Open web visualizer of papers and citation networks. `citation-graphs`
 - [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) — Claude Code plugin for surveys, paper reviews, and finding research gaps. `writing-peer-review`
+- [citegraph](https://github.com/Citegraph/citegraph) — Open web visualizer of papers and citation networks. `citation-graphs`
 - [open_reviewer](https://github.com/maxidl/openreviewer) — Generates peer reviews of conference papers for pre-submission feedback. `writing-peer-review`
 - [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) — Structured review flow with AI-assisted screening over open scholarly sources. `systematic-review`
 
