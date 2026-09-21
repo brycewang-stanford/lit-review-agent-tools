@@ -30,8 +30,8 @@
 - [grobid](https://github.com/grobidOrg/grobid) — Extracts structured metadata, references, and sections from scholarly PDFs. `pdf-extraction`
 - [zotero-mcp](https://github.com/54yyyu/zotero-mcp) — Connects a Zotero library to AI clients for semantic search and citation analysis. `mcp-servers`
 - [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) — Searches and analyzes arXiv papers and converts them to Markdown for context. `mcp-servers`
-- [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) — Zotero plugin to chat with and batch-process PDFs across many models. `reference-management`
 - [paper-search-mcp](https://github.com/openags/paper-search-mcp) — Multi-source search and download across many scholarly databases. `mcp-servers`
+- [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) — Zotero plugin to chat with and batch-process PDFs across many models. `reference-management`
 - [scholarly](https://github.com/scholarly-python-package/scholarly) — Pythonic retrieval of authors and publications from Google Scholar. `citation-graphs`
 - [paperai](https://github.com/neuml/paperai) — Semantic search and question answering over medical and scientific papers. `paper-qa-rag`
 - [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) — Assistant that lives inside Zotero for research tasks. `reference-management`
@@ -40,17 +40,17 @@
 - [dr-claw](https://github.com/OpenLAIR/dr-claw) — Research workbench with multiple AI-assistant personas. `all-in-one`
 - [ASReview](https://github.com/asreview/asreview) — Active-learning screener that ranks papers to cut systematic-review screening time. `systematic-review`
 - [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) — Automated generation of academic survey papers from a topic. `deep-research`
-- [ScienceClaw](https://github.com/beita6969/ScienceClaw) — Self-evolving AI research colleague with a large skill library. `all-in-one`
 - [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) — Multilingual library of installable AI-agent skills across disciplines. `all-in-one`
+- [ScienceClaw](https://github.com/beita6969/ScienceClaw) — Self-evolving AI research colleague with a large skill library. `all-in-one`
 - [paperetl](https://github.com/neuml/paperetl) — ETL pipeline that loads medical and scientific papers into structured stores. `pdf-extraction`
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — Multi-agent system that generates hypotheses and scientific discoveries. `autonomous-science`
 - [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
-- [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
 - [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
+- [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
 - [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
-- [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
 - [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
+- [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
 - [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) — Claude Code skills for systematic literature review with citation-validation scripts. `all-in-one`
 - [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
@@ -65,8 +65,8 @@
 - [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) — Low-code package that automates systematic-review screening with AI agents. `systematic-review`
 - [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) — AI tools for literature reviews, reference management, and data analysis. `awesome-lists`
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) — OpenAlex server focused on author disambiguation and institution lookup. `mcp-servers`
-- [LitLLM](https://github.com/LitLLM/LitLLM) — Toolkit that drafts related-work sections fast with retrieval and prompting. `deep-research`
 - [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) — OpenAlex-backed citation analysis, trend tracking, and collaboration mapping. `mcp-servers`
+- [LitLLM](https://github.com/LitLLM/LitLLM) — Toolkit that drafts related-work sections fast with retrieval and prompting. `deep-research`
 - [paper-note-filler](https://github.com/chauff/paper-note-filler) — Obsidian plugin that auto-creates notes from scholarly sources. `reference-management`
 - [prismAId](https://github.com/Open-and-Sustainable/prismAId) — Protocol-based, no-code toolkit for replicable review screening and extraction. `systematic-review`
 - [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) — Open-source tools for systematic reviews and meta-analysis. `awesome-lists`

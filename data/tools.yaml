@@ -16,8 +16,8 @@
   editor_pick: true
   why: "The most complete research→paper pipeline for Claude Code, and the only pick with citation integrity gates that cross-check three sources."
   caveat: "Its CC-BY-NC-4.0 licence forbids commercial use — a real constraint the star count hides. It also assumes you work inside Claude Code; there is no library to import."
-  stars: 47975
-  pushed_at: 2026-09-14
+  stars: 48948
+  pushed_at: 2026-09-21
   archived: false
   license: CC-BY-NC-4.0
   language: Python
@@ -30,8 +30,8 @@
   category: all-in-one
   stage: [search, synthesize, cite-check, write, review]
   added: 2026-07-26
-  stars: 10779
-  pushed_at: 2026-09-02
+  stars: 11343
+  pushed_at: 2026-09-16
   archived: false
   license: CC-BY-NC-4.0
   language: Python
@@ -44,7 +44,7 @@
   category: all-in-one
   stage: [write]
   added: 2026-07-26
-  stars: 6781
+  stars: 6999
   pushed_at: 2026-06-23
   archived: false
   license: MIT
@@ -58,7 +58,7 @@
   category: all-in-one
   stage: [search, synthesize, write]
   added: 2026-07-26
-  stars: 25938
+  stars: 26199
   pushed_at: 2026-08-30
   archived: false
   license: MIT
@@ -72,7 +72,7 @@
   category: all-in-one
   stage: [write]
   added: 2026-07-26
-  stars: 1293
+  stars: 1326
   pushed_at: 2026-01-04
   archived: false
   license: MIT
@@ -86,8 +86,8 @@
   category: all-in-one
   stage: [search, read, synthesize, write]
   added: 2026-07-26
-  stars: 1108
-  pushed_at: 2026-09-13
+  stars: 1137
+  pushed_at: 2026-09-17
   archived: false
   license: custom
   language: JavaScript
@@ -100,7 +100,7 @@
   category: all-in-one
   stage: [search, synthesize, write]
   added: 2026-07-26
-  stars: 899
+  stars: 905
   pushed_at: 2026-06-08
   archived: false
   license: MIT
@@ -114,7 +114,7 @@
   category: all-in-one
   stage: [search, synthesize, write]
   added: 2026-07-26
-  stars: 891
+  stars: 913
   pushed_at: 2026-07-20
   archived: false
   license: MIT
@@ -128,7 +128,7 @@
   category: all-in-one
   stage: [search, synthesize, cite-check]
   added: 2026-07-26
-  stars: 334
+  stars: 351
   pushed_at: 2026-02-27
   archived: false
   license: none
@@ -142,8 +142,8 @@
   category: all-in-one
   stage: [search, cite-check, write]
   added: 2026-07-26
-  stars: 298
-  pushed_at: 2026-09-14
+  stars: 313
+  pushed_at: 2026-09-21
   archived: false
   license: MIT
   language: Python
@@ -161,7 +161,7 @@
   editor_pick: true
   why: "Best-in-class for turning a topic into a cited, Wikipedia-style long article, with published research behind the two-stage approach."
   caveat: "It writes a *survey*, not a systematic review — there is no screening, no PRISMA trail, no reproducible inclusion criteria. Needs an LLM key plus a search backend, and has not been pushed to in over three months."
-  stars: 31304
+  stars: 31453
   pushed_at: 2025-09-30
   archived: false
   license: MIT
@@ -178,7 +178,7 @@
   editor_pick: true
   why: "The most reliable general-purpose 'go research this' agent, and the least academic-specific — useful when your question spans grey literature and the web."
   caveat: "Web-first, so coverage of paywalled and indexed scholarly databases is weaker than a dedicated OpenAlex/PubMed client. Requires both an LLM key and a search API."
-  stars: 29444
+  stars: 29552
   pushed_at: 2026-08-27
   archived: false
   license: Apache-2.0
@@ -192,7 +192,7 @@
   category: deep-research
   stage: [search, synthesize]
   added: 2026-07-26
-  stars: 19667
+  stars: 19711
   pushed_at: 2026-04-11
   archived: false
   license: MIT
@@ -206,7 +206,7 @@
   category: deep-research
   stage: [search, synthesize]
   added: 2026-07-26
-  stars: 12679
+  stars: 12685
   pushed_at: 2026-08-10
   archived: true
   license: MIT
@@ -220,8 +220,8 @@
   category: deep-research
   stage: [search, synthesize]
   added: 2026-07-26
-  stars: 9087
-  pushed_at: 2026-09-14
+  stars: 9115
+  pushed_at: 2026-09-21
   archived: false
   license: MIT
   language: Python
@@ -234,7 +234,7 @@
   category: deep-research
   stage: [search, synthesize]
   added: 2026-07-26
-  stars: 6282
+  stars: 6286
   pushed_at: 2025-05-07
   archived: false
   license: Apache-2.0
@@ -248,7 +248,7 @@
   category: deep-research
   stage: [search, synthesize, write]
   added: 2026-07-26
-  stars: 991
+  stars: 990
   pushed_at: 2026-01-12
   archived: false
   license: none
@@ -276,7 +276,7 @@
   category: deep-research
   stage: [write]
   added: 2026-07-26
-  stars: 415
+  stars: 448
   pushed_at: 2026-09-10
   archived: false
   license: MIT
@@ -309,7 +309,7 @@
   editor_pick: true
   why: "The most ambitious system in the catalogue and the best one to *read* if you want to see how far end-to-end automation currently goes."
   caveat: "Not a literature-review tool: it runs experiments and writes papers, at real API cost, under a bespoke non-standard licence. Output is workshop-grade. Treat as a research artefact, not infrastructure."
-  stars: 14549
+  stars: 14594
   pushed_at: 2025-12-19
   archived: false
   license: custom
@@ -323,7 +323,7 @@
   category: autonomous-science
   stage: [search, synthesize, write, review]
   added: 2026-07-26
-  stars: 7144
+  stars: 7195
   pushed_at: 2025-12-19
   archived: false
   license: custom
@@ -336,7 +336,7 @@
   category: autonomous-science
   stage: [search, synthesize, cite-check, write, review]
   added: 2026-07-26
-  stars: 14418
+  stars: 14482
   pushed_at: 2026-08-19
   archived: false
   license: MIT
@@ -350,7 +350,7 @@
   category: autonomous-science
   stage: [search, synthesize, write]
   added: 2026-07-26
-  stars: 5846
+  stars: 5858
   pushed_at: 2025-08-20
   archived: false
   license: MIT
@@ -392,7 +392,7 @@
   category: autonomous-science
   stage: [synthesize]
   added: 2026-07-26
-  stars: 290
+  stars: 291
   pushed_at: 2026-03-06
   archived: false
   license: MIT
@@ -411,8 +411,8 @@
   editor_pick: true
   why: "The highest-accuracy way to ask questions across your own PDFs and get answers that carry citations back to the source passage."
   caveat: "Needs an LLM key, and cost scales with corpus size. It answers questions over papers you already have — it will not find them or screen them for you."
-  stars: 9197
-  pushed_at: 2026-09-07
+  stars: 9230
+  pushed_at: 2026-09-17
   archived: false
   license: Apache-2.0
   language: Python
@@ -425,7 +425,7 @@
   category: paper-qa-rag
   stage: [search, read, synthesize]
   added: 2026-07-26
-  stars: 1778
+  stars: 1780
   pushed_at: 2026-07-14
   archived: false
   license: Apache-2.0
@@ -439,7 +439,7 @@
   category: paper-qa-rag
   stage: [read, synthesize, cite-check]
   added: 2026-07-26
-  stars: 475
+  stars: 481
   pushed_at: 2026-09-03
   archived: false
   license: AGPL-3.0
@@ -458,8 +458,8 @@
   editor_pick: true
   why: "The only pick here with a measured claim: on a published review's own data it surfaced all 38 relevant papers after screening 5.5% of 4,544 records (see recipes/02). Academic provenance, runs fully offline, no key."
   caveat: "It ranks; you still decide. There is no automatic include/exclude, and no way to see your recall mid-review, so you need a stopping rule. Least-starred pick in the catalogue — popularity is not the signal here."
-  stars: 1006
-  pushed_at: 2026-09-10
+  stars: 1012
+  pushed_at: 2026-09-14
   archived: false
   license: Apache-2.0
   language: Python
@@ -486,7 +486,7 @@
   category: systematic-review
   stage: [screen, extract]
   added: 2026-07-26
-  stars: 28
+  stars: 29
   pushed_at: 2026-09-09
   archived: false
   license: AGPL-3.0
@@ -520,8 +520,8 @@
   editor_pick: true
   why: "The most complete bridge between a Zotero library and an AI client: semantic search, PDF full text and citation analysis over what you have already collected."
   caveat: "Useless unless you already keep your library in Zotero and use an MCP-capable client."
-  stars: 5016
-  pushed_at: 2026-09-14
+  stars: 5101
+  pushed_at: 2026-09-15
   archived: false
   license: MIT
   language: Python
@@ -537,7 +537,7 @@
   editor_pick: true
   why: "Search arXiv and pull papers into context as Markdown without leaving your assistant; ships a one-click `.mcpb` bundle."
   caveat: "arXiv-only. For biomedical work PubMed-MCP-Server or paper-search-mcp will cover far more of your field."
-  stars: 3145
+  stars: 3169
   pushed_at: 2026-08-26
   archived: false
   license: Apache-2.0
@@ -551,8 +551,8 @@
   category: mcp-servers
   stage: [search]
   added: 2026-07-26
-  stars: 2630
-  pushed_at: 2026-08-17
+  stars: 2672
+  pushed_at: 2026-09-21
   archived: false
   license: MIT
   language: Python
@@ -579,7 +579,7 @@
   category: mcp-servers
   stage: [search]
   added: 2026-07-26
-  stars: 55
+  stars: 56
   pushed_at: 2025-08-11
   archived: false
   license: MIT
@@ -593,12 +593,12 @@
   category: mcp-servers
   stage: [search, cite-check]
   added: 2026-07-26
-  stars: 52
+  stars: 53
   pushed_at: 2026-06-22
   archived: false
   license: MIT
   language: JavaScript
-  status: active
+  status: slowing
   desc_zh: "OpenAlex（2.4 亿+ 成果）：引用分析、研究趋势、合作网络"
   desc_en: "OpenAlex (240M+ works): citation analysis, research-trend tracking, collaboration networks"
   desc_awesome: "OpenAlex-backed citation analysis, trend tracking, and collaboration mapping."
@@ -612,7 +612,7 @@
   editor_pick: true
   why: "Chat with your library inside Zotero itself, with no second application to run."
   caveat: "Interactive by design — it is a reading aid, not something you can put in a pipeline. AGPL-3.0, which matters if you plan to redistribute."
-  stars: 7398
+  stars: 7420
   pushed_at: 2026-05-01
   archived: false
   license: AGPL-3.0
@@ -626,8 +626,8 @@
   category: reference-management
   stage: [read, extract, synthesize]
   added: 2026-07-26
-  stars: 2634
-  pushed_at: 2026-09-11
+  stars: 2650
+  pushed_at: 2026-09-21
   archived: false
   license: AGPL-3.0
   language: JavaScript
@@ -673,8 +673,8 @@
   editor_pick: true
   why: "The most accurate PDF→Markdown converter for scientific documents: formulas, tables and 100+ languages, all local."
   caveat: "Heavy. If you want something lighter for straightforward papers, docling converted a 29-page paper in 78s on CPU (recipes/04) with tables intact; marker is faster still."
-  stars: 79880
-  pushed_at: 2026-09-13
+  stars: 80375
+  pushed_at: 2026-09-21
   archived: false
   license: Apache-2.0
   language: Python
@@ -687,8 +687,8 @@
   category: pdf-extraction
   stage: [extract]
   added: 2026-07-26
-  stars: 66378
-  pushed_at: 2026-09-14
+  stars: 67484
+  pushed_at: 2026-09-21
   archived: false
   license: MIT
   language: Python
@@ -701,7 +701,7 @@
   category: pdf-extraction
   stage: [extract]
   added: 2026-07-26
-  stars: 39727
+  stars: 39871
   pushed_at: 2026-09-13
   archived: false
   license: Apache-2.0
@@ -715,8 +715,8 @@
   category: pdf-extraction
   stage: [read]
   added: 2026-07-26
-  stars: 36918
-  pushed_at: 2026-09-14
+  stars: 37118
+  pushed_at: 2026-09-21
   archived: false
   license: AGPL-3.0
   language: Python
@@ -729,8 +729,8 @@
   category: pdf-extraction
   stage: [extract]
   added: 2026-07-26
-  stars: 5127
-  pushed_at: 2026-09-13
+  stars: 5135
+  pushed_at: 2026-09-17
   archived: false
   license: Apache-2.0
   language: Java
@@ -801,7 +801,7 @@
   category: citation-graphs
   stage: [search, cite-check]
   added: 2026-07-26
-  stars: 408
+  stars: 413
   pushed_at: 2026-07-06
   archived: false
   license: MIT
@@ -815,7 +815,7 @@
   category: citation-graphs
   stage: [search]
   added: 2026-07-26
-  stars: 465
+  stars: 467
   pushed_at: 2024-05-26
   archived: false
   license: MIT
@@ -845,7 +845,7 @@
   category: writing-peer-review
   stage: [write]
   added: 2026-07-26
-  stars: 270
+  stars: 273
   pushed_at: 2026-06-01
   archived: false
   license: MIT
@@ -859,7 +859,7 @@
   category: writing-peer-review
   stage: [write, review]
   added: 2026-07-26
-  stars: 194
+  stars: 200
   pushed_at: 2026-05-11
   archived: false
   license: MIT
@@ -917,7 +917,7 @@
   repo: HKUST-KnowComp/Awesome-LLM-Scientific-Discovery
   category: awesome-lists
   added: 2026-07-26
-  stars: 438
+  stars: 439
   pushed_at: 2026-07-03
   archived: false
   license: MIT
@@ -930,8 +930,8 @@
   repo: handsome-rich/Awesome-Auto-Research-Tools
   category: awesome-lists
   added: 2026-07-26
-  stars: 1194
-  pushed_at: 2026-09-07
+  stars: 1196
+  pushed_at: 2026-09-14
   archived: false
   license: CC0-1.0
   language: Python
@@ -943,7 +943,7 @@
   repo: worldbench/awesome-ai-auto-research
   category: awesome-lists
   added: 2026-07-26
-  stars: 519
+  stars: 522
   pushed_at: 2026-09-01
   archived: false
   license: MIT
@@ -956,7 +956,7 @@
   repo: du-nlp-lab/LLM4SR
   category: awesome-lists
   added: 2026-07-26
-  stars: 132
+  stars: 133
   pushed_at: 2025-01-22
   archived: false
   license: MIT
@@ -969,7 +969,7 @@
   repo: 0x11c11e/awesome-ai-research-tools
   category: awesome-lists
   added: 2026-07-26
-  stars: 69
+  stars: 73
   pushed_at: 2026-08-15
   archived: false
   license: CC0-1.0
