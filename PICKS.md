@@ -6,20 +6,20 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 | Pick | Stars | Health | Licence | Covers |
 |---|---|---|---|---|
-| [MinerU](#mineru) | ~80.4k | 🟢 | Apache-2.0 | extract |
-| [academic-research-skills](#academic-research-skills) | ~48.9k | 🟢 | CC-BY-NC-4.0 | search, synthesize, cite-check, write, review |
+| [MinerU](#mineru) | ~80.8k | 🟢 | Apache-2.0 | extract |
+| [academic-research-skills](#academic-research-skills) | ~49.7k | 🟢 | CC-BY-NC-4.0 | search, synthesize, cite-check, write, review |
 | [STORM](#storm) | ~31.5k | 🟡 | MIT | search, synthesize, write |
-| [gpt-researcher](#gpt-researcher) | ~29.6k | 🟢 | Apache-2.0 | search, synthesize, write |
+| [gpt-researcher](#gpt-researcher) | ~29.7k | 🟢 | Apache-2.0 | search, synthesize, write |
 | [AI-Scientist](#ai-scientist) | ~14.6k | 🟡 | custom | search, synthesize, write, review |
-| [paper-qa](#paper-qa) | ~9.2k | 🟢 | Apache-2.0 | read, extract, synthesize, cite-check |
+| [paper-qa](#paper-qa) | ~9.3k | 🟢 | Apache-2.0 | read, extract, synthesize, cite-check |
 | [zotero-gpt](#zotero-gpt) | ~7.4k | 🟡 | AGPL-3.0 | read, synthesize |
-| [zotero-mcp](#zotero-mcp) | ~5.1k | 🟢 | MIT | search, read |
+| [zotero-mcp](#zotero-mcp) | ~5.2k | 🟢 | MIT | search, read |
 | [arxiv-mcp-server](#arxiv-mcp-server) | ~3.2k | 🟢 | Apache-2.0 | search, extract, read |
 | [ASReview](#asreview) | ~1.0k | 🟢 | Apache-2.0 | screen |
 
 ## MinerU
 
-[github.com/opendatalab/MinerU](https://github.com/opendatalab/MinerU) · 📄 PDF → Structured Data Extraction · ~80.4k★ · 🟢 · `Apache-2.0`
+[github.com/opendatalab/MinerU](https://github.com/opendatalab/MinerU) · 📄 PDF → Structured Data Extraction · ~80.8k★ · 🟢 · `Apache-2.0`
 
 **Why this one.** The most accurate PDF→Markdown converter for scientific documents: formulas, tables and 100+ languages, all local.
 
@@ -27,7 +27,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## academic-research-skills
 
-[github.com/Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) · 🌟 All-in-one Research Agents & Skills · ~48.9k★ · 🟢 · `CC-BY-NC-4.0`
+[github.com/Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) · 🌟 All-in-one Research Agents & Skills · ~49.7k★ · 🟢 · `CC-BY-NC-4.0`
 
 **Why this one.** The most complete research→paper pipeline for Claude Code, and the only pick with citation integrity gates that cross-check three sources.
 
@@ -43,7 +43,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## gpt-researcher
 
-[github.com/assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) · 🔎 Deep Research & Auto Survey Generation · ~29.6k★ · 🟢 · `Apache-2.0`
+[github.com/assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) · 🔎 Deep Research & Auto Survey Generation · ~29.7k★ · 🟢 · `Apache-2.0`
 
 **Why this one.** The most reliable general-purpose 'go research this' agent, and the least academic-specific — useful when your question spans grey literature and the web.
 
@@ -59,7 +59,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## paper-qa
 
-[github.com/Future-House/paper-qa](https://github.com/Future-House/paper-qa) · 📚 Paper Q&A and RAG · ~9.2k★ · 🟢 · `Apache-2.0`
+[github.com/Future-House/paper-qa](https://github.com/Future-House/paper-qa) · 📚 Paper Q&A and RAG · ~9.3k★ · 🟢 · `Apache-2.0`
 
 **Why this one.** The highest-accuracy way to ask questions across your own PDFs and get answers that carry citations back to the source passage.
 
@@ -75,7 +75,7 @@ Every catalogue has stars. Stars tell you what was popular, not what fits your p
 
 ## zotero-mcp
 
-[github.com/54yyyu/zotero-mcp](https://github.com/54yyyu/zotero-mcp) · 🔌 MCP Servers · ~5.1k★ · 🟢 · `MIT`
+[github.com/54yyyu/zotero-mcp](https://github.com/54yyyu/zotero-mcp) · 🔌 MCP Servers · ~5.2k★ · 🟢 · `MIT`
 
 **Why this one.** The most complete bridge between a Zotero library and an AI client: semantic search, PDF full text and citation analysis over what you have already collected.
 

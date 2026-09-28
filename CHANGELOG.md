@@ -27,8 +27,8 @@
 - [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) — Machine-learning paper-writing skill pack for Codex, Claude Code, and Gemini. `all-in-one`
 - [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Autonomous workflow from literature review through experimentation to report writing. `autonomous-science`
-- [grobid](https://github.com/grobidOrg/grobid) — Extracts structured metadata, references, and sections from scholarly PDFs. `pdf-extraction`
 - [zotero-mcp](https://github.com/54yyyu/zotero-mcp) — Connects a Zotero library to AI clients for semantic search and citation analysis. `mcp-servers`
+- [grobid](https://github.com/grobidOrg/grobid) — Extracts structured metadata, references, and sections from scholarly PDFs. `pdf-extraction`
 - [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) — Searches and analyzes arXiv papers and converts them to Markdown for context. `mcp-servers`
 - [paper-search-mcp](https://github.com/openags/paper-search-mcp) — Multi-source search and download across many scholarly databases. `mcp-servers`
 - [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) — Zotero plugin to chat with and batch-process PDFs across many models. `reference-management`
@@ -48,13 +48,13 @@
 - [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
 - [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
 - [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
-- [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
+- [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
 - [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) — Claude Code skills for systematic literature review with citation-validation scripts. `all-in-one`
-- [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
 - [medsci-skills](https://github.com/Aperivue/medsci-skills) — Medical-research skills for search, reporting-guideline checks, statistics, and submission. `all-in-one`
+- [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
 - [DeepInnovator](https://github.com/HKUDS/DeepInnovator) — Autonomously generates research ideas, hypotheses, and experiment designs. `autonomous-science`
 - [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) — Local-first agentic LaTeX writer for AI-assisted academic writing. `writing-peer-review`
 - [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) — Claude Code plugin with specialist agents for reviewing, drafting, and polishing. `writing-peer-review`
@@ -77,7 +77,7 @@
 
 ## Watch list
 
-12 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
+13 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
 
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — last push 2023-05-23 (stale)
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — last push 2024-03-21 (stale)
@@ -90,4 +90,5 @@
 - [open_reviewer](https://github.com/maxidl/openreviewer) — last push 2025-06-21 (stale)
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) — last push 2025-08-11 (stale)
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — last push 2025-08-20 (stale)
+- [citegraph](https://github.com/Citegraph/citegraph) — last push 2025-09-24 (stale)
 - [open_deep_research](https://github.com/langchain-ai/open_deep_research) — last push 2026-08-10 (archived)
