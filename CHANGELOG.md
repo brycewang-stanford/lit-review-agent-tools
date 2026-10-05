@@ -45,10 +45,10 @@
 - [paperetl](https://github.com/neuml/paperetl) — ETL pipeline that loads medical and scientific papers into structured stores. `pdf-extraction`
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — Multi-agent system that generates hypotheses and scientific discoveries. `autonomous-science`
 - [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
+- [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
 - [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
 - [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
 - [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
-- [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
 - [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
@@ -77,7 +77,7 @@
 
 ## Watch list
 
-13 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
+14 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
 
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — last push 2023-05-23 (stale)
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — last push 2024-03-21 (stale)
@@ -91,4 +91,5 @@
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) — last push 2025-08-11 (stale)
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — last push 2025-08-20 (stale)
 - [citegraph](https://github.com/Citegraph/citegraph) — last push 2025-09-24 (stale)
+- [STORM](https://github.com/stanford-oval/storm) — last push 2025-09-30 (stale)
 - [open_deep_research](https://github.com/langchain-ai/open_deep_research) — last push 2026-08-10 (archived)

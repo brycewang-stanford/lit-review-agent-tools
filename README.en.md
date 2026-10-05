@@ -115,16 +115,16 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Health | License | Notes |
 |---|---|---|---|---|
-| ⭐ [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~49.7k | 🟢 | CC-BY-NC-4.0 | **The most popular project in this space.** A suite of Claude Code skills running a 10-stage pipeline (research→write→review→revise→finalize) with citation/claim "integrity gates," cross-checked against Semantic Scholar + OpenAlex + Crossref. Philosophy: *"AI is your copilot, not the pilot."* `/plugin install academic-research-skills` |
-| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~11.8k | 🟢 | CC-BY-NC-4.0 | Codex-native sibling of the above, human-in-the-loop research flow |
-| [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | ~7.1k | 🟡 | MIT | ML/CV/NLP paper-writing skill pack; works with Codex, Claude Code, and Gemini |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~26.7k | 🟢 | MIT | Large skill collection incl. a litreview / grants / deep-research stack across Claude Code / Codex / Gemini / Cursor |
-| [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | ~1.3k | 🟡 | MIT | Strategist (planning) + Composer (writing) skills with quality checkpoints |
+| ⭐ [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~50.5k | 🟢 | CC-BY-NC-4.0 | **The most popular project in this space.** A suite of Claude Code skills running a 10-stage pipeline (research→write→review→revise→finalize) with citation/claim "integrity gates," cross-checked against Semantic Scholar + OpenAlex + Crossref. Philosophy: *"AI is your copilot, not the pilot."* `/plugin install academic-research-skills` |
+| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~12.1k | 🟢 | CC-BY-NC-4.0 | Codex-native sibling of the above, human-in-the-loop research flow |
+| [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | ~7.3k | 🟡 | MIT | ML/CV/NLP paper-writing skill pack; works with Codex, Claude Code, and Gemini |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~27.6k | 🟢 | MIT | Large skill collection incl. a litreview / grants / deep-research stack across Claude Code / Codex / Gemini / Cursor |
+| [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | ~1.4k | 🟡 | MIT | Strategist (planning) + Composer (writing) skills with quality checkpoints |
 | [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1.1k | 🟢 | custom | A "research IDE" with multiple AI-assistant personas |
-| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟡 | MIT | Self-evolving AI research colleague, 285 skills, "zero hallucination" claim |
-| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 929 | 🟢 | MIT | Multilingual library of 182 installable AI-agent skills across disciplines |
-| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 364 | 🟡 | none | Claude Code skills for systematic literature review, incl. citation-validation scripts |
-| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 318 | 🟢 | MIT | Medical-research skills: search, reporting-guideline/citation checks, stats, figures, submission (by a physician-researcher) |
+| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟢 | MIT | Self-evolving AI research colleague, 285 skills, "zero hallucination" claim |
+| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 932 | 🟢 | MIT | Multilingual library of 182 installable AI-agent skills across disciplines |
+| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 377 | 🟡 | none | Claude Code skills for systematic literature review, incl. citation-validation scripts |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 327 | 🟢 | MIT | Medical-research skills: search, reporting-guideline/citation checks, stats, figures, submission (by a physician-researcher) |
 
 ---
 
@@ -134,15 +134,15 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Health | License | Notes |
 |---|---|---|---|---|
-| ⭐ [STORM](https://github.com/stanford-oval/storm) | ~31.5k | 🟡 | MIT | Stanford OVAL; retrieval-grounded "pre-writing + writing" stages, produces Wikipedia-style long articles with citations; includes conversational Co-STORM |
-| ⭐ [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.7k | 🟢 | Apache-2.0 | Autonomous agent that runs deep research on any topic and outputs a cited report; general-purpose, not academic-only |
-| [deep-research](https://github.com/dzhng/deep-research) | ~19.7k | 🟡 | MIT | Minimal iterative deep-research agent (search + scrape + LLM refinement); small and hackable |
+| ⭐ [STORM](https://github.com/stanford-oval/storm) | ~31.6k | 🔴 | MIT | Stanford OVAL; retrieval-grounded "pre-writing + writing" stages, produces Wikipedia-style long articles with citations; includes conversational Co-STORM |
+| ⭐ [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.9k | 🟢 | Apache-2.0 | Autonomous agent that runs deep research on any topic and outputs a cited report; general-purpose, not academic-only |
+| [deep-research](https://github.com/dzhng/deep-research) | ~19.8k | 🟡 | MIT | Minimal iterative deep-research agent (search + scrape + LLM refinement); small and hackable |
 | [open_deep_research](https://github.com/langchain-ai/open_deep_research) | ~12.7k | 🗄️ | MIT | LangChain's official open deep-research reference implementation |
-| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~9.1k | 🟢 | MIT | Local/private deep-research; 10+ sources incl. arXiv & PubMed, fully local LLMs |
+| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~9.2k | 🟢 | MIT | Local/private deep-research; 10+ sources incl. arXiv & PubMed, fully local LLMs |
 | [open-deep-research](https://github.com/nickscamara/open-deep-research) | ~6.3k | 🔴 | Apache-2.0 | Open deep-research clone reasoning over web data via Firecrawl |
 | [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | 994 | 🟡 | none | Automated academic survey-paper generation from a topic |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | 52 | 🟡 | Apache-2.0 | Toolkit focused on scientific literature review; RAG + prompting to draft related-work fast (TMLR 2025) |
-| [opendraft](https://github.com/federicodeponte/opendraft) | 461 | 🟢 | MIT | Free & open-source AI paper writer; 19 agents collaborate to draft long papers |
+| [opendraft](https://github.com/federicodeponte/opendraft) | 503 | 🟢 | MIT | Free & open-source AI paper writer; 19 agents collaborate to draft long papers |
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | 156 | 🔴 | MIT | Uses GPT to find & rank Google Scholar papers and auto-generate a survey |
 
 ---
@@ -153,12 +153,12 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Health | License | Notes |
 |---|---|---|---|---|
-| ⭐ [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.6k | 🟡 | custom | Sakana AI; end-to-end automated discovery (lit review→experiments→writing→review); see also [v2](https://github.com/SakanaAI/AI-Scientist-v2) (~6.9k, agentic tree search, workshop-level) |
+| ⭐ [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.7k | 🟡 | custom | Sakana AI; end-to-end automated discovery (lit review→experiments→writing→review); see also [v2](https://github.com/SakanaAI/AI-Scientist-v2) (~6.9k, agentic tree search, workshop-level) |
 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | ~14.6k | 🟢 | MIT | Self-evolving autonomous research: idea → conference-ready LaTeX paper (real lit from OpenAlex/S2/arXiv + sandboxed experiments + multi-agent peer review) |
 | [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ~5.9k | 🔴 | MIT | End-to-end autonomous workflow: literature review → experimentation → report writing |
 | [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) | 637 | 🔴 | Apache-2.0 | Multi-agent (ontologist/scientist/critic) automated hypothesis & discovery system |
 | [Zochi](https://github.com/IntologyAI/Zochi) | 316 | 🟡 | MIT | "Artificial scientist" doing end-to-end discovery to peer-reviewed publication |
-| [DeepInnovator](https://github.com/HKUDS/DeepInnovator) | 289 | 🟡 | MIT | Autonomously generates research ideas, questions, testable hypotheses & experiment designs |
+| [DeepInnovator](https://github.com/HKUDS/DeepInnovator) | 287 | 🟡 | MIT | Autonomously generates research ideas, questions, testable hypotheses & experiment designs |
 
 ---
 
@@ -170,7 +170,7 @@ I want to chat with my library inside Zotero ───────────�
 |---|---|---|---|---|
 | ⭐ [paper-qa](https://github.com/Future-House/paper-qa) | ~9.3k | 🟢 | Apache-2.0 | FutureHouse; high-accuracy RAG for scientific papers, answers **always cite sources**; PaperQA2 claims superhuman literature search |
 | [paperai](https://github.com/neuml/paperai) | ~1.8k | 🟢 | Apache-2.0 | Semantic search + Q&A over medical & scientific papers |
-| [openpaper](https://github.com/khoj-ai/openpaper) | 483 | 🟢 | AGPL-3.0 | Research-library workbench: read/annotate papers + AI lit-review assistant with grounded citations |
+| [openpaper](https://github.com/khoj-ai/openpaper) | 492 | 🟢 | AGPL-3.0 | Research-library workbench: read/annotate papers + AI lit-review assistant with grounded citations |
 
 ---
 
@@ -182,7 +182,7 @@ I want to chat with my library inside Zotero ───────────�
 |---|---|---|---|---|
 | ⭐ [ASReview](https://github.com/asreview/asreview) | ~1.0k | 🟢 | Apache-2.0 | Active-learning screener for systematic reviews; interactively ranks papers to cut screening time; well-established in academia |
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | 121 | 🟢 | CC-BY-NC-ND-4.0 | Low-code Python package automating SR screening via AI agents (OpenAI/Gemini/Claude/Ollama) |
-| [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 29 | 🟢 | AGPL-3.0 | Generative-AI, protocol-based systematic-review toolkit; no-code, replicable screening & extraction |
+| [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 30 | 🟢 | AGPL-3.0 | Generative-AI, protocol-based systematic-review toolkit; no-code, replicable screening & extraction |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | PRISMA 2020 flow with AI-assisted screening via MCP (arXiv/OpenAlex/S2, no API keys) |
 
 ---
@@ -198,7 +198,7 @@ I want to chat with my library inside Zotero ───────────�
 | [paper-search-mcp](https://github.com/openags/paper-search-mcp) | ~2.7k | 🟢 | MIT | Multi-source search/download across 20+ sources (arXiv, PubMed, bioRxiv, S2, OpenAlex, Crossref, CORE…) |
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | 129 | 🔴 | MIT | Search, access, and analyze PubMed articles (metadata + deep analysis) |
 | [alex-mcp](https://github.com/drAbreu/alex-mcp) | 56 | 🔴 | MIT | OpenAlex MCP focused on author disambiguation and institution/work lookup |
-| [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 54 | 🟡 | MIT | OpenAlex (240M+ works): citation analysis, research-trend tracking, collaboration networks |
+| [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 55 | 🟢 | MIT | OpenAlex (240M+ works): citation analysis, research-trend tracking, collaboration networks |
 
 ---
 
@@ -208,7 +208,7 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Health | License | Notes |
 |---|---|---|---|---|
-| ⭐ [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) | ~7.4k | 🟡 | AGPL-3.0 | GPT integrated into Zotero to chat with your library |
+| ⭐ [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) | ~7.5k | 🟡 | AGPL-3.0 | GPT integrated into Zotero to chat with your library |
 | [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) | ~2.7k | 🟢 | AGPL-3.0 | Zotero AI + MCP plugin; chat/batch-process PDFs across 30+ LLMs |
 | [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) | ~1.7k | 🔴 | AGPL-3.0 | "Aria" — LLM-powered research assistant inside Zotero |
 | [paper-note-filler](https://github.com/chauff/paper-note-filler) | 47 | 🟡 | none | Obsidian plugin auto-creating notes from arXiv / ACL Anthology / Semantic Scholar |
@@ -221,11 +221,11 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Health | License | Notes |
 |---|---|---|---|---|
-| ⭐ [MinerU](https://github.com/opendatalab/MinerU) | ~80.8k | 🟢 | Apache-2.0 | High-accuracy PDF/Office → LLM-ready Markdown/JSON (VLM+OCR, 100+ languages, formulas/tables) |
-| [docling](https://github.com/docling-project/docling) | ~68.1k | 🟢 | MIT | IBM-origin document parser prepping PDFs/docs for gen-AI/RAG |
-| [marker](https://github.com/datalab-to/marker) | ~40.0k | 🟢 | Apache-2.0 | Fast PDF/doc → clean Markdown/JSON conversion, scientific-doc friendly |
-| [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) | ~37.2k | 🟢 | AGPL-3.0 | Layout-preserving scientific-PDF translation (formulas/figures intact) |
-| [grobid](https://github.com/grobidOrg/grobid) | ~5.1k | 🟢 | Apache-2.0 | ML tool extracting structured TEI/XML (metadata, refs, sections) from scholarly PDFs |
+| ⭐ [MinerU](https://github.com/opendatalab/MinerU) | ~81.1k | 🟢 | Apache-2.0 | High-accuracy PDF/Office → LLM-ready Markdown/JSON (VLM+OCR, 100+ languages, formulas/tables) |
+| [docling](https://github.com/docling-project/docling) | ~68.4k | 🟢 | MIT | IBM-origin document parser prepping PDFs/docs for gen-AI/RAG |
+| [marker](https://github.com/datalab-to/marker) | ~40.2k | 🟢 | Apache-2.0 | Fast PDF/doc → clean Markdown/JSON conversion, scientific-doc friendly |
+| [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) | ~37.3k | 🟢 | AGPL-3.0 | Layout-preserving scientific-PDF translation (formulas/figures intact) |
+| [grobid](https://github.com/grobidOrg/grobid) | ~5.2k | 🟢 | Apache-2.0 | ML tool extracting structured TEI/XML (metadata, refs, sections) from scholarly PDFs |
 | [paperetl](https://github.com/neuml/paperetl) | 697 | 🟡 | Apache-2.0 | ETL pipeline for medical & scientific papers into structured stores |
 | [scipdf_parser](https://github.com/titipata/scipdf_parser) | 456 | 🔴 | MIT | Python parser for scientific-publication PDFs (content + figures, GROBID-backed) |
 
@@ -239,8 +239,8 @@ I want to chat with my library inside Zotero ───────────�
 |---|---|---|---|---|
 | [scholarly](https://github.com/scholarly-python-package/scholarly) | ~1.9k | 🟡 | Unlicense | Pythonic Google Scholar author/publication retrieval |
 | [semanticscholar](https://github.com/danielnsilva/semanticscholar) | 481 | 🟢 | MIT | Unofficial Python client for Semantic Scholar APIs |
-| [pyalex](https://github.com/J535D165/pyalex) | 417 | 🟢 | MIT | Lightweight Python interface to the OpenAlex API |
-| [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) | 467 | 🔴 | MIT | Personalized daily arXiv digest with GPT relevancy scoring + email pipeline |
+| [pyalex](https://github.com/J535D165/pyalex) | 418 | 🟡 | MIT | Lightweight Python interface to the OpenAlex API |
+| [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) | 468 | 🔴 | MIT | Personalized daily arXiv digest with GPT relevancy scoring + email pipeline |
 | [citegraph](https://github.com/Citegraph/citegraph) | 22 | 🔴 | MIT | Open web visualizer of 5M+ papers / citation networks (CS bibliography) |
 
 ---
@@ -251,11 +251,11 @@ I want to chat with my library inside Zotero ───────────�
 
 | Project | Stars | Health | License | Notes |
 |---|---|---|---|---|
-| [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) | 275 | 🟡 | MIT | Local-first agentic LaTeX writer for AI-assisted academic writing |
-| [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) | 208 | 🟡 | MIT | Claude Code plugin: 10+ specialist agents for academic writing review, research, drafting, polishing |
-| [ai-peer-review](https://github.com/poldrack/ai-peer-review) | 154 | 🟢 | MIT | Multi-LLM meta-review: independent reviews synthesized into a meta-review |
+| [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) | 276 | 🟡 | MIT | Local-first agentic LaTeX writer for AI-assisted academic writing |
+| [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) | 211 | 🟡 | MIT | Claude Code plugin: 10+ specialist agents for academic writing review, research, drafting, polishing |
+| [ai-peer-review](https://github.com/poldrack/ai-peer-review) | 154 | 🟡 | MIT | Multi-LLM meta-review: independent reviews synthesized into a meta-review |
 | [open_reviewer](https://github.com/maxidl/openreviewer) | 17 | 🔴 | none | Generates high-quality peer reviews of ML/AI conference papers for pre-submission feedback |
-| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 25 | 🟡 | MIT | Claude Code plugin: lit surveys, paper reviews, citation management; searches arXiv/S2/DBLP and finds research gaps |
+| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 26 | 🟡 | MIT | Claude Code plugin: lit surveys, paper reviews, citation management; searches arXiv/S2/DBLP and finds research gaps |
 
 ---
 
@@ -265,12 +265,12 @@ I want to chat with my library inside Zotero ───────────�
 
 | List | Stars | Health | License | Notes |
 |---|---|---|---|---|
-| [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) | 439 | 🟢 | MIT | EMNLP 2025 survey list: LLMs in scientific discovery |
+| [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) | 438 | 🟡 | MIT | EMNLP 2025 survey list: LLMs in scientific discovery |
 | [Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) | ~1.2k | 🟢 | CC0-1.0 | Automated literature search, paper reading, experiment management, code gen |
-| [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) | 536 | 🟢 | MIT | A survey on AI auto-research |
+| [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) | 540 | 🟢 | MIT | A survey on AI auto-research |
 | [LLM4SR](https://github.com/du-nlp-lab/LLM4SR) | 133 | 🔴 | MIT | Papers & resources on LLMs for scientific research surveys |
-| [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) | 75 | 🟢 | CC0-1.0 | AI tools for lit reviews, reference management, data analysis |
-| [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) | 27 | 🟢 | CC-BY-4.0 | Open-source tools for systematic reviews, meta-analysis & evidence synthesis |
+| [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) | 80 | 🟢 | CC0-1.0 | AI tools for lit reviews, reference management, data analysis |
+| [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) | 30 | 🟢 | CC-BY-4.0 | Open-source tools for systematic reviews, meta-analysis & evidence synthesis |
 <!-- END GENERATED:categories -->
 
 ---

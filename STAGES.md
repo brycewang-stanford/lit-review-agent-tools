@@ -49,17 +49,17 @@ _Find candidate literature across databases._
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
-| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~49.7k | 🟢 | CC-BY-NC-4.0 | Synthesize, Cite-check, Write, Review |
-| [STORM](https://github.com/stanford-oval/storm) | ~31.5k | 🟡 | MIT | Synthesize, Write |
-| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.7k | 🟢 | Apache-2.0 | Synthesize, Write |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~26.7k | 🟢 | MIT | Synthesize, Write |
-| [deep-research](https://github.com/dzhng/deep-research) | ~19.7k | 🟡 | MIT | Synthesize |
-| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.6k | 🟡 | custom | Synthesize, Write, Review |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~50.5k | 🟢 | CC-BY-NC-4.0 | Synthesize, Cite-check, Write, Review |
+| [STORM](https://github.com/stanford-oval/storm) | ~31.6k | 🔴 | MIT | Synthesize, Write |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.9k | 🟢 | Apache-2.0 | Synthesize, Write |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~27.6k | 🟢 | MIT | Synthesize, Write |
+| [deep-research](https://github.com/dzhng/deep-research) | ~19.8k | 🟡 | MIT | Synthesize |
+| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.7k | 🟡 | custom | Synthesize, Write, Review |
 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | ~14.6k | 🟢 | MIT | Synthesize, Cite-check, Write, Review |
 | [open_deep_research](https://github.com/langchain-ai/open_deep_research) | ~12.7k | 🗄️ | MIT | Synthesize |
-| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~11.8k | 🟢 | CC-BY-NC-4.0 | Synthesize, Cite-check, Write, Review |
-| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~9.1k | 🟢 | MIT | Synthesize |
-| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.2k | 🟡 | custom | Synthesize, Write, Review |
+| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~12.1k | 🟢 | CC-BY-NC-4.0 | Synthesize, Cite-check, Write, Review |
+| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~9.2k | 🟢 | MIT | Synthesize |
+| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.3k | 🟡 | custom | Synthesize, Write, Review |
 | [open-deep-research](https://github.com/nickscamara/open-deep-research) | ~6.3k | 🔴 | Apache-2.0 | Synthesize |
 | [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ~5.9k | 🔴 | MIT | Synthesize, Write |
 | [zotero-mcp](https://github.com/54yyyu/zotero-mcp) | ~5.2k | 🟢 | MIT | Read |
@@ -69,20 +69,20 @@ _Find candidate literature across databases._
 | [paperai](https://github.com/neuml/paperai) | ~1.8k | 🟢 | Apache-2.0 | Read, Synthesize |
 | [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1.1k | 🟢 | custom | Read, Synthesize, Write |
 | [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | 994 | 🟡 | none | Synthesize, Write |
-| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 929 | 🟢 | MIT | Synthesize, Write |
-| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟡 | MIT | Synthesize, Write |
+| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 932 | 🟢 | MIT | Synthesize, Write |
+| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟢 | MIT | Synthesize, Write |
 | [semanticscholar](https://github.com/danielnsilva/semanticscholar) | 481 | 🟢 | MIT | Cite-check |
-| [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) | 467 | 🔴 | MIT | — |
-| [pyalex](https://github.com/J535D165/pyalex) | 417 | 🟢 | MIT | Cite-check |
-| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 364 | 🟡 | none | Synthesize, Cite-check |
-| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 318 | 🟢 | MIT | Cite-check, Write |
+| [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) | 468 | 🔴 | MIT | — |
+| [pyalex](https://github.com/J535D165/pyalex) | 418 | 🟡 | MIT | Cite-check |
+| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 377 | 🟡 | none | Synthesize, Cite-check |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 327 | 🟢 | MIT | Cite-check, Write |
 | [Zochi](https://github.com/IntologyAI/Zochi) | 316 | 🟡 | MIT | Synthesize, Write, Review |
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | 156 | 🔴 | MIT | Synthesize, Write |
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | 129 | 🔴 | MIT | Read |
 | [alex-mcp](https://github.com/drAbreu/alex-mcp) | 56 | 🔴 | MIT | — |
-| [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 54 | 🟡 | MIT | Cite-check |
+| [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 55 | 🟢 | MIT | Cite-check |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | 52 | 🟡 | Apache-2.0 | Synthesize, Write |
-| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 25 | 🟡 | MIT | Synthesize, Cite-check, Review |
+| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 26 | 🟡 | MIT | Synthesize, Cite-check, Review |
 | [citegraph](https://github.com/Citegraph/citegraph) | 22 | 🔴 | MIT | — |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | Screen |
 
@@ -96,7 +96,7 @@ _Include/exclude at scale — the PRISMA bottleneck._
 |---|---|---|---|---|
 | [ASReview](https://github.com/asreview/asreview) | ~1.0k | 🟢 | Apache-2.0 | — |
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | 121 | 🟢 | CC-BY-NC-ND-4.0 | — |
-| [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 29 | 🟢 | AGPL-3.0 | Extract |
+| [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 30 | 🟢 | AGPL-3.0 | Extract |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | Search |
 
 ## Extract
@@ -107,16 +107,16 @@ _Turn PDFs into structured text or data._
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
-| [MinerU](https://github.com/opendatalab/MinerU) | ~80.8k | 🟢 | Apache-2.0 | — |
-| [docling](https://github.com/docling-project/docling) | ~68.1k | 🟢 | MIT | — |
-| [marker](https://github.com/datalab-to/marker) | ~40.0k | 🟢 | Apache-2.0 | — |
+| [MinerU](https://github.com/opendatalab/MinerU) | ~81.1k | 🟢 | Apache-2.0 | — |
+| [docling](https://github.com/docling-project/docling) | ~68.4k | 🟢 | MIT | — |
+| [marker](https://github.com/datalab-to/marker) | ~40.2k | 🟢 | Apache-2.0 | — |
 | [paper-qa](https://github.com/Future-House/paper-qa) | ~9.3k | 🟢 | Apache-2.0 | Read, Synthesize, Cite-check |
-| [grobid](https://github.com/grobidOrg/grobid) | ~5.1k | 🟢 | Apache-2.0 | — |
+| [grobid](https://github.com/grobidOrg/grobid) | ~5.2k | 🟢 | Apache-2.0 | — |
 | [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | ~3.2k | 🟢 | Apache-2.0 | Search, Read |
 | [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) | ~2.7k | 🟢 | AGPL-3.0 | Read, Synthesize |
 | [paperetl](https://github.com/neuml/paperetl) | 697 | 🟡 | Apache-2.0 | — |
 | [scipdf_parser](https://github.com/titipata/scipdf_parser) | 456 | 🔴 | MIT | — |
-| [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 29 | 🟢 | AGPL-3.0 | Screen |
+| [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 30 | 🟢 | AGPL-3.0 | Screen |
 
 ## Read
 
@@ -124,16 +124,16 @@ _Read, annotate, and interrogate individual papers._
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
-| [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) | ~37.2k | 🟢 | AGPL-3.0 | — |
+| [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) | ~37.3k | 🟢 | AGPL-3.0 | — |
 | [paper-qa](https://github.com/Future-House/paper-qa) | ~9.3k | 🟢 | Apache-2.0 | Extract, Synthesize, Cite-check |
-| [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) | ~7.4k | 🟡 | AGPL-3.0 | Synthesize |
+| [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) | ~7.5k | 🟡 | AGPL-3.0 | Synthesize |
 | [zotero-mcp](https://github.com/54yyyu/zotero-mcp) | ~5.2k | 🟢 | MIT | Search |
 | [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | ~3.2k | 🟢 | Apache-2.0 | Search, Extract |
 | [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) | ~2.7k | 🟢 | AGPL-3.0 | Extract, Synthesize |
 | [paperai](https://github.com/neuml/paperai) | ~1.8k | 🟢 | Apache-2.0 | Search, Synthesize |
 | [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) | ~1.7k | 🔴 | AGPL-3.0 | Synthesize |
 | [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1.1k | 🟢 | custom | Search, Synthesize, Write |
-| [openpaper](https://github.com/khoj-ai/openpaper) | 483 | 🟢 | AGPL-3.0 | Synthesize, Cite-check |
+| [openpaper](https://github.com/khoj-ai/openpaper) | 492 | 🟢 | AGPL-3.0 | Synthesize, Cite-check |
 | [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) | 129 | 🔴 | MIT | Search |
 | [paper-note-filler](https://github.com/chauff/paper-note-filler) | 47 | 🟡 | none | — |
 
@@ -143,19 +143,19 @@ _Combine findings across papers into themes._
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
-| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~49.7k | 🟢 | CC-BY-NC-4.0 | Search, Cite-check, Write, Review |
-| [STORM](https://github.com/stanford-oval/storm) | ~31.5k | 🟡 | MIT | Search, Write |
-| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.7k | 🟢 | Apache-2.0 | Search, Write |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~26.7k | 🟢 | MIT | Search, Write |
-| [deep-research](https://github.com/dzhng/deep-research) | ~19.7k | 🟡 | MIT | Search |
-| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.6k | 🟡 | custom | Search, Write, Review |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~50.5k | 🟢 | CC-BY-NC-4.0 | Search, Cite-check, Write, Review |
+| [STORM](https://github.com/stanford-oval/storm) | ~31.6k | 🔴 | MIT | Search, Write |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.9k | 🟢 | Apache-2.0 | Search, Write |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~27.6k | 🟢 | MIT | Search, Write |
+| [deep-research](https://github.com/dzhng/deep-research) | ~19.8k | 🟡 | MIT | Search |
+| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.7k | 🟡 | custom | Search, Write, Review |
 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | ~14.6k | 🟢 | MIT | Search, Cite-check, Write, Review |
 | [open_deep_research](https://github.com/langchain-ai/open_deep_research) | ~12.7k | 🗄️ | MIT | Search |
-| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~11.8k | 🟢 | CC-BY-NC-4.0 | Search, Cite-check, Write, Review |
+| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~12.1k | 🟢 | CC-BY-NC-4.0 | Search, Cite-check, Write, Review |
 | [paper-qa](https://github.com/Future-House/paper-qa) | ~9.3k | 🟢 | Apache-2.0 | Extract, Read, Cite-check |
-| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~9.1k | 🟢 | MIT | Search |
-| [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) | ~7.4k | 🟡 | AGPL-3.0 | Read |
-| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.2k | 🟡 | custom | Search, Write, Review |
+| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | ~9.2k | 🟢 | MIT | Search |
+| [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) | ~7.5k | 🟡 | AGPL-3.0 | Read |
+| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.3k | 🟡 | custom | Search, Write, Review |
 | [open-deep-research](https://github.com/nickscamara/open-deep-research) | ~6.3k | 🔴 | Apache-2.0 | Search |
 | [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ~5.9k | 🔴 | MIT | Search, Write |
 | [papersgpt-for-zotero](https://github.com/papersgpt/papersgpt-for-zotero) | ~2.7k | 🟢 | AGPL-3.0 | Extract, Read |
@@ -163,16 +163,16 @@ _Combine findings across papers into themes._
 | [ai-research-assistant](https://github.com/lifan0127/ai-research-assistant) | ~1.7k | 🔴 | AGPL-3.0 | Read |
 | [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1.1k | 🟢 | custom | Search, Read, Write |
 | [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | 994 | 🟡 | none | Search, Write |
-| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 929 | 🟢 | MIT | Search, Write |
-| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟡 | MIT | Search, Write |
+| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 932 | 🟢 | MIT | Search, Write |
+| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟢 | MIT | Search, Write |
 | [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) | 637 | 🔴 | Apache-2.0 | — |
-| [openpaper](https://github.com/khoj-ai/openpaper) | 483 | 🟢 | AGPL-3.0 | Read, Cite-check |
-| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 364 | 🟡 | none | Search, Cite-check |
+| [openpaper](https://github.com/khoj-ai/openpaper) | 492 | 🟢 | AGPL-3.0 | Read, Cite-check |
+| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 377 | 🟡 | none | Search, Cite-check |
 | [Zochi](https://github.com/IntologyAI/Zochi) | 316 | 🟡 | MIT | Search, Write, Review |
-| [DeepInnovator](https://github.com/HKUDS/DeepInnovator) | 289 | 🟡 | MIT | — |
+| [DeepInnovator](https://github.com/HKUDS/DeepInnovator) | 287 | 🟡 | MIT | — |
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | 156 | 🔴 | MIT | Search, Write |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | 52 | 🟡 | Apache-2.0 | Search, Write |
-| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 25 | 🟡 | MIT | Search, Cite-check, Review |
+| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 26 | 🟡 | MIT | Search, Cite-check, Review |
 
 ## Cite-check
 
@@ -182,17 +182,17 @@ _Verify citations and claims against the sources._
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
-| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~49.7k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Write, Review |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~50.5k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Write, Review |
 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | ~14.6k | 🟢 | MIT | Search, Synthesize, Write, Review |
-| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~11.8k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Write, Review |
+| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~12.1k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Write, Review |
 | [paper-qa](https://github.com/Future-House/paper-qa) | ~9.3k | 🟢 | Apache-2.0 | Extract, Read, Synthesize |
-| [openpaper](https://github.com/khoj-ai/openpaper) | 483 | 🟢 | AGPL-3.0 | Read, Synthesize |
+| [openpaper](https://github.com/khoj-ai/openpaper) | 492 | 🟢 | AGPL-3.0 | Read, Synthesize |
 | [semanticscholar](https://github.com/danielnsilva/semanticscholar) | 481 | 🟢 | MIT | Search |
-| [pyalex](https://github.com/J535D165/pyalex) | 417 | 🟢 | MIT | Search |
-| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 364 | 🟡 | none | Search, Synthesize |
-| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 318 | 🟢 | MIT | Search, Write |
-| [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 54 | 🟡 | MIT | Search |
-| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 25 | 🟡 | MIT | Search, Synthesize, Review |
+| [pyalex](https://github.com/J535D165/pyalex) | 418 | 🟡 | MIT | Search |
+| [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 377 | 🟡 | none | Search, Synthesize |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 327 | 🟢 | MIT | Search, Write |
+| [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 55 | 🟢 | MIT | Search |
+| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 26 | 🟡 | MIT | Search, Synthesize, Review |
 
 ## Write
 
@@ -200,26 +200,26 @@ _Draft the prose._
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
-| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~49.7k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Review |
-| [STORM](https://github.com/stanford-oval/storm) | ~31.5k | 🟡 | MIT | Search, Synthesize |
-| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.7k | 🟢 | Apache-2.0 | Search, Synthesize |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~26.7k | 🟢 | MIT | Search, Synthesize |
-| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.6k | 🟡 | custom | Search, Synthesize, Review |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~50.5k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Review |
+| [STORM](https://github.com/stanford-oval/storm) | ~31.6k | 🔴 | MIT | Search, Synthesize |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | ~29.9k | 🟢 | Apache-2.0 | Search, Synthesize |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | ~27.6k | 🟢 | MIT | Search, Synthesize |
+| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.7k | 🟡 | custom | Search, Synthesize, Review |
 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | ~14.6k | 🟢 | MIT | Search, Synthesize, Cite-check, Review |
-| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~11.8k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Review |
-| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.2k | 🟡 | custom | Search, Synthesize, Review |
-| [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | ~7.1k | 🟡 | MIT | — |
+| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~12.1k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Review |
+| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.3k | 🟡 | custom | Search, Synthesize, Review |
+| [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | ~7.3k | 🟡 | MIT | — |
 | [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ~5.9k | 🔴 | MIT | Search, Synthesize |
-| [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | ~1.3k | 🟡 | MIT | — |
+| [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | ~1.4k | 🟡 | MIT | — |
 | [dr-claw](https://github.com/OpenLAIR/dr-claw) | ~1.1k | 🟢 | custom | Search, Read, Synthesize |
 | [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) | 994 | 🟡 | none | Search, Synthesize |
-| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 929 | 🟢 | MIT | Search, Synthesize |
-| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟡 | MIT | Search, Synthesize |
-| [opendraft](https://github.com/federicodeponte/opendraft) | 461 | 🟢 | MIT | — |
-| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 318 | 🟢 | MIT | Search, Cite-check |
+| [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 932 | 🟢 | MIT | Search, Synthesize |
+| [ScienceClaw](https://github.com/beita6969/ScienceClaw) | 906 | 🟢 | MIT | Search, Synthesize |
+| [opendraft](https://github.com/federicodeponte/opendraft) | 503 | 🟢 | MIT | — |
+| [medsci-skills](https://github.com/Aperivue/medsci-skills) | 327 | 🟢 | MIT | Search, Cite-check |
 | [Zochi](https://github.com/IntologyAI/Zochi) | 316 | 🟡 | MIT | Search, Synthesize, Review |
-| [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) | 275 | 🟡 | MIT | — |
-| [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) | 208 | 🟡 | MIT | Review |
+| [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) | 276 | 🟡 | MIT | — |
+| [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) | 211 | 🟡 | MIT | Review |
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | 156 | 🔴 | MIT | Search, Synthesize |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | 52 | 🟡 | Apache-2.0 | Search, Synthesize |
 
@@ -229,13 +229,13 @@ _Critique a draft before a human reviewer does._
 
 | Tool | Stars | Health | Licence | Also covers |
 |---|---|---|---|---|
-| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~49.7k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Write |
-| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.6k | 🟡 | custom | Search, Synthesize, Write |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | ~50.5k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Write |
+| [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ~14.7k | 🟡 | custom | Search, Synthesize, Write |
 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | ~14.6k | 🟢 | MIT | Search, Synthesize, Cite-check, Write |
-| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~11.8k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Write |
-| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.2k | 🟡 | custom | Search, Synthesize, Write |
+| [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | ~12.1k | 🟢 | CC-BY-NC-4.0 | Search, Synthesize, Cite-check, Write |
+| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ~7.3k | 🟡 | custom | Search, Synthesize, Write |
 | [Zochi](https://github.com/IntologyAI/Zochi) | 316 | 🟡 | MIT | Search, Synthesize, Write |
-| [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) | 208 | 🟡 | MIT | Write |
-| [ai-peer-review](https://github.com/poldrack/ai-peer-review) | 154 | 🟢 | MIT | — |
-| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 25 | 🟡 | MIT | Search, Synthesize, Cite-check |
+| [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) | 211 | 🟡 | MIT | Write |
+| [ai-peer-review](https://github.com/poldrack/ai-peer-review) | 154 | 🟡 | MIT | — |
+| [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 26 | 🟡 | MIT | Search, Synthesize, Cite-check |
 | [open_reviewer](https://github.com/maxidl/openreviewer) | 17 | 🔴 | none | — |
