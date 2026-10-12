@@ -23,8 +23,8 @@
 - [paper-qa](https://github.com/Future-House/paper-qa) — High-accuracy retrieval system for scientific papers whose answers always cite sources. `paper-qa-rag`
 - [local-deep-research](https://github.com/LearningCircuit/local-deep-research) — Local and private deep-research over many sources including arXiv and PubMed. `deep-research`
 - [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
-- [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) — Workshop-level automated scientific discovery via agentic tree search. `autonomous-science`
 - [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) — Machine-learning paper-writing skill pack for Codex, Claude Code, and Gemini. `all-in-one`
+- [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) — Workshop-level automated scientific discovery via agentic tree search. `autonomous-science`
 - [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Autonomous workflow from literature review through experimentation to report writing. `autonomous-science`
 - [zotero-mcp](https://github.com/54yyyu/zotero-mcp) — Connects a Zotero library to AI clients for semantic search and citation analysis. `mcp-servers`
@@ -40,8 +40,8 @@
 - [dr-claw](https://github.com/OpenLAIR/dr-claw) — Research workbench with multiple AI-assistant personas. `all-in-one`
 - [ASReview](https://github.com/asreview/asreview) — Active-learning screener that ranks papers to cut systematic-review screening time. `systematic-review`
 - [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) — Automated generation of academic survey papers from a topic. `deep-research`
-- [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) — Multilingual library of installable AI-agent skills across disciplines. `all-in-one`
 - [ScienceClaw](https://github.com/beita6969/ScienceClaw) — Self-evolving AI research colleague with a large skill library. `all-in-one`
+- [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) — Multilingual library of installable AI-agent skills across disciplines. `all-in-one`
 - [paperetl](https://github.com/neuml/paperetl) — ETL pipeline that loads medical and scientific papers into structured stores. `pdf-extraction`
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — Multi-agent system that generates hypotheses and scientific discoveries. `autonomous-science`
 - [awesome-ai-auto-research](https://github.com/worldbench/awesome-ai-auto-research) — Survey of AI approaches to automated research. `awesome-lists`
@@ -64,8 +64,8 @@
 - [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) — Searches, accesses, and analyzes PubMed articles through a tool interface. `mcp-servers`
 - [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) — Low-code package that automates systematic-review screening with AI agents. `systematic-review`
 - [awesome-ai-research-tools](https://github.com/0x11c11e/awesome-ai-research-tools) — AI tools for literature reviews, reference management, and data analysis. `awesome-lists`
-- [alex-mcp](https://github.com/drAbreu/alex-mcp) — OpenAlex server focused on author disambiguation and institution lookup. `mcp-servers`
 - [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) — OpenAlex-backed citation analysis, trend tracking, and collaboration mapping. `mcp-servers`
+- [alex-mcp](https://github.com/drAbreu/alex-mcp) — OpenAlex server focused on author disambiguation and institution lookup. `mcp-servers`
 - [LitLLM](https://github.com/LitLLM/LitLLM) — Toolkit that drafts related-work sections fast with retrieval and prompting. `deep-research`
 - [paper-note-filler](https://github.com/chauff/paper-note-filler) — Obsidian plugin that auto-creates notes from scholarly sources. `reference-management`
 - [prismAId](https://github.com/Open-and-Sustainable/prismAId) — Protocol-based, no-code toolkit for replicable review screening and extraction. `systematic-review`
