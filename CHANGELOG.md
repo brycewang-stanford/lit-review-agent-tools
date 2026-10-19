@@ -18,12 +18,12 @@
 - [deep-research](https://github.com/dzhng/deep-research) — Minimal iterative deep-research agent that is small and easy to hack on. `deep-research`
 - [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) — End-to-end automated discovery covering literature review, experiments, writing, and review. `autonomous-science`
 - [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — Self-evolving research from idea to conference-ready paper with real literature and sandboxed experiments. `autonomous-science`
-- [open_deep_research](https://github.com/langchain-ai/open_deep_research) — Open deep-research reference implementation from LangChain. `deep-research`
 - [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) — Codex-native sibling with a human-in-the-loop research flow. `all-in-one`
+- [open_deep_research](https://github.com/langchain-ai/open_deep_research) — Open deep-research reference implementation from LangChain. `deep-research`
 - [paper-qa](https://github.com/Future-House/paper-qa) — High-accuracy retrieval system for scientific papers whose answers always cite sources. `paper-qa-rag`
 - [local-deep-research](https://github.com/LearningCircuit/local-deep-research) — Local and private deep-research over many sources including arXiv and PubMed. `deep-research`
-- [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) — Machine-learning paper-writing skill pack for Codex, Claude Code, and Gemini. `all-in-one`
+- [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) — Workshop-level automated scientific discovery via agentic tree search. `autonomous-science`
 - [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Autonomous workflow from literature review through experimentation to report writing. `autonomous-science`
@@ -39,8 +39,8 @@
 - [Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) — Automated tools for search, reading, experiments, and code generation. `awesome-lists`
 - [dr-claw](https://github.com/OpenLAIR/dr-claw) — Research workbench with multiple AI-assistant personas. `all-in-one`
 - [ASReview](https://github.com/asreview/asreview) — Active-learning screener that ranks papers to cut systematic-review screening time. `systematic-review`
-- [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) — Automated generation of academic survey papers from a topic. `deep-research`
 - [ScienceClaw](https://github.com/beita6969/ScienceClaw) — Self-evolving AI research colleague with a large skill library. `all-in-one`
+- [SurveyX](https://github.com/IAAR-Shanghai/SurveyX) — Automated generation of academic survey papers from a topic. `deep-research`
 - [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) — Multilingual library of installable AI-agent skills across disciplines. `all-in-one`
 - [paperetl](https://github.com/neuml/paperetl) — ETL pipeline that loads medical and scientific papers into structured stores. `pdf-extraction`
 - [SciAgentsDiscovery](https://github.com/lamm-mit/SciAgentsDiscovery) — Multi-agent system that generates hypotheses and scientific discoveries. `autonomous-science`
@@ -68,8 +68,8 @@
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) — OpenAlex server focused on author disambiguation and institution lookup. `mcp-servers`
 - [LitLLM](https://github.com/LitLLM/LitLLM) — Toolkit that drafts related-work sections fast with retrieval and prompting. `deep-research`
 - [paper-note-filler](https://github.com/chauff/paper-note-filler) — Obsidian plugin that auto-creates notes from scholarly sources. `reference-management`
-- [prismAId](https://github.com/Open-and-Sustainable/prismAId) — Protocol-based, no-code toolkit for replicable review screening and extraction. `systematic-review`
 - [awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis) — Open-source tools for systematic reviews and meta-analysis. `awesome-lists`
+- [prismAId](https://github.com/Open-and-Sustainable/prismAId) — Protocol-based, no-code toolkit for replicable review screening and extraction. `systematic-review`
 - [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) — Claude Code plugin for surveys, paper reviews, and finding research gaps. `writing-peer-review`
 - [citegraph](https://github.com/Citegraph/citegraph) — Open web visualizer of papers and citation networks. `citation-graphs`
 - [open_reviewer](https://github.com/maxidl/openreviewer) — Generates peer reviews of conference papers for pre-submission feedback. `writing-peer-review`
