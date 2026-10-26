@@ -51,15 +51,15 @@
 - [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
-- [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) — Claude Code skills for systematic literature review with citation-validation scripts. `all-in-one`
+- [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
 - [medsci-skills](https://github.com/Aperivue/medsci-skills) — Medical-research skills for search, reporting-guideline checks, statistics, and submission. `all-in-one`
 - [Zochi](https://github.com/IntologyAI/Zochi) — Artificial-scientist system doing end-to-end discovery toward publication. `autonomous-science`
 - [DeepInnovator](https://github.com/HKUDS/DeepInnovator) — Autonomously generates research ideas, hypotheses, and experiment designs. `autonomous-science`
 - [lmms-lab-writer](https://github.com/EvolvingLMMs-Lab/lmms-lab-writer) — Local-first agentic LaTeX writer for AI-assisted academic writing. `writing-peer-review`
 - [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) — Claude Code plugin with specialist agents for reviewing, drafting, and polishing. `writing-peer-review`
-- [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — Finds and ranks scholarly papers and auto-generates a survey. `deep-research`
 - [ai-peer-review](https://github.com/poldrack/ai-peer-review) — Multi-model meta-review that synthesizes independent reviews of a paper. `writing-peer-review`
+- [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — Finds and ranks scholarly papers and auto-generates a survey. `deep-research`
 - [LLM4SR](https://github.com/du-nlp-lab/LLM4SR) — Papers and resources on language models for scientific research surveys. `awesome-lists`
 - [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) — Searches, accesses, and analyzes PubMed articles through a tool interface. `mcp-servers`
 - [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) — Low-code package that automates systematic-review screening with AI agents. `systematic-review`
