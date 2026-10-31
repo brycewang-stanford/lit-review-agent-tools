@@ -43,6 +43,7 @@ Every entry carries a maintenance status and a licence, refreshed weekly from th
 - [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) - Multilingual library of installable AI-agent skills across disciplines.
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) - Claude Code skills for systematic literature review with citation-validation scripts.
 - [medsci-skills](https://github.com/Aperivue/medsci-skills) - Medical-research skills for search, reporting-guideline checks, statistics, and submission.
+- [research-weave-skill](https://github.com/NeuraLiying/research-weave-skill) - Agent skill for prioritizing papers with claim-level evidence maps, support-dependence checks, and scoped contradiction analysis.
 
 ## Deep Research and Auto Survey Generation
 

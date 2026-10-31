@@ -14,13 +14,13 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 [简体中文](README.zh.md) · **English** · **[🔍 Searchable site](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em><b>66</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
+<em><b>67</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -125,6 +125,7 @@ I want to chat with my library inside Zotero ───────────�
 | [qinyan-academic-skills](https://github.com/LeonChaoX/qinyan-academic-skills) | 980 | 🟡 | MIT | Multilingual library of 182 installable AI-agent skills across disciplines |
 | [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) | 433 | 🟡 | none | Claude Code skills for systematic literature review, incl. citation-validation scripts |
 | [medsci-skills](https://github.com/Aperivue/medsci-skills) | 350 | 🟢 | MIT | Medical-research skills: search, reporting-guideline/citation checks, stats, figures, submission (by a physician-researcher) |
+| [research-weave-skill](https://github.com/NeuraLiying/research-weave-skill) | new | 🟢 | MIT | Codex-tested skill for paper prioritization with claim-level evidence maps, support-dependence checks, and scoped contradiction analysis. |
 
 ---
 

@@ -152,6 +152,22 @@
   desc_en: "Medical-research skills: search, reporting-guideline/citation checks, stats, figures, submission (by a physician-researcher)"
   desc_awesome: "Medical-research skills for search, reporting-guideline checks, statistics, and submission."
 
+- name: "research-weave-skill"
+  repo: NeuraLiying/research-weave-skill
+  category: all-in-one
+  stage: [search, screen, read, synthesize]
+  added: 2026-10-31
+  stars: null
+  pushed_at: 2026-10-31
+  archived: false
+  license: MIT
+  language: Python
+  status: active
+  stars_label: {zh: "新项目", en: "new"}
+  desc_zh: "经 Codex 试用的论文筛选与证据综合技能：追溯研究脉络、区分重复证据与独立支持、对齐冲突条件，并按研究决策安排阅读优先级。"
+  desc_en: "Codex-tested skill for paper prioritization with claim-level evidence maps, support-dependence checks, and scoped contradiction analysis."
+  desc_awesome: "Agent skill for prioritizing papers with claim-level evidence maps, support-dependence checks, and scoped contradiction analysis."
+
 # ── deep-research ───────────────────────────────────────────────
 - name: "STORM"
   repo: stanford-oval/storm
