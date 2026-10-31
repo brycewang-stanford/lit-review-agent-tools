@@ -281,6 +281,29 @@
       "description_zh": "医学科研技能：检索、报告规范/引用核查、统计、出版图表、投稿（医生-研究者出品）"
     },
     {
+      "name": "research-weave-skill",
+      "repo": "NeuraLiying/research-weave-skill",
+      "url": "https://github.com/NeuraLiying/research-weave-skill",
+      "category": "all-in-one",
+      "stage": [
+        "search",
+        "screen",
+        "read",
+        "synthesize"
+      ],
+      "editor_pick": false,
+      "why": null,
+      "caveat": null,
+      "stars": null,
+      "pushed_at": "2026-10-31",
+      "status": "active",
+      "archived": false,
+      "license": "MIT",
+      "language": "Python",
+      "description_en": "Codex-tested skill for paper prioritization with claim-level evidence maps, support-dependence checks, and scoped contradiction analysis.",
+      "description_zh": "经 Codex 试用的论文筛选与证据综合技能：追溯研究脉络、区分重复证据与独立支持、对齐冲突条件，并按研究决策安排阅读优先级。"
+    },
+    {
       "name": "STORM",
       "repo": "stanford-oval/storm",
       "url": "https://github.com/stanford-oval/storm",
