@@ -88,6 +88,7 @@ Every entry carries a maintenance status and a licence, refreshed weekly from th
 - [PubMed-MCP-Server](https://github.com/JackKuo666/PubMed-MCP-Server) - Searches, accesses, and analyzes PubMed articles through a tool interface.
 - [alex-mcp](https://github.com/drAbreu/alex-mcp) - OpenAlex server focused on author disambiguation and institution lookup.
 - [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) - OpenAlex-backed citation analysis, trend tracking, and collaboration mapping.
+- [No Stairs Please MCP](https://nostairsplease.com/mcp) - Public MCP server exposing structured data for 1,700+ US and Canadian live-music venues.
 
 ## Reference and Knowledge Management
 
