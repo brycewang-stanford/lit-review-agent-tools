@@ -17,17 +17,17 @@
 - [claude-skills](https://github.com/alirezarezvani/claude-skills) — Large skill collection including a literature-review, grants, and deep-research stack. `all-in-one`
 - [deep-research](https://github.com/dzhng/deep-research) — Minimal iterative deep-research agent that is small and easy to hack on. `deep-research`
 - [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) — End-to-end automated discovery covering literature review, experiments, writing, and review. `autonomous-science`
-- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — Self-evolving research from idea to conference-ready paper with real literature and sandboxed experiments. `autonomous-science`
 - [academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) — Codex-native sibling with a human-in-the-loop research flow. `all-in-one`
+- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — Self-evolving research from idea to conference-ready paper with real literature and sandboxed experiments. `autonomous-science`
 - [open_deep_research](https://github.com/langchain-ai/open_deep_research) — Open deep-research reference implementation from LangChain. `deep-research`
 - [paper-qa](https://github.com/Future-House/paper-qa) — High-accuracy retrieval system for scientific papers whose answers always cite sources. `paper-qa-rag`
 - [local-deep-research](https://github.com/LearningCircuit/local-deep-research) — Local and private deep-research over many sources including arXiv and PubMed. `deep-research`
 - [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) — Machine-learning paper-writing skill pack for Codex, Claude Code, and Gemini. `all-in-one`
-- [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) — Workshop-level automated scientific discovery via agentic tree search. `autonomous-science`
+- [zotero-gpt](https://github.com/MuiseDestiny/zotero-gpt) — Integrates a chat assistant into Zotero to talk with your library. `reference-management`
 - [open-deep-research](https://github.com/nickscamara/open-deep-research) — Open deep-research clone that reasons over web data via Firecrawl. `deep-research`
-- [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Autonomous workflow from literature review through experimentation to report writing. `autonomous-science`
 - [zotero-mcp](https://github.com/54yyyu/zotero-mcp) — Connects a Zotero library to AI clients for semantic search and citation analysis. `mcp-servers`
+- [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Autonomous workflow from literature review through experimentation to report writing. `autonomous-science`
 - [grobid](https://github.com/grobidOrg/grobid) — Extracts structured metadata, references, and sections from scholarly PDFs. `pdf-extraction`
 - [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) — Searches and analyzes arXiv papers and converts them to Markdown for context. `mcp-servers`
 - [paper-search-mcp](https://github.com/openags/paper-search-mcp) — Multi-source search and download across many scholarly databases. `mcp-servers`
@@ -48,8 +48,8 @@
 - [opendraft](https://github.com/federicodeponte/opendraft) — Free and open-source AI paper writer where many agents collaborate on long drafts. `deep-research`
 - [openpaper](https://github.com/khoj-ai/openpaper) — Research-library workbench with a grounded, citation-aware review assistant. `paper-qa-rag`
 - [semanticscholar](https://github.com/danielnsilva/semanticscholar) — Python client for the Semantic Scholar APIs. `citation-graphs`
-- [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
 - [agent-research-skills](https://github.com/lingzhi227/agent-research-skills) — Claude Code skills for systematic literature review with citation-validation scripts. `all-in-one`
+- [ArxivDigest](https://github.com/AutoLLM/ArxivDigest) — Personalized daily arXiv digest with relevancy scoring and email delivery. `citation-graphs`
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — Python parser for scientific PDFs that extracts content and figures. `pdf-extraction`
 - [Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) — Survey list of language models in scientific discovery. `awesome-lists`
 - [pyalex](https://github.com/J535D165/pyalex) — Lightweight Python interface to the OpenAlex API. `citation-graphs`
@@ -77,7 +77,7 @@
 
 ## Watch list
 
-14 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
+16 entries have not been pushed to in over a year, or are archived. They stay listed while still useful; see [HEALTH.md](HEALTH.md) for the full picture.
 
 - [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) — last push 2023-05-23 (stale)
 - [scipdf_parser](https://github.com/titipata/scipdf_parser) — last push 2024-03-21 (stale)
@@ -92,4 +92,6 @@
 - [Agent-Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — last push 2025-08-20 (stale)
 - [citegraph](https://github.com/Citegraph/citegraph) — last push 2025-09-24 (stale)
 - [STORM](https://github.com/stanford-oval/storm) — last push 2025-09-30 (stale)
+- [Zochi](https://github.com/IntologyAI/Zochi) — last push 2025-11-19 (stale)
+- [paper-note-filler](https://github.com/chauff/paper-note-filler) — last push 2025-11-20 (stale)
 - [open_deep_research](https://github.com/langchain-ai/open_deep_research) — last push 2026-08-10 (archived)
