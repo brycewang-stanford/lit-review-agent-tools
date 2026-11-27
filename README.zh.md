@@ -14,13 +14,13 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 **简体中文** · [English](README.en.md) · [Awesome list](README.md) · **[🔍 可搜索站点](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em>收录 <b>66</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
+<em>收录 <b>67</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -180,6 +180,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | 127 | 🟢 | CC-BY-NC-ND-4.0 | 低代码 Python 包，用 AI 智能体自动化系统综述筛选（OpenAI/Gemini/Claude/Ollama） |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 32 | 🟢 | AGPL-3.0 | 基于生成式 AI 的协议驱动系统综述工具，无需编程、可复现的筛选与抽取 |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | 小众 | 🟢 | MIT | PRISMA 2020 全流程，经 MCP 做 AI 辅助筛选（arXiv/OpenAlex/S2，无需 API key） |
+| [systematic-review-skills](https://github.com/pinjun99/systematic-review-skills) | 0 | 🟢 | Apache-2.0 | 用 Codex 或 Claude Code 从方案到 PRISMA 2020 报告完成健康干预系统综述的技能包，每个里程碑都需人工批准 |
 
 ---
 

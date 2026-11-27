@@ -799,6 +799,30 @@
       "description_zh": "PRISMA 2020 全流程，经 MCP 做 AI 辅助筛选（arXiv/OpenAlex/S2，无需 API key）"
     },
     {
+      "name": "systematic-review-skills",
+      "repo": "pinjun99/systematic-review-skills",
+      "url": "https://github.com/pinjun99/systematic-review-skills",
+      "category": "systematic-review",
+      "stage": [
+        "search",
+        "screen",
+        "extract",
+        "synthesize",
+        "write"
+      ],
+      "editor_pick": false,
+      "why": null,
+      "caveat": null,
+      "stars": 0,
+      "pushed_at": "2026-11-27",
+      "status": "active",
+      "archived": false,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "description_en": "Codex and Claude Code skills that run a health-intervention systematic review from protocol to PRISMA 2020 reporting, with a human approval gate at each milestone",
+      "description_zh": "用 Codex 或 Claude Code 从方案到 PRISMA 2020 报告完成健康干预系统综述的技能包，每个里程碑都需人工批准"
+    },
+    {
       "name": "zotero-mcp",
       "repo": "54yyyu/zotero-mcp",
       "url": "https://github.com/54yyyu/zotero-mcp",
