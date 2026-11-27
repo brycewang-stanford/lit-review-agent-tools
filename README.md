@@ -79,6 +79,7 @@ Every entry carries a maintenance status and a licence, refreshed weekly from th
 - [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) - Low-code package that automates systematic-review screening with AI agents.
 - [prismAId](https://github.com/Open-and-Sustainable/prismAId) - Protocol-based, no-code toolkit for replicable review screening and extraction.
 - [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) - Structured review flow with AI-assisted screening over open scholarly sources.
+- [systematic-review-skills](https://github.com/pinjun99/systematic-review-skills) - Codex and Claude Code skills for a health-intervention systematic review from protocol to reporting, with human approval at each milestone.
 
 ## MCP Servers
 

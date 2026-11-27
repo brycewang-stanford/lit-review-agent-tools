@@ -510,6 +510,20 @@
   desc_zh: "PRISMA 2020 全流程，经 MCP 做 AI 辅助筛选（arXiv/OpenAlex/S2，无需 API key）"
   desc_en: "PRISMA 2020 flow with AI-assisted screening via MCP (arXiv/OpenAlex/S2, no API keys)"
   desc_awesome: "Structured review flow with AI-assisted screening over open scholarly sources."
+- name: "systematic-review-skills"
+  repo: pinjun99/systematic-review-skills
+  category: systematic-review
+  stage: [search, screen, extract, synthesize, write]
+  added: 2026-11-27
+  stars: 0
+  pushed_at: 2026-11-27
+  archived: false
+  license: Apache-2.0
+  language: Python
+  status: active
+  desc_zh: "用 Codex 或 Claude Code 从方案到 PRISMA 2020 报告完成健康干预系统综述的技能包，每个里程碑都需人工批准"
+  desc_en: "Codex and Claude Code skills that run a health-intervention systematic review from protocol to PRISMA 2020 reporting, with a human approval gate at each milestone"
+  desc_awesome: "Codex and Claude Code skills for a health-intervention systematic review from protocol to reporting, with human approval at each milestone."
 
 # ── mcp-servers ─────────────────────────────────────────────────
 - name: "zotero-mcp"

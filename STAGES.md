@@ -11,16 +11,16 @@ Four of these stages have a workflow in [recipes/](recipes/) that was actually r
 
 | Stage | What it means | Tools |
 |---|---|---|
-| **Search** | Find candidate literature across databases. | 36 |
-| **Screen** | Include/exclude at scale — the PRISMA bottleneck. | 4 |
-| **Extract** | Turn PDFs into structured text or data. | 10 |
+| **Search** | Find candidate literature across databases. | 37 |
+| **Screen** | Include/exclude at scale — the PRISMA bottleneck. | 5 |
+| **Extract** | Turn PDFs into structured text or data. | 11 |
 | **Read** | Read, annotate, and interrogate individual papers. | 12 |
-| **Synthesize** | Combine findings across papers into themes. | 30 |
+| **Synthesize** | Combine findings across papers into themes. | 31 |
 | **Cite-check** | Verify citations and claims against the sources. | 11 |
-| **Write** | Draft the prose. | 22 |
+| **Write** | Draft the prose. | 23 |
 | **Review** | Critique a draft before a human reviewer does. | 10 |
 
-The distribution is lopsided: **36 tools help you search**, but only **4 help you screen** and **10 help you extract**. The ecosystem is thickest where the work is easiest to automate and thinnest in the middle of a real review — which is worth knowing before you assume a tool exists for your bottleneck.
+The distribution is lopsided: **37 tools help you search**, but only **5 help you screen** and **10 help you review**. The ecosystem is thickest where the work is easiest to automate and thinnest in the middle of a real review — which is worth knowing before you assume a tool exists for your bottleneck.
 
 ## Editor's picks by stage
 
@@ -85,6 +85,7 @@ _Find candidate literature across databases._
 | [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 29 | 🟡 | MIT | Synthesize, Cite-check, Review |
 | [citegraph](https://github.com/Citegraph/citegraph) | 22 | 🔴 | MIT | — |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | Screen |
+| [systematic-review-skills](https://github.com/pinjun99/systematic-review-skills) | 0 | 🟢 | Apache-2.0 | Screen, Extract, Synthesize, Write |
 
 ## Screen
 
@@ -98,6 +99,7 @@ _Include/exclude at scale — the PRISMA bottleneck._
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | 127 | 🟢 | CC-BY-NC-ND-4.0 | — |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 32 | 🟢 | AGPL-3.0 | Extract |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | Search |
+| [systematic-review-skills](https://github.com/pinjun99/systematic-review-skills) | 0 | 🟢 | Apache-2.0 | Search, Extract, Synthesize, Write |
 
 ## Extract
 
@@ -117,6 +119,7 @@ _Turn PDFs into structured text or data._
 | [paperetl](https://github.com/neuml/paperetl) | 702 | 🟡 | Apache-2.0 | — |
 | [scipdf_parser](https://github.com/titipata/scipdf_parser) | 457 | 🔴 | MIT | — |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 32 | 🟢 | AGPL-3.0 | Screen |
+| [systematic-review-skills](https://github.com/pinjun99/systematic-review-skills) | 0 | 🟢 | Apache-2.0 | Search, Screen, Synthesize, Write |
 
 ## Read
 
@@ -173,6 +176,7 @@ _Combine findings across papers into themes._
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | 156 | 🔴 | MIT | Search, Write |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | 54 | 🟡 | Apache-2.0 | Search, Write |
 | [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 29 | 🟡 | MIT | Search, Cite-check, Review |
+| [systematic-review-skills](https://github.com/pinjun99/systematic-review-skills) | 0 | 🟢 | Apache-2.0 | Search, Screen, Extract, Write |
 
 ## Cite-check
 
@@ -222,6 +226,7 @@ _Draft the prose._
 | [academic-writing-agents](https://github.com/andrehuang/academic-writing-agents) | 243 | 🟡 | MIT | Review |
 | [AutoSurveyGPT](https://github.com/a554b554/AutoSurveyGPT) | 156 | 🔴 | MIT | Search, Synthesize |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | 54 | 🟡 | Apache-2.0 | Search, Synthesize |
+| [systematic-review-skills](https://github.com/pinjun99/systematic-review-skills) | 0 | 🟢 | Apache-2.0 | Search, Screen, Extract, Synthesize |
 
 ## Review
 
