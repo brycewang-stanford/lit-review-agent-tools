@@ -11,8 +11,8 @@ Four of these stages have a workflow in [recipes/](recipes/) that was actually r
 
 | Stage | What it means | Tools |
 |---|---|---|
-| **Search** | Find candidate literature across databases. | 36 |
-| **Screen** | Include/exclude at scale — the PRISMA bottleneck. | 4 |
+| **Search** | Find candidate literature across databases. | 37 |
+| **Screen** | Include/exclude at scale — the PRISMA bottleneck. | 5 |
 | **Extract** | Turn PDFs into structured text or data. | 10 |
 | **Read** | Read, annotate, and interrogate individual papers. | 12 |
 | **Synthesize** | Combine findings across papers into themes. | 30 |
@@ -20,7 +20,7 @@ Four of these stages have a workflow in [recipes/](recipes/) that was actually r
 | **Write** | Draft the prose. | 22 |
 | **Review** | Critique a draft before a human reviewer does. | 10 |
 
-The distribution is lopsided: **36 tools help you search**, but only **4 help you screen** and **10 help you extract**. The ecosystem is thickest where the work is easiest to automate and thinnest in the middle of a real review — which is worth knowing before you assume a tool exists for your bottleneck.
+The distribution is lopsided: **37 tools help you search**, but only **5 help you screen** and **10 help you extract**. The ecosystem is thickest where the work is easiest to automate and thinnest in the middle of a real review — which is worth knowing before you assume a tool exists for your bottleneck.
 
 ## Editor's picks by stage
 
@@ -82,6 +82,7 @@ _Find candidate literature across databases._
 | [openalex-research-mcp](https://github.com/oksure/openalex-research-mcp) | 61 | 🟢 | MIT | Cite-check |
 | [alex-mcp](https://github.com/drAbreu/alex-mcp) | 57 | 🔴 | MIT | — |
 | [LitLLM](https://github.com/LitLLM/LitLLM) | 54 | 🟡 | Apache-2.0 | Synthesize, Write |
+| [Paper Radar](https://github.com/Eliot5566/JEV-Paper-Radar) | 47 | 🟢 | MIT | Screen |
 | [academic-research-plugin](https://github.com/JeanDiable/academic-research-plugin) | 29 | 🟡 | MIT | Synthesize, Cite-check, Review |
 | [citegraph](https://github.com/Citegraph/citegraph) | 22 | 🔴 | MIT | — |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | Screen |
@@ -96,6 +97,7 @@ _Include/exclude at scale — the PRISMA bottleneck._
 |---|---|---|---|---|
 | [ASReview](https://github.com/asreview/asreview) | ~1.1k | 🟢 | Apache-2.0 | — |
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | 127 | 🟢 | CC-BY-NC-ND-4.0 | — |
+| [Paper Radar](https://github.com/Eliot5566/JEV-Paper-Radar) | 47 | 🟢 | MIT | Search |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 32 | 🟢 | AGPL-3.0 | Extract |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | Search |
 

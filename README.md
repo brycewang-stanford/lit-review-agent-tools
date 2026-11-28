@@ -77,6 +77,7 @@ Every entry carries a maintenance status and a licence, refreshed weekly from th
 
 - [ASReview](https://github.com/asreview/asreview) - Active-learning screener that ranks papers to cut systematic-review screening time.
 - [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) - Low-code package that automates systematic-review screening with AI agents.
+- [Paper Radar](https://github.com/Eliot5566/JEV-Paper-Radar) - Scores new papers against plain-English interests and screens review records, benchmarked on CLEF TAR 2019.
 - [prismAId](https://github.com/Open-and-Sustainable/prismAId) - Protocol-based, no-code toolkit for replicable review screening and extraction.
 - [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) - Structured review flow with AI-assisted screening over open scholarly sources.
 

@@ -481,6 +481,20 @@
   desc_zh: "低代码 Python 包，用 AI 智能体自动化系统综述筛选（OpenAI/Gemini/Claude/Ollama）"
   desc_en: "Low-code Python package automating SR screening via AI agents (OpenAI/Gemini/Claude/Ollama)"
   desc_awesome: "Low-code package that automates systematic-review screening with AI agents."
+- name: "Paper Radar"
+  repo: Eliot5566/JEV-Paper-Radar
+  category: systematic-review
+  stage: [search, screen]
+  added: 2026-11-28
+  stars: 47
+  pushed_at: 2026-11-27
+  archived: false
+  license: MIT
+  language: Python
+  status: active
+  desc_zh: "用白话研究兴趣为 arXiv/bioRxiv/PubMed 新论文逐条打分，生成每日页面与 RSS；附 Claude 技能与系统综述筛选模式，在 CLEF TAR 2019 公开评测（含校准局限）"
+  desc_en: "Scores new arXiv/bioRxiv/PubMed papers against plain-English interests into daily pages and RSS; includes a Claude skill and a screening mode benchmarked on CLEF TAR 2019 with calibration caveats"
+  desc_awesome: "Scores new papers against plain-English interests and screens review records, benchmarked on CLEF TAR 2019."
 - name: "prismAId"
   repo: Open-and-Sustainable/prismAId
   category: systematic-review
