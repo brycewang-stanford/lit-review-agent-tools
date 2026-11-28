@@ -14,13 +14,13 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 **简体中文** · [English](README.en.md) · [Awesome list](README.md) · **[🔍 可搜索站点](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em>收录 <b>66</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
+<em>收录 <b>67</b> 个用于文献综述的开源项目，按使用场景分类 · 每季度更新 · 欢迎 PR</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -178,6 +178,7 @@ _让 AI 智能体帮你完成 检索 → 阅读 → 抽取 → 综述 → 引用
 |---|---|---|---|---|
 | ⭐ [ASReview](https://github.com/asreview/asreview) | ~1.1k | 🟢 | Apache-2.0 | 主动学习的系统综述筛选工具，交互式排序论文、大幅缩短筛选时间；学术界成熟方案 |
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | 127 | 🟢 | CC-BY-NC-ND-4.0 | 低代码 Python 包，用 AI 智能体自动化系统综述筛选（OpenAI/Gemini/Claude/Ollama） |
+| [Paper Radar](https://github.com/Eliot5566/JEV-Paper-Radar) | 47 | 🟢 | MIT | 用白话研究兴趣为 arXiv/bioRxiv/PubMed 新论文逐条打分，生成每日页面与 RSS；附 Claude 技能与系统综述筛选模式，在 CLEF TAR 2019 公开评测（含校准局限） |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 32 | 🟢 | AGPL-3.0 | 基于生成式 AI 的协议驱动系统综述工具，无需编程、可复现的筛选与抽取 |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | 小众 | 🟢 | MIT | PRISMA 2020 全流程，经 MCP 做 AI 辅助筛选（arXiv/OpenAlex/S2，无需 API key） |
 

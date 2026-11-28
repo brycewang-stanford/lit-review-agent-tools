@@ -14,13 +14,13 @@ _Let AI agents handle the whole loop: search → read → extract → synthesize
 [![Stars](https://img.shields.io/github/stars/brycewang-stanford/lit-review-agent-tools?style=social)](https://github.com/brycewang-stanford/lit-review-agent-tools/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/brycewang-stanford/lit-review-agent-tools)](https://github.com/brycewang-stanford/lit-review-agent-tools/commits)
 <!-- BEGIN GENERATED:badge -->
-![Tools](https://img.shields.io/badge/tools-66-blue)
+![Tools](https://img.shields.io/badge/tools-67-blue)
 <!-- END GENERATED:badge -->
 
 [简体中文](README.zh.md) · **English** · **[🔍 Searchable site](https://brycewang-stanford.github.io/lit-review-agent-tools/)**
 
 <!-- BEGIN GENERATED:tagline -->
-<em><b>66</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
+<em><b>67</b> open-source projects for literature review, organized by use case · updated quarterly · PRs welcome</em>
 <!-- END GENERATED:tagline -->
 
 </div>
@@ -182,6 +182,7 @@ I want to chat with my library inside Zotero ───────────�
 |---|---|---|---|---|
 | ⭐ [ASReview](https://github.com/asreview/asreview) | ~1.1k | 🟢 | Apache-2.0 | Active-learning screener for systematic reviews; interactively ranks papers to cut screening time; well-established in academia |
 | [LatteReview](https://github.com/PouriaRouzrokh/LatteReview) | 127 | 🟢 | CC-BY-NC-ND-4.0 | Low-code Python package automating SR screening via AI agents (OpenAI/Gemini/Claude/Ollama) |
+| [Paper Radar](https://github.com/Eliot5566/JEV-Paper-Radar) | 47 | 🟢 | MIT | Scores new arXiv/bioRxiv/PubMed papers against plain-English interests into daily pages and RSS; includes a Claude skill and a screening mode benchmarked on CLEF TAR 2019 with calibration caveats |
 | [prismAId](https://github.com/Open-and-Sustainable/prismAId) | 32 | 🟢 | AGPL-3.0 | Generative-AI, protocol-based systematic-review toolkit; no-code, replicable screening & extraction |
 | [prisma-review-tool](https://github.com/Black-Lights/prisma-review-tool) | niche | 🟢 | MIT | PRISMA 2020 flow with AI-assisted screening via MCP (arXiv/OpenAlex/S2, no API keys) |
 
